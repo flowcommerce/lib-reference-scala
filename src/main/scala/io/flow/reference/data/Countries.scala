@@ -207,8 +207,8 @@ object Countries {
   val Are = Country(iso31662 = "AE", iso31663 = "ARE", defaultCurrency = Some("AED"), measurementSystem = "metric", name = "United Arab Emirates", languages = Seq("ar"), timezones = Nil)
   val Gbr = Country(iso31662 = "GB", iso31663 = "GBR", defaultCurrency = Some("GBP"), measurementSystem = "metric", name = "United Kingdom", languages = Seq("cy", "en"), timezones = Seq("GMT"))
   val Tza = Country(iso31662 = "TZ", iso31663 = "TZA", defaultCurrency = Some("TZS"), measurementSystem = "metric", name = "United Republic of Tanzania", languages = Seq("en", "sw"), timezones = Nil)
-  val Vir = Country(iso31662 = "VI", iso31663 = "VIR", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "United States Virgin Islands", languages = Nil, timezones = Nil)
   val Usa = Country(iso31662 = "US", iso31663 = "USA", defaultCurrency = Some("USD"), measurementSystem = "imperial", name = "United States of America", languages = Seq("en"), timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York"))
+  val Vir = Country(iso31662 = "VI", iso31663 = "VIR", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "United States Virgin Islands", languages = Nil, timezones = Nil)
   val Ury = Country(iso31662 = "UY", iso31663 = "URY", defaultCurrency = Some("UYU"), measurementSystem = "metric", name = "Uruguay", languages = Seq("es"), timezones = Nil)
   val Uzb = Country(iso31662 = "UZ", iso31663 = "UZB", defaultCurrency = Some("UZS"), measurementSystem = "metric", name = "Uzbekistan", languages = Seq("uz"), timezones = Nil)
   val Vut = Country(iso31662 = "VU", iso31663 = "VUT", defaultCurrency = Some("VUV"), measurementSystem = "metric", name = "Vanuatu", languages = Seq("bi", "en", "fr"), timezones = Nil)
@@ -424,8 +424,8 @@ object Countries {
     Are,
     Gbr,
     Tza,
-    Vir,
     Usa,
+    Vir,
     Ury,
     Uzb,
     Vut,

@@ -83,7 +83,9 @@ class CountriesSpec extends FunSpec with Matchers {
 
     intercept[Throwable] {
       Countries.mustFind("other")
-    }.getMessage should be("The following country is invalid: [other]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries.")
+    }.getMessage should be(
+      "The following country is invalid: [other]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+    )
   }
 
   it("validate2") {
@@ -143,8 +145,12 @@ class CountriesSpec extends FunSpec with Matchers {
   }
 
   it("return an error for invalid countries for both ISO 3166 2- and 3-character codes") {
-    Countries.validate(Seq("Fra", "Mars")) should be(Left(Seq("The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries.")))
-    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq("The following countries are invalid: [Mars], [Venus], [Jupiter]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries.")))
+    Countries.validate(Seq("Fra", "Mars")) should be(Left(Seq(
+      "The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-2 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+    )))
+    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq(
+      "The following countries are invalid: [Mars], [Venus], [Jupiter]. The provided country codes must be valid ISO 3166-2 or 3166-2 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+    )))
   }
 
   it("return a list of two errors with prefixes for mixed invalid countries for both 3166 2- and 3-character codes") {
@@ -157,7 +163,7 @@ class CountriesSpec extends FunSpec with Matchers {
     )
 
     res0 should be(Seq(
-      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-2 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
     ))
 
     // Test ISO3166-3
@@ -209,7 +215,7 @@ class CountriesSpec extends FunSpec with Matchers {
     )
 
     res4 should be(Seq(
-      "The following destination countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      "The following destination countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
     ))
   }
 
@@ -265,7 +271,7 @@ class CountriesSpec extends FunSpec with Matchers {
     )
 
     res4 should be(Seq(
-      "The following countries of origin are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      "The following countries of origin are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
     ))
   }
 
@@ -280,7 +286,7 @@ class CountriesSpec extends FunSpec with Matchers {
     )
 
     res should be(Seq(
-      "The following countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      "The following countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
     ))
   }
 

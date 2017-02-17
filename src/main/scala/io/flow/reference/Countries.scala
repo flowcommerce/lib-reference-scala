@@ -81,7 +81,7 @@ object Countries extends Validation[Country] {
     }
 
     val messages: Seq[String] = invalid.map { case (label, codes) =>
-      s"Invalid $label ${codes.mkString("'", "', '", "'")}. Must be a valid ISO 3166 2 or 3 digit code. See https://api.flow.io/reference/countries"
+      s"Invalid $label ${codes.mkString("'", "', '", "'")}. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
     }.toSeq
 
     messages.toList match {

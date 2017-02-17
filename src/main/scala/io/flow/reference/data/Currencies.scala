@@ -21,12 +21,12 @@ object Currencies {
   val Brl = Currency(iso42173 = "BRL", name = "Brazilian Real", numberDecimals = 0)
   val Bnd = Currency(iso42173 = "BND", name = "Brunei Dollar", numberDecimals = 0)
   val Bgn = Currency(iso42173 = "BGN", name = "Bulgarian Lev", numberDecimals = 0)
-  val Xof = Currency(iso42173 = "XOF", name = "CFA Franc BCEAO", numberDecimals = 0)
-  val Xaf = Currency(iso42173 = "XAF", name = "CFA Franc BEAC", numberDecimals = 0)
-  val Xpf = Currency(iso42173 = "XPF", name = "CFP Franc", numberDecimals = 0)
   val Cve = Currency(iso42173 = "CVE", name = "Cabo Verde Escudo", numberDecimals = 0)
   val Cad = Currency(iso42173 = "CAD", name = "Canadian Dollar", numberDecimals = 0)
   val Kyd = Currency(iso42173 = "KYD", name = "Cayman Islands Dollar", numberDecimals = 0)
+  val Xof = Currency(iso42173 = "XOF", name = "CFA Franc BCEAO", numberDecimals = 0)
+  val Xaf = Currency(iso42173 = "XAF", name = "CFA Franc BEAC", numberDecimals = 0)
+  val Xpf = Currency(iso42173 = "XPF", name = "CFP Franc", numberDecimals = 0)
   val Clp = Currency(iso42173 = "CLP", name = "Chilean Peso", numberDecimals = 0)
   val Cop = Currency(iso42173 = "COP", name = "Colombian Peso", numberDecimals = 0)
   val Kmf = Currency(iso42173 = "KMF", name = "Comoro Franc", numberDecimals = 0)
@@ -119,8 +119,8 @@ object Currencies {
   val Tnd = Currency(iso42173 = "TND", name = "Tunisian Dinar", numberDecimals = 0)
   val Try = Currency(iso42173 = "TRY", name = "Turkish Lira", numberDecimals = 0)
   val Aed = Currency(iso42173 = "AED", name = "UAE Dirham", numberDecimals = 0)
-  val Usd = Currency(iso42173 = "USD", name = "US Dollar", numberDecimals = 0)
   val Ugx = Currency(iso42173 = "UGX", name = "Uganda Shilling", numberDecimals = 0)
+  val Usd = Currency(iso42173 = "USD", name = "US Dollar", numberDecimals = 0)
   val Uzs = Currency(iso42173 = "UZS", name = "Uzbekistan Sum", numberDecimals = 0)
   val Vuv = Currency(iso42173 = "VUV", name = "Vatu", numberDecimals = 0)
   val Krw = Currency(iso42173 = "KRW", name = "Won", numberDecimals = 0)
@@ -148,12 +148,12 @@ object Currencies {
     Brl,
     Bnd,
     Bgn,
-    Xof,
-    Xaf,
-    Xpf,
     Cve,
     Cad,
     Kyd,
+    Xof,
+    Xaf,
+    Xpf,
     Clp,
     Cop,
     Kmf,
@@ -246,8 +246,8 @@ object Currencies {
     Tnd,
     Try,
     Aed,
-    Usd,
     Ugx,
+    Usd,
     Uzs,
     Vuv,
     Krw,
