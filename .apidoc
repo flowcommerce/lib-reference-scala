@@ -1,0 +1,6 @@
+code:
+  flow:
+    reference:
+      version: latest
+      generators:
+        scala_models: src/main/scala/io/flow/generated
