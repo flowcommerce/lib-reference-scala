@@ -49,7 +49,7 @@ trait Validation[T] {
 
   // This needs to be a method, rather than a val, for the same reason above.
   private[this] def singularReferenceLink = plural match {
-    case "countries" => s"The provided country code must be a valid ISO 3166-2 or 3166-3 codes. $referenceLink"
+    case "countries" => s"The provided country code must be a valid ISO 3166-2 or 3166-3 code. $referenceLink"
     case _ => referenceLink
   }
 

@@ -29,7 +29,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
     val usd = data.Currencies.all.find(_.iso42173 == "USD").getOrElse {
       sys.error("USD missing")
     }
-    usd.name should be("US Dollars")
+    usd.name should be("US Dollar")
     usd.numberDecimals should be(2)
 
     val canada = data.Currencies.all.find(_.iso42173 == "CAD").getOrElse {
@@ -46,7 +46,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
   }
   
   it("find") {
-    Seq("usd", "USD", " usd ", "us dollars").foreach { name =>
+    Seq("usd", "USD", " usd ", "us dollar").foreach { name =>
       Currencies.find(name).getOrElse {
         sys.error(s"$name missing")
       }
@@ -56,7 +56,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
   }
   
   it("mustFind") {
-    Seq("usd", "USD", " usd ", "us dollars").foreach { name =>
+    Seq("usd", "USD", " usd ", "us dollar").foreach { name =>
       Currencies.mustFind(name).iso42173 should be("USD")
     }
 
