@@ -43,3 +43,11 @@ We recommend viewing the project tests to see detailed usage examples
 for all of the types of reference data:
 
   [Scala Tests](/flowcommerce/json-reference/src/test/scala/io/flow/reference/)
+
+## Updating to latest models
+
+```
+    git checkout -b <release_branch>
+    go run update.go
+    git pull-request
+```
