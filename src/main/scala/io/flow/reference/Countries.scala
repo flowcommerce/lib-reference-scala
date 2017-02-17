@@ -4,7 +4,8 @@ import io.flow.reference.v0.models.Country
 import scala.collection.mutable
 
 object Countries extends Validation[Country] {
-  val cache: Map[String, Country] = Map(
+
+  override val cache: Map[String, Country] = Map(
     data.Countries.all.flatMap { c =>
       Seq(
         (c.iso31662.toLowerCase -> c),
@@ -13,18 +14,12 @@ object Countries extends Validation[Country] {
       )
     }: _*
   )
-  val supportedCache: Map[String, Country] = Map(
-    data.Countries.supported.flatMap { c =>
-      Seq(
-        (c.iso31662.toLowerCase -> c),
-        (c.iso31663.toLowerCase -> c),
-        (c.name.toLowerCase -> c)
-      )
-    }: _*
-  )
-  def singular = "country"
-  def plural = "countries"
-  def name(c: Country): String = c.name
+
+  override def singular = "country"
+
+  override def plural = "countries"
+  
+  override def name(c: Country): String = c.name
 
   /**
     * Validation function that will turn two provided codes into either of:

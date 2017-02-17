@@ -3,21 +3,18 @@ package io.flow.reference
 import io.flow.reference.v0.models.{Country, Region}
 
 object Regions extends Validation[Region] {
-  val cache: Map[String, Region] = Map(
+
+  override val cache: Map[String, Region] = Map(
     data.Regions.all.map { r =>
       (r.id.toLowerCase -> r)
     }: _*
   )
 
-  val supportedCache: Map[String, Region] = Map(
-    data.Regions.supported.map { r =>
-      (r.id.toLowerCase -> r)
-    }: _*
-  )
-  def singular = "region"
-  def plural = "regions"
-  def name(r: Region) = r.name
+  override def singular = "region"
 
+  override def plural = "regions"
+
+  override def name(r: Region) = r.name
 
   /**
     * Filters regions based on the query parameter. We filter in a few

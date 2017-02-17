@@ -6,14 +6,12 @@ package io.flow.reference
  *  @param singular The singular form of `T`; for example, "country".
  *  @param plural The plural form of `T`; for example, "countries".
  *  @param cache A map of valid keys to the objects of type `T` that they represent.
- *  @param supportedCache A map of supported keys to the objects of type `T` that they represent.
  *  @param name A method that returns the name (or other property that returns a string) to use in validation error messages for each object of type `T`.
  */
 trait Validation[T] {
   def singular: String
   def plural: String
   def cache: Map[String, T]
-  def supportedCache: Map[String, T]
   def name(t: T): String
 
   def find(q: String): Option[T] = {
@@ -35,10 +33,6 @@ trait Validation[T] {
     cache.keys.toSeq.contains(id.trim.toLowerCase)
   }
 
-  private[this] def isSupported(id: String): Boolean = {
-    supportedCache.keys.toSeq.contains(id.trim.toLowerCase)
-  }
-
   private[this] def formatted(value: String): String = value match {
     case "" => ""
     case _ => s" $value"
@@ -49,13 +43,13 @@ trait Validation[T] {
 
   // This needs to be a method, rather than a val, for the same reason above.
   private[this] def pluralReferenceLink = plural match {
-    case "countries" => s"The provided ids must be valid ISO 3166 2- or 3-digit codes. $referenceLink"
+    case "countries" => s"The provided country codes must be valid ISO 3166-2 or 3166-2 codes. $referenceLink"
     case _ => referenceLink
   }
 
   // This needs to be a method, rather than a val, for the same reason above.
   private[this] def singularReferenceLink = plural match {
-    case "countries" => s"The provided id must be a valid ISO 3166 2- or 3-digit code. $referenceLink"
+    case "countries" => s"The provided country code must be a valid ISO 3166-2 or 3166-2 codes. $referenceLink"
     case _ => referenceLink
   }
 
@@ -67,16 +61,6 @@ trait Validation[T] {
     s"The following${formatted(prefix)} $plural${formatted(suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s".${formatted(pluralReferenceLink)}"
   }
 
-  // TODO: Create a route to supported/unsupported regions and countries so we can explicitly link to which ones are supported.
-  private[this] def singleUnsupported(t: T, prefix: String = "", suffix: String = ""): String = {
-    s"The following${formatted(prefix)} $singular${formatted(suffix)} is unsupported: [${name(t)}]."
-  }
-
-  // TODO: Create a route to supported/unsupported regions and countries so we can explicitly link to which ones are supported.
-  private[this] def manyUnsupported(ts: Seq[T], prefix: String = "", suffix: String = ""): String = {
-    s"The following${formatted(prefix)} $plural${formatted(suffix)} are unsupported: " + ts.map(t => s"[${name(t)}]").mkString(", ") + "."
-  }
-
   def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = {
     ids match {
       case Nil => Nil
@@ -85,30 +69,16 @@ trait Validation[T] {
     }
   }
 
-  def unsupportedError(regions: Seq[T], prefix: String = "", suffix: String = "") = {
-    regions match {
-      case Nil => Nil
-      case one :: Nil => Seq(singleUnsupported(one, prefix, suffix))
-      case multiple => Seq(manyUnsupported(multiple, prefix, suffix))
-    }
-  }
-
   def validateSingle(id: String, prefix: String = "", suffix: String = ""): Either[String, T] = {
     val trimmed = id.trim
-    if(!isValid(trimmed)) {
-      Left(singleInvalid(trimmed, prefix, suffix))
-    } else if(!isSupported(trimmed)) {
-      find(trimmed) map { country =>
-        Left(singleUnsupported(country, prefix, suffix))
-      } getOrElse {
-        sys.error("Region [$id] is valid and unsupported, but for some reason could not be found.")
-      }
+    if(isValid(trimmed)) {
+      Right(
+        find(trimmed).getOrElse {
+          sys.error(s"[${getClass.getName}] Code[$id] is valid but could not be found.")
+        }
+      )
     } else {
-      find(trimmed) map { country =>
-        Right(country)
-      } getOrElse {
-        sys.error("Region [$id] is valid and supported, but for some reason could not be found.")
-      }
+      Left(singleInvalid(trimmed, prefix, suffix))
     }
   }
 
@@ -121,13 +91,8 @@ trait Validation[T] {
   def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[Seq[String], Seq[T]] = {
     val distinctTrimmedIds = ids.map(_.trim).distinct
     val strictlyInvalidIds = distinctTrimmedIds.filterNot(isValid)
-    val strictlyUnsupportedCountries = distinctTrimmedIds.
-      filterNot(isSupported).
-      diff(strictlyInvalidIds).
-      map(mustFind).
-      distinct // remove duplicates caused by providing multiple ids that map to the same value in the cache
 
-    (invalidError(strictlyInvalidIds, prefix, suffix) ++ unsupportedError(strictlyUnsupportedCountries, prefix, suffix)) match {
+    invalidError(strictlyInvalidIds, prefix, suffix) match {
       case Nil => Right(distinctTrimmedIds.map(mustFind))
       case errors => Left(errors)
     }

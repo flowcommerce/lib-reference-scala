@@ -40,16 +40,16 @@ func writeFile(objectName string, imports string, instances []Instance) {
 	for _, instance := range(instances) {
 		writer.WriteString(fmt.Sprintf("  val %s = %s\n", scalaName(instance.Name), instance.Value))
 	}
-	
 	writer.WriteString("\n")
-	writer.WriteString("  val instances = Seq(\n    ")
+
+	writer.WriteString("  val all = Seq(\n    ")
 	for i, instance := range(instances) {
 		if i > 0 {
 			writer.WriteString(",\n    ")
 		}
 		writer.WriteString(scalaName(instance.Name))
 	}
-	writer.WriteString("\n  )\n\n")
+	writer.WriteString("\n  )\n\n}\n")
 
 	err = writer.Flush()
 	util.ExitIfError(err, fmt.Sprintf("Failed to flush file %s: %s", path, err))

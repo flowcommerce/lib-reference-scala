@@ -106,8 +106,8 @@ class RegionsSpec extends FunSpec with Matchers {
     Regions.filter("other") should be(Nil)
   }
 
-  it("validate all supported regions") {
-    Regions.validate(data.Regions.supported.map(_.id)) should be(Right(data.Regions.supported))
+  it("validate all all regions") {
+    Regions.validate(data.Regions.all.map(_.id)) should be(Right(data.Regions.all))
   }
 
   it("validate an empty list of region ids") {
@@ -119,93 +119,28 @@ class RegionsSpec extends FunSpec with Matchers {
     Regions.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq("The following regions are invalid: [Mars], [Venus], [Jupiter]. See https://api.flow.io/reference/regions for a list of all valid regions.")))
   }
 
-  it("return an error for unsupported regions") {
-    Regions.validate(Seq(data.Regions.Afghanistan.id)) should be(
-      Left(Seq("The following region is unsupported: [Afghanistan]."))
-    )
-    Regions.validate(data.Regions.all.map(_.id)) should be(
-      Left(
-        List("The following regions are unsupported: [Afghanistan], [Angola], [Belarus], [Bouvet Island], [British Indian Ocean Territory], [Burundi], [Christmas Island], [Cocos (Keeling) Islands], [Congo - Kinshasa], [Cuba], [Eritrea], [Faroe Islands], [French Southern Territories], [Heard & McDonald Islands], [Iran], [Iraq], [Liberia], [Macedonia], [Madagascar], [Mozambique], [Myanmar], [Palestine], [South Georgia & South Sandwich Islands], [Sudan], [Suriname], [Syria], [Tajikistan], [Turkmenistan], [U.S. Outlying Islands], [Zimbabwe].")
-      )
-    )
-  }
-
-  it("return a list of two errors for mixed unsupported/invalid regions") {
-    val Left(res) = Regions.validate(Seq(
-      data.Regions.Afghanistan.id,
-      "Flowville"
-    ))
-
-    res should be(
-      Seq(
-        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
-        "The following region is unsupported: [Afghanistan]."
-      )
-    )
-  }
-
-  it("return a list of two errors for mixed unsupported/invalid regions with prefix") {
-    val Left(res) = Regions.validate(
-      ids = Seq(
-        data.Regions.Afghanistan.id,
-        "Flowville"
-      ),
-      prefix = "destination"
-    )
-
-    res should be(
-      Seq(
-        "The following destination region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
-        "The following destination region is unsupported: [Afghanistan]."
-      )
-    )
-  }
-
-  it("return a list of two errors for mixed unsupported/invalid regions with suffix") {
-    val Left(res) = Regions.validate(
-      ids = Seq(
-        data.Regions.Afghanistan.id,
-        "Flowville"
-      ),
-      suffix = "of origin"
-    )
-
-    res should be(
-      Seq(
-        "The following region of origin is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
-        "The following region of origin is unsupported: [Afghanistan]."
-      )
-    )
-  }
-
   it("ignore duplicates") {
     val Left(res) = Regions.validate(Seq(
-      data.Regions.Afghanistan.id,
-      data.Regions.Afghanistan.id,
       "Flowville",
       "Flowville"
     ))
 
     res should be(
       Seq(
-        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
-        "The following region is unsupported: [Afghanistan]."
+        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions."
       )
     )
   }
 
   it("trims strings and removes duplicates") {
     val Left(res) = Regions.validate(Seq(
-      "      AFG   ",
-      "  AFG       ",
       "Flowville   ",
       "   Flowville"
     ))
 
     res should be(
       Seq(
-        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
-        "The following region is unsupported: [Afghanistan]."
+        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions."
       )
     )
   }
@@ -229,40 +164,5 @@ class RegionsSpec extends FunSpec with Matchers {
   it("return an error for a single invalid region and trims provided id") {
     Regions.validateSingle("Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
     Regions.validateSingle("        Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
-  }
-
-  it("return an error for a single unsupported region, ignoring case.") {
-    Regions.validateSingle("AFG") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("AfG") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("aFG") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("afG") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("AFg") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("Afg") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("aFg") should be(Left("The following region is unsupported: [Afghanistan]."))
-    Regions.validateSingle("afg") should be(Left("The following region is unsupported: [Afghanistan]."))
-  }
-
-  it("return an error with prefix for a single unsupported region, ignoring case.") {
-    Regions.validateSingle(id = "AFG", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AFG", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AfG", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "aFG", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "afG", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AFg", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "Afg", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "aFg", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "afg", prefix = "destination") should be(Left("The following destination region is unsupported: [Afghanistan]."))
-  }
-
-  it("return an error with suffix for a single unsupported region, ignoring case.") {
-    Regions.validateSingle(id = "AFG", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AFG", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AfG", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "aFG", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "afG", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "AFg", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "Afg", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "aFg", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
-    Regions.validateSingle(id = "afg", suffix = "of origin") should be(Left("The following region of origin is unsupported: [Afghanistan]."))
   }
 }
