@@ -31,6 +31,12 @@ This library wraps the source data provided by the [Flow Reference Project](/flo
   }
   ```
 
+  Validate input, returning a friendly error message:
+  ```
+  Countries.validate(Seq("Fra", "Mars"))
+  ```
+  
+
 ## More examples
 
 We recommend viewing the project tests to see detailed usage examples
