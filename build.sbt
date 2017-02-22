@@ -1,4 +1,4 @@
-name := "lib-reference"
+name := "lib-reference-scala"
 
 organization := "io.flow"
 
