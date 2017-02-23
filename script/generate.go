@@ -134,11 +134,11 @@ func processLocales() {
 	for _, l := range common.Locales() {
 		instances = append(instances, Instance{
 			Name: l.Id,
-			Value: fmt.Sprintf("Locale(id = \"%s\", country = \"%s\", language = \"%s\", numbers = Numbers(decimal = \"%s\", group = \"%s\"))", l.Id, l.Country, l.Language, l.Numbers.Decimal, l.Numbers.Group),
+			Value: fmt.Sprintf("Locale(id = \"%s\", country = \"%s\", language = \"%s\", numbers = LocaleNumbers(decimal = \"%s\", group = \"%s\"))", l.Id, l.Country, l.Language, l.Numbers.Decimal, l.Numbers.Group),
 		})
 	}
 
-	writeFile("Locales", "Locale", instances)
+	writeFile("Locales", "{Locale, LocaleNumbers}", instances)
 }
 
 func processTimezones() {
