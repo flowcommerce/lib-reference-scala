@@ -192,6 +192,7 @@ object Countries {
   val Swz = Country(iso31662 = "SZ", iso31663 = "SWZ", defaultCurrency = Some("SZL"), measurementSystem = "metric", name = "Swaziland", languages = Seq("en", "ss"), timezones = Nil)
   val Swe = Country(iso31662 = "SE", iso31663 = "SWE", defaultCurrency = Some("SEK"), measurementSystem = "metric", name = "Sweden", languages = Seq("sv"), timezones = Nil)
   val Che = Country(iso31662 = "CH", iso31663 = "CHE", defaultCurrency = Some("CHF"), measurementSystem = "metric", name = "Switzerland", languages = Seq("de", "fr", "it", "rm"), timezones = Nil)
+  val Twn = Country(iso31662 = "TW", iso31663 = "TWN", defaultCurrency = None, measurementSystem = "metric", name = "Taiwan", languages = Seq("zh"), timezones = Nil)
   val Tha = Country(iso31662 = "TH", iso31663 = "THA", defaultCurrency = Some("THB"), measurementSystem = "metric", name = "Thailand", languages = Seq("th"), timezones = Nil)
   val Tls = Country(iso31662 = "TL", iso31663 = "TLS", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "Timor-Leste", languages = Seq("pt"), timezones = Nil)
   val Tgo = Country(iso31662 = "TG", iso31663 = "TGO", defaultCurrency = Some("XOF"), measurementSystem = "metric", name = "Togo", languages = Seq("ee", "fr"), timezones = Nil)
@@ -409,6 +410,7 @@ object Countries {
     Swz,
     Swe,
     Che,
+    Twn,
     Tha,
     Tls,
     Tgo,

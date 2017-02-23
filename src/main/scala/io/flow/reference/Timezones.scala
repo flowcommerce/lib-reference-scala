@@ -3,7 +3,7 @@ package io.flow.reference
 import io.flow.reference.v0.models.Timezone
 
 object Timezones extends Validation[Timezone] {
-  val cache: Map[String, Timezone] = Map(
+  override val cache: Map[String, Timezone] = Map(
     data.Timezones.all.flatMap { t =>
       Seq(
         t.name.toLowerCase -> t,
@@ -12,9 +12,7 @@ object Timezones extends Validation[Timezone] {
     }: _*
   )
   
-  val supportedCache = cache
-
-  def singular = "timezone"
-  def plural = "timezones"
-  def name(tz: Timezone) = tz.name
+  override def singular = "timezone"
+  override def plural = "timezones"
+  override def name(tz: Timezone) = tz.name
 }

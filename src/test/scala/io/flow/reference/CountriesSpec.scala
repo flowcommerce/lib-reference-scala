@@ -46,6 +46,19 @@ class CountriesSpec extends FunSpec with Matchers {
     data.Countries.all.find(_.iso31663.trim.isEmpty) should be(None)
   }
 
+  it("codes in use are defined") {
+    val all = Seq(
+      "ALB", "AND", "ARE", "ARG", "ATG", "AUS", "AUT", "BEL", "BFA", "BGR", "BHS", "BRA", "CAN", "CHE",
+      "CHL", "CHN", "CIV", "CMR", "CRI", "DEU", "DNK", "DOM", "DZA", "ESP", "EST", "FIN", "FJI", "FRA",
+      "GBR", "HKG", "HTI", "IND", "IRL", "ISR", "ITA", "JPN", "KOR", "KWT", "MEX", "MLT", "NLD", "NOR",
+      "NZL", "PHL", "POL", "RUS", "SAU", "SGP", "SWE", "THA", "TUN", "TWN", "USA", "ZAF"
+    )
+
+    all.filter { code =>
+      Countries.find(code).isEmpty
+    } should be(Nil)
+  }
+
   it("have common countries are defined") {
     val usa = Countries.find("usa").getOrElse {
       sys.error("USA missing")

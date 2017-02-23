@@ -3,7 +3,7 @@ package io.flow.reference
 import io.flow.reference.v0.models.Currency
 
 object Currencies extends Validation[Currency] {
-  val cache: Map[String, Currency] = Map(
+  override val cache: Map[String, Currency] = Map(
     data.Currencies.all.flatMap { c =>
       Seq(
         (c.iso42173.toLowerCase -> c),
@@ -12,9 +12,7 @@ object Currencies extends Validation[Currency] {
     }: _*
   )
 
-  val supportedCache = cache
-
-  def singular = "currency"
-  def plural = "currencies"
-  def name(c: Currency) = c.iso42173
+  override def singular = "currency"
+  override def plural = "currencies"
+  override def name(c: Currency) = c.iso42173
 }

@@ -12,8 +12,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
   }
 
   it("be sorted") {
-    // TODO: Sort
-    // data.Currencies.all.map(_.name) should be(data.Currencies.all.map(_.name).sortBy { _.toLowerCase })
+    data.Currencies.all.map(_.name) should be(data.Currencies.all.map(_.name).sortBy { _.toLowerCase })
   }
 
   it("have codes be in upper case") {
@@ -23,6 +22,18 @@ class CurrenciesSpec extends FunSpec with Matchers {
   it("have no blanks") {
     data.Currencies.all.find(_.name.trim.isEmpty) should be(None)
     data.Currencies.all.find(_.iso42173.trim.isEmpty) should be(None)
+  }
+
+  it("codes in use are defined") {
+    val all = Seq(
+      "AED", "AMD", "ARS", "AUD", "BAM", "BGN", "BRL", "BSD", "CAD", "CHF", "CLP", "CNY", "CRC",
+      "DKK", "DOP", "DZD", "EUR", "FJD", "GBP", "HKD", "ILS", "INR", "JPY", "KRW", "KWD", "MXN", "NOK",
+      "NZD", "PHP", "PLN", "RUB", "SAR", "SEK", "SGD", "THB", "TND", "TWD", "USD", "XCD", "XOF", "ZAR"
+    )
+
+    all.filter { code =>
+      Currencies.find(code).isEmpty
+    } should be(Nil)
   }
 
   it("have common currencies defined") {

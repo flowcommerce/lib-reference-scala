@@ -25,7 +25,18 @@ class LanguagesSpec extends FunSpec with Matchers {
     data.Languages.all.find(_.iso6392.trim.isEmpty) should be(None)
   }
 
-  it("have common languages are defined") {
+  it("codes in use are defined") {
+    val all = Seq(
+      "aa", "af", "ar", "be", "bg", "ca", "cs", "cy", "da", "de", "en", "es", "et", "fa",
+      "fi", "fr", "ja", "kg", "ko", "nb", "nl", "pl", "pt", "ru", "sq", "sv", "th", "zh"
+    )
+
+    all.filter { code =>
+      Languages.find(code).isEmpty
+    } should be(Nil)
+  }
+
+  it("have common languages are defined") {  
     val english = data.Languages.all.find(_.iso6392 == "en").getOrElse {
       sys.error("english missing")
     }
