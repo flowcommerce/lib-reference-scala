@@ -12,8 +12,7 @@ class LanguagesSpec extends FunSpec with Matchers {
   }
 
   it("be sorted") {
-    // TODO: Sort data
-    // data.Languages.all.map(_.name) should be(data.Languages.all.map(_.name).sortBy { _.toLowerCase })
+    data.Languages.all.map(_.name) should be(data.Languages.all.map(_.name).sortBy { _.toLowerCase })
   }
 
   it("have codes in lower case") {
