@@ -21,17 +21,16 @@ object Locales extends Validation[Locale] {
     *  - otherwise we check if there is a locale with id = q
     */
   def filter(q: String): Seq[Locale] = {  
-    Countries.find(q) match {
-      case None => {
-        Languages.find(q) match {
-          case None => Seq(find(q)).flatten
-          case Some(lang) => data.Locales.all.filter {
-            _.language == lang.iso6392
-          }
-        }
-      }
+    val byId = Seq(find(q)).flatten
 
-      case Some(c) => data.Locales.all.filter { _.country == c.iso31663 }
-    }
+    val byCountry = Countries.find(q).map { c =>
+      data.Locales.all.filter { _.country == c.iso31663 }
+    }.getOrElse(Nil)
+
+    val byLanguage = Languages.find(q).map { l =>
+      data.Locales.all.filter { _.language == l.iso6392 }
+    }.getOrElse(Nil)
+
+    (byId ++ byCountry ++ byLanguage).distinct
   }  
 }

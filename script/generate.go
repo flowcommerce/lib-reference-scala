@@ -104,7 +104,6 @@ func processRegions() {
 	writeFile("Regions", "Region", instances)
 }
 
-// The loaded list of currencies contains _only_ the currencies we support, so there's no separate `ZzzCurrencies` object
 func processCurrencies() {
 	instances := []Instance{}
 	for _, c := range common.Currencies() {
@@ -133,7 +132,7 @@ func processLocales() {
 	instances := []Instance{}
 	for _, l := range common.Locales() {
 		instances = append(instances, Instance{
-			Name: l.Id,
+			Name: formatLocaleIdForName(l.Id),
 			Value: fmt.Sprintf("Locale(id = \"%s\", name = \"%s\", country = \"%s\", language = \"%s\", numbers = LocaleNumbers(decimal = \"%s\", group = \"%s\"))", l.Id, l.Name, l.Country, l.Language, l.Numbers.Decimal, l.Numbers.Group),
 		})
 	}
@@ -203,6 +202,10 @@ func scalaName(name string) string {
 		s = s + UpcaseInitial(strings.ToLower(el))
 	}
 	return s
+}
+
+func formatLocaleIdForName(id string) string {
+	return strings.Replace(id, "-", "_", -1)
 }
 
 func UpcaseInitial(str string) string {

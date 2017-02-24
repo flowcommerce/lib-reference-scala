@@ -21,7 +21,7 @@ class LocalesSpec extends FunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "en_US"
+      "en-US"
     )
 
     all.filter { id =>
@@ -30,8 +30,8 @@ class LocalesSpec extends FunSpec with Matchers {
   }
 
   it("have common locales are defined") {  
-    val enUs = data.Locales.all.find(_.id == "en_US").getOrElse {
-      sys.error("en_US missing")
+    val enUs = data.Locales.all.find(_.id == "en-US").getOrElse {
+      sys.error("en-US missing")
     }
     enUs.name should be("English - United States")
     enUs.country should be("USA")
@@ -39,8 +39,8 @@ class LocalesSpec extends FunSpec with Matchers {
     enUs.numbers.decimal should be(".")
     enUs.numbers.group should be(",")
 
-    val frBe = data.Locales.all.find(_.id == "fr_BE").getOrElse {
-      sys.error("fr_BE missing")
+    val frBe = data.Locales.all.find(_.id == "fr-BE").getOrElse {
+      sys.error("fr-BE missing")
     }
     frBe.name should be("French - Belgium")
     frBe.country should be("BEL")
@@ -50,7 +50,7 @@ class LocalesSpec extends FunSpec with Matchers {
   }
 
   it("find") {
-    Seq("en_US", " en_us ", "EN_US").foreach { id =>
+    Seq("en-US", " en-US ", "en-US").foreach { id =>
       Locales.find(id).getOrElse {
         sys.error(s"$id missing")
       }
@@ -60,8 +60,8 @@ class LocalesSpec extends FunSpec with Matchers {
   }
 
   it("mustFind") {
-    Seq("en_US", " en_us ", "EN_US").foreach { id =>
-      Locales.mustFind(id).id should be("en_US")
+    Seq("en-US", " en-US ", "en-US").foreach { id =>
+      Locales.mustFind(id).id should be("en-US")
     }
 
     intercept[Throwable] {
@@ -69,27 +69,32 @@ class LocalesSpec extends FunSpec with Matchers {
     }.getMessage should be("The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales.")
   }
 
-  it("filter") {
-    Seq("en_US", "fr_BE").foreach { id =>
+  it("filter by id") {
+    Seq("en-US", "fr-BE").foreach { id =>
       Locales.filter(id).toList match {
         case one :: Nil => one.id should be(id)
         case other => sys.error(s"$id should have found one result but found $other")
       }
     }
+  }
 
-    Seq("us", "usa", " FR ", " FRA ", "france", " FRANCE ").foreach { name =>
+  it("filter by country") {
+    Seq("usa", " FRA ", "france", " FRANCE ").foreach { name =>
       Locales.filter(name).toList match {
         case Nil => sys.error(s"$name should have found at least one result but found none")
-        case _ => {}
+        case results => results.foreach { l => l.country should be(Countries.mustFind(name).iso31663) }
       }
     }
+  }
 
-    val locales = Locales.filter("fra")
-    locales.map(_.name).sorted should be(Seq("Catalan - France"))
+  it("filter by language") {
+    val locales = Locales.filter("ka")
     locales.foreach { l =>
-      l.country should be("FRA")
+      l.language should be("ka")
     }
+  }
 
+  it("filter by other") {
     Locales.filter("other") should be(Nil)
   }
 }
