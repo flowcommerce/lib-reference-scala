@@ -11,11 +11,12 @@ class LocalesSpec extends FunSpec with Matchers {
   }
 
   it("be sorted") {
-    data.Locales.all.map(_.id) should be(data.Locales.all.map(_.id).sortBy { _.toLowerCase })
+    data.Locales.all.map(_.name) should be(data.Locales.all.map(_.name).sortBy { _.toLowerCase })
   }
 
   it("have no blanks") {
     data.Locales.all.find(_.id.trim.isEmpty) should be(None)
+    data.Locales.all.find(_.name.trim.isEmpty) should be(None)
   }
 
   it("codes in use are defined") {
@@ -32,6 +33,7 @@ class LocalesSpec extends FunSpec with Matchers {
     val enUs = data.Locales.all.find(_.id == "en_US").getOrElse {
       sys.error("en_US missing")
     }
+    enUs.name should be("English - United States")
     enUs.country should be("USA")
     enUs.language should be("en")
     enUs.numbers.decimal should be(".")
@@ -40,6 +42,7 @@ class LocalesSpec extends FunSpec with Matchers {
     val frBe = data.Locales.all.find(_.id == "fr_BE").getOrElse {
       sys.error("fr_BE missing")
     }
+    frBe.name should be("French - Belgium")
     frBe.country should be("BEL")
     frBe.language should be("fr")
     frBe.numbers.decimal should be(",")
