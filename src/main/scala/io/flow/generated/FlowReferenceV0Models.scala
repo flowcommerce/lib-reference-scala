@@ -38,6 +38,26 @@ package io.flow.reference.v0.models {
   )
 
   /**
+   * Locales defines standard conventions for presentation of content. See
+   * https://api.flow.io/reference/locales
+   */
+  case class Locale(
+    id: String,
+    name: String,
+    country: String,
+    language: String,
+    numbers: io.flow.reference.v0.models.LocaleNumbers
+  )
+
+  /**
+   * Number formats defined for a given locale
+   */
+  case class LocaleNumbers(
+    decimal: String,
+    group: String
+  )
+
+  /**
    * A region represents a geographic area of the world. Regions can be countries,
    * continents or other political areas (like the Eurozone). See
    * https://api.flow.io/reference/regions
