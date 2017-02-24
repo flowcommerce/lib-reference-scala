@@ -9,8 +9,7 @@ class TimezonesSpec extends FunSpec with Matchers {
   }
 
   it("be sorted") {
-    // TODO: Resolve why this fails
-    // data.Timezones.all.map(_.name) should be(data.Timezones.all.map(_.name).sortBy { _.toLowerCase })
+    data.Timezones.all.map(_.description) should be(data.Timezones.all.map(_.description).sortBy { _.toLowerCase })
   }
 
   it("have no blanks") {
