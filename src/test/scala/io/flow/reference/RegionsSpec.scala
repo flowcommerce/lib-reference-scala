@@ -71,31 +71,6 @@ class RegionsSpec extends FunSpec with Matchers {
     }.getMessage should be("The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions.")
   }
 
-  it("findBySingleCountry") {
-    Seq("usa", " fra ").foreach { name =>
-      Regions.findBySingleCountry(name).getOrElse {
-        sys.error(s"$name missing")
-      }
-    }
-
-    val ca = Regions.findBySingleCountry("ca").getOrElse {
-      sys.error("Could not find region by canada country code[ca]")
-    }
-    ca.id should be("can")
-    ca.name should be("Canada")
-    ca.countries should be(Seq("CAN"))
-    ca.languages should be(Seq("en", "fr"))
-    ca.measurementSystems should be(Seq("metric"))
-
-    Seq("us", "usa", "fr", "fra", "CA", "CAN", " AU ", " AUS ", " france ", " FRANCE ").foreach { name =>
-      Regions.findBySingleCountry(name).getOrElse {
-        sys.error(s"$name missing")
-      }
-    }
-
-    Regions.findBySingleCountry("other") should be(None)
-  }
-
   it("filter") {
     Seq("europe", " EUROPE ", "eurozone", "EUROZONE", "africa", "asia").foreach { id =>
       Regions.filter(id).toList match {

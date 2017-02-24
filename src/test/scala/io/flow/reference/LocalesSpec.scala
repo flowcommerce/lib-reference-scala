@@ -68,5 +68,28 @@ class LocalesSpec extends FunSpec with Matchers {
       Locales.mustFind("other")
     }.getMessage should be("The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales.")
   }
-  
+
+  it("filter") {
+    Seq("en_US", "fr_BE").foreach { id =>
+      Locales.filter(id).toList match {
+        case one :: Nil => one.id should be(id)
+        case other => sys.error(s"$id should have found one result but found $other")
+      }
+    }
+
+    Seq("us", "usa", " FR ", " FRA ", "france", " FRANCE ").foreach { name =>
+      Locales.filter(name).toList match {
+        case Nil => sys.error(s"$name should have found at least one result but found none")
+        case _ => {}
+      }
+    }
+
+    val locales = Locales.filter("fra")
+    locales.map(_.name).sorted should be(Seq("Catalan - France"))
+    locales.foreach { l =>
+      l.country should be("FRA")
+    }
+
+    Locales.filter("other") should be(Nil)
+  }
 }
