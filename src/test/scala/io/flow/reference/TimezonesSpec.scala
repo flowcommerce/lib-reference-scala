@@ -4,8 +4,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class TimezonesSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   it("be unique") {
     data.Timezones.all.groupBy(_.name).filter { _._2.size > 1 }.keys should be(Set())
   }

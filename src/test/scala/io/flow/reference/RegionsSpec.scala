@@ -4,8 +4,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class RegionsSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   it("be unique") {
     data.Regions.all.groupBy(_.name).filter { _._2.size > 1 }.keys should be(Set())
     data.Regions.all.groupBy(_.id).filter { _._2.size > 1 }.keys should be(Set())
@@ -82,7 +80,7 @@ class RegionsSpec extends FunSpec with Matchers {
     Seq("us", "usa", " FR ", " FRA ", "france", " FRANCE ").foreach { name =>
       Regions.filter(name).toList match {
         case Nil => sys.error(s"$name should have found at least one result but found none")
-        case _ => {}
+        case _ => // no-op
       }
     }
 

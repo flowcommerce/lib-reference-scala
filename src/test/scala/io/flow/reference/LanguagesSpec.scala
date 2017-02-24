@@ -4,8 +4,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class LanguagesSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   it("be unique") {
     data.Languages.all.groupBy(_.name).filter { _._2.size > 1 }.keys should be(Set())
     data.Languages.all.groupBy(_.iso6392).filter { _._2.size > 1 }.keys should be(Set())

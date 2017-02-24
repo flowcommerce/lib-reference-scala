@@ -4,8 +4,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class LocalesSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   it("be unique") {
     data.Locales.all.groupBy(_.id).filter { _._2.size > 1 }.keys should be(Set())
   }
