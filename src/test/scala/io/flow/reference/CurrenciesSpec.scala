@@ -1,5 +1,6 @@
 package io.flow.reference
 
+import io.flow.reference.v0.models.CurrencySymbols
 import org.scalatest.{FunSpec, Matchers}
 
 class CurrenciesSpec extends FunSpec with Matchers {
@@ -96,4 +97,34 @@ class CurrenciesSpec extends FunSpec with Matchers {
   it("should return an error validating a list containing both valid and invalid currencies") {
     Currencies.validate(Seq("USD", "invalid")) should be(Left(List("The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.")))
   }
+
+  it("numbers") {
+    data.Currencies.Usd.symbols should be(
+      Some(CurrencySymbols(primary = "$", narrow = None))
+    )
+
+    data.Currencies.Aud.symbols should be(
+      Some(CurrencySymbols(primary = "A$", narrow = Some("$")))
+    )
+
+    data.Currencies.Eur.symbols should be(
+      Some(CurrencySymbols(primary = "€", narrow = None))
+    )
+
+    data.Currencies.Gbp.symbols should be(
+      Some(CurrencySymbols(primary = "£", narrow = None))
+    )
+
+    data.Currencies.Jpy.symbols should be(
+      Some(CurrencySymbols(primary = "¥", narrow = None))
+    )
+  }
+
+  it("defaultLocale") {
+    data.Currencies.Usd.defaultLocale should be(Some("en-US"))
+    data.Currencies.Aud.defaultLocale should be(Some("en-AU"))
+    data.Currencies.Eur.defaultLocale should be(Some("en-DE"))
+    data.Currencies.Gbp.defaultLocale should be(Some("en-GB"))
+    data.Currencies.Jpy.defaultLocale should be(Some("ja-JP"))
+  }  
 }

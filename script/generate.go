@@ -107,13 +107,27 @@ func processRegions() {
 func processCurrencies() {
 	instances := []Instance{}
 	for _, c := range common.Currencies() {
+		symbols := "None"
+		if c.Symbols != nil {
+			narrow := "None"
+			if c.Symbols.Narrow != "" {
+				narrow = fmt.Sprintf("Some(\"%s\")", c.Symbols.Narrow)
+			}
+			symbols = fmt.Sprintf("Some(CurrencySymbols(primary = \"%s\", narrow = %s))", c.Symbols.Primary, narrow)
+		}
+
+		defaultLocale := "None"
+		if c.DefaultLocale != "" {
+			defaultLocale = fmt.Sprintf("Some(\"%s\")", c.DefaultLocale)
+		}
+
 		instances = append(instances, Instance{
 			Name: c.Iso_4217_3,
-			Value: fmt.Sprintf("Currency(iso42173 = \"%s\", name = \"%s\", numberDecimals = %v)", c.Iso_4217_3, c.Name, c.NumberDecimals),
+			Value: fmt.Sprintf("Currency(iso42173 = \"%s\", name = \"%s\", numberDecimals = %v, defaultLocale = %s, symbols = %s)", c.Iso_4217_3, c.Name, c.NumberDecimals, defaultLocale, symbols),
 		})
 	}
 
-	writeFile("Currencies", "Currency", instances)
+	writeFile("Currencies", "{Currency, CurrencySymbols}", instances)
 }
 
 func processLanguages() {

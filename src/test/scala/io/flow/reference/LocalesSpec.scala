@@ -95,4 +95,9 @@ class LocalesSpec extends FunSpec with Matchers {
   it("filter by other") {
     Locales.filter("other") should be(Nil)
   }
+
+  it("constants are well defined") {
+    data.Locales.EnUs.id should be("en-US")
+    data.Locales.JaJp.id should be("ja-JP")
+  }
 }
