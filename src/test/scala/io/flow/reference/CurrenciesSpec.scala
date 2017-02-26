@@ -123,7 +123,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
   it("defaultLocale") {
     data.Currencies.Usd.defaultLocale should be(Some("en-US"))
     data.Currencies.Aud.defaultLocale should be(Some("en-AU"))
-    data.Currencies.Eur.defaultLocale should be(Some("en-DE"))
+    data.Currencies.Eur.defaultLocale should be(Some("de"))
     data.Currencies.Gbp.defaultLocale should be(Some("en-GB"))
     data.Currencies.Jpy.defaultLocale should be(Some("ja-JP"))
   }  

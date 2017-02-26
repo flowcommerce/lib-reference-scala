@@ -44,7 +44,7 @@ object Currencies {
   val Svc = Currency(iso42173 = "SVC", name = "El Salvador Colón", numberDecimals = 2, defaultLocale = None, symbols = None)
   val Eek = Currency(iso42173 = "EEK", name = "Estonian Krone", numberDecimals = 2, defaultLocale = None, symbols = None)
   val Etb = Currency(iso42173 = "ETB", name = "Ethiopian Birr", numberDecimals = 2, defaultLocale = None, symbols = None)
-  val Eur = Currency(iso42173 = "EUR", name = "Euro", numberDecimals = 2, defaultLocale = Some("en-DE"), symbols = Some(CurrencySymbols(primary = "€", narrow = None)))
+  val Eur = Currency(iso42173 = "EUR", name = "Euro", numberDecimals = 2, defaultLocale = Some("de"), symbols = Some(CurrencySymbols(primary = "€", narrow = None)))
   val Fkp = Currency(iso42173 = "FKP", name = "Falkland Islands Pound", numberDecimals = 2, defaultLocale = None, symbols = None)
   val Fjd = Currency(iso42173 = "FJD", name = "Fiji Dollar", numberDecimals = 2, defaultLocale = Some("en-FJ"), symbols = None)
   val Gmd = Currency(iso42173 = "GMD", name = "Gambia Delasi", numberDecimals = 2, defaultLocale = Some("en-GM"), symbols = None)
