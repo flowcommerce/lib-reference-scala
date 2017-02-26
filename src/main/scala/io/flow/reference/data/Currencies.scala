@@ -56,7 +56,7 @@ object Currencies {
   val Gyd = Currency(iso42173 = "GYD", name = "Guyanese Dollar", numberDecimals = 2, defaultLocale = Some("en-GY"), symbols = None)
   val Htg = Currency(iso42173 = "HTG", name = "Haitian Gourde", numberDecimals = 2, defaultLocale = None, symbols = None)
   val Hnl = Currency(iso42173 = "HNL", name = "Honduras Lempira", numberDecimals = 2, defaultLocale = Some("es-HN"), symbols = None)
-  val Hkd = Currency(iso42173 = "HKD", name = "Hong Kong Dollar", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "HK$", narrow = Some("$"))))
+  val Hkd = Currency(iso42173 = "HKD", name = "Hong Kong Dollar", numberDecimals = 2, defaultLocale = Some("zh-HK"), symbols = Some(CurrencySymbols(primary = "HK$", narrow = Some("$"))))
   val Huf = Currency(iso42173 = "HUF", name = "Hungarian Forint", numberDecimals = 2, defaultLocale = Some("hu"), symbols = None)
   val Isk = Currency(iso42173 = "ISK", name = "Iceland Krona", numberDecimals = 2, defaultLocale = Some("is"), symbols = None)
   val Inr = Currency(iso42173 = "INR", name = "Indian Rupee", numberDecimals = 2, defaultLocale = Some("bn-IN"), symbols = Some(CurrencySymbols(primary = "₹", narrow = None)))
