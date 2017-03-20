@@ -6,8 +6,8 @@ object Currencies extends Validation[Currency] {
   override val cache: Map[String, Currency] = Map(
     data.Currencies.all.flatMap { c =>
       Seq(
-        (c.iso42173.toLowerCase -> c),
-        (c.name.toLowerCase -> c)
+        c.iso42173.toLowerCase -> c,
+        c.name.toLowerCase -> c
       )
     }: _*
   )

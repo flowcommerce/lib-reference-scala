@@ -15,6 +15,7 @@ import (
 	"os"
 	"regexp"
 	"strings"
+	"strconv"
 	"unicode"
 )
 
@@ -63,6 +64,7 @@ func main() {
 	processLanguages()
 	processRegions()
 	processTimezones()
+	processPaymentMethods()
 }
 
 func processCountries() {
@@ -166,6 +168,36 @@ func processTimezones() {
 	writeFile("Timezones", "Timezone", instances)
 }
 
+func processPaymentMethods() {
+	instances := []Instance{}
+	for _, pm := range common.PaymentMethods() {
+		var typ string
+		if pm.Type == "card" {
+			typ = "PaymentMethodType.Card"
+		} else if pm.Type == "online" {
+			typ = "PaymentMethodType.Online"
+		} else if pm.Type == "offline" {
+			typ = "PaymentMethodType.Offline"
+		} else {
+			fmt.Printf("ERROR: Unknown PaymentMethodType[%s]\n", pm.Type)
+			os.Exit(1)
+		}
+
+		divider := "\n                                    "
+		images := fmt.Sprintf("PaymentMethodImages(%s  small = %s,%s  medium = %s,%s  large = %s%s)", divider, toImage(pm.Images.Small), divider, toImage(pm.Images.Medium), divider, toImage(pm.Images.Large), divider)
+
+		instances = append(instances, Instance{
+			Name: pm.Id,
+			Value: fmt.Sprintf("PaymentMethod(id = \"%s\", `type` = %s, name = \"%s\", images = %s, regions = %s)", pm.Id, typ, pm.Name, images, scalaArrayQuoted(pm.Regions)),
+		})
+	}
+
+	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType}", instances)
+}
+
+func toImage(i common.PaymentMethodImage) string {
+	return fmt.Sprintf("PaymentMethodImage(url = \"%s\", width = %s, height = %s)", i.Url, strconv.Itoa(i.Width), strconv.Itoa(i.Height))
+}
 
 func scalaArrayQuoted(values []string) string {
 	value := ""

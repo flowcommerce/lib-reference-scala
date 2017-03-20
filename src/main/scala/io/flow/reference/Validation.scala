@@ -2,17 +2,33 @@ package io.flow.reference
 
 /**
  *  A trait that allows a type `T` to be validated, as long as the following are defined:
- *
- *  @param singular The singular form of `T`; for example, "country".
- *  @param plural The plural form of `T`; for example, "countries".
- *  @param cache A map of valid keys to the objects of type `T` that they represent.
- *  @param name A method that returns the name (or other property that returns a string) to use in validation error messages for each object of type `T`.
  */
 trait Validation[T] {
+
+  /**
+    * The singular form of `T`; for example, "country".
+    */
   def singular: String
+
+  /**
+    * The plural form of `T`; for example, "countries".
+    */
   def plural: String
+
+  /**
+    * A map of valid keys to the objects of type `T` that they represent.
+    */
   def cache: Map[String, T]
+
+  /**
+    * A method that returns the name (or other property that returns a string) to use in validation error messages for each object of type `T`.
+    */
   def name(t: T): String
+
+  /**
+    * Key in URL for reference data. Defaults to plural
+    */
+  def urlKey: String = plural
 
   def find(q: String): Option[T] = {
     cache.get(q.toLowerCase.trim)
@@ -39,7 +55,7 @@ trait Validation[T] {
   }
 
   // This needs to be a method since the value of `plural` is not known at compile time. Making it a `val` causes `$plural` to interpolate as `null`.
-  private[this] def referenceLink = s"See https://api.flow.io/reference/$plural for a list of all valid $plural."
+  private[this] def referenceLink = s"See https://api.flow.io/reference/$urlKey for a list of all valid $plural."
 
   // This needs to be a method, rather than a val, for the same reason above.
   private[this] def pluralReferenceLink = plural match {
