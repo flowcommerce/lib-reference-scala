@@ -45,7 +45,7 @@ class PaymentMethodsSpec extends FunSpec with Matchers {
       sys.error("paypal missing")
     }
     paypal.id should be("paypal")
-    paypal.name should be("Paypal")
+    paypal.name should be("PayPal")
     paypal.`type` should be(PaymentMethodType.Online)
   }
 
@@ -68,5 +68,5 @@ class PaymentMethodsSpec extends FunSpec with Matchers {
       PaymentMethods.mustFind("other")
     }.getMessage should be("The following payment method is invalid: [other]. See https://api.flow.io/reference/payment-methods for a list of all valid payment methods.")
   }
-  
+
 }
