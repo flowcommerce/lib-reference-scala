@@ -65,6 +65,19 @@ func main() {
 	processRegions()
 	processTimezones()
 	processPaymentMethods()
+	processProvinces()
+}
+
+func processProvinces() {
+	instances := []Instance{}
+	for _, p := range common.Provinces() {
+		instances = append(instances, Instance{
+			Name: p.Id,
+			Value: fmt.Sprintf("Province(id = \"%s\", iso31662 = \"%s\", name = \"%s\", country = \"%s\", provinceType = \"%s\")", p.Id, p.Iso_3166_2, p.Name, p.Country, p.ProvinceType),
+		})
+	}
+
+	writeFile("Provinces", "Province", instances)
 }
 
 func processCountries() {
