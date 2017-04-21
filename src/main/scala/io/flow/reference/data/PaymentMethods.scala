@@ -49,7 +49,7 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/mastercard/128x128.png", width = 128, height = 128),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/mastercard/256x256.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
-  val Paypal = PaymentMethod(id = "paypal", `type` = PaymentMethodType.Online, name = "Paypal", images = PaymentMethodImages(
+  val Paypal = PaymentMethod(id = "paypal", `type` = PaymentMethodType.Online, name = "PayPal", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/paypal/76x48.png", width = 76, height = 48),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/paypal/150x94.png", width = 150, height = 94),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/paypal/266x142.png", width = 266, height = 142)
