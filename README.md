@@ -48,6 +48,6 @@ for all of the types of reference data:
 
 ```
     git checkout -b <release_branch>
-    go run update.go
+    go run release.go
     git pull-request
 ```
