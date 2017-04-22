@@ -13,7 +13,7 @@ object Provinces extends Validation[Province] {
   override def plural = "provinces"
   override def name(p: Province) = p.id
 
-  def filter(q: String, countriesOpt: Option[Seq[String]]): Seq[Province] = {
+  def filter(q: String, countriesOpt: Option[Seq[String]] = None): Seq[Province] = {
     /**
       * Find by ID, Name, or ISO 3166-2 Code
       */
