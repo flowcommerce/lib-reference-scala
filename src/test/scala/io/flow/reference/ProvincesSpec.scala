@@ -40,18 +40,20 @@ class ProvincesSpec extends FunSpec with Matchers {
     }.getMessage should be("The following province is invalid: [other]. See https://api.flow.io/reference/provinces for a list of all valid provinces.")
   }
 
-  it("filter") {
+  it("query") {
     Seq("New York", "NY").foreach { q =>
-      Provinces.filter(q) should be(Seq(data.Provinces.UsaNy))
+      Provinces.query(Some(q), None) should be(Seq(data.Provinces.UsaNy))
     }
 
     Seq("New York", "NY").foreach { q =>
-      Provinces.filter(q, Some(Seq("AUS"))) should be(Nil)
+      Provinces.query(Some(q), Some(Seq("AUS"))) should be(Nil)
     }
 
     Seq("New York", "NY").foreach { q =>
-      Provinces.filter(q, Some(Seq("USA"))) should be(Seq(data.Provinces.UsaNy))
+      Provinces.query(Some(q), Some(Seq("USA"))) should be(Seq(data.Provinces.UsaNy))
     }
+
+    Provinces.query(None, Some(Seq("USA"))) should contain(data.Provinces.UsaNy)
   }
 
 }

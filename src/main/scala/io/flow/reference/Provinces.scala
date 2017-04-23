@@ -13,21 +13,28 @@ object Provinces extends Validation[Province] {
   override def plural = "provinces"
   override def name(p: Province) = p.id
 
-  def filter(q: String, countriesOpt: Option[Seq[String]] = None): Seq[Province] = {
+  def query(q: Option[String], countriesOpt: Option[Seq[String]]): Seq[Province] = {
     /**
-      * Find by ID, Name, or ISO 3166-2 Code
+      * If q is provided, use that to narrow down by id, name, and iso31662 code
+      * Otherwise, just return everything
       */
-    val byId: Seq[Province] = Seq(find(q)).flatten
+    val found: Seq[Province] = q match {
+      case None => {
+        data.Provinces.all
+      }
+      case Some(text) => {
+        val byId: Seq[Province] = Seq(find(text)).flatten
 
-    val byNameOrIso31662: Seq[Province] = data.Provinces.all.filter { p =>
-      p.name.toLowerCase == q.toLowerCase || p.iso31662.toLowerCase == q.toLowerCase
+        val byNameOrIso31662: Seq[Province] = data.Provinces.all.filter { p =>
+          p.name.toLowerCase == text.toLowerCase || p.iso31662.toLowerCase == text.toLowerCase
+        }
+
+        (byId ++ byNameOrIso31662).distinct
+      }
     }
 
-    val found: Seq[Province] = (byId ++ byNameOrIso31662).distinct
-
     /**
-      * If a list of countries is passed, then
-      * use that to further filter the list
+      * If a list of countries is passed, use that to filter the list
       */
     val finalList: Seq[Province] = countriesOpt match {
       case Some(countries) => found.filter { p => countries.map(_.toLowerCase).contains(p.country.toLowerCase) }
