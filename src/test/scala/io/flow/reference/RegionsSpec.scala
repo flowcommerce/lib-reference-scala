@@ -21,7 +21,7 @@ class RegionsSpec extends FunSpec with Matchers {
   it("codes in use are defined") {
     val all = Seq(
       "africa", "alb", "and", "are", "arg", "atg", "aus", "aut", "bel", "bgr",
-      "bhs", "bra", "can", "che", "chl", "chn", "civ", "cri", "deu", "dnk", "dom", "dza", "esp", "est",
+      "bhs", "can", "che", "chl", "chn", "civ", "cri", "deu", "dnk", "dom", "esp", "est",
       "europe", "eurozone", "fin", "fji", "fra", "gbr", "hkg", "hti", "ind", "irl", "isr", "ita", "jpn",
       "kor", "kwt", "mex", "mlt", "nld", "nor", "nzl", "phl", "pol", "rus", "sau", "sgp", "swe", "tha",
       "twn", "usa", "world", "zaf"

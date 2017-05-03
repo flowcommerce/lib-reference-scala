@@ -48,10 +48,10 @@ class CountriesSpec extends FunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "ALB", "AND", "ARE", "ARG", "ATG", "AUS", "AUT", "BEL", "BFA", "BGR", "BHS", "BRA", "CAN", "CHE",
-      "CHL", "CHN", "CIV", "CMR", "CRI", "DEU", "DNK", "DOM", "DZA", "ESP", "EST", "FIN", "FJI", "FRA",
+      "ALB", "AND", "ARE", "ARG", "ATG", "AUS", "AUT", "BEL", "BFA", "BGR", "BHS", "CAN", "CHE",
+      "CHL", "CHN", "CIV", "CMR", "CRI", "DEU", "DNK", "DOM", "ESP", "EST", "FIN", "FJI", "FRA",
       "GBR", "HKG", "HTI", "IND", "IRL", "ISR", "ITA", "JPN", "KOR", "KWT", "MEX", "MLT", "NLD", "NOR",
-      "NZL", "PHL", "POL", "RUS", "SAU", "SGP", "SWE", "THA", "TUN", "TWN", "USA", "ZAF"
+      "NZL", "PHL", "POL", "RUS", "SAU", "SGP", "SWE", "THA", "TWN", "USA", "ZAF"
     )
 
     all.filter { code =>
