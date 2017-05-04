@@ -28,6 +28,7 @@ object Countries {
   val Bes = Country(iso31662 = "BQ", iso31663 = "BES", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "Bonaire, Sint Eustatius and Saba", languages = Nil, timezones = Nil)
   val Bih = Country(iso31662 = "BA", iso31663 = "BIH", defaultCurrency = Some("BAM"), measurementSystem = "metric", name = "Bosnia and Herzegovina", languages = Seq("bs", "hr", "sr"), timezones = Nil)
   val Bwa = Country(iso31662 = "BW", iso31663 = "BWA", defaultCurrency = Some("BWP"), measurementSystem = "metric", name = "Botswana", languages = Seq("en", "tn"), timezones = Nil)
+  val Bra = Country(iso31662 = "BR", iso31663 = "BRA", defaultCurrency = Some("BRL"), measurementSystem = "metric", name = "Brazil", languages = Seq("pt"), timezones = Nil)
   val Vgb = Country(iso31662 = "VG", iso31663 = "VGB", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "British Virgin Islands", languages = Nil, timezones = Nil)
   val Brn = Country(iso31662 = "BN", iso31663 = "BRN", defaultCurrency = Some("BND"), measurementSystem = "metric", name = "Brunei Darussalam", languages = Seq("ms"), timezones = Nil)
   val Bgr = Country(iso31662 = "BG", iso31663 = "BGR", defaultCurrency = Some("BGN"), measurementSystem = "metric", name = "Bulgaria", languages = Seq("bg"), timezones = Nil)
@@ -229,6 +230,7 @@ object Countries {
     Bes,
     Bih,
     Bwa,
+    Bra,
     Vgb,
     Brn,
     Bgr,

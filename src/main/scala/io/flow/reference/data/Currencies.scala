@@ -21,7 +21,7 @@ object Currencies {
   val Bob = Currency(iso42173 = "BOB", name = "Bolivia Boliviano", numberDecimals = 2, defaultLocale = Some("qu-BO"), symbols = None)
   val Bam = Currency(iso42173 = "BAM", name = "Bosnia and Herzegovina Convertible Marks", numberDecimals = 2, defaultLocale = Some("hr-BA"), symbols = None)
   val Bwp = Currency(iso42173 = "BWP", name = "Botswana Pula", numberDecimals = 2, defaultLocale = Some("en-BW"), symbols = None)
-  val Brl = Currency(iso42173 = "BRL", name = "Brazilian Real", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "R$", narrow = None)))
+  val Brl = Currency(iso42173 = "BRL", name = "Brazilian Real", numberDecimals = 2, defaultLocale = Some("pt-BR"), symbols = Some(CurrencySymbols(primary = "R$", narrow = None)))
   val Bnd = Currency(iso42173 = "BND", name = "Brunei Dollar", numberDecimals = 2, defaultLocale = Some("ms-BN"), symbols = None)
   val Khr = Currency(iso42173 = "KHR", name = "Cambodia Riel", numberDecimals = 2, defaultLocale = None, symbols = None)
   val Cad = Currency(iso42173 = "CAD", name = "Canadian Dollar", numberDecimals = 2, defaultLocale = Some("en-CA"), symbols = Some(CurrencySymbols(primary = "CA$", narrow = Some("$"))))

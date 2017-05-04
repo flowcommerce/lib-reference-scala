@@ -228,6 +228,7 @@ object Locales {
   val NnNo = Locale(id = "nn-NO", name = "Norwegian (Nynorsk) - Norway", country = "NOR", language = "nn", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Pa = Locale(id = "pa", name = "Panjabi - Panama", country = "PAN", language = "pa", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Pl = Locale(id = "pl", name = "Polish - Poland", country = "POL", language = "pl", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val PtBr = Locale(id = "pt-BR", name = "Portuguese - Brazil", country = "BRA", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtCv = Locale(id = "pt-CV", name = "Portuguese - Cabo Verde", country = "CPV", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtGq = Locale(id = "pt-GQ", name = "Portuguese - Equatorial Guinea", country = "GNQ", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtGw = Locale(id = "pt-GW", name = "Portuguese - Guinea-Bissau", country = "GNB", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -260,6 +261,7 @@ object Locales {
   val So = Locale(id = "so", name = "Somali - Somalia", country = "SOM", language = "so", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EsAr = Locale(id = "es-AR", name = "Spanish - Argentina", country = "ARG", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EsBo = Locale(id = "es-BO", name = "Spanish - Bolivia", country = "BOL", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val EsBr = Locale(id = "es-BR", name = "Spanish - Brazil", country = "BRA", language = "es", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EsCl = Locale(id = "es-CL", name = "Spanish - Chile", country = "CHL", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EsCo = Locale(id = "es-CO", name = "Spanish - Colombia", country = "COL", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EsCr = Locale(id = "es-CR", name = "Spanish - Costa Rica", country = "CRI", language = "es", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -525,6 +527,7 @@ object Locales {
     NnNo,
     Pa,
     Pl,
+    PtBr,
     PtCv,
     PtGq,
     PtGw,
@@ -557,6 +560,7 @@ object Locales {
     So,
     EsAr,
     EsBo,
+    EsBr,
     EsCl,
     EsCo,
     EsCr,
