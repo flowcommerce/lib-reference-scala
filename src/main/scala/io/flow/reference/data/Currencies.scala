@@ -91,7 +91,7 @@ object Currencies {
   val Ils = Currency(iso42173 = "ILS", name = "New Israeli Scheqel", numberDecimals = 2, defaultLocale = Some("ar-IL"), symbols = Some(CurrencySymbols(primary = "₪", narrow = None)))
   val Pln = Currency(iso42173 = "PLN", name = "New Polish Zloty", numberDecimals = 2, defaultLocale = Some("pl"), symbols = None)
   val Ron = Currency(iso42173 = "RON", name = "New Romanian Lei", numberDecimals = 2, defaultLocale = Some("ro"), symbols = None)
-  val Twd = Currency(iso42173 = "TWD", name = "New Taiwan Dollar", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "NT$", narrow = Some("$"))))
+  val Twd = Currency(iso42173 = "TWD", name = "New Taiwan Dollar", numberDecimals = 0, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "NT$", narrow = Some("$"))))
   val Try = Currency(iso42173 = "TRY", name = "New Turkish Lira", numberDecimals = 2, defaultLocale = Some("tr"), symbols = None)
   val Nzd = Currency(iso42173 = "NZD", name = "New Zealand Dollar", numberDecimals = 2, defaultLocale = Some("en-CK"), symbols = Some(CurrencySymbols(primary = "NZ$", narrow = Some("$"))))
   val Nio = Currency(iso42173 = "NIO", name = "Nicaragua Cordoba Oro", numberDecimals = 2, defaultLocale = Some("es-NI"), symbols = None)
