@@ -9,7 +9,7 @@ func main() {
 	executor = executor.Add("git checkout master")
 	executor = executor.Add("git pull --rebase")
 
-	executor = executor.Add("apidoc update")
+	executor = executor.Add("apibuilder update")
 	executor = executor.Add("go get -u github.com/flowcommerce/json-reference/common")
 	executor = executor.Add("go run script/generate.go")
 	executor = executor.Add("sbt test")
