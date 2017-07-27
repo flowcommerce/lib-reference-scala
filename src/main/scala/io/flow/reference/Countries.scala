@@ -75,7 +75,7 @@ object Countries extends Validation[Country] {
         }
 
         case Some(c) => {
-          countries += c
+          countries.append(c)
         }
       }
     }
