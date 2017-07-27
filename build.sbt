@@ -4,6 +4,8 @@ organization := "io.flow"
 
 scalaVersion in ThisBuild := "2.11.8"
 
+crossScalaVersions := Seq("2.11.11", "2.10.6")
+
 lazy val root = project
   .in(file("."))
   .settings(
@@ -20,4 +22,5 @@ publishTo := {
     Some("Artifactory Realm" at s"$host/libs-release-local")
   }
 }
+
 version := "0.1.24"

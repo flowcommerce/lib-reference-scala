@@ -18,6 +18,6 @@ func main() {
 	executor = executor.Add("git commit -a -m 'Auto create version `sem-info tag next`'")
 	executor = executor.Add("dev tag")
 
-	executor = executor.Add("sbt publish")
+	executor = executor.Add("sbt +publish")
 	executor.Run()
 }
