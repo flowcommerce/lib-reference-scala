@@ -42,7 +42,7 @@ This library wraps the source data provided by the [Flow Reference Project](http
 We recommend viewing the project tests to see detailed usage examples
 for all of the types of reference data:
 
-  [Scala Tests](/flowcommerce/json-reference/src/test/scala/io/flow/reference/)
+  [Scala Tests](/src/test/scala/io/flow/reference/)
 
 ## Updating to latest models
 
