@@ -220,7 +220,7 @@ package io.flow.reference.v0.models {
      * lower case to avoid collisions with the camel cased values
      * above.
      */
-    val all: List[PaymentMethodType] = List(Card, Online, Offline)
+    val all: scala.List[PaymentMethodType] = scala.List(Card, Online, Offline)
 
     private[this]
     val byName: Map[String, PaymentMethodType] = all.map(x => x.toString.toLowerCase -> x).toMap
@@ -267,7 +267,7 @@ package io.flow.reference.v0.models {
      * lower case to avoid collisions with the camel cased values
      * above.
      */
-    val all: List[ProvinceType] = List(City, Dependency, District, Emirate, Entity, Municipality, OutlyingArea, Parish, Province, State, Territory, Other)
+    val all: scala.List[ProvinceType] = scala.List(City, Dependency, District, Emirate, Entity, Municipality, OutlyingArea, Parish, Province, State, Territory, Other)
 
     private[this]
     val byName: Map[String, ProvinceType] = all.map(x => x.toString.toLowerCase -> x).toMap
