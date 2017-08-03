@@ -54,6 +54,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/paypal/100x60.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/paypal/180x60.png", width = 180, height = 60)
                                     ), regions = Seq("world"))
+  val Unionpay = PaymentMethod(id = "unionpay", `type` = PaymentMethodType.Online, name = "UnionPay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/unionpay/65x41.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/unionpay/100x60.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/unionpay/256x256.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val Visa = PaymentMethod(id = "visa", `type` = PaymentMethodType.Card, name = "VISA", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/visa/65x41.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/visa/100x60.png", width = 100, height = 60),
@@ -71,6 +76,7 @@ object PaymentMethods {
     Maestro,
     Mastercard,
     Paypal,
+    Unionpay,
     Visa
   )
 
