@@ -4,6 +4,11 @@ import io.flow.reference.v0.models.{PaymentMethod, PaymentMethodImage, PaymentMe
 
 object PaymentMethods {
 
+  val Alipay = PaymentMethod(id = "alipay", `type` = PaymentMethodType.Online, name = "Alipay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/alipay/65x41.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/alipay/100x60.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/alipay/256x256.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val AmericanExpress = PaymentMethod(id = "american_express", `type` = PaymentMethodType.Card, name = "American Express", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/american_express/65x41.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/icons/payment-methods/american_express/100x60.png", width = 100, height = 60),
@@ -66,6 +71,7 @@ object PaymentMethods {
                                     ), regions = Seq("world"))
 
   val all = Seq(
+    Alipay,
     AmericanExpress,
     CartesBancaires,
     ChinaUnionPay,
