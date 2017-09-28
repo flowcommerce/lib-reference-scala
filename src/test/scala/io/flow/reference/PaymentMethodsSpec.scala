@@ -10,14 +10,6 @@ class PaymentMethodsSpec extends FunSpec with Matchers {
     data.PaymentMethods.all.groupBy(_.id).filter { _._2.size > 1 }.keys should be(Set())
   }
 
-  it("be sorted") {
-    data.PaymentMethods.all.map(_.name) should be(data.PaymentMethods.all.map(_.name).sortBy { _.toLowerCase })
-  }
-
-  it("have ids in lower case") {
-    data.PaymentMethods.all.map(_.id) should be(data.PaymentMethods.all.map(_.id.toLowerCase))
-  }
-
   it("have no blanks") {
     data.PaymentMethods.all.find(_.name.trim.isEmpty) should be(None)
     data.PaymentMethods.all.find(_.id.trim.isEmpty) should be(None)
