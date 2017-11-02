@@ -100,7 +100,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
 
   it("numbers") {
     data.Currencies.Usd.symbols should be(
-      Some(CurrencySymbols(primary = "$", narrow = None))
+      Some(CurrencySymbols(primary = "US$", narrow = Some("$")))
     )
 
     data.Currencies.Aud.symbols should be(
