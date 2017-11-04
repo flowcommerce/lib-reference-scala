@@ -9,7 +9,7 @@ This library wraps the source data provided by the [Flow Reference Project](http
 ## Installation
 
   ```
-      "io.flow" %% "lib-reference-scala" % "1.0.0"
+      "io.flow" %% "lib-reference-scala" % "0.1.43"
   ```
 
 ## Example
