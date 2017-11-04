@@ -2,9 +2,9 @@ name := "lib-reference-scala"
 
 organization := "io.flow"
 
-scalaVersion in ThisBuild := "2.12.3"
+scalaVersion in ThisBuild := "2.12.4"
 
-crossScalaVersions := Seq("2.12.3", "2.11.11", "2.10.6")
+crossScalaVersions := Seq("2.12.4", "2.11.11", "2.10.6")
 
 lazy val root = project
   .in(file("."))
