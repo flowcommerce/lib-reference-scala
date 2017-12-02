@@ -100,7 +100,7 @@ class CurrenciesSpec extends FunSpec with Matchers {
 
   it("numbers") {
     data.Currencies.Usd.symbols should be(
-      Some(CurrencySymbols(primary = "$", narrow = None))
+      Some(CurrencySymbols(primary = "$", narrow = Some("$")))
     )
 
     data.Currencies.Aud.symbols should be(
@@ -108,15 +108,15 @@ class CurrenciesSpec extends FunSpec with Matchers {
     )
 
     data.Currencies.Eur.symbols should be(
-      Some(CurrencySymbols(primary = "€", narrow = None))
+      Some(CurrencySymbols(primary = "€", narrow = Some("€")))
     )
 
     data.Currencies.Gbp.symbols should be(
-      Some(CurrencySymbols(primary = "£", narrow = None))
+      Some(CurrencySymbols(primary = "£", narrow = Some("£")))
     )
 
     data.Currencies.Jpy.symbols should be(
-      Some(CurrencySymbols(primary = "¥", narrow = None))
+      Some(CurrencySymbols(primary = "¥", narrow = Some("¥")))
     )
   }
 
