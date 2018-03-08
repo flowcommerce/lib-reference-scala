@@ -100,7 +100,7 @@ trait Validation[T] {
     if (eithers.exists(_.isLeft)) {
       Left(eithers.collect { case Left(error) => error })
     } else {
-      Right(eithers.flatMap(_.toOption))
+      Right(eithers.collect { case Right(value) => value })
     }
   }
 }
