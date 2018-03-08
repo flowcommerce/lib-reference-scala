@@ -45,10 +45,6 @@ trait Validation[T] {
   def findById = find _
   def mustFindById = mustFind _
 
-  private[this] def isValid(id: String): Boolean = {
-    cache.keys.toSeq.contains(id.trim.toLowerCase)
-  }
-
   private[this] def formatted(value: String): String = value match {
     case "" => ""
     case _ => s" $value"
@@ -87,14 +83,9 @@ trait Validation[T] {
 
   def validateSingle(id: String, prefix: String = "", suffix: String = ""): Either[String, T] = {
     val trimmed = id.trim
-    if(isValid(trimmed)) {
-      Right(
-        find(trimmed).getOrElse {
-          sys.error(s"[${getClass.getName}] Code[$id] is valid but could not be found.")
-        }
-      )
-    } else {
-      Left(singleInvalid(trimmed, prefix, suffix))
+    find(trimmed) match {
+      case Some(value) => Right(value)
+      case None => Left(singleInvalid(trimmed, prefix, suffix))
     }
   }
 
@@ -105,12 +96,11 @@ trait Validation[T] {
    *  @param suffix A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or "countries of origin" if `T` is `Country`.
    */
   def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[Seq[String], Seq[T]] = {
-    val distinctTrimmedIds = ids.map(_.trim).distinct
-    val strictlyInvalidIds = distinctTrimmedIds.filterNot(isValid)
-
-    invalidError(strictlyInvalidIds, prefix, suffix) match {
-      case Nil => Right(distinctTrimmedIds.map(mustFind))
-      case errors => Left(errors)
+    val eithers = ids.map(validateSingle(_, prefix, suffix))
+    if (eithers.exists(_.isLeft)) {
+      Left(eithers.collect { case Left(error) => error })
+    } else {
+      Right(eithers.flatMap(_.toOption))
     }
   }
 }
