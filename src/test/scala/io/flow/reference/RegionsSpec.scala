@@ -152,4 +152,8 @@ class RegionsSpec extends FunSpec with Matchers {
     Regions.validateSingle("Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
     Regions.validateSingle("        Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
   }
+
+  it("validation merges duplicate regions") {
+    Regions.validate(Seq("Mars", "Mars")) should be(Left(Seq("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.")))
+  }
 }

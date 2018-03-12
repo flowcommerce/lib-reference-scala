@@ -96,11 +96,12 @@ trait Validation[T] {
    *  @param suffix A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or "countries of origin" if `T` is `Country`.
    */
   def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[Seq[String], Seq[T]] = {
-    val eithers = ids.map(validateSingle(_, prefix, suffix))
-    if (eithers.exists(_.isLeft)) {
-      Left(eithers.collect { case Left(error) => error })
-    } else {
-      Right(eithers.collect { case Right(value) => value })
+    val distinctTrimmedIds = ids.map(_.trim).distinct
+    val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validateSingle(id).isRight }
+
+    invalidError(strictlyInvalidIds, prefix, suffix) match {
+      case Nil => Right(distinctTrimmedIds.map(mustFind))
+      case errors => Left(errors)
     }
   }
 }
