@@ -2,7 +2,7 @@ name := "lib-reference-scala"
 
 organization := "io.flow"
 
-scalaVersion in ThisBuild := "2.12.4"
+scalaVersion in ThisBuild := "2.12.5"
 
 crossScalaVersions := Seq("2.12.4", "2.11.12", "2.10.6")
 
