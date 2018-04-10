@@ -97,11 +97,18 @@ func processCarrierServices() {
 func processProvinces() {
 	instances := []Instance{}
 	for _, p := range common.Provinces() {
-		
-		for _, t := range p.translations {
-
+		// translations is a list of locales with their translated names
+		var translationsText []string
+		for _, t := range p.Translations {
+			l := t.Locale
+			translationsText = append(
+				translationsText,
+				fmt.Sprintf("Locale(id = \"%s\", name = \"%s\", country = \"%s\", language = \"%s\", numbers = LocaleNumbers(decimal = \"%s\", group = \"%s\"))", l.Id, l.Name, l.Country, l.Language, l.Numbers.Decimal, l.Numbers.Group),
+			)
 		}
+		fmt.Printf("%v", translationsText)
 
+		// now create the province and simply add the locale translations
 		instances = append(instances, Instance{
 			Name:  strings.Replace(p.Id, "-", "_", -1),
 			Value: fmt.Sprintf("Province(id = \"%s\", iso31662 = \"%s\", name = \"%s\", country = \"%s\", provinceType = io.flow.reference.v0.models.ProvinceType(\"%s\"))", p.Id, p.Iso_3166_2, p.Name, p.Country, p.ProvinceType),
