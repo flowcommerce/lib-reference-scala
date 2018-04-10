@@ -97,6 +97,11 @@ func processCarrierServices() {
 func processProvinces() {
 	instances := []Instance{}
 	for _, p := range common.Provinces() {
+		
+		for _, t := range p.translations {
+
+		}
+
 		instances = append(instances, Instance{
 			Name:  strings.Replace(p.Id, "-", "_", -1),
 			Value: fmt.Sprintf("Province(id = \"%s\", iso31662 = \"%s\", name = \"%s\", country = \"%s\", provinceType = io.flow.reference.v0.models.ProvinceType(\"%s\"))", p.Id, p.Iso_3166_2, p.Name, p.Country, p.ProvinceType),
