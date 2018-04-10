@@ -1,0 +1,5 @@
+---
+flow:
+  reference:
+    scala_models:
+    - src/main/scala/io/flow/generated/FlowReferenceV0Models.scala
