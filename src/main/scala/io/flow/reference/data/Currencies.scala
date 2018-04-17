@@ -109,7 +109,7 @@ object Currencies {
   val Rub = Currency(iso42173 = "RUB", name = "Russian Ruble", numberDecimals = 2, defaultLocale = Some("ru"), symbols = Some(CurrencySymbols(primary = "RUB", narrow = Some("₽"))))
   val Rwf = Currency(iso42173 = "RWF", name = "Rwanda Franc", numberDecimals = 0, defaultLocale = Some("en-RW"), symbols = Some(CurrencySymbols(primary = "RWF", narrow = Some("RF"))))
   val Wst = Currency(iso42173 = "WST", name = "Samoan Tala", numberDecimals = 2, defaultLocale = Some("en-WS"), symbols = Some(CurrencySymbols(primary = "WST", narrow = None)))
-  val Std = Currency(iso42173 = "STD", name = "Sao Tome & Principe Dobra", numberDecimals = 2, defaultLocale = Some("pt-ST"), symbols = Some(CurrencySymbols(primary = "STD", narrow = Some("Db"))))
+  val Std = Currency(iso42173 = "STD", name = "Sao Tome & Principe Dobra", numberDecimals = 2, defaultLocale = Some("pt-ST"), symbols = Some(CurrencySymbols(primary = "STD", narrow = None)))
   val Sar = Currency(iso42173 = "SAR", name = "Saudi Riyal", numberDecimals = 2, defaultLocale = Some("ar-SA"), symbols = Some(CurrencySymbols(primary = "SAR", narrow = None)))
   val Rsd = Currency(iso42173 = "RSD", name = "Serbian Dinar", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "RSD", narrow = None)))
   val Scr = Currency(iso42173 = "SCR", name = "Seychelles Rupee", numberDecimals = 2, defaultLocale = Some("en-SC"), symbols = Some(CurrencySymbols(primary = "SCR", narrow = None)))

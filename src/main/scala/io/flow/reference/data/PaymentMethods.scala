@@ -14,6 +14,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
+  val Bitcoin = PaymentMethod(id = "bitcoin", `type` = PaymentMethodType.Online, name = "Bitcoin", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitcoin/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitcoin/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitcoin/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val CartesBancaires = PaymentMethod(id = "cartes_bancaires", `type` = PaymentMethodType.Card, name = "Cartes Bancaires", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/60/original.png", width = 100, height = 60),
@@ -103,6 +108,7 @@ object PaymentMethods {
   val all = Seq(
     Alipay,
     AmericanExpress,
+    Bitcoin,
     CartesBancaires,
     ChinaUnionPay,
     Dankort,
