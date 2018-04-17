@@ -9,6 +9,9 @@ func main() {
 	executor := executor.Create("lib-reference-scala-json")
 	executor = executor.Add("go get -u github.com/flowcommerce/json-reference/common")
 	executor = executor.Add("go run script/generate.go")
+	executor = executor.Add("sbt test")
+	executor = executor.Add("git commit -am 'autocommit: Regenerate models'")
+
 	executor.Run()
 
 	scala_library.Run()
