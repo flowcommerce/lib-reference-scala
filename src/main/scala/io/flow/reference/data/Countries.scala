@@ -204,6 +204,7 @@ object Countries {
   val Vnm = Country(iso31662 = "VN", iso31663 = "VNM", defaultCurrency = Some("VND"), measurementSystem = "metric", name = "Viet Nam", languages = Seq("vi"), timezones = Nil)
   val Yem = Country(iso31662 = "YE", iso31663 = "YEM", defaultCurrency = Some("YER"), measurementSystem = "metric", name = "Yemen", languages = Seq("ar"), timezones = Nil)
   val Zmb = Country(iso31662 = "ZM", iso31663 = "ZMB", defaultCurrency = Some("ZMW"), measurementSystem = "metric", name = "Zambia", languages = Seq("en"), timezones = Nil)
+  val Mmr = Country(iso31662 = "MM", iso31663 = "MMR", defaultCurrency = Some("MMK"), measurementSystem = "metric", name = "Myanmar", languages = Seq("en"), timezones = Nil)
 
   val all = Seq(
     Alb,
@@ -405,7 +406,8 @@ object Countries {
     Ven,
     Vnm,
     Yem,
-    Zmb
+    Zmb,
+    Mmr
   )
 
 }
