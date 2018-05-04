@@ -9,7 +9,7 @@ package io.flow.reference.v0.models {
    * Partner that actually takes a shipment between places (ex: FedEx, DHL, SF
    * Express)
    */
-  case class Carrier(
+  final case class Carrier(
     id: String,
     name: String,
     trackingUrl: String
@@ -19,7 +19,7 @@ package io.flow.reference.v0.models {
    * Specific service rendered by the carrier (fedex ground saturday, ups overnight
    * weekend, etc)
    */
-  case class CarrierService(
+  final case class CarrierService(
     id: String,
     carrier: io.flow.reference.v0.models.Carrier,
     name: String
@@ -39,7 +39,7 @@ package io.flow.reference.v0.models {
    * @param defaultDeliveredDuty Default delivered duty value. See https://en.wikipedia.org/wiki/Incoterms for
    *        more information
    */
-  case class Country(
+  final case class Country(
     name: String,
     iso31662: String,
     iso31663: String,
@@ -57,7 +57,7 @@ package io.flow.reference.v0.models {
    *        decimals while JPY has 0.
    * @param defaultLocale The locale id of the default locale to use when rendering this currency
    */
-  case class Currency(
+  final case class Currency(
     name: String,
     iso42173: String,
     numberDecimals: Int,
@@ -68,7 +68,7 @@ package io.flow.reference.v0.models {
   /**
    * Defines one or more symbols representing this currency
    */
-  case class CurrencySymbols(
+  final case class CurrencySymbols(
     primary: String,
     narrow: _root_.scala.Option[String] = None
   )
@@ -76,7 +76,7 @@ package io.flow.reference.v0.models {
   /**
    * ISO 639 2-character language code. See https://api.flow.io/reference/languages
    */
-  case class Language(
+  final case class Language(
     name: String,
     iso6392: String
   )
@@ -88,7 +88,7 @@ package io.flow.reference.v0.models {
    * @param country ISO 3166 3 country code
    * @param language ISO 639 2 language code
    */
-  case class Locale(
+  final case class Locale(
     id: String,
     name: String,
     country: String,
@@ -102,7 +102,7 @@ package io.flow.reference.v0.models {
    * @param decimal Decimal separator
    * @param group Group separator (e.g. 1,000 have a group separator of ',')
    */
-  case class LocaleNumbers(
+  final case class LocaleNumbers(
     decimal: String,
     group: String
   )
@@ -112,7 +112,7 @@ package io.flow.reference.v0.models {
    * 
    * @param name Text translated to the appropriate locale
    */
-  case class LocalizedTranslation(
+  final case class LocalizedTranslation(
     locale: io.flow.reference.v0.models.Locale,
     name: String
   )
@@ -123,7 +123,7 @@ package io.flow.reference.v0.models {
    * 
    * @param regions List of region ids in which this payment method is available
    */
-  case class PaymentMethod(
+  final case class PaymentMethod(
     id: String,
     `type`: io.flow.reference.v0.models.PaymentMethodType,
     name: String,
@@ -131,13 +131,13 @@ package io.flow.reference.v0.models {
     regions: Seq[String]
   )
 
-  case class PaymentMethodImage(
+  final case class PaymentMethodImage(
     url: String,
     width: Int,
     height: Int
   )
 
-  case class PaymentMethodImages(
+  final case class PaymentMethodImages(
     small: io.flow.reference.v0.models.PaymentMethodImage,
     medium: io.flow.reference.v0.models.PaymentMethodImage,
     large: io.flow.reference.v0.models.PaymentMethodImage
@@ -149,7 +149,7 @@ package io.flow.reference.v0.models {
    * 
    * @param country ISO 3166 3 code of the country for this subdivision
    */
-  case class Province(
+  final case class Province(
     id: String,
     iso31662: String,
     name: String,
@@ -170,7 +170,7 @@ package io.flow.reference.v0.models {
    * @param timezones A list of canonical timezone IDs for the region. See
    *        http://joda-time.sourceforge.net/timezones.html
    */
-  case class Region(
+  final case class Region(
     id: String,
     name: String,
     countries: Seq[String],
@@ -186,7 +186,7 @@ package io.flow.reference.v0.models {
    * 
    * @param offset Minutes offset from GMT
    */
-  case class Timezone(
+  final case class Timezone(
     name: String,
     description: String,
     offset: Int
@@ -226,7 +226,7 @@ package io.flow.reference.v0.models {
      * We use all CAPS for the variable name to avoid collisions
      * with the camel cased values above.
      */
-    case class UNDEFINED(override val toString: String) extends PaymentMethodType
+    final case class UNDEFINED(override val toString: String) extends PaymentMethodType
 
     /**
      * all returns a list of all the valid, known values. We use
@@ -273,7 +273,7 @@ package io.flow.reference.v0.models {
      * We use all CAPS for the variable name to avoid collisions
      * with the camel cased values above.
      */
-    case class UNDEFINED(override val toString: String) extends ProvinceType
+    final case class UNDEFINED(override val toString: String) extends ProvinceType
 
     /**
      * all returns a list of all the valid, known values. We use
