@@ -85,7 +85,7 @@ class RegionsSpec extends FunSpec with Matchers {
     }
 
     val regions = Regions.filter("fra")
-    regions.map(_.name).sorted should be(Seq("Europe", "Eurozone", "France", "World"))
+    regions.map(_.name).sorted should be(Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World"))
     regions.foreach { r =>
       r.countries.contains("FRA") should be(true)
     }
