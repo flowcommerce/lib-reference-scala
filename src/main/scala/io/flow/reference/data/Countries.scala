@@ -128,7 +128,7 @@ object Countries {
   val Mng = Country(iso31662 = "MN", iso31663 = "MNG", defaultCurrency = Some("MNT"), measurementSystem = "metric", name = "Mongolia", languages = Seq("mn"), timezones = Nil)
   val Mne = Country(iso31662 = "ME", iso31663 = "MNE", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Montenegro", languages = Nil, timezones = Nil)
   val Msr = Country(iso31662 = "MS", iso31663 = "MSR", defaultCurrency = Some("XCD"), measurementSystem = "metric", name = "Montserrat", languages = Nil, timezones = Nil)
-  val Nam = Country(iso31662 = "NA", iso31663 = "NAM", defaultCurrency = Some("ZAR"), measurementSystem = "metric", name = "Namibia", languages = Seq("en"), timezones = Nil)
+  val Nam = Country(iso31662 = "NA", iso31663 = "NAM", defaultCurrency = Some("NAD"), measurementSystem = "metric", name = "Namibia", languages = Seq("en"), timezones = Nil)
   val Nru = Country(iso31662 = "NR", iso31663 = "NRU", defaultCurrency = Some("AUD"), measurementSystem = "metric", name = "Nauru", languages = Seq("en"), timezones = Nil)
   val Npl = Country(iso31662 = "NP", iso31663 = "NPL", defaultCurrency = Some("NPR"), measurementSystem = "metric", name = "Nepal", languages = Seq("ne"), timezones = Nil)
   val Nld = Country(iso31662 = "NL", iso31663 = "NLD", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Netherlands", languages = Seq("nl"), timezones = Nil)

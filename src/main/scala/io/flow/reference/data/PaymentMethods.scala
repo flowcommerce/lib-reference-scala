@@ -64,6 +64,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/jcb/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/jcb/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("jpn"))
+  val Klarna = PaymentMethod(id = "klarna", `type` = PaymentMethodType.Online, name = "Klarna", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/klarna/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/klarna/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/klarna/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val Maestro = PaymentMethod(id = "maestro", `type` = PaymentMethodType.Card, name = "Maestro", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/60/original.png", width = 100, height = 60),
@@ -118,6 +123,7 @@ object PaymentMethods {
     Giropay,
     Ideal,
     Jcb,
+    Klarna,
     Maestro,
     Mastercard,
     Paypal,

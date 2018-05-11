@@ -33,7 +33,7 @@ class RegionsSpec extends FunSpec with Matchers {
   }
 
   it("have common regions are defined") {
-    val eurozone = data.Regions.all.find(_.id == "eurozone").getOrElse {
+    val eurozone = data.Regions.all.find(_.id == "eurozone").getOrElse {("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World")
       sys.error("eurozone missing")
     }
     eurozone.id should be("eurozone")
@@ -85,7 +85,7 @@ class RegionsSpec extends FunSpec with Matchers {
     }
 
     val regions = Regions.filter("fra")
-    regions.map(_.name).sorted should be(Seq("Europe", "Eurozone", "France", "World"))
+    regions.map(_.name).sorted should be(Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World"))
     regions.foreach { r =>
       r.countries.contains("FRA") should be(true)
     }
