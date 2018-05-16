@@ -3,6 +3,8 @@ package io.flow.reference.functions
 import io.flow.reference.{Regions, data}
 import io.flow.reference.v0.models.Region
 
+import scala.annotation.tailrec
+
 object RegionFunctions {
 
   /**
@@ -32,9 +34,9 @@ object RegionFunctions {
     lazy val encompassingRegions = {
       val rs = r match {
         case data.Regions.World => Seq(r)
-        case Region(_,_, countries,_,_,_,_) => {
-          data.Regions.all.filter(eachRegion=>
-            countries.forall(c=> eachRegion.countries.contains(c))
+        case Region(_, _, countries, _, _, _, _) => {
+          data.Regions.all.filter(eachRegion =>
+            countries.forall(c => eachRegion.countries.contains(c))
           )
         }
       }
@@ -55,9 +57,9 @@ object RegionFunctions {
     lazy val enclosedRegions = {
       val rs = r match {
         case data.Regions.World => data.Regions.all
-        case Region(_,_, countries,_,_,_,_) => {
+        case Region(_, _, countries, _, _, _, _) => {
           data.Regions.all.filter(
-            _.countries.forall(c=> countries.contains(c))
+            _.countries.forall(c => countries.contains(c))
           )
         }
       }
@@ -73,15 +75,21 @@ object RegionFunctions {
       * w/r/t Morocco. This isn't a fantastic heuristic and will likely need to be revisited in the future.
       *
       * Note that f() will be called as few times as is feasible to return a response.
+      *
       * @param f
       * @tparam B
       * @return
       */
-    def mostLocal[B](f: Region=> Option[B]): Option[B] = {
-      encompassingRegions.foldLeft[Option[B]](None) {
-        case (None, eachRegion) => f(eachRegion)
-        case (Some(p), _) => Some(p)
-      }
+    def mostLocal[B](f: Region => Option[B]): Option[B] = collectFirstDefined(encompassingRegions.iterator, f)
+
+    @tailrec
+    private def collectFirstDefined[B](it: Iterator[Region], f: Region => Option[B]): Option[B] = {
+      if (it.hasNext) {
+        f(it.next()) match {
+          case None => collectFirstDefined(it, f)
+          case s => s
+        }
+      } else None
     }
 
     /**
@@ -93,16 +101,13 @@ object RegionFunctions {
       * w/r/t Morocco. This isn't a fantastic heuristic and will likely need to be revisited in the future.
       *
       * Note that f() will be called as few times as is feasible to return a response.
+      *
       * @param f
       * @tparam B
       * @return
       */
-    def mostGlobal[B](f: Region=> Option[B]): Option[B] = {
-      encompassingRegions.foldRight[Option[B]](None) {
-        case (eachRegion, None) => f(eachRegion)
-        case (_, Some(p)) => Some(p)
-      }
-    }
+    def mostGlobal[B](f: Region => Option[B]): Option[B] = collectFirstDefined(encompassingRegions.reverseIterator, f)
+
   }
 
 }
