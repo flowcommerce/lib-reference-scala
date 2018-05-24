@@ -201,7 +201,7 @@ object Countries {
   val Uzb = Country(iso31662 = "UZ", iso31663 = "UZB", defaultCurrency = Some("UZS"), measurementSystem = "metric", name = "Uzbekistan", languages = Seq("uz"), timezones = Nil)
   val Vut = Country(iso31662 = "VU", iso31663 = "VUT", defaultCurrency = Some("VUV"), measurementSystem = "metric", name = "Vanuatu", languages = Seq("bi", "en", "fr"), timezones = Nil)
   val Ven = Country(iso31662 = "VE", iso31663 = "VEN", defaultCurrency = Some("VEF"), measurementSystem = "metric", name = "Venezuela", languages = Seq("es"), timezones = Nil)
-  val Vnm = Country(iso31662 = "VN", iso31663 = "VNM", defaultCurrency = Some("VND"), measurementSystem = "metric", name = "Viet Nam", languages = Seq("vi"), timezones = Nil)
+  val Vnm = Country(iso31662 = "VN", iso31663 = "VNM", defaultCurrency = Some("VND"), measurementSystem = "metric", name = "Vietnam", languages = Seq("vi"), timezones = Nil)
   val Yem = Country(iso31662 = "YE", iso31663 = "YEM", defaultCurrency = Some("YER"), measurementSystem = "metric", name = "Yemen", languages = Seq("ar"), timezones = Nil)
   val Zmb = Country(iso31662 = "ZM", iso31663 = "ZMB", defaultCurrency = Some("ZMW"), measurementSystem = "metric", name = "Zambia", languages = Seq("en"), timezones = Nil)
 
