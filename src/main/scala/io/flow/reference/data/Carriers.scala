@@ -5,7 +5,7 @@ import io.flow.reference.v0.models.Carrier
 object Carriers {
 
   val Asendia = Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/")
-  val CanadaPost = Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://www.aftership.com/couriers/canada-post")
+  val CanadaPost = Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
   val Dhl = Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB=")
   val DhlEcommerce = Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlGlobalMail = Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
