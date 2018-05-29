@@ -6,6 +6,9 @@ object CarrierServices {
 
   val AsendiaExpress = CarrierService(id = "asendia-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
   val AsendiaStandard = CarrierService(id = "asendia-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
+  val CanadaPostalPriority = CarrierService(id = "canada-postal-parcel", name = "Priority", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://www.aftership.com/couriers/canada-post"))
+  val CanadaPostalRegularParcel = CarrierService(id = "canada-postal-regular-parcel", name = "Regular Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://www.aftership.com/couriers/canada-post"))
+  val CanadaPostalXpresspost = CarrierService(id = "canada-postal-xpresspost", name = "Xpresspost", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://www.aftership.com/couriers/canada-post"))
   val DhlEcommerceStandard = CarrierService(id = "dhl-ecommerce-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlExpressWorldwide = CarrierService(id = "dhl-express-worldwide", name = "Express Worldwide", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlGlobalMailPacketPlus = CarrierService(id = "dhl-global-mail-packet-plus", name = "Packet Plus", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
@@ -19,6 +22,9 @@ object CarrierServices {
   val all = Seq(
     AsendiaExpress,
     AsendiaStandard,
+    CanadaPostalPriority,
+    CanadaPostalRegularParcel,
+    CanadaPostalXpresspost,
     DhlEcommerceStandard,
     DhlExpressWorldwide,
     DhlGlobalMailPacketPlus,
