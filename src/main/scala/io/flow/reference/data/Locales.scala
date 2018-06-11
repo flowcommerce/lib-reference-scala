@@ -193,6 +193,7 @@ object Locales {
   val DeLu = Locale(id = "de-LU", name = "German - Luxembourg", country = "LUX", language = "de", numbers = LocaleNumbers(decimal = ",", group = "."))
   val DeCh = Locale(id = "de-CH", name = "German - Switzerland", country = "CHE", language = "de", numbers = LocaleNumbers(decimal = ".", group = "'"))
   val ElCy = Locale(id = "el-CY", name = "Greek - Cyprus", country = "CYP", language = "el", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val ElGr = Locale(id = "el-GR", name = "Greek - Greece", country = "GRC", language = "el", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Gu = Locale(id = "gu", name = "Gujarati - Guam", country = "GUM", language = "gu", numbers = LocaleNumbers(decimal = ".", group = ","))
   val HaGh = Locale(id = "ha-GH", name = "Hausa - Ghana", country = "GHA", language = "ha", numbers = LocaleNumbers(decimal = ".", group = ","))
   val HaNe = Locale(id = "ha-NE", name = "Hausa - Niger", country = "NER", language = "ha", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -492,6 +493,7 @@ object Locales {
     DeLu,
     DeCh,
     ElCy,
+    ElGr,
     Gu,
     HaGh,
     HaNe,
