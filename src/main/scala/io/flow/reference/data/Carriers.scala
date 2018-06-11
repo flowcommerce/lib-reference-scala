@@ -10,12 +10,10 @@ object Carriers {
   val DhlEcommerce = Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlGlobalMail = Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlParcel = Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
-  val LaPoste = Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=")
   val Landmark = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://mercury.landmarkglobal.com/tracking/track.php?trck=")
   val SfExpress = Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/")
   val Ups = Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/")
   val Usps = Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/")
-  val WnDirect = Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref=")
 
   val all = Seq(
     Asendia,
@@ -24,12 +22,10 @@ object Carriers {
     DhlEcommerce,
     DhlGlobalMail,
     DhlParcel,
-    LaPoste,
     Landmark,
     SfExpress,
     Ups,
-    Usps,
-    WnDirect
+    Usps
   )
 
 }
