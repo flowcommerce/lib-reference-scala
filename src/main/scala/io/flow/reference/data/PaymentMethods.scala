@@ -29,6 +29,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitcoin/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitcoin/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
+  val Bitpay = PaymentMethod(id = "bitpay", `type` = PaymentMethodType.Online, name = "BitPay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitpay/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitpay/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bitpay/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val CartesBancaires = PaymentMethod(id = "cartes_bancaires", `type` = PaymentMethodType.Card, name = "Cartes Bancaires", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/60/original.png", width = 100, height = 60),
@@ -191,6 +196,7 @@ object PaymentMethods {
     AmericanExpress,
     BanktransferIban,
     Bitcoin,
+    Bitpay,
     CartesBancaires,
     ChinaUnionPay,
     Dankort,
