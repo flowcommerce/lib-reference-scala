@@ -5,7 +5,7 @@ import io.flow.reference.v0.models.{Currency, CurrencySymbols}
 object Currencies {
 
   val All = Currency(iso42173 = "ALL", name = "Albanian Lek", numberDecimals = 2, defaultLocale = Some("sq-AL"), symbols = Some(CurrencySymbols(primary = "ALL", narrow = None)))
-  val Dzd = Currency(iso42173 = "DZD", name = "Algerian Dinar", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "DZD", narrow = None)))
+  val Dzd = Currency(iso42173 = "DZD", name = "Algerian Dinar", numberDecimals = 2, defaultLocale = Some("ar-DZ"), symbols = Some(CurrencySymbols(primary = "DZD", narrow = None)))
   val Ang = Currency(iso42173 = "ANG", name = "Antillian Guilder", numberDecimals = 2, defaultLocale = Some("nl-CW"), symbols = Some(CurrencySymbols(primary = "ANG", narrow = None)))
   val Ars = Currency(iso42173 = "ARS", name = "Argentine Peso", numberDecimals = 2, defaultLocale = Some("es-AR"), symbols = Some(CurrencySymbols(primary = "ARS", narrow = Some("$"))))
   val Amd = Currency(iso42173 = "AMD", name = "Armenian Dram", numberDecimals = 2, defaultLocale = Some("hy-AM"), symbols = Some(CurrencySymbols(primary = "AMD", narrow = None)))
@@ -82,7 +82,7 @@ object Currencies {
   val Mxn = Currency(iso42173 = "MXN", name = "Mexican Peso", numberDecimals = 2, defaultLocale = Some("es-MX"), symbols = Some(CurrencySymbols(primary = "MX$", narrow = Some("$"))))
   val Mdl = Currency(iso42173 = "MDL", name = "Moldovia Leu", numberDecimals = 2, defaultLocale = Some("ro-MD"), symbols = Some(CurrencySymbols(primary = "MDL", narrow = None)))
   val Mnt = Currency(iso42173 = "MNT", name = "Mongolia Tugrik", numberDecimals = 2, defaultLocale = Some("mn"), symbols = Some(CurrencySymbols(primary = "MNT", narrow = Some("₮"))))
-  val Mad = Currency(iso42173 = "MAD", name = "Moroccan Dirham", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MAD", narrow = None)))
+  val Mad = Currency(iso42173 = "MAD", name = "Moroccan Dirham", numberDecimals = 2, defaultLocale = Some("ar-MA"), symbols = Some(CurrencySymbols(primary = "MAD", narrow = None)))
   val Nad = Currency(iso42173 = "NAD", name = "Namibian Dollar", numberDecimals = 2, defaultLocale = Some("en-NA"), symbols = Some(CurrencySymbols(primary = "NAD", narrow = Some("$"))))
   val Npr = Currency(iso42173 = "NPR", name = "Nepalese Rupee", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "NPR", narrow = Some("Rs"))))
   val Byn = Currency(iso42173 = "BYN", name = "New Belarusian Ruble", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "BYN", narrow = Some("р."))))
