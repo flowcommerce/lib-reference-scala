@@ -67,6 +67,7 @@ object Currencies {
   val Kzt = Currency(iso42173 = "KZT", name = "Kazakhstani Tenge", numberDecimals = 2, defaultLocale = Some("kk-KZ"), symbols = Some(CurrencySymbols(primary = "KZT", narrow = Some("₸"))))
   val Kes = Currency(iso42173 = "KES", name = "Kenyan Shilling", numberDecimals = 2, defaultLocale = Some("en-KE"), symbols = Some(CurrencySymbols(primary = "KES", narrow = None)))
   val Kwd = Currency(iso42173 = "KWD", name = "Kuwaiti Dinar", numberDecimals = 3, defaultLocale = Some("ar-KW"), symbols = Some(CurrencySymbols(primary = "KWD", narrow = None)))
+  val Aoa = Currency(iso42173 = "AOA", name = "Kwanza", numberDecimals = 2, defaultLocale = Some("pt-AO"), symbols = Some(CurrencySymbols(primary = "AOA", narrow = Some("Kz"))))
   val Kgs = Currency(iso42173 = "KGS", name = "Kyrgyzstan Som", numberDecimals = 2, defaultLocale = Some("ru-KG"), symbols = Some(CurrencySymbols(primary = "KGS", narrow = None)))
   val Lak = Currency(iso42173 = "LAK", name = "Laos Kip", numberDecimals = 2, defaultLocale = Some("lo-LA"), symbols = Some(CurrencySymbols(primary = "LAK", narrow = Some("₭"))))
   val Lvl = Currency(iso42173 = "LVL", name = "Latvian Lats", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "LVL", narrow = Some("Ls"))))
@@ -74,6 +75,7 @@ object Currencies {
   val Lyd = Currency(iso42173 = "LYD", name = "Libyan Dinar", numberDecimals = 3, defaultLocale = Some("ar-LY"), symbols = Some(CurrencySymbols(primary = "LYD", narrow = None)))
   val Ltl = Currency(iso42173 = "LTL", name = "Lithuanian Litas", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "LTL", narrow = Some("Lt"))))
   val Mop = Currency(iso42173 = "MOP", name = "Macau Pataca", numberDecimals = 2, defaultLocale = Some("zh-MO"), symbols = Some(CurrencySymbols(primary = "MOP", narrow = None)))
+  val Mga = Currency(iso42173 = "MGA", name = "Malagasy Ariary", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MGA", narrow = Some("Ar"))))
   val Mwk = Currency(iso42173 = "MWK", name = "Malawi Kwacha", numberDecimals = 2, defaultLocale = Some("en-MW"), symbols = Some(CurrencySymbols(primary = "MWK", narrow = None)))
   val Myr = Currency(iso42173 = "MYR", name = "Malaysian Ringgit", numberDecimals = 2, defaultLocale = Some("en-MY"), symbols = Some(CurrencySymbols(primary = "MYR", narrow = Some("RM"))))
   val Mvr = Currency(iso42173 = "MVR", name = "Maldives Rufiyaa", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MVR", narrow = None)))
@@ -83,6 +85,7 @@ object Currencies {
   val Mdl = Currency(iso42173 = "MDL", name = "Moldovia Leu", numberDecimals = 2, defaultLocale = Some("ro-MD"), symbols = Some(CurrencySymbols(primary = "MDL", narrow = None)))
   val Mnt = Currency(iso42173 = "MNT", name = "Mongolia Tugrik", numberDecimals = 2, defaultLocale = Some("mn"), symbols = Some(CurrencySymbols(primary = "MNT", narrow = Some("₮"))))
   val Mad = Currency(iso42173 = "MAD", name = "Moroccan Dirham", numberDecimals = 2, defaultLocale = Some("ar-MA"), symbols = Some(CurrencySymbols(primary = "MAD", narrow = None)))
+  val Mzn = Currency(iso42173 = "MZN", name = "Mozambique Metical", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MZN", narrow = None)))
   val Nad = Currency(iso42173 = "NAD", name = "Namibian Dollar", numberDecimals = 2, defaultLocale = Some("en-NA"), symbols = Some(CurrencySymbols(primary = "NAD", narrow = Some("$"))))
   val Npr = Currency(iso42173 = "NPR", name = "Nepalese Rupee", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "NPR", narrow = Some("Rs"))))
   val Byn = Currency(iso42173 = "BYN", name = "New Belarusian Ruble", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "BYN", narrow = Some("р."))))
@@ -117,10 +120,12 @@ object Currencies {
   val Sgd = Currency(iso42173 = "SGD", name = "Singapore Dollar", numberDecimals = 2, defaultLocale = Some("zh-SG"), symbols = Some(CurrencySymbols(primary = "SGD", narrow = Some("$"))))
   val Sbd = Currency(iso42173 = "SBD", name = "Solomon Island Dollar", numberDecimals = 2, defaultLocale = Some("en-SB"), symbols = Some(CurrencySymbols(primary = "SBD", narrow = Some("$"))))
   val Sos = Currency(iso42173 = "SOS", name = "Somalia Shilling", numberDecimals = 2, defaultLocale = Some("ar-SO"), symbols = Some(CurrencySymbols(primary = "SOS", narrow = None)))
+  val Tjs = Currency(iso42173 = "TJS", name = "Somoni", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "TJS", narrow = None)))
   val Zar = Currency(iso42173 = "ZAR", name = "South African Rand", numberDecimals = 2, defaultLocale = Some("en-LS"), symbols = Some(CurrencySymbols(primary = "ZAR", narrow = Some("R"))))
   val Krw = Currency(iso42173 = "KRW", name = "South-Korean Won", numberDecimals = 0, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "₩", narrow = Some("₩"))))
   val Lkr = Currency(iso42173 = "LKR", name = "Sri Lanka Rupee", numberDecimals = 2, defaultLocale = Some("ta-LK"), symbols = Some(CurrencySymbols(primary = "LKR", narrow = Some("Rs"))))
   val Shp = Currency(iso42173 = "SHP", name = "St. Helena Pound", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "SHP", narrow = Some("£"))))
+  val Srd = Currency(iso42173 = "SRD", name = "Surinam Dollar", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "SRD", narrow = Some("$"))))
   val Szl = Currency(iso42173 = "SZL", name = "Swaziland Lilangeni", numberDecimals = 2, defaultLocale = Some("en-SZ"), symbols = Some(CurrencySymbols(primary = "SZL", narrow = None)))
   val Sek = Currency(iso42173 = "SEK", name = "Swedish Krone", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "SEK", narrow = Some("kr"))))
   val Chf = Currency(iso42173 = "CHF", name = "Swiss Franc", numberDecimals = 2, defaultLocale = Some("fr-CH"), symbols = Some(CurrencySymbols(primary = "CHF", narrow = None)))
@@ -129,6 +134,7 @@ object Currencies {
   val Top = Currency(iso42173 = "TOP", name = "Tonga Pa'anga", numberDecimals = 2, defaultLocale = Some("en-TO"), symbols = Some(CurrencySymbols(primary = "TOP", narrow = Some("T$"))))
   val Ttd = Currency(iso42173 = "TTD", name = "Trinidad & Tobago Dollar", numberDecimals = 2, defaultLocale = Some("en-TT"), symbols = Some(CurrencySymbols(primary = "TTD", narrow = Some("$"))))
   val Tnd = Currency(iso42173 = "TND", name = "Tunisian Dinar", numberDecimals = 3, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "TND", narrow = None)))
+  val Tmt = Currency(iso42173 = "TMT", name = "Turkmenistan New Manat", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "TMT", narrow = None)))
   val Aed = Currency(iso42173 = "AED", name = "UAE Dirham", numberDecimals = 2, defaultLocale = Some("ar-AE"), symbols = Some(CurrencySymbols(primary = "AED", narrow = None)))
   val Ugx = Currency(iso42173 = "UGX", name = "Uganda Shilling", numberDecimals = 0, defaultLocale = Some("en-UG"), symbols = Some(CurrencySymbols(primary = "UGX", narrow = None)))
   val Uah = Currency(iso42173 = "UAH", name = "Ukraine Hryvnia", numberDecimals = 2, defaultLocale = Some("uk-UA"), symbols = Some(CurrencySymbols(primary = "UAH", narrow = Some("₴"))))
@@ -205,6 +211,7 @@ object Currencies {
     Kzt,
     Kes,
     Kwd,
+    Aoa,
     Kgs,
     Lak,
     Lvl,
@@ -212,6 +219,7 @@ object Currencies {
     Lyd,
     Ltl,
     Mop,
+    Mga,
     Mwk,
     Myr,
     Mvr,
@@ -221,6 +229,7 @@ object Currencies {
     Mdl,
     Mnt,
     Mad,
+    Mzn,
     Nad,
     Npr,
     Byn,
@@ -255,10 +264,12 @@ object Currencies {
     Sgd,
     Sbd,
     Sos,
+    Tjs,
     Zar,
     Krw,
     Lkr,
     Shp,
+    Srd,
     Szl,
     Sek,
     Chf,
@@ -267,6 +278,7 @@ object Currencies {
     Top,
     Ttd,
     Tnd,
+    Tmt,
     Aed,
     Ugx,
     Uah,

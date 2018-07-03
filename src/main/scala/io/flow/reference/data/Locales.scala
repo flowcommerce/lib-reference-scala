@@ -101,6 +101,7 @@ object Locales {
   val EnKi = Locale(id = "en-KI", name = "English - Kiribati", country = "KIR", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnLs = Locale(id = "en-LS", name = "English - Lesotho", country = "LSO", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnMo = Locale(id = "en-MO", name = "English - Macau", country = "MAC", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
+  val EnMg = Locale(id = "en-MG", name = "English - Madagascar", country = "MDG", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnMw = Locale(id = "en-MW", name = "English - Malawi", country = "MWI", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnMy = Locale(id = "en-MY", name = "English - Malaysia", country = "MYS", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnMt = Locale(id = "en-MT", name = "English - Malta", country = "MLT", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -170,6 +171,7 @@ object Locales {
   val FrGn = Locale(id = "fr-GN", name = "French - Guinea", country = "GIN", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
   val FrHt = Locale(id = "fr-HT", name = "French - Haiti", country = "HTI", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
   val FrLu = Locale(id = "fr-LU", name = "French - Luxembourg", country = "LUX", language = "fr", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val FrMg = Locale(id = "fr-MG", name = "French - Madagascar", country = "MDG", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
   val FrMl = Locale(id = "fr-ML", name = "French - Mali", country = "MLI", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
   val FrMq = Locale(id = "fr-MQ", name = "French - Martinique", country = "MTQ", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
   val FrMr = Locale(id = "fr-MR", name = "French - Mauritania", country = "MRT", language = "fr", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -219,14 +221,17 @@ object Locales {
   val KkKz = Locale(id = "kk-KZ", name = "Kazakh - Kazakhstan", country = "KAZ", language = "kk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Km = Locale(id = "km", name = "Khmer - Comoros", country = "COM", language = "km", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Rw = Locale(id = "rw", name = "Kinyarwanda - Rwanda", country = "RWA", language = "rw", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val KoKp = Locale(id = "ko-KP", name = "Korean - Democratic People's Republic of Korea", country = "PRK", language = "ko", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Ky = Locale(id = "ky", name = "Kyrgyz - Cayman Islands", country = "CYM", language = "ky", numbers = LocaleNumbers(decimal = ",", group = " "))
   val LoLa = Locale(id = "lo-LA", name = "Lao - Lao People's Democratic Republic", country = "LAO", language = "lo", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lv = Locale(id = "lv", name = "Latvian - Latvia", country = "LVA", language = "lv", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val LnAo = Locale(id = "ln-AO", name = "Lingala - Angola", country = "AGO", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
   val LnCf = Locale(id = "ln-CF", name = "Lingala - Central African Republic", country = "CAF", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
   val LnCg = Locale(id = "ln-CG", name = "Lingala - Congo", country = "COG", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lt = Locale(id = "lt", name = "Lithuanian - Lithuania", country = "LTU", language = "lt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Lu = Locale(id = "lu", name = "Luba-Katanga - Luxembourg", country = "LUX", language = "lu", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lb = Locale(id = "lb", name = "Luxembourgish - Lebanon", country = "LBN", language = "lb", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val Mg = Locale(id = "mg", name = "Malagasy - Madagascar", country = "MDG", language = "mg", numbers = LocaleNumbers(decimal = ".", group = ","))
   val MsBn = Locale(id = "ms-BN", name = "Malay - Brunei", country = "BRN", language = "ms", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Ms = Locale(id = "ms", name = "Malay - Montserrat", country = "MSR", language = "ms", numbers = LocaleNumbers(decimal = ".", group = ","))
   val MsSg = Locale(id = "ms-SG", name = "Malay - Singapore", country = "SGP", language = "ms", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -238,12 +243,14 @@ object Locales {
   val NnNo = Locale(id = "nn-NO", name = "Norwegian (Nynorsk) - Norway", country = "NOR", language = "nn", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Pa = Locale(id = "pa", name = "Panjabi - Panama", country = "PAN", language = "pa", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Pl = Locale(id = "pl", name = "Polish - Poland", country = "POL", language = "pl", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val PtAo = Locale(id = "pt-AO", name = "Portuguese - Angola", country = "AGO", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtBr = Locale(id = "pt-BR", name = "Portuguese - Brazil", country = "BRA", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtCv = Locale(id = "pt-CV", name = "Portuguese - Cabo Verde", country = "CPV", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtGq = Locale(id = "pt-GQ", name = "Portuguese - Equatorial Guinea", country = "GNQ", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtGw = Locale(id = "pt-GW", name = "Portuguese - Guinea-Bissau", country = "GNB", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtLu = Locale(id = "pt-LU", name = "Portuguese - Luxembourg", country = "LUX", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtMo = Locale(id = "pt-MO", name = "Portuguese - Macau", country = "MAC", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val PtMz = Locale(id = "pt-MZ", name = "Portuguese - Mozambique", country = "MOZ", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Pt = Locale(id = "pt", name = "Portuguese - Portugal", country = "PRT", language = "pt", numbers = LocaleNumbers(decimal = ",", group = "."))
   val PtSt = Locale(id = "pt-ST", name = "Portuguese - Sao Tome and Principe", country = "STP", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
   val PtCh = Locale(id = "pt-CH", name = "Portuguese - Switzerland", country = "CHE", language = "pt", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -304,6 +311,7 @@ object Locales {
   val Th = Locale(id = "th", name = "Thai - Thailand", country = "THA", language = "th", numbers = LocaleNumbers(decimal = ".", group = ","))
   val TrCy = Locale(id = "tr-CY", name = "Turkish - Cyprus", country = "CYP", language = "tr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Tr = Locale(id = "tr", name = "Turkish - Turkey", country = "TUR", language = "tr", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val TkTm = Locale(id = "tk-TM", name = "Turkmen - Turkmenistan", country = "TKM", language = "tk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val UkUa = Locale(id = "uk-UA", name = "Ukrainian - Ukraine", country = "UKR", language = "uk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val UrIn = Locale(id = "ur-IN", name = "Urdu - India", country = "IND", language = "ur", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Uz = Locale(id = "uz", name = "Uzbek - Uzbekistan", country = "UZB", language = "uz", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -410,6 +418,7 @@ object Locales {
     EnKi,
     EnLs,
     EnMo,
+    EnMg,
     EnMw,
     EnMy,
     EnMt,
@@ -479,6 +488,7 @@ object Locales {
     FrGn,
     FrHt,
     FrLu,
+    FrMg,
     FrMl,
     FrMq,
     FrMr,
@@ -528,14 +538,17 @@ object Locales {
     KkKz,
     Km,
     Rw,
+    KoKp,
     Ky,
     LoLa,
     Lv,
+    LnAo,
     LnCf,
     LnCg,
     Lt,
     Lu,
     Lb,
+    Mg,
     MsBn,
     Ms,
     MsSg,
@@ -547,12 +560,14 @@ object Locales {
     NnNo,
     Pa,
     Pl,
+    PtAo,
     PtBr,
     PtCv,
     PtGq,
     PtGw,
     PtLu,
     PtMo,
+    PtMz,
     Pt,
     PtSt,
     PtCh,
@@ -613,6 +628,7 @@ object Locales {
     Th,
     TrCy,
     Tr,
+    TkTm,
     UkUa,
     UrIn,
     Uz,
