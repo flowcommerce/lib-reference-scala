@@ -12,7 +12,7 @@ object Carriers {
   val DhlParcel = Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val Fedex = Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
   val LaPoste = Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=")
-  val Landmark = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://mercury.landmarkglobal.com/tracking/track.php?trck=")
+  val Landmark = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck=")
   val SfExpress = Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/")
   val Ups = Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/")
   val Usps = Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/")
