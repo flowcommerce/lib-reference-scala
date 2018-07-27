@@ -89,6 +89,7 @@ object Countries {
   val Gnb = Country(iso31662 = "GW", iso31663 = "GNB", defaultCurrency = Some("XOF"), measurementSystem = "metric", name = "Guinea-Bissau", languages = Seq("pt"), timezones = Nil)
   val Guy = Country(iso31662 = "GY", iso31663 = "GUY", defaultCurrency = Some("GYD"), measurementSystem = "metric", name = "Guyana", languages = Seq("en"), timezones = Nil)
   val Hti = Country(iso31662 = "HT", iso31663 = "HTI", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "Haiti", languages = Seq("fr", "ht"), timezones = Nil)
+  val Vat = Country(iso31662 = "VA", iso31663 = "VAT", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Holy See", languages = Seq("it", "la"), timezones = Nil)
   val Hnd = Country(iso31662 = "HN", iso31663 = "HND", defaultCurrency = Some("HNL"), measurementSystem = "metric", name = "Honduras", languages = Seq("es"), timezones = Nil)
   val Hkg = Country(iso31662 = "HK", iso31663 = "HKG", defaultCurrency = Some("HKD"), measurementSystem = "metric", name = "Hong Kong", languages = Seq("en", "zh"), timezones = Nil)
   val Hun = Country(iso31662 = "HU", iso31663 = "HUN", defaultCurrency = Some("HUF"), measurementSystem = "metric", name = "Hungary", languages = Seq("hu"), timezones = Nil)
@@ -305,6 +306,7 @@ object Countries {
     Gnb,
     Guy,
     Hti,
+    Vat,
     Hnd,
     Hkg,
     Hun,

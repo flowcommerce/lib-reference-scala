@@ -56,6 +56,53 @@ object Provinces {
   val Chn63 = Province(id = "CHN-63", iso31662 = "63", name = "Qinghai", country = "CHN", provinceType = io.flow.reference.v0.models.ProvinceType("province"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Qinghai"), io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "zh-CN", name = "Chinese - China", country = "CHN", language = "zh", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "青海省"))))
   val Chn64 = Province(id = "CHN-64", iso31662 = "64", name = "Ningxia", country = "CHN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Ningxia"), io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "zh-CN", name = "Chinese - China", country = "CHN", language = "zh", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "宁夏回族自治区"))))
   val Chn65 = Province(id = "CHN-65", iso31662 = "65", name = "Xinjiang", country = "CHN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Xinjiang"), io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "zh-CN", name = "Chinese - China", country = "CHN", language = "zh", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "新疆维吾尔自治区"))))
+  val Jpn01 = Province(id = "JPN-01", iso31662 = "01", name = "Hokkaid� [Hokkaido]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn02 = Province(id = "JPN-02", iso31662 = "02", name = "Aomori", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn03 = Province(id = "JPN-03", iso31662 = "03", name = "Iwate", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn04 = Province(id = "JPN-04", iso31662 = "04", name = "Miyagi", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn05 = Province(id = "JPN-05", iso31662 = "05", name = "Akita", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn06 = Province(id = "JPN-06", iso31662 = "06", name = "Yamagata", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn07 = Province(id = "JPN-07", iso31662 = "07", name = "Hukusima [Fukushima]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn08 = Province(id = "JPN-08", iso31662 = "08", name = "Ibaraki", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn09 = Province(id = "JPN-09", iso31662 = "09", name = "Totigi [Tochigi]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn10 = Province(id = "JPN-10", iso31662 = "10", name = "Gunma", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn11 = Province(id = "JPN-11", iso31662 = "11", name = "Saitama", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn12 = Province(id = "JPN-12", iso31662 = "12", name = "Tiba [Chiba]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn13 = Province(id = "JPN-13", iso31662 = "13", name = "T�ky� [Tokyo]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn14 = Province(id = "JPN-14", iso31662 = "14", name = "Kanagawa", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn15 = Province(id = "JPN-15", iso31662 = "15", name = "Niigata", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn16 = Province(id = "JPN-16", iso31662 = "16", name = "Toyama", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn17 = Province(id = "JPN-17", iso31662 = "17", name = "Isikawa [Ishikawa]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn18 = Province(id = "JPN-18", iso31662 = "18", name = "Hukui [Fukui]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn19 = Province(id = "JPN-19", iso31662 = "19", name = "Yamanasi [Yamanashi]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn20 = Province(id = "JPN-20", iso31662 = "20", name = "Nagano", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn21 = Province(id = "JPN-21", iso31662 = "21", name = "Gihu [Gifu]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn22 = Province(id = "JPN-22", iso31662 = "22", name = "Sizuoka [Shizuoka]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn23 = Province(id = "JPN-23", iso31662 = "23", name = "Aiti [Aichi]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn24 = Province(id = "JPN-24", iso31662 = "24", name = "Mie", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn25 = Province(id = "JPN-25", iso31662 = "25", name = "Siga [Shiga]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn26 = Province(id = "JPN-26", iso31662 = "26", name = "Hy�go [Kyoto]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn27 = Province(id = "JPN-27", iso31662 = "27", name = "�saka [Osaka]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn28 = Province(id = "JPN-28", iso31662 = "28", name = "Hy�go[Hyogo]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn29 = Province(id = "JPN-29", iso31662 = "29", name = "Nara", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn30 = Province(id = "JPN-30", iso31662 = "30", name = "Wakayama", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn31 = Province(id = "JPN-31", iso31662 = "31", name = "Tottori", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn32 = Province(id = "JPN-32", iso31662 = "32", name = "Simane [Shimane]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn33 = Province(id = "JPN-33", iso31662 = "33", name = "Okayama", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn34 = Province(id = "JPN-34", iso31662 = "34", name = "Hirosima [Hiroshima]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn35 = Province(id = "JPN-35", iso31662 = "35", name = "Yamaguti [Yamaguchi]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn36 = Province(id = "JPN-36", iso31662 = "36", name = "Tokusima [Tokushima]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn37 = Province(id = "JPN-37", iso31662 = "37", name = "Kagawa", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn38 = Province(id = "JPN-38", iso31662 = "38", name = "Ehime", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn39 = Province(id = "JPN-39", iso31662 = "39", name = "K�ti [Kochi]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn40 = Province(id = "JPN-40", iso31662 = "40", name = "Hukuoka [Fukuoka]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn41 = Province(id = "JPN-41", iso31662 = "41", name = "Saga", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn42 = Province(id = "JPN-42", iso31662 = "42", name = "Nagasaki", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn43 = Province(id = "JPN-43", iso31662 = "43", name = "Kumamoto", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn44 = Province(id = "JPN-44", iso31662 = "44", name = "�ita [Oita]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn45 = Province(id = "JPN-45", iso31662 = "45", name = "Miyazaki", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn46 = Province(id = "JPN-46", iso31662 = "46", name = "Kagosima [Kagoshima]", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val Jpn47 = Province(id = "JPN-47", iso31662 = "47", name = "Okinawa", country = "JPN", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val UsaAk = Province(id = "USA-AK", iso31662 = "AK", name = "Alaska", country = "USA", provinceType = io.flow.reference.v0.models.ProvinceType("state"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Alaska"))))
   val UsaAl = Province(id = "USA-AL", iso31662 = "AL", name = "Alabama", country = "USA", provinceType = io.flow.reference.v0.models.ProvinceType("state"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Alabama"))))
   val UsaAr = Province(id = "USA-AR", iso31662 = "AR", name = "Arkansas", country = "USA", provinceType = io.flow.reference.v0.models.ProvinceType("state"), translations = Some(Seq(io.flow.reference.v0.models.LocalizedTranslation(locale = io.flow.reference.v0.models.Locale(id = "en-US", name = "English - United States", country = "USA", language = "en", numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")), name = "Arkansas"))))
@@ -161,6 +208,53 @@ object Provinces {
     Chn63,
     Chn64,
     Chn65,
+    Jpn01,
+    Jpn02,
+    Jpn03,
+    Jpn04,
+    Jpn05,
+    Jpn06,
+    Jpn07,
+    Jpn08,
+    Jpn09,
+    Jpn10,
+    Jpn11,
+    Jpn12,
+    Jpn13,
+    Jpn14,
+    Jpn15,
+    Jpn16,
+    Jpn17,
+    Jpn18,
+    Jpn19,
+    Jpn20,
+    Jpn21,
+    Jpn22,
+    Jpn23,
+    Jpn24,
+    Jpn25,
+    Jpn26,
+    Jpn27,
+    Jpn28,
+    Jpn29,
+    Jpn30,
+    Jpn31,
+    Jpn32,
+    Jpn33,
+    Jpn34,
+    Jpn35,
+    Jpn36,
+    Jpn37,
+    Jpn38,
+    Jpn39,
+    Jpn40,
+    Jpn41,
+    Jpn42,
+    Jpn43,
+    Jpn44,
+    Jpn45,
+    Jpn46,
+    Jpn47,
     UsaAk,
     UsaAl,
     UsaAr,
