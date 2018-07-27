@@ -11,6 +11,12 @@ lazy val root = project
   .settings(
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.0.5" % Test
+    ),
+    credentials += Credentials(
+      "Artifactory Realm",
+      "flow.jfrog.io",
+      System.getenv("ARTIFACTORY_USERNAME"),
+      System.getenv("ARTIFACTORY_PASSWORD")
     )
   )
 
