@@ -6,6 +6,7 @@ object CarrierServices {
 
   val AsendiaExpress = CarrierService(id = "asendia-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
   val AsendiaStandard = CarrierService(id = "asendia-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
+  val CanadaPostExpeditedParcel = CarrierService(id = "canada-post-expedited-parcel", name = "Expedited Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val CanadaPostPriority = CarrierService(id = "canada-post-priority", name = "Priority", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val CanadaPostRegularParcel = CarrierService(id = "canada-post-regular-parcel", name = "Regular Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val CanadaPostXpresspost = CarrierService(id = "canada-post-xpresspost", name = "Xpresspost", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
@@ -28,6 +29,7 @@ object CarrierServices {
   val all = Seq(
     AsendiaExpress,
     AsendiaStandard,
+    CanadaPostExpeditedParcel,
     CanadaPostPriority,
     CanadaPostRegularParcel,
     CanadaPostXpresspost,

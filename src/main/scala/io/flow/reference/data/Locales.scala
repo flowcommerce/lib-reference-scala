@@ -79,6 +79,7 @@ object Locales {
   val EnCy = Locale(id = "en-CY", name = "English - Cyprus", country = "CYP", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnDk = Locale(id = "en-DK", name = "English - Denmark", country = "DNK", language = "en", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EnDm = Locale(id = "en-DM", name = "English - Dominica", country = "DMA", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
+  val EnSz = Locale(id = "en-SZ", name = "English - Eswatini", country = "SWZ", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnFk = Locale(id = "en-FK", name = "English - Falkland Islands", country = "FLK", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnFj = Locale(id = "en-FJ", name = "English - Fiji", country = "FJI", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnFi = Locale(id = "en-FI", name = "English - Finland", country = "FIN", language = "en", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -133,7 +134,6 @@ object Locales {
   val EnSi = Locale(id = "en-SI", name = "English - Slovenia", country = "SVN", language = "en", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EnSb = Locale(id = "en-SB", name = "English - Solomon Islands", country = "SLB", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnZa = Locale(id = "en-ZA", name = "English - South Africa", country = "ZAF", language = "en", numbers = LocaleNumbers(decimal = ",", group = " "))
-  val EnSz = Locale(id = "en-SZ", name = "English - Swaziland", country = "SWZ", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnSe = Locale(id = "en-SE", name = "English - Sweden", country = "SWE", language = "en", numbers = LocaleNumbers(decimal = ",", group = " "))
   val EnCh = Locale(id = "en-CH", name = "English - Switzerland", country = "CHE", language = "en", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EnTo = Locale(id = "en-TO", name = "English - Tonga", country = "TON", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -396,6 +396,7 @@ object Locales {
     EnCy,
     EnDk,
     EnDm,
+    EnSz,
     EnFk,
     EnFj,
     EnFi,
@@ -450,7 +451,6 @@ object Locales {
     EnSi,
     EnSb,
     EnZa,
-    EnSz,
     EnSe,
     EnCh,
     EnTo,

@@ -19,6 +19,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
+  val ApplePay = PaymentMethod(id = "apple_pay", `type` = PaymentMethodType.Online, name = "Apple Pay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val BanktransferIban = PaymentMethod(id = "bankTransfer_IBAN", `type` = PaymentMethodType.Online, name = "International Bank Transfer (IBAN)", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bankTransfer_IBAN/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bankTransfer_IBAN/60/original.png", width = 100, height = 60),
@@ -93,6 +98,11 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/giropay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/giropay/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/giropay/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
+  val GooglePay = PaymentMethod(id = "google_pay", `type` = PaymentMethodType.Online, name = "Google Pay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/google_pay/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/google_pay/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/google_pay/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
   val Ideal = PaymentMethod(id = "ideal", `type` = PaymentMethodType.Online, name = "iDEAL", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/ideal/30/original.png", width = 65, height = 41),
@@ -194,6 +204,7 @@ object PaymentMethods {
     Ach,
     Alipay,
     AmericanExpress,
+    ApplePay,
     BanktransferIban,
     Bitcoin,
     Bitpay,
@@ -209,6 +220,7 @@ object PaymentMethods {
     DragonpayOtcBanking,
     EbankingFi,
     Giropay,
+    GooglePay,
     Ideal,
     Interac,
     Jcb,
