@@ -4,7 +4,8 @@ import io.flow.reference.v0.models.Region
 
 object Regions {
 
-  val Africa = Region(id = "africa", name = "Africa", countries = Seq("AGO", "BEN", "BFA", "BWA", "CAF", "CIV", "CMR", "COG", "COM", "CPV", "DJI", "DZA", "EGY", "ETH", "GAB", "GHA", "GIN", "GMB", "GNB", "GNQ", "KEN", "LBY", "LSO", "MAR", "MDG", "MLI", "MOZ", "MRT", "MUS", "MWI", "MYT", "NAM", "NER", "NGA", "REU", "RWA", "SEN", "SHN", "SLE", "SOM", "SSD", "STP", "SWZ", "SYC", "TCD", "TGO", "TZA", "UGA", "ZAF", "ZMB"), languages = Seq("aa", "af", "ak", "am", "ar", "bm", "ee", "en", "es", "ff", "fr", "ha", "ig", "kg", "kj", "kr", "ln", "mg", "nd", "nr", "ny", "pt", "rw", "sg", "so", "ss", "st", "sw", "ta", "tn", "ts", "ve", "wo", "xh", "yo", "zu"), currencies = Seq("AOA", "BWP", "CVE", "DJF", "DZD", "EGP", "ETB", "EUR", "GHS", "GMD", "GNF", "KES", "KMF", "LYD", "MAD", "MUR", "MWK", "NAD", "NGN", "RWF", "SCR", "SHP", "SLL", "SOS", "SZL", "TZS", "UGX", "XAF", "XOF", "ZAR", "ZMW"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Afghanistan = Region(id = "afg", name = "Afghanistan", countries = Seq("AFG"), languages = Seq("fa", "ps"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Africa = Region(id = "africa", name = "Africa", countries = Seq("AGO", "BDI", "BEN", "BFA", "BWA", "CAF", "CIV", "CMR", "COD", "COG", "COM", "CPV", "DJI", "DZA", "EGY", "ERI", "ESH", "ETH", "GAB", "GHA", "GIN", "GMB", "GNB", "GNQ", "KEN", "LBR", "LBY", "LSO", "MAR", "MDG", "MLI", "MOZ", "MRT", "MUS", "MWI", "MYT", "NAM", "NER", "NGA", "REU", "RWA", "SDN", "SEN", "SHN", "SLE", "SOM", "SSD", "STP", "SWZ", "SYC", "TCD", "TGO", "TUN", "TZA", "UGA", "ZAF", "ZMB", "ZWE"), languages = Seq("aa", "af", "ak", "am", "ar", "bm", "ee", "en", "es", "ff", "fr", "ha", "ig", "kg", "kj", "kr", "ln", "lu", "mg", "nd", "nr", "ny", "pt", "rn", "rw", "sg", "sn", "so", "ss", "st", "sw", "ta", "ti", "tn", "ts", "ve", "wo", "xh", "yo", "zu"), currencies = Seq("AOA", "BWP", "CVE", "DJF", "DZD", "EGP", "ETB", "EUR", "GHS", "GMD", "GNF", "KES", "KMF", "LYD", "MAD", "MUR", "MWK", "NAD", "NGN", "RWF", "SCR", "SHP", "SLL", "SOS", "SZL", "TND", "TZS", "UGX", "XAF", "XOF", "ZAR", "ZMW"), measurementSystems = Seq("imperial", "metric"), timezones = Nil)
   val Albania = Region(id = "alb", name = "Albania", countries = Seq("ALB"), languages = Seq("sq"), currencies = Seq("ALL"), measurementSystems = Seq("metric"), timezones = Nil)
   val Algeria = Region(id = "dza", name = "Algeria", countries = Seq("DZA"), languages = Seq("ar"), currencies = Seq("DZD"), measurementSystems = Seq("metric"), timezones = Nil)
   val AmericanSamoa = Region(id = "asm", name = "American Samoa", countries = Seq("ASM"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -15,7 +16,7 @@ object Regions {
   val Argentina = Region(id = "arg", name = "Argentina", countries = Seq("ARG"), languages = Seq("es"), currencies = Seq("ARS"), measurementSystems = Seq("metric"), timezones = Nil)
   val Armenia = Region(id = "arm", name = "Armenia", countries = Seq("ARM"), languages = Seq("hy"), currencies = Seq("AMD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Aruba = Region(id = "abw", name = "Aruba", countries = Seq("ABW"), languages = Seq("nl"), currencies = Seq("AWG"), measurementSystems = Seq("metric"), timezones = Nil)
-  val Asia = Region(id = "asia", name = "Asia", countries = Seq("ARE", "ARM", "AZE", "BGD", "BHR", "BRN", "BTN", "CHN", "GEO", "HKG", "IDN", "IND", "ISR", "JOR", "JPN", "KAZ", "KGZ", "KHM", "KOR", "KWT", "LAO", "LBN", "LKA", "MAC", "MDV", "MNG", "MYS", "NPL", "OMN", "PAK", "PHL", "PRK", "QAT", "SAU", "SGP", "THA", "TJK", "TKM", "TUR", "TWN", "UZB", "VNM", "YEM"), languages = Seq("ar", "az", "bn", "dv", "dz", "en", "fa", "gu", "he", "hi", "hy", "id", "ja", "ka", "kk", "km", "ko", "ky", "lo", "mn", "ms", "ne", "pa", "pt", "ru", "si", "ta", "te", "tg", "th", "tk", "tl", "tr", "ur", "uz", "vi", "zh"), currencies = Seq("AED", "AMD", "AZN", "BDT", "BHD", "BND", "CNY", "EUR", "GEL", "HKD", "IDR", "ILS", "INR", "JOD", "JPY", "KGS", "KHR", "KRW", "KWD", "KZT", "LAK", "LBP", "LKR", "MNT", "MOP", "MVR", "MYR", "NPR", "OMR", "PHP", "PKR", "QAR", "SAR", "SGD", "THB", "TRY", "TWD", "UZS", "VND", "YER"), measurementSystems = Seq("metric"), timezones = Seq("Asia/Chongqing"))
+  val Asia = Region(id = "asia", name = "Asia", countries = Seq("AFG", "ARE", "ARM", "AZE", "BGD", "BHR", "BRN", "BTN", "CCK", "CHN", "GEO", "HKG", "IDN", "IND", "IOT", "IRN", "IRQ", "ISR", "JOR", "JPN", "KAZ", "KGZ", "KHM", "KOR", "KWT", "LAO", "LBN", "LKA", "MAC", "MDV", "MMR", "MNG", "MYS", "NPL", "OMN", "PAK", "PHL", "PRK", "QAT", "SAU", "SGP", "SYR", "THA", "TJK", "TKM", "TUR", "TWN", "UZB", "VNM", "YEM"), languages = Seq("ar", "az", "bn", "dv", "dz", "en", "fa", "gu", "he", "hi", "hy", "id", "ja", "ka", "kk", "km", "ko", "ku", "ky", "lo", "mn", "ms", "my", "ne", "pa", "ps", "pt", "ru", "si", "ta", "te", "tg", "th", "tk", "tl", "tr", "ur", "uz", "vi", "zh"), currencies = Seq("AED", "AMD", "AUD", "AZN", "BDT", "BHD", "BND", "CNY", "EUR", "GEL", "HKD", "IDR", "ILS", "INR", "JOD", "JPY", "KGS", "KHR", "KRW", "KWD", "KZT", "LAK", "LBP", "LKR", "MNT", "MOP", "MVR", "MYR", "NPR", "OMR", "PHP", "PKR", "QAR", "SAR", "SGD", "THB", "TRY", "TWD", "USD", "UZS", "VND", "YER"), measurementSystems = Seq("imperial", "metric"), timezones = Seq("Asia/Chongqing"))
   val Australia = Region(id = "aus", name = "Australia", countries = Seq("AUS"), languages = Seq("en"), currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Seq("Australia/ACT"))
   val Austria = Region(id = "aut", name = "Austria", countries = Seq("AUT"), languages = Seq("de"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Azerbaijan = Region(id = "aze", name = "Azerbaijan", countries = Seq("AZE"), languages = Seq("az"), currencies = Seq("AZN"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -23,6 +24,7 @@ object Regions {
   val Bahrain = Region(id = "bhr", name = "Bahrain", countries = Seq("BHR"), languages = Seq("ar"), currencies = Seq("BHD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Bangladesh = Region(id = "bgd", name = "Bangladesh", countries = Seq("BGD"), languages = Seq("bn"), currencies = Seq("BDT"), measurementSystems = Seq("metric"), timezones = Nil)
   val Barbados = Region(id = "brb", name = "Barbados", countries = Seq("BRB"), languages = Seq("en"), currencies = Seq("BBD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Belarus = Region(id = "blr", name = "Belarus", countries = Seq("BLR"), languages = Seq("be", "ru"), currencies = Seq("BYN"), measurementSystems = Seq("metric"), timezones = Nil)
   val Belgium = Region(id = "bel", name = "Belgium", countries = Seq("BEL"), languages = Seq("de", "fr", "nl"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Belize = Region(id = "blz", name = "Belize", countries = Seq("BLZ"), languages = Seq("en"), currencies = Seq("BZD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Benin = Region(id = "ben", name = "Benin", countries = Seq("BEN"), languages = Seq("ff", "fr", "yo"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -32,11 +34,14 @@ object Regions {
   val BonaireSintEustatiusAndSaba = Region(id = "bes", name = "Bonaire, Sint Eustatius and Saba", countries = Seq("BES"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val BosniaAndHerzegovina = Region(id = "bih", name = "Bosnia and Herzegovina", countries = Seq("BIH"), languages = Seq("bs", "hr", "sr"), currencies = Seq("BAM"), measurementSystems = Seq("metric"), timezones = Nil)
   val Botswana = Region(id = "bwa", name = "Botswana", countries = Seq("BWA"), languages = Seq("en", "tn"), currencies = Seq("BWP"), measurementSystems = Seq("metric"), timezones = Nil)
+  val BouvetIsland = Region(id = "bvt", name = "Bouvet Island", countries = Seq("BVT"), languages = Nil, currencies = Seq("NOK"), measurementSystems = Seq("metric"), timezones = Nil)
   val Brazil = Region(id = "bra", name = "Brazil", countries = Seq("BRA"), languages = Seq("pt"), currencies = Seq("BRL"), measurementSystems = Seq("metric"), timezones = Nil)
+  val BritishIndianOceanTerritory = Region(id = "iot", name = "British Indian Ocean Territory", countries = Seq("IOT"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val BritishVirginIslands = Region(id = "vgb", name = "British Virgin Islands", countries = Seq("VGB"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val BruneiDarussalam = Region(id = "brn", name = "Brunei Darussalam", countries = Seq("BRN"), languages = Seq("ms"), currencies = Seq("BND"), measurementSystems = Seq("metric"), timezones = Nil)
   val Bulgaria = Region(id = "bgr", name = "Bulgaria", countries = Seq("BGR"), languages = Seq("bg"), currencies = Seq("BGN"), measurementSystems = Seq("metric"), timezones = Nil)
   val BurkinaFaso = Region(id = "bfa", name = "Burkina Faso", countries = Seq("BFA"), languages = Seq("ff", "fr"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Burundi = Region(id = "bdi", name = "Burundi", countries = Seq("BDI"), languages = Seq("fr", "rn"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val CaboVerde = Region(id = "cpv", name = "Cabo Verde", countries = Seq("CPV"), languages = Seq("pt"), currencies = Seq("CVE"), measurementSystems = Seq("metric"), timezones = Nil)
   val Cambodia = Region(id = "khm", name = "Cambodia", countries = Seq("KHM"), languages = Seq("km"), currencies = Seq("KHR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Cameroon = Region(id = "cmr", name = "Cameroon", countries = Seq("CMR"), languages = Seq("en", "fr"), currencies = Seq("XAF"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -46,17 +51,21 @@ object Regions {
   val Chad = Region(id = "tcd", name = "Chad", countries = Seq("TCD"), languages = Seq("ar", "fr"), currencies = Seq("XAF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Chile = Region(id = "chl", name = "Chile", countries = Seq("CHL"), languages = Seq("es"), currencies = Seq("CLP"), measurementSystems = Seq("metric"), timezones = Nil)
   val China = Region(id = "chn", name = "China", countries = Seq("CHN"), languages = Seq("zh"), currencies = Seq("CNY"), measurementSystems = Seq("metric"), timezones = Seq("Asia/Chongqing"))
+  val ChristmasIsland = Region(id = "cxr", name = "Christmas Island", countries = Seq("CXR"), languages = Nil, currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val CocosKeelingIslands = Region(id = "cck", name = "Cocos (Keeling) Islands", countries = Seq("CCK"), languages = Nil, currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Colombia = Region(id = "col", name = "Colombia", countries = Seq("COL"), languages = Seq("es"), currencies = Seq("COP"), measurementSystems = Seq("metric"), timezones = Nil)
   val Comoros = Region(id = "com", name = "Comoros", countries = Seq("COM"), languages = Seq("ar", "fr"), currencies = Seq("KMF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Congo = Region(id = "cog", name = "Congo", countries = Seq("COG"), languages = Seq("fr", "kg", "ln"), currencies = Seq("XAF"), measurementSystems = Seq("metric"), timezones = Nil)
   val CookIslands = Region(id = "cok", name = "Cook Islands", countries = Seq("COK"), languages = Nil, currencies = Seq("NZD"), measurementSystems = Seq("metric"), timezones = Nil)
   val CostaRica = Region(id = "cri", name = "Costa Rica", countries = Seq("CRI"), languages = Seq("es"), currencies = Seq("CRC"), measurementSystems = Seq("metric"), timezones = Nil)
   val Croatia = Region(id = "hrv", name = "Croatia", countries = Seq("HRV"), languages = Seq("hr", "it"), currencies = Seq("HRK"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Cuba = Region(id = "cub", name = "Cuba", countries = Seq("CUB"), languages = Seq("es"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Curaçao = Region(id = "cuw", name = "Curaçao", countries = Seq("CUW"), languages = Seq("en", "nl"), currencies = Seq("ANG"), measurementSystems = Seq("metric"), timezones = Nil)
   val Cyprus = Region(id = "cyp", name = "Cyprus", countries = Seq("CYP"), languages = Seq("el", "tr"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Czechia = Region(id = "cze", name = "Czechia", countries = Seq("CZE"), languages = Seq("cs", "sk"), currencies = Seq("CZK"), measurementSystems = Seq("metric"), timezones = Nil)
   val CôteDIvoire = Region(id = "civ", name = "Côte d'Ivoire", countries = Seq("CIV"), languages = Seq("fr"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
   val DemocraticPeopleSRepublicOfKorea = Region(id = "prk", name = "Democratic People's Republic of Korea", countries = Seq("PRK"), languages = Seq("ko"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val DemocraticRepublicOfTheCongo = Region(id = "cod", name = "Democratic Republic of the Congo", countries = Seq("COD"), languages = Seq("fr", "kg", "ln", "lu", "sw"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Denmark = Region(id = "dnk", name = "Denmark", countries = Seq("DNK"), languages = Seq("da"), currencies = Seq("DKK"), measurementSystems = Seq("metric"), timezones = Nil)
   val Djibouti = Region(id = "dji", name = "Djibouti", countries = Seq("DJI"), languages = Seq("aa", "ar", "fr", "so"), currencies = Seq("DJF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Dominica = Region(id = "dma", name = "Dominica", countries = Seq("DMA"), languages = Seq("en"), currencies = Seq("XCD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -65,13 +74,14 @@ object Regions {
   val Egypt = Region(id = "egy", name = "Egypt", countries = Seq("EGY"), languages = Seq("ar"), currencies = Seq("EGP"), measurementSystems = Seq("metric"), timezones = Nil)
   val ElSalvador = Region(id = "slv", name = "El Salvador", countries = Seq("SLV"), languages = Seq("es"), currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val EquatorialGuinea = Region(id = "gnq", name = "Equatorial Guinea", countries = Seq("GNQ"), languages = Seq("es", "fr", "pt"), currencies = Seq("XAF"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Eritrea = Region(id = "eri", name = "Eritrea", countries = Seq("ERI"), languages = Seq("ar", "en", "ti"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Estonia = Region(id = "est", name = "Estonia", countries = Seq("EST"), languages = Seq("et"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Eswatini = Region(id = "swz", name = "Eswatini", countries = Seq("SWZ"), languages = Seq("en", "ss"), currencies = Seq("SZL"), measurementSystems = Seq("metric"), timezones = Nil)
   val Ethiopia = Region(id = "eth", name = "Ethiopia", countries = Seq("ETH"), languages = Seq("am"), currencies = Seq("ETB"), measurementSystems = Seq("metric"), timezones = Nil)
-  val Europe = Region(id = "europe", name = "Europe", countries = Seq("ALB", "AND", "AUT", "BEL", "BGR", "BIH", "CHE", "CYP", "CZE", "DEU", "DNK", "ESP", "EST", "FIN", "FRA", "FRO", "GBR", "GGY", "GIB", "GRC", "HRV", "HUN", "IRL", "ISL", "ITA", "JEY", "LIE", "LTU", "LUX", "LVA", "MCO", "MDA", "MLT", "MNE", "NLD", "NOR", "POL", "PRT", "ROU", "RUS", "SMR", "SRB", "SVK", "SVN", "SWE", "UKR", "VAT"), languages = Seq("bg", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "is", "it", "la", "lb", "lt", "lv", "mt", "nb", "nl", "nn", "no", "pl", "pt", "rm", "ro", "ru", "sk", "sl", "sq", "sr", "sv", "tr", "uk"), currencies = Seq("ALL", "BAM", "BGN", "CHF", "CZK", "DKK", "EUR", "GBP", "GIP", "HRK", "HUF", "ISK", "MDL", "NOK", "PLN", "RON", "RSD", "RUB", "SEK", "UAH"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers", "GMT"))
+  val Europe = Region(id = "europe", name = "Europe", countries = Seq("ALA", "ALB", "AND", "AUT", "BEL", "BGR", "BIH", "BLR", "CHE", "CYP", "CZE", "DEU", "DNK", "ESP", "EST", "FIN", "FRA", "FRO", "GBR", "GGY", "GIB", "GRC", "HRV", "HUN", "IMN", "IRL", "ISL", "ITA", "JEY", "LIE", "LTU", "LUX", "LVA", "MCO", "MDA", "MKD", "MLT", "MNE", "NLD", "NOR", "POL", "PRT", "ROU", "RUS", "SJM", "SMR", "SRB", "SVK", "SVN", "SWE", "UKR", "VAT"), languages = Seq("be", "bg", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "is", "it", "la", "lb", "lt", "lv", "mk", "mt", "nb", "nl", "nn", "no", "pl", "pt", "rm", "ro", "ru", "sk", "sl", "sq", "sr", "sv", "tr", "uk"), currencies = Seq("ALL", "BAM", "BGN", "BYN", "CHF", "CZK", "DKK", "EUR", "GBP", "GIP", "HRK", "HUF", "ISK", "MDL", "NOK", "PLN", "RON", "RSD", "RUB", "SEK", "UAH"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers", "GMT"))
   val EuropeanEconomicArea = Region(id = "europeaneconomicarea", name = "European Economic Area", countries = Seq("AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "EST", "FIN", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX", "MLT", "NLD", "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE", "GBR", "ISL", "LIE", "NOR"), languages = Seq("bg", "cs", "cy", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "is", "it", "lb", "lt", "lv", "mt", "nb", "nl", "nn", "no", "pl", "pt", "ro", "sk", "sl", "sv", "tr"), currencies = Seq("BGN", "CHF", "CZK", "DKK", "EUR", "GBP", "HRK", "HUF", "ISK", "NOK", "PLN", "RON", "SEK"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers", "GMT"))
   val EuropeanUnion = Region(id = "europeanunion", name = "European Union", countries = Seq("AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "EST", "FIN", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LVA", "LTU", "LUX", "MLT", "NLD", "POL", "PRT", "ROU", "SVK", "SVN", "ESP", "SWE", "GBR"), languages = Seq("bg", "cs", "cy", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lb", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv", "tr"), currencies = Seq("BGN", "CZK", "DKK", "EUR", "GBP", "HRK", "HUF", "PLN", "RON", "SEK"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers", "GMT"))
-  val Eurozone = Region(id = "eurozone", name = "Eurozone", countries = Seq("AND", "AUT", "BEL", "BLM", "CYP", "DEU", "ESP", "EST", "FIN", "FRA", "GLP", "GRC", "GUF", "IRL", "ITA", "LTU", "LUX", "LVA", "MAF", "MCO", "MLT", "MNE", "MTQ", "MYT", "NLD", "PRT", "REU", "SMR", "SPM", "SVK", "SVN", "VAT"), languages = Seq("ca", "cs", "de", "el", "en", "es", "et", "fi", "fr", "ga", "it", "la", "lb", "lt", "lv", "mt", "nl", "pt", "sk", "sl", "sv", "tr"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers", "GMT"))
+  val Eurozone = Region(id = "eurozone", name = "Eurozone", countries = Seq("AFG", "ALA", "AND", "ATF", "AUT", "BDI", "BEL", "BLM", "COD", "CUB", "CYP", "DEU", "ERI", "ESP", "EST", "FIN", "FRA", "GLP", "GRC", "GUF", "IRL", "IRN", "IRQ", "ITA", "LBR", "LTU", "LUX", "LVA", "MAF", "MCO", "MKD", "MLT", "MMR", "MNE", "MTQ", "MYT", "NLD", "PRT", "REU", "SDN", "SMR", "SPM", "SVK", "SVN", "SYR", "VAT", "ZWE"), languages = Seq("ar", "ca", "cs", "de", "el", "en", "es", "et", "fa", "fi", "fr", "ga", "it", "kg", "ku", "la", "lb", "ln", "lt", "lu", "lv", "mk", "mt", "my", "nd", "nl", "ps", "pt", "rn", "sk", "sl", "sn", "sv", "sw", "ti", "tr"), currencies = Seq("EUR"), measurementSystems = Seq("imperial", "metric"), timezones = Seq("Africa/Algiers", "GMT"))
   val FalklandIslands = Region(id = "flk", name = "Falkland Islands", countries = Seq("FLK"), languages = Nil, currencies = Seq("FKP"), measurementSystems = Seq("metric"), timezones = Nil)
   val FaroeIslands = Region(id = "fro", name = "Faroe Islands", countries = Seq("FRO"), languages = Seq("da"), currencies = Seq("DKK"), measurementSystems = Seq("metric"), timezones = Nil)
   val Fiji = Region(id = "fji", name = "Fiji", countries = Seq("FJI"), languages = Seq("en", "fj", "hi", "ur"), currencies = Seq("FJD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -79,6 +89,7 @@ object Regions {
   val France = Region(id = "fra", name = "France", countries = Seq("FRA"), languages = Seq("fr"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Seq("Africa/Algiers"))
   val FrenchGuiana = Region(id = "guf", name = "French Guiana", countries = Seq("GUF"), languages = Seq("fr"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val FrenchPolynesia = Region(id = "pyf", name = "French Polynesia", countries = Seq("PYF"), languages = Seq("fr"), currencies = Seq("XPF"), measurementSystems = Seq("metric"), timezones = Nil)
+  val FrenchSouthernTerritories = Region(id = "atf", name = "French Southern Territories", countries = Seq("ATF"), languages = Nil, currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Gabon = Region(id = "gab", name = "Gabon", countries = Seq("GAB"), languages = Seq("fr"), currencies = Seq("XAF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Gambia = Region(id = "gmb", name = "Gambia", countries = Seq("GMB"), languages = Seq("en"), currencies = Seq("GMD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Georgia = Region(id = "geo", name = "Georgia", countries = Seq("GEO"), languages = Seq("ka"), currencies = Seq("GEL"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -96,6 +107,7 @@ object Regions {
   val GuineaMinusBissau = Region(id = "gnb", name = "Guinea-Bissau", countries = Seq("GNB"), languages = Seq("pt"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Guyana = Region(id = "guy", name = "Guyana", countries = Seq("GUY"), languages = Seq("en"), currencies = Seq("GYD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Haiti = Region(id = "hti", name = "Haiti", countries = Seq("HTI"), languages = Seq("fr", "ht"), currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val HeardIslandAndMcdonaldIslands = Region(id = "hmd", name = "Heard Island and McDonald Islands", countries = Seq("HMD"), languages = Nil, currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Nil)
   val HolySee = Region(id = "vat", name = "Holy See", countries = Seq("VAT"), languages = Seq("it", "la"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Honduras = Region(id = "hnd", name = "Honduras", countries = Seq("HND"), languages = Seq("es"), currencies = Seq("HNL"), measurementSystems = Seq("metric"), timezones = Nil)
   val HongKong = Region(id = "hkg", name = "Hong Kong", countries = Seq("HKG"), languages = Seq("en", "zh"), currencies = Seq("HKD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -103,7 +115,10 @@ object Regions {
   val Iceland = Region(id = "isl", name = "Iceland", countries = Seq("ISL"), languages = Seq("is"), currencies = Seq("ISK"), measurementSystems = Seq("metric"), timezones = Nil)
   val India = Region(id = "ind", name = "India", countries = Seq("IND"), languages = Seq("bn", "en", "gu", "hi", "pa", "ta", "te"), currencies = Seq("INR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Indonesia = Region(id = "idn", name = "Indonesia", countries = Seq("IDN"), languages = Seq("id", "ms"), currencies = Seq("IDR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val IranIslamicRepublicOf = Region(id = "irn", name = "Iran (Islamic Republic of)", countries = Seq("IRN"), languages = Seq("fa"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Iraq = Region(id = "irq", name = "Iraq", countries = Seq("IRQ"), languages = Seq("ar", "ku"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Ireland = Region(id = "irl", name = "Ireland", countries = Seq("IRL"), languages = Seq("en", "ga"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Seq("GMT"))
+  val IsleOfMan = Region(id = "imn", name = "Isle of Man", countries = Seq("IMN"), languages = Nil, currencies = Seq("GBP"), measurementSystems = Seq("metric"), timezones = Nil)
   val Israel = Region(id = "isr", name = "Israel", countries = Seq("ISR"), languages = Seq("ar", "he"), currencies = Seq("ILS"), measurementSystems = Seq("metric"), timezones = Nil)
   val Italy = Region(id = "ita", name = "Italy", countries = Seq("ITA"), languages = Seq("de", "fr", "it"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Jamaica = Region(id = "jam", name = "Jamaica", countries = Seq("JAM"), languages = Seq("en"), currencies = Seq("JMD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -119,6 +134,7 @@ object Regions {
   val Latvia = Region(id = "lva", name = "Latvia", countries = Seq("LVA"), languages = Seq("lv"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Lebanon = Region(id = "lbn", name = "Lebanon", countries = Seq("LBN"), languages = Seq("ar"), currencies = Seq("LBP"), measurementSystems = Seq("metric"), timezones = Nil)
   val Lesotho = Region(id = "lso", name = "Lesotho", countries = Seq("LSO"), languages = Seq("en", "st"), currencies = Seq("ZAR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Liberia = Region(id = "lbr", name = "Liberia", countries = Seq("LBR"), languages = Seq("en"), currencies = Seq("EUR"), measurementSystems = Seq("imperial"), timezones = Nil)
   val Libya = Region(id = "lby", name = "Libya", countries = Seq("LBY"), languages = Seq("ar"), currencies = Seq("LYD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Liechtenstein = Region(id = "lie", name = "Liechtenstein", countries = Seq("LIE"), languages = Seq("de"), currencies = Seq("CHF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Lithuania = Region(id = "ltu", name = "Lithuania", countries = Seq("LTU"), languages = Seq("lt"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -143,6 +159,7 @@ object Regions {
   val Montserrat = Region(id = "msr", name = "Montserrat", countries = Seq("MSR"), languages = Nil, currencies = Seq("XCD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Morocco = Region(id = "mar", name = "Morocco", countries = Seq("MAR"), languages = Seq("ar"), currencies = Seq("MAD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Mozambique = Region(id = "moz", name = "Mozambique", countries = Seq("MOZ"), languages = Seq("pt"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Myanmar = Region(id = "mmr", name = "Myanmar", countries = Seq("MMR"), languages = Seq("my"), currencies = Seq("EUR"), measurementSystems = Seq("imperial"), timezones = Nil)
   val Namibia = Region(id = "nam", name = "Namibia", countries = Seq("NAM"), languages = Seq("en"), currencies = Seq("NAD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Nauru = Region(id = "nru", name = "Nauru", countries = Seq("NRU"), languages = Seq("en"), currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Nepal = Region(id = "npl", name = "Nepal", countries = Seq("NPL"), languages = Seq("ne"), currencies = Seq("NPR"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -153,10 +170,11 @@ object Regions {
   val Niger = Region(id = "ner", name = "Niger", countries = Seq("NER"), languages = Seq("ar", "ff", "fr", "ha", "kr"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Nigeria = Region(id = "nga", name = "Nigeria", countries = Seq("NGA"), languages = Seq("en", "ha", "ig", "yo"), currencies = Seq("NGN"), measurementSystems = Seq("metric"), timezones = Nil)
   val Niue = Region(id = "niu", name = "Niue", countries = Seq("NIU"), languages = Nil, currencies = Seq("NZD"), measurementSystems = Seq("metric"), timezones = Nil)
-  val NorthAmerica = Region(id = "north-america", name = "North America", countries = Seq("ABW", "AIA", "ATG", "BES", "BHS", "BLM", "BLZ", "BMU", "BRB", "CAN", "CRI", "CUW", "CYM", "DMA", "DOM", "GLP", "GRD", "GRL", "GTM", "HND", "HTI", "JAM", "KNA", "LCA", "MAF", "MEX", "MSR", "MTQ", "NIC", "PAN", "SLV", "SPM", "SXM", "TCA", "TTO", "USA", "VCT", "VGB"), languages = Seq("en", "es", "fr", "ht", "nl"), currencies = Seq("ANG", "AWG", "BBD", "BMD", "BSD", "BZD", "CAD", "CRC", "DKK", "DOP", "EUR", "GTQ", "HNL", "JMD", "KYD", "MXN", "NIO", "TTD", "USD", "XCD"), measurementSystems = Seq("imperial", "metric"), timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York", "Canada/Eastern", "Mexico/General"))
+  val NorfolkIsland = Region(id = "nfk", name = "Norfolk Island", countries = Seq("NFK"), languages = Nil, currencies = Seq("AUD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val NorthAmerica = Region(id = "north-america", name = "North America", countries = Seq("ABW", "AIA", "ATG", "BES", "BHS", "BLM", "BLZ", "BMU", "BRB", "CAN", "CRI", "CUB", "CUW", "CYM", "DMA", "DOM", "GLP", "GRD", "GRL", "GTM", "HND", "HTI", "JAM", "KNA", "LCA", "MAF", "MEX", "MSR", "MTQ", "NIC", "PAN", "SLV", "SPM", "SXM", "TCA", "TTO", "USA", "VCT", "VGB", "VIR"), languages = Seq("en", "es", "fr", "ht", "nl"), currencies = Seq("ANG", "AWG", "BBD", "BMD", "BSD", "BZD", "CAD", "CRC", "DKK", "DOP", "EUR", "GTQ", "HNL", "JMD", "KYD", "MXN", "NIO", "TTD", "USD", "XCD"), measurementSystems = Seq("imperial", "metric"), timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York", "Canada/Eastern", "Mexico/General"))
   val NorthernMarianaIslands = Region(id = "mnp", name = "Northern Mariana Islands", countries = Seq("MNP"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Norway = Region(id = "nor", name = "Norway", countries = Seq("NOR"), languages = Seq("nb", "nn", "no"), currencies = Seq("NOK"), measurementSystems = Seq("metric"), timezones = Nil)
-  val Oceania = Region(id = "oceania", name = "Oceania", countries = Seq("ASM", "AUS", "COK", "FJI", "FSM", "GUM", "KIR", "MHL", "MNP", "NCL", "NIU", "NRU", "NZL", "PLW", "PNG", "PYF", "SLB", "TKL", "TLS", "TON", "TUV", "VUT", "WLF", "WSM"), languages = Seq("bi", "en", "fj", "fr", "hi", "ho", "mh", "mi", "pt", "ur"), currencies = Seq("AUD", "FJD", "NZD", "PGK", "SBD", "TOP", "USD", "VUV", "WST", "XPF"), measurementSystems = Seq("metric"), timezones = Seq("Australia/ACT"))
+  val Oceania = Region(id = "oceania", name = "Oceania", countries = Seq("ASM", "AUS", "COK", "CXR", "FJI", "FSM", "GUM", "KIR", "MHL", "MNP", "NCL", "NFK", "NIU", "NRU", "NZL", "PCN", "PLW", "PNG", "PYF", "SLB", "TKL", "TLS", "TON", "TUV", "UMI", "VUT", "WLF", "WSM"), languages = Seq("bi", "en", "fj", "fr", "hi", "ho", "mh", "mi", "pt", "ur"), currencies = Seq("AUD", "FJD", "NZD", "PGK", "SBD", "TOP", "USD", "VUV", "WST", "XPF"), measurementSystems = Seq("metric"), timezones = Seq("Australia/ACT"))
   val Oman = Region(id = "omn", name = "Oman", countries = Seq("OMN"), languages = Seq("ar"), currencies = Seq("OMR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Pakistan = Region(id = "pak", name = "Pakistan", countries = Seq("PAK"), languages = Seq("en", "ur"), currencies = Seq("PKR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Palau = Region(id = "plw", name = "Palau", countries = Seq("PLW"), languages = Seq("en"), currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -165,6 +183,7 @@ object Regions {
   val Paraguay = Region(id = "pry", name = "Paraguay", countries = Seq("PRY"), languages = Seq("es", "gn"), currencies = Seq("PYG"), measurementSystems = Seq("metric"), timezones = Nil)
   val Peru = Region(id = "per", name = "Peru", countries = Seq("PER"), languages = Seq("ay", "es", "qu"), currencies = Seq("PEN"), measurementSystems = Seq("metric"), timezones = Nil)
   val Philippines = Region(id = "phl", name = "Philippines", countries = Seq("PHL"), languages = Seq("en", "tl"), currencies = Seq("PHP"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Pitcairn = Region(id = "pcn", name = "Pitcairn", countries = Seq("PCN"), languages = Nil, currencies = Seq("NZD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Poland = Region(id = "pol", name = "Poland", countries = Seq("POL"), languages = Seq("pl"), currencies = Seq("PLN"), measurementSystems = Seq("metric"), timezones = Nil)
   val Portugal = Region(id = "prt", name = "Portugal", countries = Seq("PRT"), languages = Seq("pt"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Qatar = Region(id = "qat", name = "Qatar", countries = Seq("QAT"), languages = Seq("ar"), currencies = Seq("QAR"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -200,17 +219,22 @@ object Regions {
   val SouthSudan = Region(id = "ssd", name = "South Sudan", countries = Seq("SSD"), languages = Seq("en"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Spain = Region(id = "esp", name = "Spain", countries = Seq("ESP"), languages = Seq("es"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val SriLanka = Region(id = "lka", name = "Sri Lanka", countries = Seq("LKA"), languages = Seq("en", "si", "ta"), currencies = Seq("LKR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Sudan = Region(id = "sdn", name = "Sudan", countries = Seq("SDN"), languages = Seq("ar", "en"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Suriname = Region(id = "sur", name = "Suriname", countries = Seq("SUR"), languages = Seq("nl"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val SvalbardAndJanMayenIslands = Region(id = "sjm", name = "Svalbard and Jan Mayen Islands", countries = Seq("SJM"), languages = Nil, currencies = Seq("NOK"), measurementSystems = Seq("metric"), timezones = Nil)
   val Sweden = Region(id = "swe", name = "Sweden", countries = Seq("SWE"), languages = Seq("sv"), currencies = Seq("SEK"), measurementSystems = Seq("metric"), timezones = Nil)
   val Switzerland = Region(id = "che", name = "Switzerland", countries = Seq("CHE"), languages = Seq("de", "fr", "it", "rm"), currencies = Seq("CHF"), measurementSystems = Seq("metric"), timezones = Nil)
+  val SyrianArabRepublic = Region(id = "syr", name = "Syrian Arab Republic", countries = Seq("SYR"), languages = Seq("ar"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Taiwan = Region(id = "twn", name = "Taiwan", countries = Seq("TWN"), languages = Seq("zh"), currencies = Seq("TWD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Tajikistan = Region(id = "tjk", name = "Tajikistan", countries = Seq("TJK"), languages = Seq("fa", "ru", "tg"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Thailand = Region(id = "tha", name = "Thailand", countries = Seq("THA"), languages = Seq("th"), currencies = Seq("THB"), measurementSystems = Seq("metric"), timezones = Nil)
+  val TheFormerYugoslavRepublicOfMacedonia = Region(id = "mkd", name = "The former Yugoslav Republic of Macedonia", countries = Seq("MKD"), languages = Seq("mk"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val TimorMinusLeste = Region(id = "tls", name = "Timor-Leste", countries = Seq("TLS"), languages = Seq("pt"), currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Togo = Region(id = "tgo", name = "Togo", countries = Seq("TGO"), languages = Seq("ee", "fr"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Tokelau = Region(id = "tkl", name = "Tokelau", countries = Seq("TKL"), languages = Nil, currencies = Seq("NZD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Tonga = Region(id = "ton", name = "Tonga", countries = Seq("TON"), languages = Seq("en"), currencies = Seq("TOP"), measurementSystems = Seq("metric"), timezones = Nil)
   val TrinidadAndTobago = Region(id = "tto", name = "Trinidad and Tobago", countries = Seq("TTO"), languages = Seq("en"), currencies = Seq("TTD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Tunisia = Region(id = "tun", name = "Tunisia", countries = Seq("TUN"), languages = Seq("ar"), currencies = Seq("TND"), measurementSystems = Seq("metric"), timezones = Nil)
   val Turkey = Region(id = "tur", name = "Turkey", countries = Seq("TUR"), languages = Seq("tr"), currencies = Seq("TRY"), measurementSystems = Seq("metric"), timezones = Nil)
   val Turkmenistan = Region(id = "tkm", name = "Turkmenistan", countries = Seq("TKM"), languages = Seq("tk"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val TurksAndCaicosIslands = Region(id = "tca", name = "Turks and Caicos Islands", countries = Seq("TCA"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -220,18 +244,24 @@ object Regions {
   val UnitedArabEmirates = Region(id = "are", name = "United Arab Emirates", countries = Seq("ARE"), languages = Seq("ar"), currencies = Seq("AED"), measurementSystems = Seq("metric"), timezones = Nil)
   val UnitedKingdom = Region(id = "gbr", name = "United Kingdom", countries = Seq("GBR"), languages = Seq("cy", "en"), currencies = Seq("GBP"), measurementSystems = Seq("metric"), timezones = Seq("GMT"))
   val UnitedRepublicOfTanzania = Region(id = "tza", name = "United Republic of Tanzania", countries = Seq("TZA"), languages = Seq("en", "sw"), currencies = Seq("TZS"), measurementSystems = Seq("metric"), timezones = Nil)
+  val UnitedStatesMinorOutlyingIslands = Region(id = "umi", name = "United States Minor Outlying Islands", countries = Seq("UMI"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val UnitedStatesOfAmerica = Region(id = "usa", name = "United States of America", countries = Seq("USA"), languages = Seq("en"), currencies = Seq("USD"), measurementSystems = Seq("imperial"), timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York"))
+  val UnitedStatesVirginIslands = Region(id = "vir", name = "United States Virgin Islands", countries = Seq("VIR"), languages = Nil, currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Uruguay = Region(id = "ury", name = "Uruguay", countries = Seq("URY"), languages = Seq("es"), currencies = Seq("UYU"), measurementSystems = Seq("metric"), timezones = Nil)
   val Uzbekistan = Region(id = "uzb", name = "Uzbekistan", countries = Seq("UZB"), languages = Seq("uz"), currencies = Seq("UZS"), measurementSystems = Seq("metric"), timezones = Nil)
   val Vanuatu = Region(id = "vut", name = "Vanuatu", countries = Seq("VUT"), languages = Seq("bi", "en", "fr"), currencies = Seq("VUV"), measurementSystems = Seq("metric"), timezones = Nil)
   val Venezuela = Region(id = "ven", name = "Venezuela", countries = Seq("VEN"), languages = Seq("es"), currencies = Seq("VEF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Vietnam = Region(id = "vnm", name = "Vietnam", countries = Seq("VNM"), languages = Seq("vi"), currencies = Seq("VND"), measurementSystems = Seq("metric"), timezones = Nil)
   val WallisAndFutunaIslands = Region(id = "wlf", name = "Wallis and Futuna Islands", countries = Seq("WLF"), languages = Seq("fr"), currencies = Seq("XPF"), measurementSystems = Seq("metric"), timezones = Nil)
-  val World = Region(id = "world", name = "World", countries = Seq("ABW", "AGO", "AIA", "ALB", "AND", "ARE", "ARG", "ARM", "ASM", "ATG", "AUS", "AUT", "AZE", "BEL", "BEN", "BES", "BFA", "BGD", "BGR", "BHR", "BHS", "BIH", "BLM", "BLZ", "BMU", "BOL", "BRA", "BRB", "BRN", "BTN", "BWA", "CAF", "CAN", "CHE", "CHL", "CHN", "CIV", "CMR", "COG", "COK", "COL", "COM", "CPV", "CRI", "CUW", "CYM", "CYP", "CZE", "DEU", "DJI", "DMA", "DNK", "DOM", "DZA", "ECU", "EGY", "ESP", "EST", "ETH", "FIN", "FJI", "FLK", "FRA", "FRO", "FSM", "GAB", "GBR", "GEO", "GGY", "GHA", "GIB", "GIN", "GLP", "GMB", "GNB", "GNQ", "GRC", "GRD", "GRL", "GTM", "GUF", "GUM", "GUY", "HKG", "HND", "HRV", "HTI", "HUN", "IDN", "IND", "IRL", "ISL", "ISR", "ITA", "JAM", "JEY", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KHM", "KIR", "KNA", "KOR", "KWT", "LAO", "LBN", "LBY", "LCA", "LIE", "LKA", "LSO", "LTU", "LUX", "LVA", "MAC", "MAF", "MAR", "MCO", "MDA", "MDG", "MDV", "MEX", "MHL", "MLI", "MLT", "MNE", "MNG", "MNP", "MOZ", "MRT", "MSR", "MTQ", "MUS", "MWI", "MYS", "MYT", "NAM", "NCL", "NER", "NGA", "NIC", "NIU", "NLD", "NOR", "NPL", "NRU", "NZL", "OMN", "PAK", "PAN", "PER", "PHL", "PLW", "PNG", "POL", "PRK", "PRT", "PRY", "PYF", "QAT", "REU", "ROU", "RUS", "RWA", "SAU", "SEN", "SGP", "SHN", "SLB", "SLE", "SLV", "SMR", "SOM", "SPM", "SRB", "SSD", "STP", "SUR", "SVK", "SVN", "SWE", "SWZ", "SXM", "SYC", "TCA", "TCD", "TGO", "THA", "TJK", "TKL", "TKM", "TLS", "TON", "TTO", "TUR", "TUV", "TWN", "TZA", "UGA", "UKR", "URY", "USA", "UZB", "VAT", "VCT", "VEN", "VGB", "VNM", "VUT", "WLF", "WSM", "YEM", "ZAF", "ZMB"), languages = Seq("aa", "af", "ak", "am", "ar", "ay", "az", "bg", "bi", "bm", "bn", "bs", "ca", "cs", "cy", "da", "de", "dv", "dz", "ee", "el", "en", "es", "et", "fa", "ff", "fi", "fj", "fr", "ga", "gn", "gu", "ha", "he", "hi", "ho", "hr", "ht", "hu", "hy", "id", "ig", "is", "it", "ja", "ka", "kg", "kj", "kk", "km", "ko", "kr", "ky", "la", "lb", "ln", "lo", "lt", "lv", "mg", "mh", "mi", "mn", "ms", "mt", "nb", "nd", "ne", "nl", "nn", "no", "nr", "ny", "pa", "pl", "pt", "qu", "rm", "ro", "ru", "rw", "sg", "si", "sk", "sl", "so", "sq", "sr", "ss", "st", "sv", "sw", "ta", "te", "tg", "th", "tk", "tl", "tn", "tr", "ts", "uk", "ur", "uz", "ve", "vi", "wo", "xh", "yo", "zh", "zu"), currencies = Seq("AED", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN", "BHD", "BMD", "BND", "BOB", "BRL", "BSD", "BWP", "BZD", "CAD", "CHF", "CLP", "CNY", "COP", "CRC", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LYD", "MAD", "MDL", "MNT", "MOP", "MUR", "MVR", "MWK", "MXN", "MYR", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SEK", "SGD", "SHP", "SLL", "SOS", "SZL", "THB", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS", "VEF", "VND", "VUV", "WST", "XAF", "XCD", "XOF", "XPF", "YER", "ZAR", "ZMW"), measurementSystems = Seq("metric", "imperial"), timezones = Seq("Africa/Algiers", "America/Chicago", "America/Los_Angeles", "America/New_York", "Asia/Chongqing", "Australia/ACT", "Canada/Eastern", "GMT", "Mexico/General"))
+  val WesternSahara = Region(id = "esh", name = "Western Sahara", countries = Seq("ESH"), languages = Seq("es"), currencies = Seq("MAD"), measurementSystems = Seq("metric"), timezones = Nil)
+  val World = Region(id = "world", name = "World", countries = Seq("ABW", "AFG", "AGO", "AIA", "ALA", "ALB", "AND", "ARE", "ARG", "ARM", "ASM", "ATF", "ATG", "AUS", "AUT", "AZE", "BDI", "BEL", "BEN", "BES", "BFA", "BGD", "BGR", "BHR", "BHS", "BIH", "BLM", "BLR", "BLZ", "BMU", "BOL", "BRA", "BRB", "BRN", "BTN", "BVT", "BWA", "CAF", "CAN", "CCK", "CHE", "CHL", "CHN", "CIV", "CMR", "COD", "COG", "COK", "COL", "COM", "CPV", "CRI", "CUB", "CUW", "CXR", "CYM", "CYP", "CZE", "DEU", "DJI", "DMA", "DNK", "DOM", "DZA", "ECU", "EGY", "ERI", "ESH", "ESP", "EST", "ETH", "FIN", "FJI", "FLK", "FRA", "FRO", "FSM", "GAB", "GBR", "GEO", "GGY", "GHA", "GIB", "GIN", "GLP", "GMB", "GNB", "GNQ", "GRC", "GRD", "GRL", "GTM", "GUF", "GUM", "GUY", "HKG", "HMD", "HND", "HRV", "HTI", "HUN", "IDN", "IMN", "IND", "IOT", "IRL", "IRN", "IRQ", "ISL", "ISR", "ITA", "JAM", "JEY", "JOR", "JPN", "KAZ", "KEN", "KGZ", "KHM", "KIR", "KNA", "KOR", "KWT", "LAO", "LBN", "LBR", "LBY", "LCA", "LIE", "LKA", "LSO", "LTU", "LUX", "LVA", "MAC", "MAF", "MAR", "MCO", "MDA", "MDG", "MDV", "MEX", "MHL", "MKD", "MLI", "MLT", "MMR", "MNE", "MNG", "MNP", "MOZ", "MRT", "MSR", "MTQ", "MUS", "MWI", "MYS", "MYT", "NAM", "NCL", "NER", "NFK", "NGA", "NIC", "NIU", "NLD", "NOR", "NPL", "NRU", "NZL", "OMN", "PAK", "PAN", "PCN", "PER", "PHL", "PLW", "PNG", "POL", "PRK", "PRT", "PRY", "PYF", "QAT", "REU", "ROU", "RUS", "RWA", "SAU", "SDN", "SEN", "SGP", "SHN", "SJM", "SLB", "SLE", "SLV", "SMR", "SOM", "SPM", "SRB", "SSD", "STP", "SUR", "SVK", "SVN", "SWE", "SWZ", "SXM", "SYC", "SYR", "TCA", "TCD", "TGO", "THA", "TJK", "TKL", "TKM", "TLS", "TON", "TTO", "TUN", "TUR", "TUV", "TWN", "TZA", "UGA", "UKR", "UMI", "URY", "USA", "UZB", "VAT", "VCT", "VEN", "VGB", "VIR", "VNM", "VUT", "WLF", "WSM", "YEM", "ZAF", "ZMB", "ZWE"), languages = Seq("aa", "af", "ak", "am", "ar", "ay", "az", "be", "bg", "bi", "bm", "bn", "bs", "ca", "cs", "cy", "da", "de", "dv", "dz", "ee", "el", "en", "es", "et", "fa", "ff", "fi", "fj", "fr", "ga", "gn", "gu", "ha", "he", "hi", "ho", "hr", "ht", "hu", "hy", "id", "ig", "is", "it", "ja", "ka", "kg", "kj", "kk", "km", "ko", "kr", "ku", "ky", "la", "lb", "ln", "lo", "lt", "lu", "lv", "mg", "mh", "mi", "mk", "mn", "ms", "mt", "my", "nb", "nd", "ne", "nl", "nn", "no", "nr", "ny", "pa", "pl", "ps", "pt", "qu", "rm", "rn", "ro", "ru", "rw", "sg", "si", "sk", "sl", "sn", "so", "sq", "sr", "ss", "st", "sv", "sw", "ta", "te", "tg", "th", "ti", "tk", "tl", "tn", "tr", "ts", "uk", "ur", "uz", "ve", "vi", "wo", "xh", "yo", "zh", "zu"), currencies = Seq("AED", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN", "BAM", "BBD", "BDT", "BGN", "BHD", "BMD", "BND", "BOB", "BRL", "BSD", "BWP", "BYN", "BZD", "CAD", "CHF", "CLP", "CNY", "COP", "CRC", "CVE", "CZK", "DJF", "DKK", "DOP", "DZD", "EGP", "ETB", "EUR", "FJD", "FKP", "GBP", "GEL", "GHS", "GIP", "GMD", "GNF", "GTQ", "GYD", "HKD", "HNL", "HRK", "HUF", "IDR", "ILS", "INR", "ISK", "JMD", "JOD", "JPY", "KES", "KGS", "KHR", "KMF", "KRW", "KWD", "KYD", "KZT", "LAK", "LBP", "LKR", "LYD", "MAD", "MDL", "MNT", "MOP", "MUR", "MVR", "MWK", "MXN", "MYR", "NAD", "NGN", "NIO", "NOK", "NPR", "NZD", "OMR", "PEN", "PGK", "PHP", "PKR", "PLN", "PYG", "QAR", "RON", "RSD", "RUB", "RWF", "SAR", "SBD", "SCR", "SEK", "SGD", "SHP", "SLL", "SOS", "SZL", "THB", "TND", "TOP", "TRY", "TTD", "TWD", "TZS", "UAH", "UGX", "USD", "UYU", "UZS", "VEF", "VND", "VUV", "WST", "XAF", "XCD", "XOF", "XPF", "YER", "ZAR", "ZMW"), measurementSystems = Seq("metric", "imperial"), timezones = Seq("Africa/Algiers", "America/Chicago", "America/Los_Angeles", "America/New_York", "Asia/Chongqing", "Australia/ACT", "Canada/Eastern", "GMT", "Mexico/General"))
   val Yemen = Region(id = "yem", name = "Yemen", countries = Seq("YEM"), languages = Seq("ar"), currencies = Seq("YER"), measurementSystems = Seq("metric"), timezones = Nil)
   val Zambia = Region(id = "zmb", name = "Zambia", countries = Seq("ZMB"), languages = Seq("en"), currencies = Seq("ZMW"), measurementSystems = Seq("metric"), timezones = Nil)
+  val Zimbabwe = Region(id = "zwe", name = "Zimbabwe", countries = Seq("ZWE"), languages = Seq("en", "nd", "sn"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val ÅlandIslands = Region(id = "ala", name = "Åland Islands", countries = Seq("ALA"), languages = Seq("sv"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
 
   val all = Seq(
+    Afghanistan,
     Africa,
     Albania,
     Algeria,
@@ -251,6 +281,7 @@ object Regions {
     Bahrain,
     Bangladesh,
     Barbados,
+    Belarus,
     Belgium,
     Belize,
     Benin,
@@ -260,11 +291,14 @@ object Regions {
     BonaireSintEustatiusAndSaba,
     BosniaAndHerzegovina,
     Botswana,
+    BouvetIsland,
     Brazil,
+    BritishIndianOceanTerritory,
     BritishVirginIslands,
     BruneiDarussalam,
     Bulgaria,
     BurkinaFaso,
+    Burundi,
     CaboVerde,
     Cambodia,
     Cameroon,
@@ -274,17 +308,21 @@ object Regions {
     Chad,
     Chile,
     China,
+    ChristmasIsland,
+    CocosKeelingIslands,
     Colombia,
     Comoros,
     Congo,
     CookIslands,
     CostaRica,
     Croatia,
+    Cuba,
     Curaçao,
     Cyprus,
     Czechia,
     CôteDIvoire,
     DemocraticPeopleSRepublicOfKorea,
+    DemocraticRepublicOfTheCongo,
     Denmark,
     Djibouti,
     Dominica,
@@ -293,6 +331,7 @@ object Regions {
     Egypt,
     ElSalvador,
     EquatorialGuinea,
+    Eritrea,
     Estonia,
     Eswatini,
     Ethiopia,
@@ -307,6 +346,7 @@ object Regions {
     France,
     FrenchGuiana,
     FrenchPolynesia,
+    FrenchSouthernTerritories,
     Gabon,
     Gambia,
     Georgia,
@@ -324,6 +364,7 @@ object Regions {
     GuineaMinusBissau,
     Guyana,
     Haiti,
+    HeardIslandAndMcdonaldIslands,
     HolySee,
     Honduras,
     HongKong,
@@ -331,7 +372,10 @@ object Regions {
     Iceland,
     India,
     Indonesia,
+    IranIslamicRepublicOf,
+    Iraq,
     Ireland,
+    IsleOfMan,
     Israel,
     Italy,
     Jamaica,
@@ -347,6 +391,7 @@ object Regions {
     Latvia,
     Lebanon,
     Lesotho,
+    Liberia,
     Libya,
     Liechtenstein,
     Lithuania,
@@ -371,6 +416,7 @@ object Regions {
     Montserrat,
     Morocco,
     Mozambique,
+    Myanmar,
     Namibia,
     Nauru,
     Nepal,
@@ -381,6 +427,7 @@ object Regions {
     Niger,
     Nigeria,
     Niue,
+    NorfolkIsland,
     NorthAmerica,
     NorthernMarianaIslands,
     Norway,
@@ -393,6 +440,7 @@ object Regions {
     Paraguay,
     Peru,
     Philippines,
+    Pitcairn,
     Poland,
     Portugal,
     Qatar,
@@ -428,17 +476,22 @@ object Regions {
     SouthSudan,
     Spain,
     SriLanka,
+    Sudan,
     Suriname,
+    SvalbardAndJanMayenIslands,
     Sweden,
     Switzerland,
+    SyrianArabRepublic,
     Taiwan,
     Tajikistan,
     Thailand,
+    TheFormerYugoslavRepublicOfMacedonia,
     TimorMinusLeste,
     Togo,
     Tokelau,
     Tonga,
     TrinidadAndTobago,
+    Tunisia,
     Turkey,
     Turkmenistan,
     TurksAndCaicosIslands,
@@ -448,16 +501,21 @@ object Regions {
     UnitedArabEmirates,
     UnitedKingdom,
     UnitedRepublicOfTanzania,
+    UnitedStatesMinorOutlyingIslands,
     UnitedStatesOfAmerica,
+    UnitedStatesVirginIslands,
     Uruguay,
     Uzbekistan,
     Vanuatu,
     Venezuela,
     Vietnam,
     WallisAndFutunaIslands,
+    WesternSahara,
     World,
     Yemen,
-    Zambia
+    Zambia,
+    Zimbabwe,
+    ÅlandIslands
   )
 
 }
