@@ -136,6 +136,7 @@ object Locales {
   val EnZa = Locale(id = "en-ZA", name = "English - South Africa", country = "ZAF", language = "en", numbers = LocaleNumbers(decimal = ",", group = " "))
   val EnSe = Locale(id = "en-SE", name = "English - Sweden", country = "SWE", language = "en", numbers = LocaleNumbers(decimal = ",", group = " "))
   val EnCh = Locale(id = "en-CH", name = "English - Switzerland", country = "CHE", language = "en", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val EnTk = Locale(id = "en-TK", name = "English - Tokelau", country = "TKL", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnTo = Locale(id = "en-TO", name = "English - Tonga", country = "TON", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnTt = Locale(id = "en-TT", name = "English - Trinidad and Tobago", country = "TTO", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnTc = Locale(id = "en-TC", name = "English - Turks and Caicos Islands", country = "TCA", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -311,7 +312,7 @@ object Locales {
   val Th = Locale(id = "th", name = "Thai - Thailand", country = "THA", language = "th", numbers = LocaleNumbers(decimal = ".", group = ","))
   val TrCy = Locale(id = "tr-CY", name = "Turkish - Cyprus", country = "CYP", language = "tr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Tr = Locale(id = "tr", name = "Turkish - Turkey", country = "TUR", language = "tr", numbers = LocaleNumbers(decimal = ",", group = "."))
-  val TkTm = Locale(id = "tk-TM", name = "Turkmen - Turkmenistan", country = "TKM", language = "tk", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val Tk = Locale(id = "tk", name = "Turkmen - Tokelau", country = "TKL", language = "tk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val UkUa = Locale(id = "uk-UA", name = "Ukrainian - Ukraine", country = "UKR", language = "uk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val UrIn = Locale(id = "ur-IN", name = "Urdu - India", country = "IND", language = "ur", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Uz = Locale(id = "uz", name = "Uzbek - Uzbekistan", country = "UZB", language = "uz", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -453,6 +454,7 @@ object Locales {
     EnZa,
     EnSe,
     EnCh,
+    EnTk,
     EnTo,
     EnTt,
     EnTc,
@@ -628,7 +630,7 @@ object Locales {
     Th,
     TrCy,
     Tr,
-    TkTm,
+    Tk,
     UkUa,
     UrIn,
     Uz,
