@@ -11,6 +11,7 @@ object Countries {
   val And = Country(iso31662 = "AD", iso31663 = "AND", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Andorra", languages = Seq("ca"), timezones = Nil)
   val Ago = Country(iso31662 = "AO", iso31663 = "AGO", defaultCurrency = Some("AOA"), measurementSystem = "metric", name = "Angola", languages = Seq("kg", "kj", "pt"), timezones = Nil)
   val Aia = Country(iso31662 = "AI", iso31663 = "AIA", defaultCurrency = Some("XCD"), measurementSystem = "metric", name = "Anguilla", languages = Nil, timezones = Nil)
+  val Ata = Country(iso31662 = "AQ", iso31663 = "ATA", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "Antarctica", languages = Nil, timezones = Nil)
   val Atg = Country(iso31662 = "AG", iso31663 = "ATG", defaultCurrency = Some("XCD"), measurementSystem = "metric", name = "Antigua and Barbuda", languages = Seq("en"), timezones = Nil)
   val Arg = Country(iso31662 = "AR", iso31663 = "ARG", defaultCurrency = Some("ARS"), measurementSystem = "metric", name = "Argentina", languages = Seq("es"), timezones = Nil)
   val Arm = Country(iso31662 = "AM", iso31663 = "ARM", defaultCurrency = Some("AMD"), measurementSystem = "metric", name = "Armenia", languages = Seq("hy"), timezones = Nil)
@@ -207,9 +208,11 @@ object Countries {
   val Slb = Country(iso31662 = "SB", iso31663 = "SLB", defaultCurrency = Some("SBD"), measurementSystem = "metric", name = "Solomon Islands", languages = Seq("en"), timezones = Nil)
   val Som = Country(iso31662 = "SO", iso31663 = "SOM", defaultCurrency = Some("SOS"), measurementSystem = "metric", name = "Somalia", languages = Seq("ar", "so"), timezones = Nil)
   val Zaf = Country(iso31662 = "ZA", iso31663 = "ZAF", defaultCurrency = Some("ZAR"), measurementSystem = "metric", name = "South Africa", languages = Seq("af", "en", "nd", "nr", "ss", "st", "tn", "ts", "ve", "xh", "zu"), timezones = Nil)
+  val Sgs = Country(iso31662 = "GS", iso31663 = "SGS", defaultCurrency = Some("GBP"), measurementSystem = "metric", name = "South Georgia and the South Sandwich Islands", languages = Nil, timezones = Nil)
   val Ssd = Country(iso31662 = "SS", iso31663 = "SSD", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "South Sudan", languages = Seq("en"), timezones = Nil)
   val Esp = Country(iso31662 = "ES", iso31663 = "ESP", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Spain", languages = Seq("es"), timezones = Nil)
   val Lka = Country(iso31662 = "LK", iso31663 = "LKA", defaultCurrency = Some("LKR"), measurementSystem = "metric", name = "Sri Lanka", languages = Seq("en", "si", "ta"), timezones = Nil)
+  val Pse = Country(iso31662 = "PS", iso31663 = "PSE", defaultCurrency = Some("JOD"), measurementSystem = "metric", name = "State of Palestine", languages = Nil, timezones = Nil)
   val Sdn = Country(iso31662 = "SD", iso31663 = "SDN", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Sudan", languages = Seq("ar", "en"), timezones = Nil)
   val Sur = Country(iso31662 = "SR", iso31663 = "SUR", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Suriname", languages = Seq("nl"), timezones = Nil)
   val Sjm = Country(iso31662 = "SJ", iso31663 = "SJM", defaultCurrency = Some("NOK"), measurementSystem = "metric", name = "Svalbard and Jan Mayen Islands", languages = Nil, timezones = Nil)
@@ -258,6 +261,7 @@ object Countries {
     And,
     Ago,
     Aia,
+    Ata,
     Atg,
     Arg,
     Arm,
@@ -454,9 +458,11 @@ object Countries {
     Slb,
     Som,
     Zaf,
+    Sgs,
     Ssd,
     Esp,
     Lka,
+    Pse,
     Sdn,
     Sur,
     Sjm,
