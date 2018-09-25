@@ -41,7 +41,7 @@ class RegionsSpec extends FunSpec with Matchers {
     eurozone.currencies should be(Seq("EUR"))
     eurozone.countries.size > 10 should be(true)
     eurozone.languages.size > 10 should be(true)
-    eurozone.measurementSystems should be(Seq("imperial", "metric"))
+    eurozone.measurementSystems should be(Seq("metric"))
   }
 
   it("find") {
