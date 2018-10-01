@@ -132,6 +132,7 @@ object Locales {
   val EnPg = Locale(id = "en-PG", name = "English - Papua New Guinea", country = "PNG", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnPh = Locale(id = "en-PH", name = "English - Philippines", country = "PHL", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnPn = Locale(id = "en-PN", name = "English - Pitcairn", country = "PCN", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
+  val EnPr = Locale(id = "en-PR", name = "English - Puerto Rico", country = "PRI", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnRw = Locale(id = "en-RW", name = "English - Rwanda", country = "RWA", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnSh = Locale(id = "en-SH", name = "English - Saint Helena", country = "SHN", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EnKn = Locale(id = "en-KN", name = "English - Saint Kitts and Nevis", country = "KNA", language = "en", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -317,6 +318,7 @@ object Locales {
   val EsPy = Locale(id = "es-PY", name = "Spanish - Paraguay", country = "PRY", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EsPe = Locale(id = "es-PE", name = "Spanish - Peru", country = "PER", language = "es", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EsPh = Locale(id = "es-PH", name = "Spanish - Philippines", country = "PHL", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val EsPr = Locale(id = "es-PR", name = "Spanish - Puerto Rico", country = "PRI", language = "es", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Es = Locale(id = "es", name = "Spanish - Spain", country = "ESP", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
   val EsUs = Locale(id = "es-US", name = "Spanish - United States of America", country = "USA", language = "es", numbers = LocaleNumbers(decimal = ".", group = ","))
   val EsUy = Locale(id = "es-UY", name = "Spanish - Uruguay", country = "URY", language = "es", numbers = LocaleNumbers(decimal = ",", group = "."))
@@ -475,6 +477,7 @@ object Locales {
     EnPg,
     EnPh,
     EnPn,
+    EnPr,
     EnRw,
     EnSh,
     EnKn,
@@ -660,6 +663,7 @@ object Locales {
     EsPy,
     EsPe,
     EsPh,
+    EsPr,
     Es,
     EsUs,
     EsUy,

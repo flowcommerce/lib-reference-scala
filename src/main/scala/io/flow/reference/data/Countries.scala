@@ -179,6 +179,7 @@ object Countries {
   val Pcn = Country(iso31662 = "PN", iso31663 = "PCN", defaultCurrency = Some("NZD"), measurementSystem = "metric", name = "Pitcairn", languages = Nil, timezones = Nil)
   val Pol = Country(iso31662 = "PL", iso31663 = "POL", defaultCurrency = Some("PLN"), measurementSystem = "metric", name = "Poland", languages = Seq("pl"), timezones = Nil)
   val Prt = Country(iso31662 = "PT", iso31663 = "PRT", defaultCurrency = Some("EUR"), measurementSystem = "metric", name = "Portugal", languages = Seq("pt"), timezones = Nil)
+  val Pri = Country(iso31662 = "PR", iso31663 = "PRI", defaultCurrency = Some("USD"), measurementSystem = "metric", name = "Puerto Rico", languages = Seq("es"), timezones = Nil)
   val Qat = Country(iso31662 = "QA", iso31663 = "QAT", defaultCurrency = Some("QAR"), measurementSystem = "metric", name = "Qatar", languages = Seq("ar"), timezones = Nil)
   val Kor = Country(iso31662 = "KR", iso31663 = "KOR", defaultCurrency = Some("KRW"), measurementSystem = "metric", name = "Republic of Korea", languages = Seq("ko"), timezones = Nil)
   val Mda = Country(iso31662 = "MD", iso31663 = "MDA", defaultCurrency = Some("MDL"), measurementSystem = "metric", name = "Republic of Moldova", languages = Seq("ro"), timezones = Nil)
@@ -429,6 +430,7 @@ object Countries {
     Pcn,
     Pol,
     Prt,
+    Pri,
     Qat,
     Kor,
     Mda,
