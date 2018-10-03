@@ -11,6 +11,7 @@ object CarrierServices {
   val CanadaPostRegularParcel = CarrierService(id = "canada-post-regular-parcel", name = "Regular Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val CanadaPostXpresspost = CarrierService(id = "canada-post-xpresspost", name = "Xpresspost", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val DhlEcommerceStandard = CarrierService(id = "dhl-ecommerce-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
+  val DhlEconomySelect = CarrierService(id = "dhl-economy-select", name = "Economy Select", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlExpressWorldwide = CarrierService(id = "dhl-express-worldwide", name = "Express Worldwide", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlGlobalMailPacketPlus = CarrierService(id = "dhl-global-mail-packet-plus", name = "Packet Plus", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlParcelInternationalDirect = CarrierService(id = "dhl-parcel-international-direct", name = "International Direct", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
@@ -24,9 +25,11 @@ object CarrierServices {
   val LaPosteColissimo = CarrierService(id = "la-poste-colissimo", name = "Colissimo", carrier = io.flow.reference.v0.models.Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code="))
   val LandmarkGlobal = CarrierService(id = "landmark-global", name = "Global", carrier = io.flow.reference.v0.models.Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck="))
   val SfExpressEconomyExpressParcel = CarrierService(id = "sf-express-economy-express-parcel", name = "Economy Express Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/"))
+  val UpsExpressInternational = CarrierService(id = "ups-express-international", name = "Express International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
   val UpsExpressSaver = CarrierService(id = "ups-express-saver", name = "Express Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
   val UpsGround = CarrierService(id = "ups-ground", name = "Ground", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
   val UpsInternationalImport = CarrierService(id = "ups-international-import", name = "International Import", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
+  val UpsStandardInternational = CarrierService(id = "ups-standard-international", name = "Standard International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
   val UspsPriorityMailInternational = CarrierService(id = "usps-priority-mail-international", name = "Priority Mail International", carrier = io.flow.reference.v0.models.Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/"))
   val WnDirectStandard = CarrierService(id = "wn-direct-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref="))
 
@@ -38,6 +41,7 @@ object CarrierServices {
     CanadaPostRegularParcel,
     CanadaPostXpresspost,
     DhlEcommerceStandard,
+    DhlEconomySelect,
     DhlExpressWorldwide,
     DhlGlobalMailPacketPlus,
     DhlParcelInternationalDirect,
@@ -51,9 +55,11 @@ object CarrierServices {
     LaPosteColissimo,
     LandmarkGlobal,
     SfExpressEconomyExpressParcel,
+    UpsExpressInternational,
     UpsExpressSaver,
     UpsGround,
     UpsInternationalImport,
+    UpsStandardInternational,
     UspsPriorityMailInternational,
     WnDirectStandard
   )
