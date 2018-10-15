@@ -327,4 +327,14 @@ class CountriesSpec extends FunSpec with Matchers {
     Countries.validateSingle("Mars") should be(Left("The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."))
   }
 
+  it("proper default language") {
+    import io.flow.reference.data.Countries._
+    import io.flow.reference.data.Languages._
+
+    Usa.defaultLanguage should equal(Some(En.iso6392))
+    Gbr.defaultLanguage should equal(Some(En.iso6392))
+    Ita.defaultLanguage should equal(Some(It.iso6392))
+    Chn.defaultLanguage should equal(Some(Zh.iso6392))
+  }
+
 }
