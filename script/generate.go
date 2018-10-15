@@ -130,9 +130,16 @@ func processCountries() {
 			defaultCurrency = fmt.Sprintf("Some(\"%s\")", c.DefaultCurrency)
 		}
 
+		var defaultLanguage string
+		if c.DefaultLanguage == "" {
+			defaultLanguage = "None"
+		} else {
+			defaultLanguage = fmt.Sprintf("Some(\"%s\")", c.DefaultLanguage)
+		}
+
 		instances = append(instances, Instance{
 			Name:  c.Iso_3166_3,
-			Value: fmt.Sprintf("Country(iso31662 = \"%s\", iso31663 = \"%s\", defaultCurrency = %s, measurementSystem = \"%s\", name = \"%s\", languages = %s, timezones = %s)", c.Iso_3166_2, c.Iso_3166_3, defaultCurrency, measurementSystem, c.Name, scalaArrayQuoted(c.Languages), scalaArrayQuoted(c.Timezones)),
+			Value: fmt.Sprintf("Country(iso31662 = \"%s\", iso31663 = \"%s\", defaultCurrency = %s, defaultLanguage = %s, measurementSystem = \"%s\", name = \"%s\", languages = %s, timezones = %s)", c.Iso_3166_2, c.Iso_3166_3, defaultCurrency, defaultLanguage, measurementSystem, c.Name, scalaArrayQuoted(c.Languages), scalaArrayQuoted(c.Timezones)),
 		})
 	}
 
