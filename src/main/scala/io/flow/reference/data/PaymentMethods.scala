@@ -9,6 +9,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/ach/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/ach/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"))
+  val Afterpay = PaymentMethod(id = "afterpay", `type` = PaymentMethodType.Online, name = "Afterpay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/afterpay/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/afterpay/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/afterpay/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val Alipay = PaymentMethod(id = "alipay", `type` = PaymentMethodType.Online, name = "Alipay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/alipay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/alipay/60/original.png", width = 100, height = 60),
@@ -202,6 +207,7 @@ object PaymentMethods {
 
   val all = Seq(
     Ach,
+    Afterpay,
     Alipay,
     AmericanExpress,
     ApplePay,
