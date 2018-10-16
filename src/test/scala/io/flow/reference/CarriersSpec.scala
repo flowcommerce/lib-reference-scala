@@ -29,7 +29,7 @@ class CarriersSpec extends FunSpec with Matchers {
       }
     }
 
-    Carriers.find("other") should be(None)
+    Carriers.find("blah") should be(None)
   }
 
   it("mustFind") {
@@ -42,8 +42,8 @@ class CarriersSpec extends FunSpec with Matchers {
     }
 
     intercept[Throwable] {
-      Carriers.mustFind("other")
-    }.getMessage should be("The following carrier is invalid: [other]. See https://api.flow.io/reference/carriers for a list of all valid carriers.")
+      Carriers.mustFind("blah")
+    }.getMessage should be("The following carrier is invalid: [blah]. See https://api.flow.io/reference/carriers for a list of all valid carriers.")
   }
 
 }
