@@ -100,4 +100,10 @@ class LocalesSpec extends FunSpec with Matchers {
     data.Locales.EnUs.id should be("en-US")
     data.Locales.JaJp.id should be("ja-JP")
   }
+
+  it("supports dashes and underscores") {
+    Seq("fr", "en_us", "EN_US", " EN_US ", "en-us", "en-US").filter { l =>
+      Locales.find(l).isEmpty
+    } should be(Nil)
+  }
 }

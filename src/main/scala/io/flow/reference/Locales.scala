@@ -4,14 +4,16 @@ import io.flow.reference.v0.models.Locale
 
 object Locales extends Validation[Locale] {
   override val cache: Map[String, Locale] = Map(
-    data.Locales.all.map { l =>
-      (l.id.toLowerCase -> l)
+    data.Locales.all.flatMap { l =>
+      variations(l.id).map { key =>
+        key -> l
+      }
     }: _*
   )
 
-  override def singular = "locale"
-  override def plural = "locales"
-  override def name(l: Locale) = l.id
+  override def singular: String = "locale"
+  override def plural: String = "locales"
+  override def name(l: Locale): String = l.id
 
   /**
     * Filters locales based on the query parameter by:
@@ -32,5 +34,13 @@ object Locales extends Validation[Locale] {
     }.getOrElse(Nil)
 
     (byId ++ byCountry ++ byLanguage).distinct
-  }  
+  }
+
+  private[this] def variations(id: String): Seq[String] = {
+    id.trim.toLowerCase().split("-").toList match {
+      case one :: Nil => Seq(one)
+      case one :: two :: Nil => Seq(s"${one}_$two", s"$one-$two")
+      case _ => sys.error(s"Unexpected locale with id[$id]")
+    }
+  }
 }
