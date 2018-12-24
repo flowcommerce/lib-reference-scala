@@ -14,10 +14,10 @@ object Provinces extends Validation[Province] {
   override def name(p: Province) = p.id
 
   def query(q: Option[String], countriesOpt: Option[Seq[String]]): Seq[Province] = {
-    /**
-      * If q is provided, use that to narrow down by id, name, and iso31662 code
-      * Otherwise, just return everything
-      */
+    /*
+     * If q is provided, use that to narrow down by id, name, and iso31662 code
+     * Otherwise, just return everything
+     */
     val found: Seq[Province] = q match {
       case None => {
         data.Provinces.all
@@ -33,9 +33,9 @@ object Provinces extends Validation[Province] {
       }
     }
 
-    /**
-      * If a list of countries is passed, use that to filter the list
-      */
+    /*
+     * If a list of countries is passed, use that to filter the list
+     */
     val finalList: Seq[Province] = countriesOpt match {
       case Some(countries) => found.filter { p => countries.map(_.toLowerCase).contains(p.country.toLowerCase) }
       case None => found
