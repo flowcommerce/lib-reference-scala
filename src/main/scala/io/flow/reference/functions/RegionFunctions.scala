@@ -1,6 +1,6 @@
 package io.flow.reference.functions
 
-import io.flow.reference.{Regions, data}
+import io.flow.reference.data
 import io.flow.reference.v0.models.Region
 
 import scala.annotation.tailrec

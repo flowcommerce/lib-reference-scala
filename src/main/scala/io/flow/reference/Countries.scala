@@ -47,7 +47,7 @@ object Countries extends Validation[Country] {
 
       case Right(countries) => {
         countries.toList match {
-          case a :: b :: Nil => Right(a, b)
+          case a :: b :: Nil => Right(a -> b)
           case _ => sys.error(s"validateN should have returned 2 items but instead returned: ${countries.size}")
         }
       }

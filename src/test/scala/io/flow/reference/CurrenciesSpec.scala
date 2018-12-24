@@ -5,8 +5,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class CurrenciesSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   it("have unique fields") {
     data.Currencies.all.map(_.name) should be(data.Currencies.all.map(_.name).distinct)
     data.Currencies.all.map(_.iso42173) should be(data.Currencies.all.map(_.iso42173).distinct)
