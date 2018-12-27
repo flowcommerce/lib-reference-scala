@@ -69,7 +69,7 @@ trait Validation[T] {
     s"The following${formatted(prefix)} $singular${formatted(suffix)} is invalid: [$id].${formatted(singularReferenceLink)}"
   }
 
-  private[this] def manyInvalid(ids: Seq[String], prefix: String = "", suffix: String = ""): String = {
+  private[this] def manyInvalid(ids: Seq[String], prefix: String, suffix: String): String = {
     s"The following${formatted(prefix)} $plural${formatted(suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s".${formatted(pluralReferenceLink)}"
   }
 

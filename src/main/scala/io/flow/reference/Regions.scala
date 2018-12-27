@@ -1,6 +1,6 @@
 package io.flow.reference
 
-import io.flow.reference.v0.models.{Country, Region}
+import io.flow.reference.v0.models.Region
 
 object Regions extends Validation[Region] {
 

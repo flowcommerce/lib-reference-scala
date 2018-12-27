@@ -4,8 +4,6 @@ import org.scalatest.{FunSpec, Matchers}
 
 class CountriesSpec extends FunSpec with Matchers {
 
-  import scala.concurrent.ExecutionContext.Implicits.global
-
   private[this] lazy val chn = Countries.find("CHN").getOrElse {
     sys.error("CHN Missing")
   }
