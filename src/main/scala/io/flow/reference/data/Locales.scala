@@ -242,6 +242,7 @@ object Locales {
   val Rw = Locale(id = "rw", name = "Kinyarwanda - Rwanda", country = "RWA", language = "rw", numbers = LocaleNumbers(decimal = ",", group = "."))
   val RnBi = Locale(id = "rn-BI", name = "Kirundi - Burundi", country = "BDI", language = "rn", numbers = LocaleNumbers(decimal = ",", group = "."))
   val KoKp = Locale(id = "ko-KP", name = "Korean - Democratic People's Republic of Korea", country = "PRK", language = "ko", numbers = LocaleNumbers(decimal = ".", group = ","))
+  val KoKr = Locale(id = "ko-KR", name = "Korean - Korea", country = "KOR", language = "ko", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Ky = Locale(id = "ky", name = "Kyrgyz - Cayman Islands", country = "CYM", language = "ky", numbers = LocaleNumbers(decimal = ",", group = " "))
   val LoLa = Locale(id = "lo-LA", name = "Lao - Lao People's Democratic Republic", country = "LAO", language = "lo", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lv = Locale(id = "lv", name = "Latvian - Latvia", country = "LVA", language = "lv", numbers = LocaleNumbers(decimal = ",", group = " "))
@@ -587,6 +588,7 @@ object Locales {
     Rw,
     RnBi,
     KoKp,
+    KoKr,
     Ky,
     LoLa,
     Lv,
