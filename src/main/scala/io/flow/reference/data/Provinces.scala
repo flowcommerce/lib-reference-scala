@@ -184,7 +184,7 @@ object Provinces {
   val RouIs = Province(id = "ROU-IS", iso31662 = "IS", name = "Iași", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val RouMh = Province(id = "ROU-MH", iso31662 = "MH", name = "Mehedinți", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val RouMm = Province(id = "ROU-MM", iso31662 = "MM", name = "Maramureș", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
-  val RouMs = Province(id = "ROU-MS", iso31662 = "MS", name = "Mures", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
+  val RouMs = Province(id = "ROU-MS", iso31662 = "MS", name = "Mureș", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val RouNt = Province(id = "ROU-NT", iso31662 = "NT", name = "Neamț", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val RouOt = Province(id = "ROU-OT", iso31662 = "OT", name = "Olt", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
   val RouPh = Province(id = "ROU-PH", iso31662 = "PH", name = "Prahova", country = "ROU", provinceType = io.flow.reference.v0.models.ProvinceType("other"), translations = Some(Seq()))
