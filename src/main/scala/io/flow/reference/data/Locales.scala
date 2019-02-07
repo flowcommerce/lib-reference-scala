@@ -50,6 +50,7 @@ object Locales {
   val ZhHk = Locale(id = "zh-HK", name = "Chinese - Hong Kong SAR", country = "HKG", language = "zh", numbers = LocaleNumbers(decimal = ".", group = ","))
   val ZhMo = Locale(id = "zh-MO", name = "Chinese - Macau SAR", country = "MAC", language = "zh", numbers = LocaleNumbers(decimal = ".", group = ","))
   val ZhSg = Locale(id = "zh-SG", name = "Chinese - Singapore", country = "SGP", language = "zh", numbers = LocaleNumbers(decimal = ".", group = ","))
+  val ZhTw = Locale(id = "zh-TW", name = "Chinese - Taiwan", country = "TWN", language = "zh", numbers = LocaleNumbers(decimal = ".", group = ","))
   val HrBa = Locale(id = "hr-BA", name = "Croatian - Bosnia and Herzegovina", country = "BIH", language = "hr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Hr = Locale(id = "hr", name = "Croatian - Croatia", country = "HRV", language = "hr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val DaDk = Locale(id = "da-DK", name = "Danish - Denmark", country = "DNK", language = "da", numbers = LocaleNumbers(decimal = ",", group = "."))
@@ -329,8 +330,8 @@ object Locales {
   val SwKe = Locale(id = "sw-KE", name = "Swahili - Kenya", country = "KEN", language = "sw", numbers = LocaleNumbers(decimal = ".", group = ","))
   val SwSe = Locale(id = "sw-SE", name = "Swahili - Sweden", country = "SWE", language = "sw", numbers = LocaleNumbers(decimal = ",", group = " "))
   val SwUg = Locale(id = "sw-UG", name = "Swahili - Uganda", country = "UGA", language = "sw", numbers = LocaleNumbers(decimal = ".", group = ","))
-  val Sv = Locale(id = "sv", name = "Swedish - El Salvador", country = "SLV", language = "sv", numbers = LocaleNumbers(decimal = ",", group = " "))
   val SvFi = Locale(id = "sv-FI", name = "Swedish - Finland", country = "FIN", language = "sv", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val SvSe = Locale(id = "sv-SE", name = "Swedish - Sweden", country = "SWE", language = "sv", numbers = LocaleNumbers(decimal = ",", group = " "))
   val SvAx = Locale(id = "sv-AX", name = "Swedish - Åland Islands", country = "ALA", language = "sv", numbers = LocaleNumbers(decimal = ",", group = " "))
   val TaMy = Locale(id = "ta-MY", name = "Tamil - Malaysia", country = "MYS", language = "ta", numbers = LocaleNumbers(decimal = ".", group = ","))
   val TaSg = Locale(id = "ta-SG", name = "Tamil - Singapore", country = "SGP", language = "ta", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -344,7 +345,7 @@ object Locales {
   val UkUa = Locale(id = "uk-UA", name = "Ukrainian - Ukraine", country = "UKR", language = "uk", numbers = LocaleNumbers(decimal = ",", group = " "))
   val UrIn = Locale(id = "ur-IN", name = "Urdu - India", country = "IND", language = "ur", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Uz = Locale(id = "uz", name = "Uzbek - Uzbekistan", country = "UZB", language = "uz", numbers = LocaleNumbers(decimal = ",", group = " "))
-  val Vi = Locale(id = "vi", name = "Vietnamese - United States Virgin Islands", country = "VIR", language = "vi", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val ViVn = Locale(id = "vi-VN", name = "Vietnamese - Vietnam", country = "VNM", language = "vi", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Cy = Locale(id = "cy", name = "Welsh - Cyprus", country = "CYP", language = "cy", numbers = LocaleNumbers(decimal = ".", group = ","))
   val YoBj = Locale(id = "yo-BJ", name = "Yoruba - Benin", country = "BEN", language = "yo", numbers = LocaleNumbers(decimal = ".", group = ","))
   val ZuZa = Locale(id = "zu-ZA", name = "Zulu - South Africa", country = "ZAF", language = "zu", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -396,6 +397,7 @@ object Locales {
     ZhHk,
     ZhMo,
     ZhSg,
+    ZhTw,
     HrBa,
     Hr,
     DaDk,
@@ -675,8 +677,8 @@ object Locales {
     SwKe,
     SwSe,
     SwUg,
-    Sv,
     SvFi,
+    SvSe,
     SvAx,
     TaMy,
     TaSg,
@@ -690,7 +692,7 @@ object Locales {
     UkUa,
     UrIn,
     Uz,
-    Vi,
+    ViVn,
     Cy,
     YoBj,
     ZuZa
