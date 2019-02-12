@@ -37,5 +37,5 @@ scalacOptions += "-P:silencer:pathFilters=src/main/scala/io/flow/generated/.*"
 // Make sure you only exclude warnings for the project directories, i.e. make builds reproducible
 scalacOptions += s"-P:silencer:sourceRoots=${baseDirectory.value.getCanonicalPath}"
 
-version := "0.2.25"
-version := "0.2.26"
+version := "0.2.27"
+version := "0.2.27"
