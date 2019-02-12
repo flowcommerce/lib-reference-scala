@@ -27,6 +27,8 @@ object CarrierServices {
   val OtherFreight = CarrierService(id = "other-freight", name = "Freight", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
   val OtherLtl = CarrierService(id = "other-ltl", name = "Less Than Truckload", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
   val OtherPostal = CarrierService(id = "other-postal", name = "Postal", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
+  val RrdonnelleyInternationalIpa = CarrierService(id = "rrdonnelley-international-ipa", name = "International IPA", carrier = io.flow.reference.v0.models.Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"))
+  val RrdonnelleyInternationalPpdc = CarrierService(id = "rrdonnelley-international-ppdc", name = "International PPDC", carrier = io.flow.reference.v0.models.Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"))
   val SfExpressEconomyExpressParcel = CarrierService(id = "sf-express-economy-express-parcel", name = "Economy Express Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/"))
   val UpsExpressInternational = CarrierService(id = "ups-express-international", name = "Express International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
   val UpsExpressSaver = CarrierService(id = "ups-express-saver", name = "Express Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
@@ -60,6 +62,8 @@ object CarrierServices {
     OtherFreight,
     OtherLtl,
     OtherPostal,
+    RrdonnelleyInternationalIpa,
+    RrdonnelleyInternationalPpdc,
     SfExpressEconomyExpressParcel,
     UpsExpressInternational,
     UpsExpressSaver,

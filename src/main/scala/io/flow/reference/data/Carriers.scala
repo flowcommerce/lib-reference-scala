@@ -15,6 +15,7 @@ object Carriers {
   val LaPoste = Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=")
   val Landmark = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck=")
   val Other = Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/")
+  val Rrdonnelley = Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/")
   val SfExpress = Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/")
   val Ups = Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/")
   val Usps = Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/")
@@ -32,6 +33,7 @@ object Carriers {
     LaPoste,
     Landmark,
     Other,
+    Rrdonnelley,
     SfExpress,
     Ups,
     Usps,
