@@ -38,4 +38,3 @@ scalacOptions += "-P:silencer:pathFilters=src/main/scala/io/flow/generated/.*"
 scalacOptions += s"-P:silencer:sourceRoots=${baseDirectory.value.getCanonicalPath}"
 
 version := "0.2.27"
-version := "0.2.27"
