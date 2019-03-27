@@ -76,7 +76,7 @@ trait Validation[T] {
   def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = {
     ids match {
       case Nil => Nil
-      case one :: Nil => Seq(singleInvalid(one, prefix, suffix))
+      case Seq(one) => Seq(singleInvalid(one, prefix, suffix))
       case multiple => Seq(manyInvalid(multiple, prefix, suffix))
     }
   }
