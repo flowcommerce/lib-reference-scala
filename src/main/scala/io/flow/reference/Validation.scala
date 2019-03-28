@@ -73,11 +73,13 @@ trait Validation[T] {
     s"The following${formatted(prefix)} $plural${formatted(suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s".${formatted(pluralReferenceLink)}"
   }
 
-  def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = {
+  def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = invalidErrorOpt(ids, prefix, suffix).toSeq
+
+  private def invalidErrorOpt(ids: Seq[String], prefix: String, suffix: String): Option[String] = {
     ids match {
-      case Nil => Nil
-      case Seq(one) => Seq(singleInvalid(one, prefix, suffix))
-      case multiple => Seq(manyInvalid(multiple, prefix, suffix))
+      case Nil => None
+      case Seq(one) => Some(singleInvalid(one, prefix, suffix))
+      case multiple => Some(manyInvalid(multiple, prefix, suffix))
     }
   }
 
@@ -95,13 +97,13 @@ trait Validation[T] {
    *  @param prefix A prefix to place before the singular or plural of `T`, such as "destination" to yield "destination country" or "destination countries" if `T` is `Country`.
    *  @param suffix A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or "countries of origin" if `T` is `Country`.
    */
-  def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[Seq[String], Seq[T]] = {
+  def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[String, Seq[T]] = {
     val distinctTrimmedIds = ids.map(_.trim).distinct
     val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validateSingle(id).isRight }
 
-    invalidError(strictlyInvalidIds, prefix, suffix) match {
-      case Nil => Right(distinctTrimmedIds.map(mustFind))
-      case errors => Left(errors)
+    invalidErrorOpt(strictlyInvalidIds, prefix, suffix) match {
+      case None => Right(distinctTrimmedIds.map(mustFind))
+      case Some(error) => Left(error)
     }
   }
 }
