@@ -158,12 +158,12 @@ class CountriesSpec extends FunSpec with Matchers {
   }
 
   it("return an error for invalid countries for both ISO 3166 2- and 3-character codes") {
-    Countries.validate(Seq("Fra", "Mars")) should be(Left(Seq(
+    Countries.validate(Seq("Fra", "Mars")) should be(Left(
       "The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    )))
-    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq(
+    ))
+    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(
       "The following countries are invalid: [Mars], [Venus], [Jupiter]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    )))
+    ))
   }
 
   it("return a list of two errors with prefixes for mixed invalid countries for both 3166 2- and 3-character codes") {
@@ -175,9 +175,9 @@ class CountriesSpec extends FunSpec with Matchers {
       prefix = "destination"
     )
 
-    res0 should be(Seq(
+    res0 should be(
       "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
     // Test ISO3166-3
     val Left(res1) = Countries.validate(
@@ -187,9 +187,9 @@ class CountriesSpec extends FunSpec with Matchers {
       prefix = "destination"
     )
 
-    res1 should be(Seq(
+    res1 should be(
       "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
     // Test both and verify that duplicates (i.e. the ISO 31662 and ISO 31663 for the same country) are ignored
     val Left(res2) = Countries.validate(
@@ -200,9 +200,9 @@ class CountriesSpec extends FunSpec with Matchers {
       prefix = "destination"
     )
 
-    res2 should be(Seq(
+    res2 should be(
       "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
 
     val Left(res3) = Countries.validate(
@@ -213,9 +213,9 @@ class CountriesSpec extends FunSpec with Matchers {
       prefix = "destination"
     )
 
-    res3 should be(Seq(
+    res3 should be(
       "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
     val Left(res4) = Countries.validate(
       ids = Seq(
@@ -227,9 +227,9 @@ class CountriesSpec extends FunSpec with Matchers {
       prefix = "destination"
     )
 
-    res4 should be(Seq(
+    res4 should be(
       "The following destination countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
   }
 
   it("return a list of two errors with suffixes for mixed invalid countries for both 3166 2- and 3-character codes") {
@@ -241,9 +241,9 @@ class CountriesSpec extends FunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res0 should be(Seq(
+    res0 should be(
       "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
     // Test both and verify that duplicates (i.e. the ISO 31662 and ISO 31663 for the same country) are ignored
     val Left(res2) = Countries.validate(
@@ -254,9 +254,9 @@ class CountriesSpec extends FunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res2 should be(Seq(
+    res2 should be(
       "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
 
     // Test with a valid country included
@@ -268,9 +268,9 @@ class CountriesSpec extends FunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res3 should be(Seq(
+    res3 should be(
       "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
 
     // Test with multiple invalid countries
     val Left(res4) = Countries.validate(
@@ -283,9 +283,9 @@ class CountriesSpec extends FunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res4 should be(Seq(
+    res4 should be(
       "The following countries of origin are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
   }
 
   it("trims strings and ignores duplicates") {
@@ -298,9 +298,9 @@ class CountriesSpec extends FunSpec with Matchers {
       )
     )
 
-    res should be(Seq(
+    res should be(
       "The following countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    )
   }
 
   it("successfully validate an empty list of ids") {
