@@ -40,3 +40,4 @@ flowGeneratedFiles ++= Seq(
 scalacOptions += s"-P:silencer:sourceRoots=${baseDirectory.value.getCanonicalPath}"
 
 version := "0.2.30"
+version := "0.2.31"
