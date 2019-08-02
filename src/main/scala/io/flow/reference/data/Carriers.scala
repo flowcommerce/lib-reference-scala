@@ -12,6 +12,7 @@ object Carriers {
   val DhlGlobalMail = Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlParcel = Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val Fedex = Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+  val FedexCrossborder = Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=")
   val Ilg = Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
   val LaPoste = Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=")
   val Landmark = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck=")
@@ -31,6 +32,7 @@ object Carriers {
     DhlGlobalMail,
     DhlParcel,
     Fedex,
+    FedexCrossborder,
     Ilg,
     LaPoste,
     Landmark,

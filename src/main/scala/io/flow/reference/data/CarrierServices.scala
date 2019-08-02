@@ -17,6 +17,8 @@ object CarrierServices {
   val DhlGlobalMailPacketPlus = CarrierService(id = "dhl-global-mail-packet-plus", name = "Packet Plus", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlParcelInternationalDirect = CarrierService(id = "dhl-parcel-international-direct", name = "International Direct", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlParcelInternationalStandard = CarrierService(id = "dhl-parcel-international-standard", name = "International Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
+  val FedexCrossborderEcommerce = CarrierService(id = "fedex-crossborder-ecommerce", name = "E-commerce", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderEcommerceLite = CarrierService(id = "fedex-crossborder-ecommerce-lite", name = "E-commerce Lite", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
   val FedexGround = CarrierService(id = "fedex-ground", name = "Ground", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexInternationalEconomy = CarrierService(id = "fedex-international-economy", name = "International Economy", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexInternationalPriority = CarrierService(id = "fedex-international-priority", name = "International Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
@@ -55,6 +57,8 @@ object CarrierServices {
     DhlGlobalMailPacketPlus,
     DhlParcelInternationalDirect,
     DhlParcelInternationalStandard,
+    FedexCrossborderEcommerce,
+    FedexCrossborderEcommerceLite,
     FedexGround,
     FedexInternationalEconomy,
     FedexInternationalPriority,
