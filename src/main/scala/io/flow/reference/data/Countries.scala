@@ -154,7 +154,7 @@ object Countries {
   val Msr = Country(iso31662 = "MS", iso31663 = "MSR", defaultCurrency = Some("XCD"), defaultLanguage = None, measurementSystem = "metric", name = "Montserrat", languages = Nil, timezones = Nil)
   val Mar = Country(iso31662 = "MA", iso31663 = "MAR", defaultCurrency = Some("MAD"), defaultLanguage = Some("ar"), measurementSystem = "metric", name = "Morocco", languages = Seq("ar"), timezones = Nil)
   val Moz = Country(iso31662 = "MZ", iso31663 = "MOZ", defaultCurrency = Some("EUR"), defaultLanguage = Some("pt"), measurementSystem = "metric", name = "Mozambique", languages = Seq("pt"), timezones = Nil)
-  val Mmr = Country(iso31662 = "MM", iso31663 = "MMR", defaultCurrency = Some("EUR"), defaultLanguage = Some("my"), measurementSystem = "imperial", name = "Myanmar", languages = Seq("my"), timezones = Nil)
+  val Mmr = Country(iso31662 = "MM", iso31663 = "MMR", defaultCurrency = Some("MMK"), defaultLanguage = Some("my"), measurementSystem = "imperial", name = "Myanmar", languages = Seq("my"), timezones = Nil)
   val Nam = Country(iso31662 = "NA", iso31663 = "NAM", defaultCurrency = Some("NAD"), defaultLanguage = Some("en"), measurementSystem = "metric", name = "Namibia", languages = Seq("en"), timezones = Nil)
   val Nru = Country(iso31662 = "NR", iso31663 = "NRU", defaultCurrency = Some("AUD"), defaultLanguage = Some("en"), measurementSystem = "metric", name = "Nauru", languages = Seq("en"), timezones = Nil)
   val Npl = Country(iso31662 = "NP", iso31663 = "NPL", defaultCurrency = Some("NPR"), defaultLanguage = Some("ne"), measurementSystem = "metric", name = "Nepal", languages = Seq("ne"), timezones = Nil)
