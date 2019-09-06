@@ -232,7 +232,7 @@ object Regions {
   val Taiwan = Region(id = "twn", name = "Taiwan", countries = Seq("TWN"), languages = Seq("zh"), currencies = Seq("TWD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Tajikistan = Region(id = "tjk", name = "Tajikistan", countries = Seq("TJK"), languages = Seq("fa", "ru", "tg"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val Thailand = Region(id = "tha", name = "Thailand", countries = Seq("THA"), languages = Seq("th"), currencies = Seq("THB"), measurementSystems = Seq("metric"), timezones = Nil)
-  val TheFormerYugoslavRepublicOfMacedonia = Region(id = "mkd", name = "The former Yugoslav Republic of Macedonia", countries = Seq("MKD"), languages = Seq("mk"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
+  val NorthMacedonia = Region(id = "mkd", name = "North Macedonia", countries = Seq("MKD"), languages = Seq("mk"), currencies = Seq("EUR"), measurementSystems = Seq("metric"), timezones = Nil)
   val TimorMinusLeste = Region(id = "tls", name = "Timor-Leste", countries = Seq("TLS"), languages = Seq("pt"), currencies = Seq("USD"), measurementSystems = Seq("metric"), timezones = Nil)
   val Togo = Region(id = "tgo", name = "Togo", countries = Seq("TGO"), languages = Seq("ee", "fr"), currencies = Seq("XOF"), measurementSystems = Seq("metric"), timezones = Nil)
   val Tokelau = Region(id = "tkl", name = "Tokelau", countries = Seq("TKL"), languages = Nil, currencies = Seq("NZD"), measurementSystems = Seq("metric"), timezones = Nil)
@@ -493,7 +493,7 @@ object Regions {
     Taiwan,
     Tajikistan,
     Thailand,
-    TheFormerYugoslavRepublicOfMacedonia,
+    NorthMacedonia,
     TimorMinusLeste,
     Togo,
     Tokelau,

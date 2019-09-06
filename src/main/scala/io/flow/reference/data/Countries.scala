@@ -223,7 +223,7 @@ object Countries {
   val Twn = Country(iso31662 = "TW", iso31663 = "TWN", defaultCurrency = Some("TWD"), defaultLanguage = Some("zh"), measurementSystem = "metric", name = "Taiwan", languages = Seq("zh"), timezones = Nil)
   val Tjk = Country(iso31662 = "TJ", iso31663 = "TJK", defaultCurrency = Some("EUR"), defaultLanguage = Some("fa"), measurementSystem = "metric", name = "Tajikistan", languages = Seq("fa", "ru", "tg"), timezones = Nil)
   val Tha = Country(iso31662 = "TH", iso31663 = "THA", defaultCurrency = Some("THB"), defaultLanguage = Some("th"), measurementSystem = "metric", name = "Thailand", languages = Seq("th"), timezones = Nil)
-  val Mkd = Country(iso31662 = "MK", iso31663 = "MKD", defaultCurrency = Some("EUR"), defaultLanguage = Some("mk"), measurementSystem = "metric", name = "The former Yugoslav Republic of Macedonia", languages = Seq("mk"), timezones = Nil)
+  val Mkd = Country(iso31662 = "MK", iso31663 = "MKD", defaultCurrency = Some("EUR"), defaultLanguage = Some("mk"), measurementSystem = "metric", name = "North Macedonia", languages = Seq("mk"), timezones = Nil)
   val Tls = Country(iso31662 = "TL", iso31663 = "TLS", defaultCurrency = Some("USD"), defaultLanguage = Some("pt"), measurementSystem = "metric", name = "Timor-Leste", languages = Seq("pt"), timezones = Nil)
   val Tgo = Country(iso31662 = "TG", iso31663 = "TGO", defaultCurrency = Some("XOF"), defaultLanguage = Some("ee"), measurementSystem = "metric", name = "Togo", languages = Seq("ee", "fr"), timezones = Nil)
   val Tkl = Country(iso31662 = "TK", iso31663 = "TKL", defaultCurrency = Some("NZD"), defaultLanguage = None, measurementSystem = "metric", name = "Tokelau", languages = Nil, timezones = Nil)
