@@ -11,6 +11,7 @@ lazy val root = project
   .settings(
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.0.5" % Test,
+      "org.scalacheck" %% "scalacheck" % "1.14.2" % Test,
       compilerPlugin("com.github.ghik" %% "silencer-plugin" % "1.3.0"),
       "com.github.ghik" %% "silencer-lib" % "1.3.0" % Provided,
     ),
