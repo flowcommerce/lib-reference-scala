@@ -55,7 +55,7 @@ object Countries extends Validation[Country] {
   }
 
   def validateN(labelsAndCodes: Seq[(String, String)]): Either[Seq[String], Seq[Country]] = {
-    val invalid = mutable.Map[String, mutable.Set[String]]()
+    val invalid = mutable.Map[String, mutable.ListBuffer[String]]()
     val countries = mutable.ListBuffer[Country]()
 
     labelsAndCodes.foreach { case (label, code) =>
@@ -63,7 +63,7 @@ object Countries extends Validation[Country] {
         case None => {
           invalid.get(label) match {
             case None => {
-              val tmp = mutable.Set[String]()
+              val tmp = mutable.ListBuffer[String]()
               tmp += code
               invalid += (label -> tmp)
             }
