@@ -10,6 +10,7 @@ lazy val root = project
   .in(file("."))
   .settings(
     libraryDependencies ++= Seq(
+      "org.scalameta" %% "scalameta" % "4.2.3",
       "org.scalatest" %% "scalatest" % "3.0.8" % Test,
       compilerPlugin("com.github.ghik" %% "silencer-plugin" % "1.4.4" cross CrossVersion.full),
       "com.github.ghik" %% "silencer-lib" % "1.4.4" % Provided cross CrossVersion.full
