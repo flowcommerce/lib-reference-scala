@@ -2,17 +2,17 @@ name := "lib-reference-scala"
 
 organization := "io.flow"
 
-scalaVersion in ThisBuild := "2.12.10"
+scalaVersion := "2.13.1"
 
-crossScalaVersions := Seq("2.12.10")
+crossScalaVersions := Seq("2.12.10", "2.13.1")
 
 lazy val root = project
   .in(file("."))
   .settings(
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.0.5" % Test,
-      compilerPlugin("com.github.ghik" %% "silencer-plugin" % "1.3.0"),
-      "com.github.ghik" %% "silencer-lib" % "1.3.0" % Provided,
+      "org.scalatest" %% "scalatest" % "3.0.8" % Test,
+      compilerPlugin("com.github.ghik" %% "silencer-plugin" % "1.4.4" cross CrossVersion.full),
+      "com.github.ghik" %% "silencer-lib" % "1.4.4" % Provided cross CrossVersion.full
     ),
     credentials += Credentials(
       "Artifactory Realm",
