@@ -8,7 +8,7 @@ resolvers += "Artifactory" at "https://flow.artifactoryonline.com/flow/libs-rele
 
 addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.10")
 
-addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.2")
+addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.9.11")
 
 resolvers += "Flow Plugins" at "https://flow.jfrog.io/flow/plugins-release/"
 
