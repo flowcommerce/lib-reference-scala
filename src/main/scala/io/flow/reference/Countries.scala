@@ -89,7 +89,7 @@ object Countries extends Validation[Country] {
     }.toSeq
 
     messages.toList match {
-      case Nil => Right(countries)
+      case Nil => Right(countries.toSeq)
       case errors => Left(errors)
     }
   }
