@@ -5,5 +5,3 @@ logs/
 *.swp
 *.swo
 .DS_Store
-*.metals
-*.bloop
