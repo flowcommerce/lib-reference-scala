@@ -125,8 +125,8 @@ class CountriesSpec extends FunSpec with Matchers {
     Countries.validate2("origin", "c", "dest", "A") should be(
       Left(
         List(
+          "Invalid dest 'A'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries",
           "Invalid origin 'c'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries",
-          "Invalid dest 'A'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
         )
       )
     )
@@ -145,8 +145,8 @@ class CountriesSpec extends FunSpec with Matchers {
     Countries.validateN(Seq(("origin", "A"), ("dest", "B"))) should be(
       Left(
         List(
+          "Invalid dest 'B'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries",
           "Invalid origin 'A'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries",
-          "Invalid dest 'B'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
         )
       )
     )

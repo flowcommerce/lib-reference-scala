@@ -1,7 +1,6 @@
 package io.flow.reference
 
 import io.flow.reference.v0.models.Country
-import scala.collection.mutable
 
 object Countries extends Validation[Country] {
 
@@ -55,42 +54,23 @@ object Countries extends Validation[Country] {
   }
 
   def validateN(labelsAndCodes: Seq[(String, String)]): Either[Seq[String], Seq[Country]] = {
-    val invalid = mutable.Map[String, mutable.ListBuffer[String]]()
-    val countries = mutable.ListBuffer[Country]()
+    val labelCountries = labelsAndCodes.map { case (label, code) => (label, code) -> Countries.find(code) }
+    val notFound = labelCountries.collect { case (labelCode, countryOpt) if countryOpt.isEmpty => labelCode }
 
-    labelsAndCodes.foreach { case (label, code) =>
-      Countries.find(code) match {
-        case None => {
-          invalid.get(label) match {
-            case None => {
-              val tmp = mutable.ListBuffer[String]()
-              tmp += code
-              invalid += (label -> tmp)
-            }
-
-            case Some(values) => {
-              values += code
-            }
-          }
+    if (notFound.nonEmpty) {
+      val invalid =
+        notFound
+          .groupBy { case (label, _) => label }
+          .map { case (label, values) => label -> values.map { case (_, code) => code } }
+      val messages =
+        invalid.toSeq.sortBy { case (label, _) => label }.map { case (label, codes) =>
+          s"Invalid $label ${codes.mkString("'", "', '", "'")}. Must be ${if (codes.size == 1) "a " else ""}valid " +
+            s"ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
         }
-
-        case Some(c) => {
-          countries.append(c)
-        }
-      }
+      Left(messages)
     }
 
-    val messages: Seq[String] = invalid.map { case (label, codes) =>
-      if (codes.size == 1) {
-        s"Invalid $label ${codes.mkString("'", "', '", "'")}. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
-      } else {
-        s"Invalid $label ${codes.mkString("'", "', '", "'")}. Must be valid ISO 3166-2 or 3166-3 digit codes. See https://api.flow.io/reference/countries"
-      }
-    }.toSeq
-
-    messages.toList match {
-      case Nil => Right(countries.toSeq)
-      case errors => Left(errors)
-    }
+    else
+      Right(labelCountries.flatMap { case (_, country) => country })
   }
 }
