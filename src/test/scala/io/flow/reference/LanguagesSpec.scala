@@ -1,8 +1,9 @@
 package io.flow.reference
 
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 
-class LanguagesSpec extends FunSpec with Matchers {
+class LanguagesSpec extends AnyFunSpec with Matchers {
 
   it("be unique") {
     data.Languages.all.groupBy(_.name).filter { _._2.size > 1 }.keys should be(Set())

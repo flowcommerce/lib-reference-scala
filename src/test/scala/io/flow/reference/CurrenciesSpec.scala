@@ -1,9 +1,10 @@
 package io.flow.reference
 
 import io.flow.reference.v0.models.CurrencySymbols
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 
-class CurrenciesSpec extends FunSpec with Matchers {
+class CurrenciesSpec extends AnyFunSpec with Matchers {
 
   it("have unique fields") {
     data.Currencies.all.map(_.name) should be(data.Currencies.all.map(_.name).distinct)

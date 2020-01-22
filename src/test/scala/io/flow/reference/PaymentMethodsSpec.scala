@@ -1,9 +1,10 @@
 package io.flow.reference
 
 import io.flow.reference.v0.models.PaymentMethodType
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 
-class PaymentMethodsSpec extends FunSpec with Matchers {
+class PaymentMethodsSpec extends AnyFunSpec with Matchers {
 
   it("be unique") {
     data.PaymentMethods.all.groupBy(_.name).filter { _._2.size > 1 }.keys should be(Set())

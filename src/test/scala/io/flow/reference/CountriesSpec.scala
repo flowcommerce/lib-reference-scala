@@ -1,8 +1,9 @@
 package io.flow.reference
 
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 
-class CountriesSpec extends FunSpec with Matchers {
+class CountriesSpec extends AnyFunSpec with Matchers {
 
   private[this] lazy val chn = Countries.find("CHN").getOrElse {
     sys.error("CHN Missing")
