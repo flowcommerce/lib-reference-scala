@@ -1,10 +1,11 @@
 package io.flow.reference.functions
 
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.funspec.AnyFunSpec
+import org.scalatest.matchers.should.Matchers
 import RegionFunctions._
 import io.flow.reference.data
 
-class RegionCoverageSpec extends FunSpec with Matchers {
+class RegionCoverageSpec extends AnyFunSpec with Matchers {
 
   it("encompassingRegions should include a test region and any region that includes it") {
     data.Regions.France.encompassingRegions.map(_.id).sorted should be(Seq(data.Regions.France, data.Regions.EuropeanUnion, data.Regions.Eurozone, data.Regions.EuropeanEconomicArea, data.Regions.Europe, data.Regions.World).map(_.id).sorted)
