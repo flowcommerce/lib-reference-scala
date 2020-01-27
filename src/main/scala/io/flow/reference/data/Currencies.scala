@@ -23,7 +23,7 @@ object Currencies {
   val Bwp = Currency(iso42173 = "BWP", name = "Botswana Pula", numberDecimals = 2, defaultLocale = Some("en-BW"), symbols = Some(CurrencySymbols(primary = "BWP", narrow = Some("P"))))
   val Brl = Currency(iso42173 = "BRL", name = "Brazilian Real", numberDecimals = 2, defaultLocale = Some("pt-BR"), symbols = Some(CurrencySymbols(primary = "R$", narrow = Some("R$"))))
   val Bnd = Currency(iso42173 = "BND", name = "Brunei Dollar", numberDecimals = 2, defaultLocale = Some("ms-BN"), symbols = Some(CurrencySymbols(primary = "BND", narrow = Some("$"))))
-  val Mmk = Currency(iso42173 = "MMK", name = "Burmese Kyat", numberDecimals = 0, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MMK", narrow = Some("K"))))
+  val Mmk = Currency(iso42173 = "MMK", name = "Burmese Kyat", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "MMK", narrow = Some("K"))))
   val Khr = Currency(iso42173 = "KHR", name = "Cambodia Riel", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "KHR", narrow = Some("៛"))))
   val Cad = Currency(iso42173 = "CAD", name = "Canadian Dollar", numberDecimals = 2, defaultLocale = Some("en-CA"), symbols = Some(CurrencySymbols(primary = "CA$", narrow = Some("$"))))
   val Cve = Currency(iso42173 = "CVE", name = "Cape Verdi Escudo", numberDecimals = 0, defaultLocale = Some("pt-CV"), symbols = Some(CurrencySymbols(primary = "CVE", narrow = None)))
