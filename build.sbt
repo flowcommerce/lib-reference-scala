@@ -4,8 +4,6 @@ organization := "io.flow"
 
 scalaVersion := "2.13.1"
 
-crossScalaVersions := Seq("2.12.10", "2.13.1")
-
 lazy val root = project
   .in(file("."))
   .settings(
