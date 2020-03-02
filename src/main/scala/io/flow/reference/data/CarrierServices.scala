@@ -37,11 +37,38 @@ object CarrierServices {
   val RrdonnelleyInternationalIpa = CarrierService(id = "rrdonnelley-international-ipa", name = "International IPA", carrier = io.flow.reference.v0.models.Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"))
   val RrdonnelleyInternationalPpdc = CarrierService(id = "rrdonnelley-international-ppdc", name = "International PPDC", carrier = io.flow.reference.v0.models.Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"))
   val SfExpressEconomyExpressParcel = CarrierService(id = "sf-express-economy-express-parcel", name = "Economy Express Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "sf-express", name = "SF Express", trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/"))
-  val UpsExpressInternational = CarrierService(id = "ups-express-international", name = "Express International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
-  val UpsExpressSaver = CarrierService(id = "ups-express-saver", name = "Express Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
-  val UpsGround = CarrierService(id = "ups-ground", name = "Ground", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
-  val UpsInternationalImport = CarrierService(id = "ups-international-import", name = "International Import", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
-  val UpsStandardInternational = CarrierService(id = "ups-standard-international", name = "Standard International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://track.aftership.com/ups/"))
+  val Ups2ndDayAir = CarrierService(id = "ups-2nd-day-air", name = "2nd Day Air", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val Ups2ndDayAirAm = CarrierService(id = "ups-2nd-day-air-am", name = "2nd Day Air AM", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val Ups3DaySelect = CarrierService(id = "ups-3-day-select", name = "3 Day Select", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsAccessPointEconomy = CarrierService(id = "ups-access-point-economy", name = "Access Point Economy", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsEconomyMailInnovations = CarrierService(id = "ups-economy-mail-innovations", name = "Economy Mail Innovations", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpedited = CarrierService(id = "ups-expedited", name = "Expedited", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpeditedMaiiInnovations = CarrierService(id = "ups-expedited-maii-innovations", name = "Expedited MaiI Innovations", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpress = CarrierService(id = "ups-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpress1200 = CarrierService(id = "ups-express-1200", name = "Express 1200", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpressInternational = CarrierService(id = "ups-express-international", name = "Express International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpressPlus = CarrierService(id = "ups-express-plus", name = "Express Plus", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsExpressSaver = CarrierService(id = "ups-express-saver", name = "Express Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsFirstClassMail = CarrierService(id = "ups-first-class-mail", name = "First Class Mail", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsGround = CarrierService(id = "ups-ground", name = "Ground", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsInternationalImport = CarrierService(id = "ups-international-import", name = "International Import", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsMaiiInnovationsReturns = CarrierService(id = "ups-maii-innovations-returns", name = "MaiI Innovations Returns", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsNextDayAir = CarrierService(id = "ups-next-day-air", name = "Next Day Air", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsNextDayAirEarly = CarrierService(id = "ups-next-day-air-early", name = "Next Day Air Early", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsNextDayAirSaver = CarrierService(id = "ups-next-day-air-saver", name = "Next Day Air Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsPriorityMail = CarrierService(id = "ups-priority-mail", name = "Priority Mail", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsPriorityMailInnovations = CarrierService(id = "ups-priority-mail-innovations", name = "Priority Mail Innovations", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsStandard = CarrierService(id = "ups-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsStandardInternational = CarrierService(id = "ups-standard-international", name = "Standard International", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsTodayDedicatedCourier = CarrierService(id = "ups-today-dedicated-courier", name = "Today Dedicated Courier", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsTodayExpress = CarrierService(id = "ups-today-express", name = "Today Express", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsTodayExpressSaver = CarrierService(id = "ups-today-express-saver", name = "Today Express Saver", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsTodayIntercity = CarrierService(id = "ups-today-intercity", name = "Today Intercity", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsTodayStandard = CarrierService(id = "ups-today-standard", name = "Today Standard", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsWorldwideEconomy = CarrierService(id = "ups-worldwide-economy", name = "Worldwide Economy", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsWorldwideEconomyDdu = CarrierService(id = "ups-worldwide-economy-ddu", name = "Worldwide Economy DDU", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsWorldwideExpressFreightMidday = CarrierService(id = "ups-worldwide-express-freight-midday", name = "Worldwide Express Freight Midday", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
+  val UpsWorldwideExpressFreight = CarrierService(id = "ups-worldwide-express-freight.", name = "Worldwide Express Freight", carrier = io.flow.reference.v0.models.Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="))
   val UspsPriorityMailInternational = CarrierService(id = "usps-priority-mail-international", name = "Priority Mail International", carrier = io.flow.reference.v0.models.Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/"))
   val WnDirectStandard = CarrierService(id = "wn-direct-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref="))
 
@@ -79,11 +106,38 @@ object CarrierServices {
     RrdonnelleyInternationalIpa,
     RrdonnelleyInternationalPpdc,
     SfExpressEconomyExpressParcel,
+    Ups2ndDayAir,
+    Ups2ndDayAirAm,
+    Ups3DaySelect,
+    UpsAccessPointEconomy,
+    UpsEconomyMailInnovations,
+    UpsExpedited,
+    UpsExpeditedMaiiInnovations,
+    UpsExpress,
+    UpsExpress1200,
     UpsExpressInternational,
+    UpsExpressPlus,
     UpsExpressSaver,
+    UpsFirstClassMail,
     UpsGround,
     UpsInternationalImport,
+    UpsMaiiInnovationsReturns,
+    UpsNextDayAir,
+    UpsNextDayAirEarly,
+    UpsNextDayAirSaver,
+    UpsPriorityMail,
+    UpsPriorityMailInnovations,
+    UpsStandard,
     UpsStandardInternational,
+    UpsTodayDedicatedCourier,
+    UpsTodayExpress,
+    UpsTodayExpressSaver,
+    UpsTodayIntercity,
+    UpsTodayStandard,
+    UpsWorldwideEconomy,
+    UpsWorldwideEconomyDdu,
+    UpsWorldwideExpressFreightMidday,
+    UpsWorldwideExpressFreight,
     UspsPriorityMailInternational,
     WnDirectStandard
   )
