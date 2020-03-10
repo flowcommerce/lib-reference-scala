@@ -54,6 +54,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("chn"))
+  val Cryptopay = PaymentMethod(id = "cryptopay", `type` = PaymentMethodType.Online, name = "CryptoPay", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cryptopay/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cryptopay/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cryptopay/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"))
   val Dankort = PaymentMethod(id = "dankort", `type` = PaymentMethodType.Card, name = "Dankort", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dankort/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dankort/60/original.png", width = 100, height = 60),
@@ -216,6 +221,7 @@ object PaymentMethods {
     Bitpay,
     CartesBancaires,
     ChinaUnionPay,
+    Cryptopay,
     Dankort,
     DinersClub,
     Directebanking,
