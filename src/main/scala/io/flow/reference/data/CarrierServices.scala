@@ -26,9 +26,12 @@ object CarrierServices {
   val FedexInternationalPriority = CarrierService(id = "fedex-international-priority", name = "International Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexInternationalStandard = CarrierService(id = "fedex-international-standard", name = "International Standard", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexOvernight = CarrierService(id = "fedex-overnight", name = "Overnight", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
+  val IlgEconomyUntracked = CarrierService(id = "ilg-economy-untracked", name = "Economy Untracked", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val IlgEuropeanSinglePack = CarrierService(id = "ilg-european-single-pack", name = "European Single Pack", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
+  val IlgExpressTracked = CarrierService(id = "ilg-express-tracked", name = "Express Tracked", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val IlgGlobalCourier = CarrierService(id = "ilg-global-courier", name = "Global Courier", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val IlgInternationalCourier = CarrierService(id = "ilg-international-courier", name = "International Courier", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
+  val IlgStandardTracked = CarrierService(id = "ilg-standard-tracked", name = "Standard Tracked", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val LaPosteColissimo = CarrierService(id = "la-poste-colissimo", name = "Colissimo", carrier = io.flow.reference.v0.models.Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code="))
   val LandmarkGlobal = CarrierService(id = "landmark-global", name = "Global", carrier = io.flow.reference.v0.models.Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck="))
   val OtherFreight = CarrierService(id = "other-freight", name = "Freight", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
@@ -95,9 +98,12 @@ object CarrierServices {
     FedexInternationalPriority,
     FedexInternationalStandard,
     FedexOvernight,
+    IlgEconomyUntracked,
     IlgEuropeanSinglePack,
+    IlgExpressTracked,
     IlgGlobalCourier,
     IlgInternationalCourier,
+    IlgStandardTracked,
     LaPosteColissimo,
     LandmarkGlobal,
     OtherFreight,
