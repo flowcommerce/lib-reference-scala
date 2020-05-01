@@ -31,23 +31,19 @@ trait Validation[T] {
   def urlKey: String = plural
 
   def find(q: String): Option[T] = {
-    cache.get(q.toLowerCase.trim) match {
-      case Some(value) => Some(value)
-      case None => findBySubstring(q)
-    }
+    val trimmed = q.toLowerCase.trim
+    cache.get(trimmed).orElse(findBySubstring(trimmed))
   }
 
   /**
    * Attempts to find a key using a substring
    */
-  def findBySubstring(q: String): Option[T] = {
-    if (q.length > 10) {
-      cache.keys.toSeq.find(_.startsWith(q)).flatMap { key =>
-        cache.get(key)
-      }
-    } else {
+  private def findBySubstring(q: String): Option[T] = {
+    lazy val matches = cache.collect { case (k, v) if k.startsWith(q) => v }
+    if (q.length > 10 && matches.sizeIs <= 1)
+      matches.headOption
+    else
       None
-    }
   }
 
   /** Attempts to find a single object; if it cannot be found, validates it to return an error message. */
