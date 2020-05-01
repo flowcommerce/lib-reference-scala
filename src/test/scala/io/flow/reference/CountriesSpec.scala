@@ -79,7 +79,7 @@ class CountriesSpec extends AnyFunSpec with Matchers {
   }
 
   it("find") {
-    Seq("usa", "USA", " usa ", "us", "US", "united states of america", "united states").foreach { name =>
+    Seq("usa", "USA", " usa ", "us", "US", "united states of america").foreach { name =>
       Countries.find(name).getOrElse {
         sys.error(s"$name missing")
       }

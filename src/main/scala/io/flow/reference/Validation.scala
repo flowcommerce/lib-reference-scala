@@ -31,23 +31,7 @@ trait Validation[T] {
   def urlKey: String = plural
 
   def find(q: String): Option[T] = {
-    cache.get(q.toLowerCase.trim) match {
-      case Some(value) => Some(value)
-      case None => findBySubstring(q)
-    }
-  }
-
-  /**
-   * Attempts to find a key using a substring
-   */
-  def findBySubstring(q: String): Option[T] = {
-    if (q.length > 10) {
-      cache.keys.toSeq.find(_.startsWith(q)).flatMap { key =>
-        cache.get(key)
-      }
-    } else {
-      None
-    }
+    cache.get(q.toLowerCase.trim)
   }
 
   /** Attempts to find a single object; if it cannot be found, validates it to return an error message. */
