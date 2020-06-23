@@ -267,7 +267,7 @@ func processPaymentMethods() {
 		})
 	}
 
-	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType}", instances)
+	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType, PaymentMethodCapability}", instances)
 }
 
 func toImage(i common.PaymentMethodImage) string {

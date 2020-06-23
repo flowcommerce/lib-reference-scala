@@ -1,6 +1,6 @@
 package io.flow.reference.data
 
-import io.flow.reference.v0.models.{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType}
+import io.flow.reference.v0.models.{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType, PaymentMethodCapability}
 
 object PaymentMethods {
 
