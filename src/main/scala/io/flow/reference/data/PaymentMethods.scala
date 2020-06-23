@@ -23,7 +23,7 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/american_express/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("world"), capabilities = Some(Seq("credit")))
+                                    ), regions = Seq("world"), capabilities = Some(Seq(PaymentMethodCapability.Credit)))
   val ApplePay = PaymentMethod(id = "apple_pay", `type` = PaymentMethodType.Online, name = "Apple Pay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/60/original.png", width = 100, height = 60),
@@ -48,12 +48,12 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("fra"), capabilities = Some(Seq("credit")))
+                                    ), regions = Seq("fra"), capabilities = Some(Seq(PaymentMethodCapability.Credit)))
   val ChinaUnionPay = PaymentMethod(id = "china_union_pay", `type` = PaymentMethodType.Card, name = "China Union Pay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("chn"), capabilities = Some(Seq("credit", "debit")))
+                                    ), regions = Seq("chn"), capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)))
   val CryptocomPay = PaymentMethod(id = "cryptocom_pay", `type` = PaymentMethodType.Online, name = "Crypto.com Pay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cryptocom_pay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cryptocom_pay/60/original.png", width = 100, height = 60),
@@ -63,12 +63,12 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dankort/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dankort/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dankort/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("europe"), capabilities = Some(Seq("debit")))
+                                    ), regions = Seq("europe"), capabilities = Some(Seq(PaymentMethodCapability.Debit)))
   val DinersClub = PaymentMethod(id = "diners_club", `type` = PaymentMethodType.Card, name = "Diners Club", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/diners_club/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/diners_club/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/diners_club/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq("credit")))
+                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq(PaymentMethodCapability.Credit)))
   val Directebanking = PaymentMethod(id = "directEbanking", `type` = PaymentMethodType.Online, name = "Sofortüberweisung", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/directEbanking/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/directEbanking/60/original.png", width = 100, height = 60),
@@ -78,7 +78,7 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/discover/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/discover/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/discover/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq("credit")))
+                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq(PaymentMethodCapability.Credit)))
   val Dotpay = PaymentMethod(id = "dotpay", `type` = PaymentMethodType.Online, name = "Dotpay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dotpay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/dotpay/60/original.png", width = 100, height = 60),
@@ -128,7 +128,7 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/jcb/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/jcb/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/jcb/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("jpn"), capabilities = Some(Seq("credit", "debit")))
+                                    ), regions = Seq("jpn"), capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)))
   val KcpBanktransfer = PaymentMethod(id = "kcp_banktransfer", `type` = PaymentMethodType.Online, name = "Bank Transfer via KCP", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/kcp_banktransfer/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/kcp_banktransfer/60/original.png", width = 100, height = 60),
@@ -153,12 +153,12 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq("debit")))
+                                    ), regions = Seq("europe", "north-america"), capabilities = Some(Seq(PaymentMethodCapability.Debit)))
   val Mastercard = PaymentMethod(id = "mastercard", `type` = PaymentMethodType.Card, name = "Mastercard", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("world"), capabilities = Some(Seq("credit", "debit")))
+                                    ), regions = Seq("world"), capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)))
   val MolpayPoints = PaymentMethod(id = "molpay_points", `type` = PaymentMethodType.Online, name = "MOLPoints via MOLPay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/molpay_points/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/molpay_points/60/original.png", width = 100, height = 60),
@@ -203,7 +203,7 @@ object PaymentMethods {
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/visa/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/visa/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/visa/120/original.png", width = 256, height = 256)
-                                    ), regions = Seq("world"), capabilities = Some(Seq("credit", "debit")))
+                                    ), regions = Seq("world"), capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)))
   val Wechatpay = PaymentMethod(id = "wechatpay", `type` = PaymentMethodType.Online, name = "WeChat Pay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/wechatpay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/wechatpay/60/original.png", width = 100, height = 60),
