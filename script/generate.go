@@ -240,16 +240,34 @@ func processPaymentMethods() {
 			os.Exit(1)
 		}
 
+		// capabilities is a list of strings
+        var capabilities []string
+        for _, cap := range pm.Capabilities {
+            var c string
+            if cap == "credit" {
+                c = "PaymentMethodCapability.Credit"
+            } else if cap == "debit" {
+                c = "PaymentMethodCapability.Debit"
+            } else {
+                fmt.Printf("ERROR: Unknown PaymentMethodCapability[%s]\n", cap)
+                os.Exit(1)
+            }
+            capabilities = append(
+                capabilities,
+                c,
+            )
+        }
+
 		divider := "\n                                    "
 		images := fmt.Sprintf("PaymentMethodImages(%s  small = %s,%s  medium = %s,%s  large = %s%s)", divider, toImage(pm.Images.Small), divider, toImage(pm.Images.Medium), divider, toImage(pm.Images.Large), divider)
 
 		instances = append(instances, Instance{
 			Name:  pm.Id,
-			Value: fmt.Sprintf("PaymentMethod(id = \"%s\", `type` = %s, name = \"%s\", images = %s, regions = %s)", pm.Id, typ, pm.Name, images, scalaArrayQuoted(pm.Regions)),
+			Value: fmt.Sprintf("PaymentMethod(id = \"%s\", `type` = %s, name = \"%s\", images = %s, regions = %s, capabilities = Some(%s))", pm.Id, typ, pm.Name, images, scalaArrayQuoted(pm.Regions), scalaArrayUnquoted(capabilities)),
 		})
 	}
 
-	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType}", instances)
+	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType, PaymentMethodCapability}", instances)
 }
 
 func toImage(i common.PaymentMethodImage) string {
