@@ -245,7 +245,7 @@ func processPaymentMethods() {
 
 		instances = append(instances, Instance{
 			Name:  pm.Id,
-			Value: fmt.Sprintf("PaymentMethod(id = \"%s\", `type` = %s, name = \"%s\", images = %s, regions = %s, capabilities = Some(Seq(%s))))", pm.Id, typ, pm.Name, images, scalaArrayQuoted(pm.Regions), scalaArrayQuoted(pm.Capabilities)),
+			Value: fmt.Sprintf("PaymentMethod(id = \"%s\", `type` = %s, name = \"%s\", images = %s, regions = %s, capabilities = Some(Seq(%s)))", pm.Id, typ, pm.Name, images, scalaArrayQuoted(pm.Regions), scalaArrayQuoted(pm.Capabilities)),
 		})
 	}
 
