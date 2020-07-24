@@ -6,8 +6,8 @@ credentials += Credentials(Path.userHome / ".ivy2" / ".artifactory")
 
 resolvers += "Artifactory" at "https://flow.jfrog.io/flow/libs-release-local/"
 
-addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.12")
+addSbtPlugin("io.github.davidgregory084" % "sbt-tpolecat" % "0.1.13")
 
 resolvers += "Flow Plugins" at "https://flow.jfrog.io/flow/plugins-release/"
 
-addSbtPlugin("io.flow" % "sbt-flow-linter" % "0.0.20")
+addSbtPlugin("io.flow" % "sbt-flow-linter" % "0.0.21")
