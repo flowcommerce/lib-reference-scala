@@ -137,7 +137,7 @@ object Currencies {
   val Tnd = Currency(iso42173 = "TND", name = "Tunisian Dinar", numberDecimals = 3, defaultLocale = Some("ar-TN"), symbols = Some(CurrencySymbols(primary = "TND", narrow = None)))
   val Tmt = Currency(iso42173 = "TMT", name = "Turkmenistan New Manat", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "TMT", narrow = None)))
   val Aed = Currency(iso42173 = "AED", name = "UAE Dirham", numberDecimals = 2, defaultLocale = Some("ar-AE"), symbols = Some(CurrencySymbols(primary = "AED", narrow = None)))
-  val Ugx = Currency(iso42173 = "UGX", name = "Uganda Shilling", numberDecimals = 0, defaultLocale = Some("en-UG"), symbols = Some(CurrencySymbols(primary = "UGX", narrow = None)))
+  val Ugx = Currency(iso42173 = "UGX", name = "Uganda Shilling", numberDecimals = 2, defaultLocale = Some("en-UG"), symbols = Some(CurrencySymbols(primary = "UGX", narrow = None)))
   val Uah = Currency(iso42173 = "UAH", name = "Ukraine Hryvnia", numberDecimals = 2, defaultLocale = Some("uk-UA"), symbols = Some(CurrencySymbols(primary = "UAH", narrow = Some("₴"))))
   val Usd = Currency(iso42173 = "USD", name = "US Dollars", numberDecimals = 2, defaultLocale = Some("en-US"), symbols = Some(CurrencySymbols(primary = "US$", narrow = Some("$"))))
   val Uzs = Currency(iso42173 = "UZS", name = "Uzbekistani Som", numberDecimals = 2, defaultLocale = Some("uz"), symbols = Some(CurrencySymbols(primary = "UZS", narrow = None)))
