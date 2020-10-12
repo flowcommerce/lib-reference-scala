@@ -40,3 +40,4 @@ scalacOptions += s"-P:silencer:sourceRoots=${baseDirectory.value.getCanonicalPat
 version := "0.2.56"
 version := "0.2.57"
 version := "0.2.58"
+version := "0.2.59"
