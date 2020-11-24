@@ -14,6 +14,7 @@ object CarrierServices {
   val ChronopostChronoExpress = CarrierService(id = "chronopost-chrono-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "chronopost", name = "Chronopost", trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT="))
   val DhlEcommerceStandard = CarrierService(id = "dhl-ecommerce-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlEconomySelect = CarrierService(id = "dhl-economy-select", name = "Economy Select", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
+  val DhlExpressDomestic1800 = CarrierService(id = "dhl-express-domestic-1800", name = "Express Domestic 18:00", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlExpressExportEconomy = CarrierService(id = "dhl-express-export-economy", name = "Express Export Economy", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlExpressWorldwide = CarrierService(id = "dhl-express-worldwide", name = "Express Worldwide", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlGlobalMailPacketPlus = CarrierService(id = "dhl-global-mail-packet-plus", name = "Packet Plus", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
@@ -86,6 +87,7 @@ object CarrierServices {
     ChronopostChronoExpress,
     DhlEcommerceStandard,
     DhlEconomySelect,
+    DhlExpressDomestic1800,
     DhlExpressExportEconomy,
     DhlExpressWorldwide,
     DhlGlobalMailPacketPlus,
