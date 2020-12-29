@@ -142,7 +142,8 @@ object Currencies {
   val Usd = Currency(iso42173 = "USD", name = "US Dollars", numberDecimals = 2, defaultLocale = Some("en-US"), symbols = Some(CurrencySymbols(primary = "US$", narrow = Some("$"))))
   val Uzs = Currency(iso42173 = "UZS", name = "Uzbekistani Som", numberDecimals = 2, defaultLocale = Some("uz"), symbols = Some(CurrencySymbols(primary = "UZS", narrow = None)))
   val Vuv = Currency(iso42173 = "VUV", name = "Vanuatu Vatu", numberDecimals = 0, defaultLocale = Some("en-VU"), symbols = Some(CurrencySymbols(primary = "VUV", narrow = None)))
-  val Vef = Currency(iso42173 = "VEF", name = "Venezuelan Bolívar", numberDecimals = 2, defaultLocale = Some("es-VE"), symbols = Some(CurrencySymbols(primary = "VEF", narrow = Some("Bs"))))
+  val Vef = Currency(iso42173 = "VEF", name = "Venezuelan Bolívar Fuerte", numberDecimals = 2, defaultLocale = None, symbols = Some(CurrencySymbols(primary = "VEF", narrow = Some("Bs"))))
+  val Ves = Currency(iso42173 = "VES", name = "Venezuelan Bolívar Soberano", numberDecimals = 0, defaultLocale = Some("es-VE"), symbols = Some(CurrencySymbols(primary = "VES", narrow = None)))
   val Vnd = Currency(iso42173 = "VND", name = "Vietnamese New Dong", numberDecimals = 0, defaultLocale = Some("vi-VN"), symbols = Some(CurrencySymbols(primary = "₫", narrow = Some("₫"))))
   val Yer = Currency(iso42173 = "YER", name = "Yemeni Rial", numberDecimals = 2, defaultLocale = Some("ar-YE"), symbols = Some(CurrencySymbols(primary = "YER", narrow = None)))
   val Cny = Currency(iso42173 = "CNY", name = "Yuan Renminbi", numberDecimals = 2, defaultLocale = Some("zh-CN"), symbols = Some(CurrencySymbols(primary = "CN¥", narrow = Some("¥"))))
@@ -288,6 +289,7 @@ object Currencies {
     Uzs,
     Vuv,
     Vef,
+    Ves,
     Vnd,
     Yer,
     Cny,
