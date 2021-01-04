@@ -7,6 +7,7 @@ object Locales {
   val AfNa = Locale(id = "af-NA", name = "Afrikaans - Namibia", country = "NAM", language = "af", numbers = LocaleNumbers(decimal = ",", group = " "))
   val AkGh = Locale(id = "ak-GH", name = "Akan - Ghana", country = "GHA", language = "ak", numbers = LocaleNumbers(decimal = ".", group = ","))
   val SqAl = Locale(id = "sq-AL", name = "Albanian - Albania", country = "ALB", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val SqXk = Locale(id = "sq-XK", name = "Albanian - Kosovo", country = "RKS", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
   val SqMk = Locale(id = "sq-MK", name = "Albanian - The former Yugoslav Republic of Macedonia", country = "MKD", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Am = Locale(id = "am", name = "Amharic - Armenia", country = "ARM", language = "am", numbers = LocaleNumbers(decimal = ".", group = ","))
   val AmEt = Locale(id = "am-ET", name = "Amharic - Ethiopia", country = "ETH", language = "am", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -251,13 +252,13 @@ object Locales {
   val KoKr = Locale(id = "ko-KR", name = "Korean - Korea", country = "KOR", language = "ko", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Ky = Locale(id = "ky", name = "Kyrgyz - Cayman Islands", country = "CYM", language = "ky", numbers = LocaleNumbers(decimal = ",", group = " "))
   val LoLa = Locale(id = "lo-LA", name = "Lao - Lao People's Democratic Republic", country = "LAO", language = "lo", numbers = LocaleNumbers(decimal = ",", group = "."))
-  val LvLv = Locale(id = "lv-LV", name = "Latvian - Latvia", country = "LVA", language = "lv", numbers = LocaleNumbers(decimal = ".", group = ","))
   val Lv = Locale(id = "lv", name = "Latvian - Latvia", country = "LVA", language = "lv", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val LvLv = Locale(id = "lv-LV", name = "Latvian - Latvia", country = "LVA", language = "lv", numbers = LocaleNumbers(decimal = ".", group = ","))
   val LnAo = Locale(id = "ln-AO", name = "Lingala - Angola", country = "AGO", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
   val LnCf = Locale(id = "ln-CF", name = "Lingala - Central African Republic", country = "CAF", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
   val LnCg = Locale(id = "ln-CG", name = "Lingala - Congo", country = "COG", language = "ln", numbers = LocaleNumbers(decimal = ",", group = "."))
-  val LtLt = Locale(id = "lt-LT", name = "Lithuanian - Lithuania", country = "LTU", language = "lt", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lt = Locale(id = "lt", name = "Lithuanian - Lithuania", country = "LTU", language = "lt", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val LtLt = Locale(id = "lt-LT", name = "Lithuanian - Lithuania", country = "LTU", language = "lt", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lu = Locale(id = "lu", name = "Luba-Katanga - Luxembourg", country = "LUX", language = "lu", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Lb = Locale(id = "lb", name = "Luxembourgish - Lebanon", country = "LBN", language = "lb", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Mk = Locale(id = "mk", name = "Macedonian (FYROM)", country = "MKD", language = "mk", numbers = LocaleNumbers(decimal = ",", group = "."))
@@ -301,6 +302,7 @@ object Locales {
   val RuUa = Locale(id = "ru-UA", name = "Russian - Ukraine", country = "UKR", language = "ru", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Sg = Locale(id = "sg", name = "Sango - Singapore", country = "SGP", language = "sg", numbers = LocaleNumbers(decimal = ",", group = "."))
   val SrBa = Locale(id = "sr-BA", name = "Serbian - Bosnia and Herzegovina", country = "BIH", language = "sr", numbers = LocaleNumbers(decimal = ",", group = "."))
+  val SrXk = Locale(id = "sr-XK", name = "Serbian - Kosovo", country = "RKS", language = "sr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val SrMe = Locale(id = "sr-ME", name = "Serbian - Montenegro", country = "MNE", language = "sr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val SrRs = Locale(id = "sr-RS", name = "Serbian - Serbia", country = "SRB", language = "sr", numbers = LocaleNumbers(decimal = ",", group = "."))
   val Sn = Locale(id = "sn", name = "Shona - Senegal", country = "SEN", language = "sn", numbers = LocaleNumbers(decimal = ".", group = ","))
@@ -365,6 +367,7 @@ object Locales {
     AfNa,
     AkGh,
     SqAl,
+    SqXk,
     SqMk,
     Am,
     AmEt,
@@ -609,13 +612,13 @@ object Locales {
     KoKr,
     Ky,
     LoLa,
-    LvLv,
     Lv,
+    LvLv,
     LnAo,
     LnCf,
     LnCg,
-    LtLt,
     Lt,
+    LtLt,
     Lu,
     Lb,
     Mk,
@@ -659,6 +662,7 @@ object Locales {
     RuUa,
     Sg,
     SrBa,
+    SrXk,
     SrMe,
     SrRs,
     Sn,
