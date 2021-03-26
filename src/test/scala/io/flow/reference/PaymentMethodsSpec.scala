@@ -18,7 +18,7 @@ class PaymentMethodsSpec extends AnyFunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "visa", "mastercard", "american_express", "paypal"
+      "visa", "primarycard", "american_express", "paypal"
     )
 
     all.filter { id =>
