@@ -154,10 +154,10 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/maestro/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("europe", "north-america"), capabilities = Some(Seq(PaymentMethodCapability.Debit)))
-  val Mastercard = PaymentMethod(id = "mastercard", `type` = PaymentMethodType.Card, name = "Mastercard", images = PaymentMethodImages(
-                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/30/original.png", width = 65, height = 41),
-                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/60/original.png", width = 100, height = 60),
-                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/mastercard/120/original.png", width = 256, height = 256)
+  val Primarycard = PaymentMethod(id = "primarycard", `type` = PaymentMethodType.Card, name = "Primarycard", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/primarycard/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/primarycard/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/primarycard/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"), capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)))
   val MolpayPoints = PaymentMethod(id = "molpay_points", `type` = PaymentMethodType.Online, name = "MOLPoints via MOLPay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/molpay_points/30/original.png", width = 65, height = 41),
@@ -241,7 +241,7 @@ object PaymentMethods {
     KcpPayco,
     Klarna,
     Maestro,
-    Mastercard,
+    Primarycard,
     MolpayPoints,
     Multibanco,
     Paypal,
