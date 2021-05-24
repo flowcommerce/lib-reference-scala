@@ -49,6 +49,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cartes_bancaires/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("fra"), capabilities = Some(Seq(PaymentMethodCapability.Credit)))
+  val CashOnDelivery = PaymentMethod(id = "cash_on_delivery", `type` = PaymentMethodType.Online, name = "Cash on Delivery", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cash_on_delivery/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cash_on_delivery/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/cash_on_delivery/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"), capabilities = Some(Nil))
   val ChinaUnionPay = PaymentMethod(id = "china_union_pay", `type` = PaymentMethodType.Card, name = "China Union Pay", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/china_union_pay/60/original.png", width = 100, height = 60),
@@ -220,6 +225,7 @@ object PaymentMethods {
     Bitcoin,
     Bitpay,
     CartesBancaires,
+    CashOnDelivery,
     ChinaUnionPay,
     CryptocomPay,
     Dankort,
