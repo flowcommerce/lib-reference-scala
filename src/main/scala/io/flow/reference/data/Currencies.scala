@@ -31,7 +31,7 @@ object Currencies {
   val Xof = Currency(iso42173 = "XOF", name = "CFA Franc BCEAO", numberDecimals = 0, defaultLocale = Some("ee-TG"), symbols = Some(CurrencySymbols(primary = "CFA", narrow = None)))
   val Xaf = Currency(iso42173 = "XAF", name = "CFA Franc BEAC", numberDecimals = 0, defaultLocale = Some("ar-TD"), symbols = Some(CurrencySymbols(primary = "FCFA", narrow = None)))
   val Xpf = Currency(iso42173 = "XPF", name = "CFP Franc", numberDecimals = 0, defaultLocale = Some("fr-PF"), symbols = Some(CurrencySymbols(primary = "CFPF", narrow = None)))
-  val Clp = Currency(iso42173 = "CLP", name = "Chilean Peso", numberDecimals = 2, defaultLocale = Some("es-CL"), symbols = Some(CurrencySymbols(primary = "CLP", narrow = Some("$"))))
+  val Clp = Currency(iso42173 = "CLP", name = "Chilean Peso", numberDecimals = 0, defaultLocale = Some("es-CL"), symbols = Some(CurrencySymbols(primary = "CLP", narrow = Some("$"))))
   val Cop = Currency(iso42173 = "COP", name = "Colombian Peso", numberDecimals = 2, defaultLocale = Some("es-CO"), symbols = Some(CurrencySymbols(primary = "COP", narrow = Some("$"))))
   val Kmf = Currency(iso42173 = "KMF", name = "Comoro Franc", numberDecimals = 0, defaultLocale = Some("ar-KM"), symbols = Some(CurrencySymbols(primary = "KMF", narrow = Some("CF"))))
   val Crc = Currency(iso42173 = "CRC", name = "Costa Rican Colon", numberDecimals = 2, defaultLocale = Some("es-CR"), symbols = Some(CurrencySymbols(primary = "CRC", narrow = Some("₡"))))
