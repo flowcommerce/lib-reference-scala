@@ -4,6 +4,7 @@ import io.flow.reference.v0.models.CarrierService
 
 object CarrierServices {
 
+  val AsendiaEPaqSelect = CarrierService(id = "asendia-e-paq-select", name = "e-Paq Select", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
   val AsendiaExpress = CarrierService(id = "asendia-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
   val AsendiaStandard = CarrierService(id = "asendia-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"))
   val CanadaPostExpeditedParcel = CarrierService(id = "canada-post-expedited-parcel", name = "Expedited Parcel", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
@@ -12,6 +13,8 @@ object CarrierServices {
   val CanadaPostXpresspost = CarrierService(id = "canada-post-xpresspost", name = "Xpresspost", carrier = io.flow.reference.v0.models.Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"))
   val ChronopostChronoClassic = CarrierService(id = "chronopost-chrono-classic", name = "Classic", carrier = io.flow.reference.v0.models.Carrier(id = "chronopost", name = "Chronopost", trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT="))
   val ChronopostChronoExpress = CarrierService(id = "chronopost-chrono-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "chronopost", name = "Chronopost", trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT="))
+  val DeutschePostPacketTrackedPriorityGpt = CarrierService(id = "deutsche-post-packet-tracked-priority-gpt", name = "Packet Tracked Priority GPT", carrier = io.flow.reference.v0.models.Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/"))
+  val DeutschePostUsaDirect = CarrierService(id = "deutsche-post-usa-direct", name = "USA Direct", carrier = io.flow.reference.v0.models.Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/"))
   val DhlEcommerceStandard = CarrierService(id = "dhl-ecommerce-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlEconomySelect = CarrierService(id = "dhl-economy-select", name = "Economy Select", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
   val DhlExpressDomestic1800 = CarrierService(id = "dhl-express-domestic-1800", name = "Express Domestic 18:00", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB="))
@@ -80,6 +83,7 @@ object CarrierServices {
   val WnDirectStandard = CarrierService(id = "wn-direct-standard", name = "Standard", carrier = io.flow.reference.v0.models.Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref="))
 
   val all = Seq(
+    AsendiaEPaqSelect,
     AsendiaExpress,
     AsendiaStandard,
     CanadaPostExpeditedParcel,
@@ -88,6 +92,8 @@ object CarrierServices {
     CanadaPostXpresspost,
     ChronopostChronoClassic,
     ChronopostChronoExpress,
+    DeutschePostPacketTrackedPriorityGpt,
+    DeutschePostUsaDirect,
     DhlEcommerceStandard,
     DhlEconomySelect,
     DhlExpressDomestic1800,
