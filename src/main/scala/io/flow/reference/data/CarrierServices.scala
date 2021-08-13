@@ -25,6 +25,18 @@ object CarrierServices {
   val DhlParcelInternationalStandard = CarrierService(id = "dhl-parcel-international-standard", name = "International Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val FedexCrossborderEcommerce = CarrierService(id = "fedex-crossborder-ecommerce", name = "E-commerce", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
   val FedexCrossborderEcommerceLite = CarrierService(id = "fedex-crossborder-ecommerce-lite", name = "E-commerce Lite", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicExpressPriority = CarrierService(id = "fedex-crossborder-fic-express-priority", name = "FIC Express Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicLimitedTracked = CarrierService(id = "fedex-crossborder-fic-limited-tracked", name = "FIC Limited Tracked", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicLimitedTrackedPlus = CarrierService(id = "fedex-crossborder-fic-limited-tracked-plus", name = "FIC Limited Tracked Plus", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicPudoService = CarrierService(id = "fedex-crossborder-fic-pudo-service", name = "FIC PUDO Service", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicTrackedUsaPriority = CarrierService(id = "fedex-crossborder-fic-tracked-usa-priority", name = "FIC Tracked USA Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicTrackedWorldwide = CarrierService(id = "fedex-crossborder-fic-tracked-worldwide", name = "FIC Tracked Worldwide", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderFicUntrackedUk = CarrierService(id = "fedex-crossborder-fic-untracked-uk", name = "FIC Untracked UK", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderRoyalMailTracked24 = CarrierService(id = "fedex-crossborder-royal-mail-tracked-24", name = "Royal Mail Tracked 24", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderRoyalMailTracked48 = CarrierService(id = "fedex-crossborder-royal-mail-tracked-48", name = "Royal Mail Tracked 48", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderUk24Hours = CarrierService(id = "fedex-crossborder-uk-24-hours", name = "UK 24 Hours", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderUk48Hours = CarrierService(id = "fedex-crossborder-uk-48-hours", name = "UK 48 hours", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
+  val FedexCrossborderYodel72HourPacket = CarrierService(id = "fedex-crossborder-yodel-72-hour-packet", name = "Yodel 72 Hour Packet", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
   val FedexGround = CarrierService(id = "fedex-ground", name = "Ground", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexInternationalEconomy = CarrierService(id = "fedex-international-economy", name = "International Economy", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
   val FedexInternationalPriority = CarrierService(id = "fedex-international-priority", name = "International Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="))
@@ -104,6 +116,18 @@ object CarrierServices {
     DhlParcelInternationalStandard,
     FedexCrossborderEcommerce,
     FedexCrossborderEcommerceLite,
+    FedexCrossborderFicExpressPriority,
+    FedexCrossborderFicLimitedTracked,
+    FedexCrossborderFicLimitedTrackedPlus,
+    FedexCrossborderFicPudoService,
+    FedexCrossborderFicTrackedUsaPriority,
+    FedexCrossborderFicTrackedWorldwide,
+    FedexCrossborderFicUntrackedUk,
+    FedexCrossborderRoyalMailTracked24,
+    FedexCrossborderRoyalMailTracked48,
+    FedexCrossborderUk24Hours,
+    FedexCrossborderUk48Hours,
+    FedexCrossborderYodel72HourPacket,
     FedexGround,
     FedexInternationalEconomy,
     FedexInternationalPriority,
