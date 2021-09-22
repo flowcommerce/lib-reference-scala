@@ -50,6 +50,7 @@ object CarrierServices {
   val IlgStandardTracked = CarrierService(id = "ilg-standard-tracked", name = "Standard Tracked", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val LaPosteColissimo = CarrierService(id = "la-poste-colissimo", name = "Colissimo", carrier = io.flow.reference.v0.models.Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code="))
   val LandmarkGlobal = CarrierService(id = "landmark-global", name = "Global", carrier = io.flow.reference.v0.models.Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck="))
+  val OcsWorldwideInternationalStandardDelivery = CarrierService(id = "ocs-worldwide-international-standard-delivery", name = "International Standard Delivery", carrier = io.flow.reference.v0.models.Carrier(id = "ocs-worldwide", name = "OCS Worldwide", trackingUrl = "https://www.ocsworldwide.co.uk/Tracking.aspx?cwb="))
   val OtherFreight = CarrierService(id = "other-freight", name = "Freight", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
   val OtherLtl = CarrierService(id = "other-ltl", name = "Less Than Truckload", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
   val OtherPostal = CarrierService(id = "other-postal", name = "Postal", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
@@ -141,6 +142,7 @@ object CarrierServices {
     IlgStandardTracked,
     LaPosteColissimo,
     LandmarkGlobal,
+    OcsWorldwideInternationalStandardDelivery,
     OtherFreight,
     OtherLtl,
     OtherPostal,
