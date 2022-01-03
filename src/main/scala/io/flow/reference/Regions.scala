@@ -14,7 +14,7 @@ object Regions extends Validation[Region] {
 
   override def plural = "regions"
 
-  override def name(r: Region) = r.name
+  override def name(r: Region): String = r.name
 
   /**
     * Filters regions based on the query parameter. We filter in a few

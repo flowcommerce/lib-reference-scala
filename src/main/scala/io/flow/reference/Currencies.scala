@@ -14,5 +14,5 @@ object Currencies extends Validation[Currency] {
 
   override def singular = "currency"
   override def plural = "currencies"
-  override def name(c: Currency) = c.iso42173
+  override def name(c: Currency): String = c.iso42173
 }
