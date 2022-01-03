@@ -14,5 +14,5 @@ object Languages extends Validation[Language] {
 
   override def singular = "language"
   override def plural = "languages"
-  override def name(l: Language) = l.name
+  override def name(l: Language): String = l.name
 }

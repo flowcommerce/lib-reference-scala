@@ -1,10 +1,15 @@
 package io.flow.reference
 
+import io.flow.reference.data.Currencies.{Eek, Ltl, Lvl}
 import io.flow.reference.v0.models.CurrencySymbols
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers
 
 class CurrenciesSpec extends AnyFunSpec with Matchers {
+
+  it("Unsupported") {
+    data.Currencies.unsupported.map(_.iso42173).toSeq.sorted should be(Seq(Ltl, Lvl, Eek).map(_.iso42173).sorted)
+  }
 
   it("have unique fields") {
     data.Currencies.all.map(_.name) should be(data.Currencies.all.map(_.name).distinct)

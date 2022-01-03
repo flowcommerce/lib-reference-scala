@@ -14,5 +14,5 @@ object Timezones extends Validation[Timezone] {
   
   override def singular = "timezone"
   override def plural = "timezones"
-  override def name(tz: Timezone) = tz.name
+  override def name(tz: Timezone): String = tz.name
 }

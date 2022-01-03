@@ -15,5 +15,5 @@ object CarrierServices extends Validation[CarrierService] {
 
   override def singular = "carrier service"
   override def plural = "carrier-services"
-  override def name(c: CarrierService) = c.name
+  override def name(c: CarrierService): String = c.name
 }

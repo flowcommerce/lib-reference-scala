@@ -26,7 +26,7 @@ type Instance struct {
 	Value string
 }
 
-func writeFile(objectName string, imports string, instances []Instance, extraDeclarations string) {
+func writeFile(typeName string, objectName string, imports string, instances []Instance, extraDeclarations string) {
 	path := fmt.Sprintf("%s/%s.scala", Directory, objectName)
 	fo, err := os.Create(path)
 	util.ExitIfError(err, fmt.Sprintf("Error creating file %s: %s", path, err))
@@ -39,7 +39,7 @@ func writeFile(objectName string, imports string, instances []Instance, extraDec
 	writer.WriteString(fmt.Sprintf("object %s {\n\n", objectName))
 
 	for _, instance := range instances {
-		writer.WriteString(fmt.Sprintf("  val %s = %s\n", scalaName(instance.Name), instance.Value))
+		writer.WriteString(fmt.Sprintf("  val %s: %s = %s\n", scalaName(instance.Name), typeName, instance.Value))
 	}
 	writer.WriteString("\n")
 
@@ -48,7 +48,7 @@ func writeFile(objectName string, imports string, instances []Instance, extraDec
 		writer.WriteString("\n");
 	}
 
-	writer.WriteString("  val all = Seq(\n    ")
+	writer.WriteString(fmt.Sprintf("  val all: Seq[%s] = Seq(\n    ", typeName))
 	for i, instance := range instances {
 		if i > 0 {
 			writer.WriteString(",\n    ")
@@ -84,7 +84,7 @@ func processCarriers() {
 		})
 	}
 
-	writeFile("Carriers", "Carrier", instances, "")
+	writeFile("Carrier", "Carriers", "Carrier", instances, "")
 }
 
 func processCarrierServices() {
@@ -96,7 +96,7 @@ func processCarrierServices() {
 		})
 	}
 
-	writeFile("CarrierServices", "CarrierService", instances, "")
+	writeFile("CarrierService", "CarrierServices", "CarrierService", instances, "")
 }
 
 func processProvinces() {
@@ -120,7 +120,7 @@ func processProvinces() {
 		})
 	}
 
-	writeFile("Provinces", "Province", instances, "")
+	writeFile("Province", "Provinces", "Province", instances, "")
 }
 
 func processCountries() {
@@ -148,7 +148,7 @@ func processCountries() {
 		})
 	}
 
-	writeFile("Countries", "Country", instances, "")
+	writeFile("Country", "Countries", "Country", instances, "")
 }
 
 func processRegions() {
@@ -165,7 +165,7 @@ func processRegions() {
 		})
 	}
 
-	writeFile("Regions", "Region", instances, "")
+	writeFile("Region", "Regions", "Region", instances, "")
 }
 
 func processCurrencies() {
@@ -191,9 +191,9 @@ func processCurrencies() {
 		})
 	}
 
-	extra := "  val Unsupported = Set(Ltl, Lvl, Eek)";
+	extra := "  val unsupported: Set[Currency] = Set(Ltl, Lvl, Eek)";
 	
-	writeFile("Currencies", "{Currency, CurrencySymbols}", instances, extra)
+	writeFile("Currency", "Currencies", "{Currency, CurrencySymbols}", instances, extra)
 }
 
 func processLanguages() {
@@ -205,7 +205,7 @@ func processLanguages() {
 		})
 	}
 
-	writeFile("Languages", "Language", instances, "")
+	writeFile("Language", "Languages", "Language", instances, "")
 }
 
 func processLocales() {
@@ -217,7 +217,7 @@ func processLocales() {
 		})
 	}
 
-	writeFile("Locales", "{Locale, LocaleNumbers}", instances, "")
+	writeFile("Locale", "Locales", "{Locale, LocaleNumbers}", instances, "")
 }
 
 func processTimezones() {
@@ -229,7 +229,7 @@ func processTimezones() {
 		})
 	}
 
-	writeFile("Timezones", "Timezone", instances, "")
+	writeFile("Timezone", "Timezones", "Timezone", instances, "")
 }
 
 func processPaymentMethods() {
@@ -274,7 +274,7 @@ func processPaymentMethods() {
 		})
 	}
 
-	writeFile("PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType, PaymentMethodCapability}", instances, "")
+	writeFile("PaymentMethod", "PaymentMethods", "{PaymentMethod, PaymentMethodImage, PaymentMethodImages, PaymentMethodType, PaymentMethodCapability}", instances, "")
 }
 
 func toImage(i common.PaymentMethodImage) string {

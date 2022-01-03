@@ -11,7 +11,7 @@ object Provinces extends Validation[Province] {
 
   override def singular = "province"
   override def plural = "provinces"
-  override def name(p: Province) = p.id
+  override def name(p: Province): String = p.id
 
   def query(q: Option[String], countriesOpt: Option[Seq[String]]): Seq[Province] = {
     /*

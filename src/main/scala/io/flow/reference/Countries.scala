@@ -8,9 +8,9 @@ object Countries extends Validation[Country] {
   override val cache: Map[String, Country] = Map(
     data.Countries.all.flatMap { c =>
       Seq(
-        (c.iso31662.toLowerCase -> c),
-        (c.iso31663.toLowerCase -> c),
-        (c.name.toLowerCase -> c)
+        c.iso31662.toLowerCase -> c,
+        c.iso31663.toLowerCase -> c,
+        c.name.toLowerCase -> c
       )
     }: _*
   )
