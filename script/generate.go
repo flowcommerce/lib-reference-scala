@@ -43,11 +43,6 @@ func writeFile(typeName string, objectName string, imports string, instances []I
 	}
 	writer.WriteString("\n")
 
-	if (extraDeclarations != "") {
-		writer.WriteString(fmt.Sprintf("%s\n", extraDeclarations));
-		writer.WriteString("\n");
-	}
-
 	writer.WriteString(fmt.Sprintf("  val all: Seq[%s] = Seq(\n    ", typeName))
 	for i, instance := range instances {
 		if i > 0 {
@@ -55,7 +50,14 @@ func writeFile(typeName string, objectName string, imports string, instances []I
 		}
 		writer.WriteString(scalaName(instance.Name))
 	}
-	writer.WriteString("\n  )\n\n}\n")
+	writer.WriteString("\n  )\n\n")
+
+	if (extraDeclarations != "") {
+		writer.WriteString(fmt.Sprintf("%s\n", extraDeclarations));
+		writer.WriteString("\n");
+	}
+
+	writer.WriteString("}\n")
 
 	err = writer.Flush()
 	util.ExitIfError(err, fmt.Sprintf("Failed to flush file %s: %s", path, err))
@@ -191,7 +193,7 @@ func processCurrencies() {
 		})
 	}
 
-	extra := "  val unsupported: Set[Currency] = Set(Ltl, Lvl, Eek)";
+	extra := "  val unsupported: Set[Currency] = Set(Ltl, Lvl, Eek)\n  val supported: Seq[Currency] = all.filterNot(unsupported.contains)";
 	
 	writeFile("Currency", "Currencies", "{Currency, CurrencySymbols}", instances, extra)
 }

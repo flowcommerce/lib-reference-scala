@@ -7,8 +7,13 @@ import org.scalatest.matchers.should.Matchers
 
 class CurrenciesSpec extends AnyFunSpec with Matchers {
 
-  it("Unsupported") {
+  it("unsupported") {
     data.Currencies.unsupported.map(_.iso42173).toSeq.sorted should be(Seq(Ltl, Lvl, Eek).map(_.iso42173).sorted)
+  }
+
+  it("supported") {
+    data.Currencies.supported.nonEmpty should be(true)
+    data.Currencies.supported.intersect(data.Currencies.unsupported.toSeq) should be(Nil)
   }
 
   it("have unique fields") {

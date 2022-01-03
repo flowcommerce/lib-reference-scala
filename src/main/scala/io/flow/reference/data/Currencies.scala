@@ -148,8 +148,6 @@ object Currencies {
   val Cny: Currency = Currency(iso42173 = "CNY", name = "Yuan Renminbi", numberDecimals = 2, defaultLocale = Some("zh-CN"), symbols = Some(CurrencySymbols(primary = "CN¥", narrow = Some("¥"))))
   val Zmw: Currency = Currency(iso42173 = "ZMW", name = "Zambia Kwacha", numberDecimals = 2, defaultLocale = Some("en-ZM"), symbols = Some(CurrencySymbols(primary = "ZMW", narrow = Some("ZK"))))
 
-  val unsupported: Set[Currency] = Set(Ltl, Lvl, Eek)
-
   val all: Seq[Currency] = Seq(
     All,
     Dzd,
@@ -295,5 +293,8 @@ object Currencies {
     Cny,
     Zmw
   )
+
+  val unsupported: Set[Currency] = Set(Ltl, Lvl, Eek)
+  val supported: Seq[Currency] = all.filterNot(unsupported.contains)
 
 }
