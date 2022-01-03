@@ -148,6 +148,8 @@ object Currencies {
   val Cny = Currency(iso42173 = "CNY", name = "Yuan Renminbi", numberDecimals = 2, defaultLocale = Some("zh-CN"), symbols = Some(CurrencySymbols(primary = "CN¥", narrow = Some("¥"))))
   val Zmw = Currency(iso42173 = "ZMW", name = "Zambia Kwacha", numberDecimals = 2, defaultLocale = Some("en-ZM"), symbols = Some(CurrencySymbols(primary = "ZMW", narrow = Some("ZK"))))
 
+  val Unsupported = Set(Ltl, Lvl, Eek)
+
   val all = Seq(
     All,
     Dzd,
