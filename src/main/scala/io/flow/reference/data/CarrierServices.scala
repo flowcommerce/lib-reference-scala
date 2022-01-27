@@ -50,6 +50,8 @@ object CarrierServices {
   val IlgStandardTracked: CarrierService = CarrierService(id = "ilg-standard-tracked", name = "Standard Tracked", carrier = io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"))
   val LaPosteColissimo: CarrierService = CarrierService(id = "la-poste-colissimo", name = "Colissimo", carrier = io.flow.reference.v0.models.Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code="))
   val LandmarkGlobal: CarrierService = CarrierService(id = "landmark-global", name = "Global", carrier = io.flow.reference.v0.models.Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck="))
+  val MalcaAmitArmored: CarrierService = CarrierService(id = "malca-amit-armored", name = "Armored", carrier = io.flow.reference.v0.models.Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t="))
+  val MalcaAmitExpress: CarrierService = CarrierService(id = "malca-amit-express", name = "Express", carrier = io.flow.reference.v0.models.Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t="))
   val OcsWorldwideInternationalStandardDelivery: CarrierService = CarrierService(id = "ocs-worldwide-international-standard-delivery", name = "International Standard Delivery", carrier = io.flow.reference.v0.models.Carrier(id = "ocs-worldwide", name = "OCS Worldwide", trackingUrl = "https://www.ocsworldwide.co.uk/Tracking.aspx?cwb="))
   val OtherFreight: CarrierService = CarrierService(id = "other-freight", name = "Freight", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
   val OtherLtl: CarrierService = CarrierService(id = "other-ltl", name = "Less Than Truckload", carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"))
@@ -142,6 +144,8 @@ object CarrierServices {
     IlgStandardTracked,
     LaPosteColissimo,
     LandmarkGlobal,
+    MalcaAmitArmored,
+    MalcaAmitExpress,
     OcsWorldwideInternationalStandardDelivery,
     OtherFreight,
     OtherLtl,

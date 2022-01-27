@@ -17,6 +17,7 @@ object Carriers {
   val Ilg: Carrier = Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
   val LaPoste: Carrier = Carrier(id = "la-poste", name = "La Poste", trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=")
   val Landmark: Carrier = Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck=")
+  val MalcaAmit: Carrier = Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t=")
   val OcsWorldwide: Carrier = Carrier(id = "ocs-worldwide", name = "OCS Worldwide", trackingUrl = "https://www.ocsworldwide.co.uk/Tracking.aspx?cwb=")
   val Other: Carrier = Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/")
   val Rrdonnelley: Carrier = Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/")
@@ -39,6 +40,7 @@ object Carriers {
     Ilg,
     LaPoste,
     Landmark,
+    MalcaAmit,
     OcsWorldwide,
     Other,
     Rrdonnelley,
