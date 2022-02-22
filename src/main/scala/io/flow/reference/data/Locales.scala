@@ -8,7 +8,7 @@ object Locales {
   val AkGh: Locale = Locale(id = "ak-GH", name = "Akan - Ghana", country = "GHA", language = "ak", numbers = LocaleNumbers(decimal = ".", group = ","))
   val SqAl: Locale = Locale(id = "sq-AL", name = "Albanian - Albania", country = "ALB", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
   val SqXk: Locale = Locale(id = "sq-XK", name = "Albanian - Kosovo", country = "RKS", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
-  val SqMk: Locale = Locale(id = "sq-MK", name = "Albanian - The former Yugoslav Republic of Macedonia", country = "MKD", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
+  val SqMk: Locale = Locale(id = "sq-MK", name = "Albanian - North Macedonia", country = "MKD", language = "sq", numbers = LocaleNumbers(decimal = ",", group = " "))
   val Am: Locale = Locale(id = "am", name = "Amharic - Armenia", country = "ARM", language = "am", numbers = LocaleNumbers(decimal = ".", group = ","))
   val AmEt: Locale = Locale(id = "am-ET", name = "Amharic - Ethiopia", country = "ETH", language = "am", numbers = LocaleNumbers(decimal = ".", group = ","))
   val ArDz: Locale = Locale(id = "ar-DZ", name = "Arabic - Algeria", country = "DZA", language = "ar", numbers = LocaleNumbers(decimal = ",", group = "."))
