@@ -42,13 +42,8 @@ trait Validation[T] {
   }
 
   // Method aliases to preserve existing methods used by `Regions`
-  def findById = find _
-  def mustFindById = mustFind _
-
-  private[this] def formatted(value: String): String = value match {
-    case "" => ""
-    case _ => s" $value"
-  }
+  def findById: String => Option[T] = find
+  def mustFindById: String => T = mustFind
 
   // This needs to be a method since the value of `plural` is not known at compile time. Making it a `val` causes `$plural` to interpolate as `null`.
   private[this] def referenceLink = s"See https://api.flow.io/reference/$urlKey for a list of all valid $plural."
@@ -65,16 +60,47 @@ trait Validation[T] {
     case _ => referenceLink
   }
 
+  /**
+   * We were seeing messages like "The following currency currencies are invalid"
+   * This method filters out the duplicate nouns so this reads as:
+   * "The following currencies are invalid"
+   */
+  private[this] def errorMessage(noun: String, prefix: String, suffix: String): String = {
+    val parts = Seq(prefix, noun, suffix).map(_.trim).filterNot(_.isEmpty)
+
+    val finalParts = if (noun == singular) {
+      parts.map { p =>
+        if (p == plural) {
+          singular
+        } else {
+          p
+        }
+      }
+    } else if (noun == plural) {
+      parts.map { p =>
+        if (p == singular) {
+          plural
+        } else {
+          p
+        }
+      }
+    } else {
+      parts
+    }
+
+    finalParts.distinct.mkString(" ")
+  }
+
   private[this] def singleInvalid(id: String, prefix: String = "", suffix: String = ""): String = {
-    s"The following${formatted(prefix)} $singular${formatted(suffix)} is invalid: [$id].${formatted(singularReferenceLink)}"
+    s"The following ${errorMessage(singular, prefix, suffix)} is invalid: [$id]. $singularReferenceLink"
   }
 
   private[this] def manyInvalid(ids: Seq[String], prefix: String, suffix: String): String = {
-    s"The following${formatted(prefix)} $plural${formatted(suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s".${formatted(pluralReferenceLink)}"
+    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s". $pluralReferenceLink"
   }
 
   def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = {
-    ids match {
+    ids.distinct.toList match {
       case Nil => Nil
       case Seq(one) => Seq(singleInvalid(one, prefix, suffix))
       case multiple => Seq(manyInvalid(multiple, prefix, suffix))

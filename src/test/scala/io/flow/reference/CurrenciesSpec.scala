@@ -97,10 +97,20 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
   it("should return a grammatically correct error for a single invalid currency") {
     Currencies.validate(Seq("invalid")) should be(Left(List("The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.")))
     Currencies.validateSingle("invalid") should be(Left("The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."))
+    Currencies.validateSingle("invalid", "currency") should be(Left("The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."))
+    Currencies.validateSingle("invalid", "foreign") should be(Left("The following foreign currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."))
   }
 
   it("should return a grammatically correct error for multiple invalid currencies") {
-    Currencies.validate(Seq("totally invalid", "seriously bad", "not a currency")) should be(Left(List("The following currencies are invalid: [totally invalid], [seriously bad], [not a currency]. See https://api.flow.io/reference/currencies for a list of all valid currencies.")))
+    Currencies.validate(Seq("totally invalid", "seriously bad", "not a currency")) should be(Left(List(
+      "The following currencies are invalid: [totally invalid], [seriously bad], [not a currency]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
+    )))
+    Currencies.validate(Seq("invalid", "invalid2"), "currency") should be(Left(List(
+      "The following currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
+    )))
+    Currencies.validate(Seq("invalid", "invalid2"), "foreign") should be(Left(List(
+      "The following foreign currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
+    )))
   }
 
   it("should return an error validating a list containing both valid and invalid currencies") {
