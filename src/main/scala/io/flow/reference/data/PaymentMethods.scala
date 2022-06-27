@@ -29,6 +29,11 @@ object PaymentMethods {
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/60/original.png", width = 100, height = 60),
                                       large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/apple_pay/120/original.png", width = 256, height = 256)
                                     ), regions = Seq("world"), capabilities = Some(Nil))
+  val Bancontact: PaymentMethod = PaymentMethod(id = "bancontact", `type` = PaymentMethodType.Online, name = "Bancontact", images = PaymentMethodImages(
+                                      small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bancontact/30/original.png", width = 65, height = 41),
+                                      medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bancontact/60/original.png", width = 100, height = 60),
+                                      large = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bancontact/120/original.png", width = 256, height = 256)
+                                    ), regions = Seq("world"), capabilities = Some(Nil))
   val BanktransferIban: PaymentMethod = PaymentMethod(id = "bankTransfer_IBAN", `type` = PaymentMethodType.Online, name = "International Bank Transfer (IBAN)", images = PaymentMethodImages(
                                       small = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bankTransfer_IBAN/30/original.png", width = 65, height = 41),
                                       medium = PaymentMethodImage(url = "https://flowcdn.io/util/logos/payment-methods/bankTransfer_IBAN/60/original.png", width = 100, height = 60),
@@ -221,6 +226,7 @@ object PaymentMethods {
     Alipay,
     AmericanExpress,
     ApplePay,
+    Bancontact,
     BanktransferIban,
     Bitcoin,
     Bitpay,
