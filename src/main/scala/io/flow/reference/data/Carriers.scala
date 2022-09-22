@@ -8,7 +8,7 @@ object Carriers {
   val CanadaPost: Carrier = Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
   val Chronopost: Carrier = Carrier(id = "chronopost", name = "Chronopost", trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT=")
   val DeutschePost: Carrier = Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/")
-  val Dhl: Carrier = Carrier(id = "dhl", name = "DHL Express", trackingUrl = "http://www.dhl.com/en/express/tracking.html?AWB=")
+  val Dhl: Carrier = Carrier(id = "dhl", name = "DHL Express", trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id=")
   val DhlEcommerce: Carrier = Carrier(id = "dhl-ecommerce", name = "DHL Ecommerce", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlGlobalMail: Carrier = Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
   val DhlParcel: Carrier = Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=")
