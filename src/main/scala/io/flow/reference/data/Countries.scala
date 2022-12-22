@@ -57,7 +57,7 @@ object Countries {
   val Cog: Country = Country(iso31662 = "CG", iso31663 = "COG", defaultCurrency = Some("XAF"), defaultLanguage = Some("fr"), measurementSystem = "metric", name = "Congo", languages = Seq("fr", "kg", "ln"), timezones = Nil)
   val Cok: Country = Country(iso31662 = "CK", iso31663 = "COK", defaultCurrency = Some("NZD"), defaultLanguage = None, measurementSystem = "metric", name = "Cook Islands", languages = Nil, timezones = Nil)
   val Cri: Country = Country(iso31662 = "CR", iso31663 = "CRI", defaultCurrency = Some("CRC"), defaultLanguage = Some("es"), measurementSystem = "metric", name = "Costa Rica", languages = Seq("es"), timezones = Nil)
-  val Hrv: Country = Country(iso31662 = "HR", iso31663 = "HRV", defaultCurrency = Some("HRK"), defaultLanguage = Some("hr"), measurementSystem = "metric", name = "Croatia", languages = Seq("hr", "it"), timezones = Nil)
+  val Hrv: Country = Country(iso31662 = "HR", iso31663 = "HRV", defaultCurrency = Some("EUR"), defaultLanguage = Some("hr"), measurementSystem = "metric", name = "Croatia", languages = Seq("hr", "it"), timezones = Nil)
   val Cub: Country = Country(iso31662 = "CU", iso31663 = "CUB", defaultCurrency = Some("EUR"), defaultLanguage = Some("es"), measurementSystem = "metric", name = "Cuba", languages = Seq("es"), timezones = Nil)
   val Cuw: Country = Country(iso31662 = "CW", iso31663 = "CUW", defaultCurrency = Some("ANG"), defaultLanguage = Some("nl"), measurementSystem = "metric", name = "Curaçao", languages = Seq("en", "nl"), timezones = Nil)
   val Cyp: Country = Country(iso31662 = "CY", iso31663 = "CYP", defaultCurrency = Some("EUR"), defaultLanguage = Some("el"), measurementSystem = "metric", name = "Cyprus", languages = Seq("el", "tr"), timezones = Nil)
