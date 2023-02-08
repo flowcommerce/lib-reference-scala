@@ -22,7 +22,7 @@ lazy val root = project
   .in(file("."))
   .settings(
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.14" % Test,
+      "org.scalatest" %% "scalatest" % "3.2.15" % Test,
     ),
     credentials += Credentials(
       "Artifactory Realm",
