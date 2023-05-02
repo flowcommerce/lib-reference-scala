@@ -59,7 +59,7 @@ object Currencies {
   val Hnl: Currency = Currency(iso42173 = "HNL", name = "Honduras Lempira", numberDecimals = 2, defaultLocale = Some("es-HN"), symbols = Some(CurrencySymbols(primary = "HNL", narrow = Some("L"))))
   val Hkd: Currency = Currency(iso42173 = "HKD", name = "Hong Kong Dollar", numberDecimals = 2, defaultLocale = Some("zh-HK"), symbols = Some(CurrencySymbols(primary = "HK$", narrow = Some("$"))))
   val Huf: Currency = Currency(iso42173 = "HUF", name = "Hungarian Forint", numberDecimals = 0, defaultLocale = Some("hu"), symbols = Some(CurrencySymbols(primary = "HUF", narrow = Some("Ft"))))
-  val Isk: Currency = Currency(iso42173 = "ISK", name = "Iceland Krona", numberDecimals = 2, defaultLocale = Some("is"), symbols = Some(CurrencySymbols(primary = "ISK", narrow = Some("kr"))))
+  val Isk: Currency = Currency(iso42173 = "ISK", name = "Iceland Krona", numberDecimals = 0, defaultLocale = Some("is"), symbols = Some(CurrencySymbols(primary = "ISK", narrow = Some("kr"))))
   val Inr: Currency = Currency(iso42173 = "INR", name = "Indian Rupee", numberDecimals = 2, defaultLocale = Some("bn-IN"), symbols = Some(CurrencySymbols(primary = "₹", narrow = Some("₹"))))
   val Idr: Currency = Currency(iso42173 = "IDR", name = "Indonesian Rupiah", numberDecimals = 0, defaultLocale = Some("id"), symbols = Some(CurrencySymbols(primary = "IDR", narrow = Some("Rp"))))
   val Jmd: Currency = Currency(iso42173 = "JMD", name = "Jamaican Dollar", numberDecimals = 2, defaultLocale = Some("en-JM"), symbols = Some(CurrencySymbols(primary = "JMD", narrow = Some("$"))))
