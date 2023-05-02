@@ -39,6 +39,5 @@ publishTo := {
 }
 
 scalacOptions ++= allScalacOptions
-version := "0.3.19-isk-zero-decimal"
 
-version := "0.3.19"
+version := "0.3.19-isk-zero-decimal"
