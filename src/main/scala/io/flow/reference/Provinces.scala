@@ -44,13 +44,9 @@ object Provinces extends Validation[Province] {
     /*
      * If a list of countries is passed, use that to filter the list
      */
-    val finalList: Seq[Province] = countries match {
-      case Some(all) => {
-        found.filter { p => Countries.find(p.country).exists(all.contains(_)) }
-      }
+    countries match {
+      case Some(all) => found.filter { p => Countries.find(p.country).exists(all.contains(_)) }
       case None => found
     }
-
-    finalList
   }
 }
