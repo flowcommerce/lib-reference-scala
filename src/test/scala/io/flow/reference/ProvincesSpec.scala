@@ -1,7 +1,10 @@
 package io.flow.reference
 
+import io.flow.reference.data.Countries.{Can, Usa}
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers
+
+import scala.collection.immutable.Nil
 
 class ProvincesSpec extends AnyFunSpec with Matchers {
 
@@ -55,6 +58,13 @@ class ProvincesSpec extends AnyFunSpec with Matchers {
     }
 
     Provinces.query(None, Some(Seq("USA"))) should contain(data.Provinces.UsaNy)
+  }
+
+  it("findInCountry") {
+    Provinces.findInCountry(Usa, "New York").get.id shouldBe data.Provinces.UsaNy.id
+    Provinces.findInCountry(Usa, "NY").get.id shouldBe data.Provinces.UsaNy.id
+    Provinces.findInCountry(Usa, "quebec") shouldBe None
+    Provinces.findInCountry(Can, "quebec").get.id shouldBe data.Provinces.CanQc.id
   }
 
 }
