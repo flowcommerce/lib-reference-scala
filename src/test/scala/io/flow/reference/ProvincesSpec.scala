@@ -58,6 +58,8 @@ class ProvincesSpec extends AnyFunSpec with Matchers {
     }
 
     Provinces.query(None, Some(Seq("USA"))) should contain(data.Provinces.UsaNy)
+
+    Provinces.query(None, Some(Seq("foobar"))) should be(Nil)
   }
 
   it("findInCountry") {
