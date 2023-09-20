@@ -22,7 +22,9 @@ object CarrierServices {
   val DhlExpressWorldwide: CarrierService = CarrierService(id = "dhl-express-worldwide", name = "Express Worldwide", carrier = io.flow.reference.v0.models.Carrier(id = "dhl", name = "DHL Express", trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id="))
   val DhlGlobalMailPacketPlus: CarrierService = CarrierService(id = "dhl-global-mail-packet-plus", name = "Packet Plus", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-global-mail", name = "DHL Global Mail", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlParcelInternationalDirect: CarrierService = CarrierService(id = "dhl-parcel-international-direct", name = "International Direct", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
+  val DhlParcelInternationalDirectSmb: CarrierService = CarrierService(id = "dhl-parcel-international-direct-smb", name = "International Direct SMB", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val DhlParcelInternationalStandard: CarrierService = CarrierService(id = "dhl-parcel-international-standard", name = "International Standard", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
+  val DhlParcelInternationalStandardSmb: CarrierService = CarrierService(id = "dhl-parcel-international-standard-smb", name = "International Standard SMB", carrier = io.flow.reference.v0.models.Carrier(id = "dhl-parcel", name = "DHL Parcel", trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="))
   val FedexCrossborderEcommerce: CarrierService = CarrierService(id = "fedex-crossborder-ecommerce", name = "E-commerce", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
   val FedexCrossborderEcommerceLite: CarrierService = CarrierService(id = "fedex-crossborder-ecommerce-lite", name = "E-commerce Lite", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
   val FedexCrossborderFicExpressPriority: CarrierService = CarrierService(id = "fedex-crossborder-fic-express-priority", name = "FIC Express Priority", carrier = io.flow.reference.v0.models.Carrier(id = "fedex-crossborder", name = "FedEx Crossborder", trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="))
@@ -116,7 +118,9 @@ object CarrierServices {
     DhlExpressWorldwide,
     DhlGlobalMailPacketPlus,
     DhlParcelInternationalDirect,
+    DhlParcelInternationalDirectSmb,
     DhlParcelInternationalStandard,
+    DhlParcelInternationalStandardSmb,
     FedexCrossborderEcommerce,
     FedexCrossborderEcommerceLite,
     FedexCrossborderFicExpressPriority,
