@@ -32,11 +32,15 @@ class CountriesSpec extends AnyFunSpec with Matchers {
   it("have codes in upper case") {
     data.Countries.all.map(_.iso31662) should be(data.Countries.all.map(_.iso31662.toUpperCase))
     data.Countries.all.map(_.iso31663) should be(data.Countries.all.map(_.iso31663.toUpperCase))
-    data.Countries.all.map(_.defaultCurrency.getOrElse("")) should be(data.Countries.all.map(_.defaultCurrency.getOrElse("").toUpperCase))
+    data.Countries.all.map(_.defaultCurrency.getOrElse("")) should be(
+      data.Countries.all.map(_.defaultCurrency.getOrElse("").toUpperCase)
+    )
   }
 
   it("have measurement systems in lower case") {
-    data.Countries.all.map(_.measurementSystem.toString) should be(data.Countries.all.map(_.measurementSystem.toString.toLowerCase))
+    data.Countries.all.map(_.measurementSystem.toString) should be(
+      data.Countries.all.map(_.measurementSystem.toString.toLowerCase)
+    )
   }
 
   it("have no blanks (except for default_currency)") {
@@ -47,10 +51,57 @@ class CountriesSpec extends AnyFunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "ALB", "AND", "ARE", "ARG", "ATG", "AUS", "AUT", "BEL", "BFA", "BGR", "BHS", "CAN", "CHE",
-      "CHL", "CHN", "CIV", "CMR", "CRI", "DEU", "DNK", "DOM", "ESP", "EST", "FIN", "FJI", "FRA",
-      "GBR", "HKG", "HTI", "IND", "IRL", "ISR", "ITA", "JPN", "KOR", "KWT", "MEX", "MLT", "NLD", "NOR",
-      "NZL", "PHL", "POL", "RUS", "SAU", "SGP", "SWE", "THA", "TWN", "USA", "ZAF"
+      "ALB",
+      "AND",
+      "ARE",
+      "ARG",
+      "ATG",
+      "AUS",
+      "AUT",
+      "BEL",
+      "BFA",
+      "BGR",
+      "BHS",
+      "CAN",
+      "CHE",
+      "CHL",
+      "CHN",
+      "CIV",
+      "CMR",
+      "CRI",
+      "DEU",
+      "DNK",
+      "DOM",
+      "ESP",
+      "EST",
+      "FIN",
+      "FJI",
+      "FRA",
+      "GBR",
+      "HKG",
+      "HTI",
+      "IND",
+      "IRL",
+      "ISR",
+      "ITA",
+      "JPN",
+      "KOR",
+      "KWT",
+      "MEX",
+      "MLT",
+      "NLD",
+      "NOR",
+      "NZL",
+      "PHL",
+      "POL",
+      "RUS",
+      "SAU",
+      "SGP",
+      "SWE",
+      "THA",
+      "TWN",
+      "USA",
+      "ZAF"
     )
 
     all.filter { code =>
@@ -106,23 +157,29 @@ class CountriesSpec extends AnyFunSpec with Matchers {
 
   it("validate2 with invalid countries") {
     Countries.validate2("origin", "c", "dest", "AUS") should be(
-      Left(List(
-        "Invalid origin 'c'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
-      ))
+      Left(
+        List(
+          "Invalid origin 'c'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
+        )
+      )
     )
 
     Countries.validate2("origin", "chn", "dest", "A") should be(
-      Left(List(
-        "Invalid dest 'A'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
-      ))
+      Left(
+        List(
+          "Invalid dest 'A'. Must be a valid ISO 3166-2 or 3166-3 digit code. See https://api.flow.io/reference/countries"
+        )
+      )
     )
 
     Countries.validate2("origin", "c", "origin", "A") should be(
-      Left(List(
-        "Invalid origin 'c', 'A'. Must be valid ISO 3166-2 or 3166-3 digit codes. See https://api.flow.io/reference/countries"
-      ))
+      Left(
+        List(
+          "Invalid origin 'c', 'A'. Must be valid ISO 3166-2 or 3166-3 digit codes. See https://api.flow.io/reference/countries"
+        )
+      )
     )
-    
+
     Countries.validate2("origin", "c", "dest", "A") should be(
       Left(
         List(
@@ -154,17 +211,25 @@ class CountriesSpec extends AnyFunSpec with Matchers {
   }
 
   it("validate all countries by ISO31662 and ISO31663") {
-    Countries.validate(data.Countries.all.map(_.iso31662)) should be (Right(data.Countries.all))
-    Countries.validate(data.Countries.all.map(_.iso31663)) should be (Right(data.Countries.all))
+    Countries.validate(data.Countries.all.map(_.iso31662)) should be(Right(data.Countries.all))
+    Countries.validate(data.Countries.all.map(_.iso31663)) should be(Right(data.Countries.all))
   }
 
   it("return an error for invalid countries for both ISO 3166 2- and 3-character codes") {
-    Countries.validate(Seq("Fra", "Mars")) should be(Left(Seq(
-      "The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    )))
-    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq(
-      "The following countries are invalid: [Mars], [Venus], [Jupiter]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    )))
+    Countries.validate(Seq("Fra", "Mars")) should be(
+      Left(
+        Seq(
+          "The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+        )
+      )
+    )
+    Countries.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(
+      Left(
+        Seq(
+          "The following countries are invalid: [Mars], [Venus], [Jupiter]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+        )
+      )
+    )
   }
 
   it("return a list of two errors with prefixes for mixed invalid countries for both 3166 2- and 3-character codes") {
@@ -176,9 +241,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       prefix = "destination"
     )
 
-    res0 should be(Seq(
-      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res0 should be(
+      Seq(
+        "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     // Test ISO3166-3
     val Left(res1) = Countries.validate(
@@ -188,9 +255,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       prefix = "destination"
     )
 
-    res1 should be(Seq(
-      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res1 should be(
+      Seq(
+        "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     // Test both and verify that duplicates (i.e. the ISO 31662 and ISO 31663 for the same country) are ignored
     val Left(res2) = Countries.validate(
@@ -201,10 +270,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       prefix = "destination"
     )
 
-    res2 should be(Seq(
-      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
-
+    res2 should be(
+      Seq(
+        "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     val Left(res3) = Countries.validate(
       ids = Seq(
@@ -214,9 +284,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       prefix = "destination"
     )
 
-    res3 should be(Seq(
-      "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res3 should be(
+      Seq(
+        "The following destination country is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     val Left(res4) = Countries.validate(
       ids = Seq(
@@ -228,9 +300,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       prefix = "destination"
     )
 
-    res4 should be(Seq(
-      "The following destination countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res4 should be(
+      Seq(
+        "The following destination countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
   }
 
   it("return a list of two errors with suffixes for mixed invalid countries for both 3166 2- and 3-character codes") {
@@ -242,9 +316,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res0 should be(Seq(
-      "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res0 should be(
+      Seq(
+        "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     // Test both and verify that duplicates (i.e. the ISO 31662 and ISO 31663 for the same country) are ignored
     val Left(res2) = Countries.validate(
@@ -255,10 +331,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res2 should be(Seq(
-      "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
-
+    res2 should be(
+      Seq(
+        "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     // Test with a valid country included
     val Left(res3) = Countries.validate(
@@ -269,9 +346,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res3 should be(Seq(
-      "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res3 should be(
+      Seq(
+        "The following country of origin is invalid: [Flowville]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
 
     // Test with multiple invalid countries
     val Left(res4) = Countries.validate(
@@ -284,9 +363,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       suffix = "of origin"
     )
 
-    res4 should be(Seq(
-      "The following countries of origin are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res4 should be(
+      Seq(
+        "The following countries of origin are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
   }
 
   it("trims strings and ignores duplicates") {
@@ -299,9 +380,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
       )
     )
 
-    res should be(Seq(
-      "The following countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
-    ))
+    res should be(
+      Seq(
+        "The following countries are invalid: [Flowville], [Flobistan]. The provided country codes must be valid ISO 3166-2 or 3166-3 codes. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
   }
 
   it("successfully validate an empty list of ids") {
@@ -323,7 +406,11 @@ class CountriesSpec extends AnyFunSpec with Matchers {
   }
 
   it("return an error for a single invalid country") {
-    Countries.validateSingle("Mars") should be(Left("The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."))
+    Countries.validateSingle("Mars") should be(
+      Left(
+        "The following country is invalid: [Mars]. The provided country code must be a valid ISO 3166-2 or 3166-3 code. See https://api.flow.io/reference/countries for a list of all valid countries."
+      )
+    )
   }
 
   it("proper default language") {

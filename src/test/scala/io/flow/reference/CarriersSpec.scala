@@ -44,7 +44,9 @@ class CarriersSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Carriers.mustFind("blah")
-    }.getMessage should be("The following carrier is invalid: [blah]. See https://api.flow.io/reference/carriers for a list of all valid carriers.")
+    }.getMessage should be(
+      "The following carrier is invalid: [blah]. See https://api.flow.io/reference/carriers for a list of all valid carriers."
+    )
   }
 
 }

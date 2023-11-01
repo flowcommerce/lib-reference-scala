@@ -21,11 +21,59 @@ class RegionsSpec extends AnyFunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "africa", "alb", "and", "are", "arg", "atg", "aus", "aut", "bel", "bgr",
-      "bhs", "can", "che", "chl", "chn", "civ", "cri", "deu", "dnk", "dom", "esp", "est",
-      "europe", "eurozone", "fin", "fji", "fra", "gbr", "hkg", "hti", "ind", "irl", "isr", "ita", "jpn",
-      "kor", "kwt", "mex", "mlt", "nld", "nor", "nzl", "phl", "pol", "rus", "sau", "sgp", "swe", "tha",
-      "twn", "usa", "world", "zaf"
+      "africa",
+      "alb",
+      "and",
+      "are",
+      "arg",
+      "atg",
+      "aus",
+      "aut",
+      "bel",
+      "bgr",
+      "bhs",
+      "can",
+      "che",
+      "chl",
+      "chn",
+      "civ",
+      "cri",
+      "deu",
+      "dnk",
+      "dom",
+      "esp",
+      "est",
+      "europe",
+      "eurozone",
+      "fin",
+      "fji",
+      "fra",
+      "gbr",
+      "hkg",
+      "hti",
+      "ind",
+      "irl",
+      "isr",
+      "ita",
+      "jpn",
+      "kor",
+      "kwt",
+      "mex",
+      "mlt",
+      "nld",
+      "nor",
+      "nzl",
+      "phl",
+      "pol",
+      "rus",
+      "sau",
+      "sgp",
+      "swe",
+      "tha",
+      "twn",
+      "usa",
+      "world",
+      "zaf"
     )
 
     all.filter { id =>
@@ -34,7 +82,8 @@ class RegionsSpec extends AnyFunSpec with Matchers {
   }
 
   it("have common regions are defined") {
-    val eurozone = data.Regions.all.find(_.id == "eurozone").getOrElse {("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World")
+    val eurozone = data.Regions.all.find(_.id == "eurozone").getOrElse {
+      ("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World")
       sys.error("eurozone missing")
     }
     eurozone.id should be("eurozone")
@@ -63,11 +112,15 @@ class RegionsSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Regions.mustFind("other")
-    }.getMessage should be("The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions.")
+    }.getMessage should be(
+      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions."
+    )
 
     intercept[Throwable] {
       Regions.mustFindById("other")
-    }.getMessage should be("The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions.")
+    }.getMessage should be(
+      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions."
+    )
   }
 
   it("filter") {
@@ -86,7 +139,9 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     }
 
     val regions = Regions.filter("fra")
-    regions.map(_.name).sorted should be(Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World"))
+    regions.map(_.name).sorted should be(
+      Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World")
+    )
     regions.foreach { r =>
       r.countries.contains("FRA") should be(true)
     }
@@ -103,15 +158,29 @@ class RegionsSpec extends AnyFunSpec with Matchers {
   }
 
   it("return an error for invalid regions") {
-    Regions.validate(Seq("Fra", "Mars")) should be(Left(Seq("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.")))
-    Regions.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(Left(Seq("The following regions are invalid: [Mars], [Venus], [Jupiter]. See https://api.flow.io/reference/regions for a list of all valid regions.")))
+    Regions.validate(Seq("Fra", "Mars")) should be(
+      Left(
+        Seq(
+          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
+        )
+      )
+    )
+    Regions.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(
+      Left(
+        Seq(
+          "The following regions are invalid: [Mars], [Venus], [Jupiter]. See https://api.flow.io/reference/regions for a list of all valid regions."
+        )
+      )
+    )
   }
 
   it("ignore duplicates") {
-    val Left(res) = Regions.validate(Seq(
-      "Flowville",
-      "Flowville"
-    ))
+    val Left(res) = Regions.validate(
+      Seq(
+        "Flowville",
+        "Flowville"
+      )
+    )
 
     res should be(
       Seq(
@@ -121,10 +190,12 @@ class RegionsSpec extends AnyFunSpec with Matchers {
   }
 
   it("trims strings and removes duplicates") {
-    val Left(res) = Regions.validate(Seq(
-      "Flowville   ",
-      "   Flowville"
-    ))
+    val Left(res) = Regions.validate(
+      Seq(
+        "Flowville   ",
+        "   Flowville"
+      )
+    )
 
     res should be(
       Seq(
@@ -150,11 +221,25 @@ class RegionsSpec extends AnyFunSpec with Matchers {
   }
 
   it("return an error for a single invalid region and trims provided id") {
-    Regions.validateSingle("Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
-    Regions.validateSingle("        Mars") should be(Left("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."))
+    Regions.validateSingle("Mars") should be(
+      Left(
+        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
+      )
+    )
+    Regions.validateSingle("        Mars") should be(
+      Left(
+        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
+      )
+    )
   }
 
   it("validation merges duplicate regions") {
-    Regions.validate(Seq("Mars", "Mars")) should be(Left(Seq("The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.")))
+    Regions.validate(Seq("Mars", "Mars")) should be(
+      Left(
+        Seq(
+          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
+        )
+      )
+    )
   }
 }

@@ -16,14 +16,12 @@ object Regions extends Validation[Region] {
 
   override def name(r: Region): String = r.name
 
-  /**
-    * Filters regions based on the query parameter. We filter in a few
-    * different ways:
-    * 
-    *  - if the query string maps to a country, we find all regions that contain that country
-    *  - otherwise we check if there is a region with id = q
+  /** Filters regions based on the query parameter. We filter in a few different ways:
+    *
+    *   - if the query string maps to a country, we find all regions that contain that country
+    *   - otherwise we check if there is a region with id = q
     */
-  def filter(q: String): Seq[Region] = {  
+  def filter(q: String): Seq[Region] = {
     Countries.find(q) match {
       case None => {
         Seq(find(q)).flatten

@@ -1,32 +1,27 @@
 package io.flow.reference
 
-/**
- *  A trait that allows a type `T` to be validated, as long as the following are defined:
- */
+/** A trait that allows a type `T` to be validated, as long as the following are defined:
+  */
 trait Validation[T] {
 
-  /**
-    * The singular form of `T`; for example, "country".
+  /** The singular form of `T`; for example, "country".
     */
   def singular: String
 
-  /**
-    * The plural form of `T`; for example, "countries".
+  /** The plural form of `T`; for example, "countries".
     */
   def plural: String
 
-  /**
-    * A map of valid keys to the objects of type `T` that they represent.
+  /** A map of valid keys to the objects of type `T` that they represent.
     */
   def cache: Map[String, T]
 
-  /**
-    * A method that returns the name (or other property that returns a string) to use in validation error messages for each object of type `T`.
+  /** A method that returns the name (or other property that returns a string) to use in validation error messages for
+    * each object of type `T`.
     */
   def name(t: T): String
 
-  /**
-    * Key in URL for reference data. Defaults to plural
+  /** Key in URL for reference data. Defaults to plural
     */
   def urlKey: String = plural
 
@@ -60,11 +55,9 @@ trait Validation[T] {
     case _ => referenceLink
   }
 
-  /**
-   * We were seeing messages like "The following currency currencies are invalid"
-   * This method filters out the duplicate nouns so this reads as:
-   * "The following currencies are invalid"
-   */
+  /** We were seeing messages like "The following currency currencies are invalid" This method filters out the duplicate
+    * nouns so this reads as: "The following currencies are invalid"
+    */
   private[this] def errorMessage(noun: String, prefix: String, suffix: String): String = {
     val parts = Seq(prefix, noun, suffix).map(_.trim).filterNot(_.isEmpty)
 
@@ -96,7 +89,9 @@ trait Validation[T] {
   }
 
   private[this] def manyInvalid(ids: Seq[String], prefix: String, suffix: String): String = {
-    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids.map(id => s"[$id]").mkString(", ") + s". $pluralReferenceLink"
+    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids
+      .map(id => s"[$id]")
+      .mkString(", ") + s". $pluralReferenceLink"
   }
 
   def invalidError(ids: Seq[String], prefix: String = "", suffix: String = ""): Seq[String] = {
@@ -115,12 +110,16 @@ trait Validation[T] {
     }
   }
 
-  /**
-   *  Validates a list of ids for the given type `T`.
-   *  @param ids The ids to validate.
-   *  @param prefix A prefix to place before the singular or plural of `T`, such as "destination" to yield "destination country" or "destination countries" if `T` is `Country`.
-   *  @param suffix A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or "countries of origin" if `T` is `Country`.
-   */
+  /** Validates a list of ids for the given type `T`.
+    * @param ids
+    *   The ids to validate.
+    * @param prefix
+    *   A prefix to place before the singular or plural of `T`, such as "destination" to yield "destination country" or
+    *   "destination countries" if `T` is `Country`.
+    * @param suffix
+    *   A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or
+    *   "countries of origin" if `T` is `Country`.
+    */
   def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): Either[Seq[String], Seq[T]] = {
     val distinctTrimmedIds = ids.map(_.trim).distinct
     val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validateSingle(id).isRight }

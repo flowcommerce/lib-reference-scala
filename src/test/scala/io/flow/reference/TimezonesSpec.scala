@@ -42,7 +42,9 @@ class TimezonesSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Timezones.mustFind("other")
-    }.getMessage should be("The following timezone is invalid: [other]. See https://api.flow.io/reference/timezones for a list of all valid timezones.")
+    }.getMessage should be(
+      "The following timezone is invalid: [other]. See https://api.flow.io/reference/timezones for a list of all valid timezones."
+    )
   }
-  
+
 }
