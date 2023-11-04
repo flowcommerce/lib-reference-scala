@@ -7,19 +7,18 @@ import scala.annotation.tailrec
 
 object RegionFunctions {
 
-  /**
-    * A Region is a logical construct that can cover just about any geography -- political, physical, economic -- and
-    * is thus naturally layered.
+  /** A Region is a logical construct that can cover just about any geography -- political, physical, economic -- and is
+    * thus naturally layered.
     *
     * As such, it will occasionally be important to determine how a given region intersects with a set of regionally
-    * associated rules -- such as determining which set of regulations applies when regulations might be set at
-    * state, province, country and union levels.
+    * associated rules -- such as determining which set of regulations applies when regulations might be set at state,
+    * province, country and union levels.
     *
     * @param r
     */
   implicit class RegionCoverage(r: Region) {
-    /**
-      * Returns a Seq of all the regions that include this region (including itself).
+
+    /** Returns a Seq of all the regions that include this region (including itself).
       *
       * E.g.
       *
@@ -35,16 +34,13 @@ object RegionFunctions {
       val rs = r match {
         case data.Regions.World => Seq(r)
         case Region(_, _, countries, _, _, _, _) => {
-          data.Regions.all.filter(eachRegion =>
-            countries.forall(c => eachRegion.countries.contains(c))
-          )
+          data.Regions.all.filter(eachRegion => countries.forall(c => eachRegion.countries.contains(c)))
         }
       }
       rs.sortBy(_.countries.size)
     }
 
-    /**
-      * Returns a Seq of all the regions that this region includes (including itself).
+    /** Returns a Seq of all the regions that this region includes (including itself).
       *
       * World -> (everything)
       *
@@ -66,10 +62,9 @@ object RegionFunctions {
       rs.sortBy(_.countries.size)(Ordering.Int.reverse)
     }
 
-    /**
-      * Given a region and a function that returns an optional product to that service, returns the product that is
-      * most local to the region. E.g. if a rule applies in France and a different rule applies in Europe, the French
-      * rule would be returned.
+    /** Given a region and a function that returns an optional product to that service, returns the product that is most
+      * local to the region. E.g. if a rule applies in France and a different rule applies in Europe, the French rule
+      * would be returned.
       *
       * Locality is determines based on the count of countries within a Region -- e.g. Africa is more local than World
       * w/r/t Morocco. This isn't a fantastic heuristic and will likely need to be revisited in the future.
@@ -92,10 +87,9 @@ object RegionFunctions {
       } else None
     }
 
-    /**
-      * Given a region and a function that returns an optional product to that service, returns the product that is
-      * most global to the region. E.g. if a rule applies in France and a different rule applies to Europe, the European
-      * rule would be returned
+    /** Given a region and a function that returns an optional product to that service, returns the product that is most
+      * global to the region. E.g. if a rule applies in France and a different rule applies to Europe, the European rule
+      * would be returned
       *
       * Locality is determines based on the count of countries within a Region -- e.g. Africa is more local than World
       * w/r/t Morocco. This isn't a fantastic heuristic and will likely need to be revisited in the future.

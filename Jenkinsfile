@@ -35,7 +35,7 @@ pipeline {
           script {
             try {
               sh '''
-                sbt clean compile flowLintLib test doc
+                sbt clean compile flowLintLib test scalafmtSbtCheck scalafmtCheck doc
               '''
             } finally {
                 junit allowEmptyResults: true, testResults: '**/target/test-reports/*.xml'

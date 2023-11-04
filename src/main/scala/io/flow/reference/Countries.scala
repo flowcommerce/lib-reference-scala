@@ -18,23 +18,25 @@ object Countries extends Validation[Country] {
   override def singular = "country"
 
   override def plural = "countries"
-  
+
   override def name(c: Country): String = c.name
 
-  /**
-    * Validation function that will turn two provided codes into either of:
+  /** Validation function that will turn two provided codes into either of:
     *
     *   - 1 or more errors
     *   - A tuple of two country objects
     *
     * Example:
-    * 
-    *    validate2("country of origin", "CHN", "destination", "AUS") match {
-    *      case Left(errors) => { }
-    *      case Right((origin, destination)) => { }
-    *    }
+    *
+    * validate2("country of origin", "CHN", "destination", "AUS") match { case Left(errors) => { } case Right((origin,
+    * destination)) => { } }
     */
-  def validate2(label1: String, code1: String, label2: String, code2: String): Either[Seq[String], (Country, Country)] = {
+  def validate2(
+    label1: String,
+    code1: String,
+    label2: String,
+    code2: String
+  ): Either[Seq[String], (Country, Country)] = {
     validateN(
       Seq(
         (label1, code1),

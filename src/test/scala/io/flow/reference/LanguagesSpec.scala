@@ -25,8 +25,34 @@ class LanguagesSpec extends AnyFunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "aa", "af", "ar", "be", "bg", "ca", "cs", "cy", "da", "de", "en", "es", "et", "fa",
-      "fi", "fr", "ja", "kg", "ko", "nb", "nl", "pl", "pt", "ru", "sq", "sv", "th", "zh"
+      "aa",
+      "af",
+      "ar",
+      "be",
+      "bg",
+      "ca",
+      "cs",
+      "cy",
+      "da",
+      "de",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "ja",
+      "kg",
+      "ko",
+      "nb",
+      "nl",
+      "pl",
+      "pt",
+      "ru",
+      "sq",
+      "sv",
+      "th",
+      "zh"
     )
 
     all.filter { code =>
@@ -34,7 +60,7 @@ class LanguagesSpec extends AnyFunSpec with Matchers {
     } should be(Nil)
   }
 
-  it("have common languages are defined") {  
+  it("have common languages are defined") {
     val english = data.Languages.all.find(_.iso6392 == "en").getOrElse {
       sys.error("english missing")
     }
@@ -65,7 +91,9 @@ class LanguagesSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Languages.mustFind("other")
-    }.getMessage should be("The following language is invalid: [other]. See https://api.flow.io/reference/languages for a list of all valid languages.")
+    }.getMessage should be(
+      "The following language is invalid: [other]. See https://api.flow.io/reference/languages for a list of all valid languages."
+    )
   }
-  
+
 }

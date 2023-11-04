@@ -28,7 +28,7 @@ class LocalesSpec extends AnyFunSpec with Matchers {
     } should be(Nil)
   }
 
-  it("have common locales are defined") {  
+  it("have common locales are defined") {
     val enUs = data.Locales.all.find(_.id == "en-US").getOrElse {
       sys.error("en-US missing")
     }
@@ -65,7 +65,9 @@ class LocalesSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Locales.mustFind("other")
-    }.getMessage should be("The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales.")
+    }.getMessage should be(
+      "The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales."
+    )
   }
 
   it("filter by id") {

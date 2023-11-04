@@ -41,7 +41,9 @@ class ProvincesSpec extends AnyFunSpec with Matchers {
 
     intercept[Throwable] {
       Provinces.mustFind("other")
-    }.getMessage should be("The following province is invalid: [other]. See https://api.flow.io/reference/provinces for a list of all valid provinces.")
+    }.getMessage should be(
+      "The following province is invalid: [other]. See https://api.flow.io/reference/provinces for a list of all valid provinces."
+    )
   }
 
   it("query") {
