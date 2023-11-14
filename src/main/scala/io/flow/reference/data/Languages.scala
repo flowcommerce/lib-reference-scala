@@ -245,7 +245,7 @@ object Languages {
     Wo,
     Xh,
     Yo,
-    Zu
+    Zu,
   )
 
 }

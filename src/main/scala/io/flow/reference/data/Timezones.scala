@@ -156,29 +156,29 @@ object Timezones {
   val AustraliaDarwin: Timezone = Timezone(
     name = "Australia/Darwin",
     offset = 570,
-    description = "Australian Central Standard Time (Northern Territory)"
+    description = "Australian Central Standard Time (Northern Territory)",
   )
   val AustraliaNorth: Timezone = Timezone(
     name = "Australia/North",
     offset = 570,
-    description = "Australian Central Standard Time (Northern Territory)"
+    description = "Australian Central Standard Time (Northern Territory)",
   )
   val AustraliaAdelaide: Timezone = Timezone(
     name = "Australia/Adelaide",
     offset = 570,
-    description = "Australian Central Standard Time (South Australia)"
+    description = "Australian Central Standard Time (South Australia)",
   )
   val AustraliaSouth: Timezone =
     Timezone(name = "Australia/South", offset = 570, description = "Australian Central Standard Time (South Australia)")
   val AustraliaBrokenHill: Timezone = Timezone(
     name = "Australia/Broken_Hill",
     offset = 570,
-    description = "Australian Central Standard Time (South Australia/New South Wales)"
+    description = "Australian Central Standard Time (South Australia/New South Wales)",
   )
   val AustraliaYancowinna: Timezone = Timezone(
     name = "Australia/Yancowinna",
     offset = 570,
-    description = "Australian Central Standard Time (South Australia/New South Wales)"
+    description = "Australian Central Standard Time (South Australia/New South Wales)",
   )
   val AustraliaEucla: Timezone =
     Timezone(name = "Australia/Eucla", offset = 525, description = "Australian Central Western Standard Time")
@@ -187,19 +187,19 @@ object Timezones {
   val AustraliaCanberra: Timezone = Timezone(
     name = "Australia/Canberra",
     offset = 600,
-    description = "Australian Eastern Standard Time (New South Wales)"
+    description = "Australian Eastern Standard Time (New South Wales)",
   )
   val AustraliaCurrie: Timezone = Timezone(
     name = "Australia/Currie",
     offset = 600,
-    description = "Australian Eastern Standard Time (New South Wales)"
+    description = "Australian Eastern Standard Time (New South Wales)",
   )
   val AustraliaNsw: Timezone =
     Timezone(name = "Australia/NSW", offset = 600, description = "Australian Eastern Standard Time (New South Wales)")
   val AustraliaSydney: Timezone = Timezone(
     name = "Australia/Sydney",
     offset = 600,
-    description = "Australian Eastern Standard Time (New South Wales)"
+    description = "Australian Eastern Standard Time (New South Wales)",
   )
   val AustraliaBrisbane: Timezone =
     Timezone(name = "Australia/Brisbane", offset = 600, description = "Australian Eastern Standard Time (Queensland)")
@@ -1438,7 +1438,7 @@ object Timezones {
     AsiaKashgar,
     AsiaUrumqi,
     AsiaYakutsk,
-    AsiaYekaterinburg
+    AsiaYekaterinburg,
   )
 
 }

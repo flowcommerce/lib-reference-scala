@@ -7,7 +7,7 @@ object Regions extends Validation[Region] {
   override val cache: Map[String, Region] = Map(
     data.Regions.all.map { r =>
       (r.id.toLowerCase -> r)
-    }: _*
+    }: _*,
   )
 
   override def singular = "region"

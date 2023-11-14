@@ -8,7 +8,7 @@ object Locales extends Validation[Locale] {
       variations(l.id).map { key =>
         key -> l
       }
-    }: _*
+    }: _*,
   )
 
   override def singular: String = "locale"

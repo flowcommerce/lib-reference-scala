@@ -15,12 +15,12 @@ class RegionCoverageSpec extends AnyFunSpec with Matchers {
         data.Regions.Eurozone,
         data.Regions.EuropeanEconomicArea,
         data.Regions.Europe,
-        data.Regions.World
-      ).map(_.id).sorted
+        data.Regions.World,
+      ).map(_.id).sorted,
     )
     data.Regions.EuropeanUnion.encompassingRegions.map(_.id) should be(
       Seq(data.Regions.EuropeanUnion, data.Regions.EuropeanEconomicArea, data.Regions.Europe, data.Regions.World)
-        .map(_.id)
+        .map(_.id),
     )
     data.Regions.World.encompassingRegions.map(_.id) should be(Seq(data.Regions.World.id))
   }

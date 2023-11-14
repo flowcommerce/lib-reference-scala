@@ -76,7 +76,7 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
       "USD",
       "XCD",
       "XOF",
-      "ZAR"
+      "ZAR",
     )
 
     all.filter { code =>
@@ -122,7 +122,7 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
     intercept[Throwable] {
       Currencies.mustFind("other")
     }.getMessage should be(
-      "The following currency is invalid: [other]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
+      "The following currency is invalid: [other]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
     )
   }
 
@@ -138,24 +138,24 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
     Currencies.validate(Seq("invalid")) should be(
       Left(
         List(
-          "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-        )
-      )
+          "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+        ),
+      ),
     )
     Currencies.validateSingle("invalid") should be(
       Left(
-        "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-      )
+        "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+      ),
     )
     Currencies.validateSingle("invalid", "currency") should be(
       Left(
-        "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-      )
+        "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+      ),
     )
     Currencies.validateSingle("invalid", "foreign") should be(
       Left(
-        "The following foreign currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-      )
+        "The following foreign currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+      ),
     )
   }
 
@@ -163,23 +163,23 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
     Currencies.validate(Seq("totally invalid", "seriously bad", "not a currency")) should be(
       Left(
         List(
-          "The following currencies are invalid: [totally invalid], [seriously bad], [not a currency]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-        )
-      )
+          "The following currencies are invalid: [totally invalid], [seriously bad], [not a currency]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+        ),
+      ),
     )
     Currencies.validate(Seq("invalid", "invalid2"), "currency") should be(
       Left(
         List(
-          "The following currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-        )
-      )
+          "The following currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+        ),
+      ),
     )
     Currencies.validate(Seq("invalid", "invalid2"), "foreign") should be(
       Left(
         List(
-          "The following foreign currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-        )
-      )
+          "The following foreign currencies are invalid: [invalid], [invalid2]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+        ),
+      ),
     )
   }
 
@@ -187,31 +187,31 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
     Currencies.validate(Seq("USD", "invalid")) should be(
       Left(
         List(
-          "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies."
-        )
-      )
+          "The following currency is invalid: [invalid]. See https://api.flow.io/reference/currencies for a list of all valid currencies.",
+        ),
+      ),
     )
   }
 
   it("numbers") {
     data.Currencies.Usd.symbols should be(
-      Some(CurrencySymbols(primary = "US$", narrow = Some("$")))
+      Some(CurrencySymbols(primary = "US$", narrow = Some("$"))),
     )
 
     data.Currencies.Aud.symbols should be(
-      Some(CurrencySymbols(primary = "A$", narrow = Some("$")))
+      Some(CurrencySymbols(primary = "A$", narrow = Some("$"))),
     )
 
     data.Currencies.Eur.symbols should be(
-      Some(CurrencySymbols(primary = "€", narrow = Some("€")))
+      Some(CurrencySymbols(primary = "€", narrow = Some("€"))),
     )
 
     data.Currencies.Gbp.symbols should be(
-      Some(CurrencySymbols(primary = "£", narrow = Some("£")))
+      Some(CurrencySymbols(primary = "£", narrow = Some("£"))),
     )
 
     data.Currencies.Jpy.symbols should be(
-      Some(CurrencySymbols(primary = "¥", narrow = Some("¥")))
+      Some(CurrencySymbols(primary = "¥", narrow = Some("¥"))),
     )
   }
 

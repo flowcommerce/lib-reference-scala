@@ -10,9 +10,9 @@ object Countries extends Validation[Country] {
       Seq(
         c.iso31662.toLowerCase -> c,
         c.iso31663.toLowerCase -> c,
-        c.name.toLowerCase -> c
+        c.name.toLowerCase -> c,
       )
-    }: _*
+    }: _*,
   )
 
   override def singular = "country"
@@ -35,13 +35,13 @@ object Countries extends Validation[Country] {
     label1: String,
     code1: String,
     label2: String,
-    code2: String
+    code2: String,
   ): Either[Seq[String], (Country, Country)] = {
     validateN(
       Seq(
         (label1, code1),
-        (label2, code2)
-      )
+        (label2, code2),
+      ),
     ) match {
       case Left(errors) => {
         Left(errors)
