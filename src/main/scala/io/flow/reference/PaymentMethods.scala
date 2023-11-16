@@ -7,7 +7,7 @@ object PaymentMethods extends Validation[PaymentMethod] {
   override val cache: Map[String, PaymentMethod] = Map(
     data.PaymentMethods.all.map { r =>
       r.id.toLowerCase -> r
-    }: _*
+    }: _*,
   )
 
   override def singular = "payment method"

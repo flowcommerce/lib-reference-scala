@@ -20,7 +20,7 @@ class LocalesSpec extends AnyFunSpec with Matchers {
 
   it("codes in use are defined") {
     val all = Seq(
-      "en-US"
+      "en-US",
     )
 
     all.filter { id =>
@@ -66,7 +66,7 @@ class LocalesSpec extends AnyFunSpec with Matchers {
     intercept[Throwable] {
       Locales.mustFind("other")
     }.getMessage should be(
-      "The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales."
+      "The following locale is invalid: [other]. See https://api.flow.io/reference/locales for a list of all valid locales.",
     )
   }
 

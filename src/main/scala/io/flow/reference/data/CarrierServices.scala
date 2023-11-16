@@ -8,43 +8,43 @@ object CarrierServices {
     id = "asendia-e-paq-select",
     name = "e-Paq Select",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/")
+      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"),
   )
   val AsendiaExpress: CarrierService = CarrierService(
     id = "asendia-express",
     name = "Express",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/")
+      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"),
   )
   val AsendiaStandard: CarrierService = CarrierService(
     id = "asendia-standard",
     name = "Standard",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/")
+      .Carrier(id = "asendia", name = "Asendia", trackingUrl = "https://track.aftership.com/asendia/"),
   )
   val CanadaPostExpeditedParcel: CarrierService = CarrierService(
     id = "canada-post-expedited-parcel",
     name = "Expedited Parcel",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
+      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"),
   )
   val CanadaPostPriority: CarrierService = CarrierService(
     id = "canada-post-priority",
     name = "Priority",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
+      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"),
   )
   val CanadaPostRegularParcel: CarrierService = CarrierService(
     id = "canada-post-regular-parcel",
     name = "Regular Parcel",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
+      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"),
   )
   val CanadaPostXpresspost: CarrierService = CarrierService(
     id = "canada-post-xpresspost",
     name = "Xpresspost",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/")
+      .Carrier(id = "canada-post", name = "Canada Post", trackingUrl = "https://track.aftership.com/canada-post/"),
   )
   val ChronopostChronoClassic: CarrierService = CarrierService(
     id = "chronopost-chrono-classic",
@@ -52,8 +52,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "chronopost",
       name = "Chronopost",
-      trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT="
-    )
+      trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT=",
+    ),
   )
   val ChronopostChronoExpress: CarrierService = CarrierService(
     id = "chronopost-chrono-express",
@@ -61,20 +61,20 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "chronopost",
       name = "Chronopost",
-      trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT="
-    )
+      trackingUrl = "https://www.chronopost.fr/en/chrono_suivi_search?listeNumerosLT=",
+    ),
   )
   val DeutschePostPacketTrackedPriorityGpt: CarrierService = CarrierService(
     id = "deutsche-post-packet-tracked-priority-gpt",
     name = "Packet Tracked Priority GPT",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/")
+      .Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/"),
   )
   val DeutschePostUsaDirect: CarrierService = CarrierService(
     id = "deutsche-post-usa-direct",
     name = "USA Direct",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/")
+      .Carrier(id = "deutsche-post", name = "Deutsche Post", trackingUrl = "https://track.aftership.com/deutsch-post/"),
   )
   val DhlEcommerceStandard: CarrierService = CarrierService(
     id = "dhl-ecommerce-standard",
@@ -82,8 +82,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-ecommerce",
       name = "DHL Ecommerce",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val DhlEconomySelect: CarrierService = CarrierService(
     id = "dhl-economy-select",
@@ -91,8 +91,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl",
       name = "DHL Express",
-      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id="
-    )
+      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id=",
+    ),
   )
   val DhlExpressDomestic1800: CarrierService = CarrierService(
     id = "dhl-express-domestic-1800",
@@ -100,8 +100,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl",
       name = "DHL Express",
-      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id="
-    )
+      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id=",
+    ),
   )
   val DhlExpressExportEconomy: CarrierService = CarrierService(
     id = "dhl-express-export-economy",
@@ -109,8 +109,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl",
       name = "DHL Express",
-      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id="
-    )
+      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id=",
+    ),
   )
   val DhlExpressWorldwide: CarrierService = CarrierService(
     id = "dhl-express-worldwide",
@@ -118,8 +118,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl",
       name = "DHL Express",
-      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id="
-    )
+      trackingUrl = "https://mydhl.express.dhl/us/en/tracking.html#/results?id=",
+    ),
   )
   val DhlGlobalMailPacketPlus: CarrierService = CarrierService(
     id = "dhl-global-mail-packet-plus",
@@ -127,8 +127,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-global-mail",
       name = "DHL Global Mail",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val DhlParcelInternationalDirect: CarrierService = CarrierService(
     id = "dhl-parcel-international-direct",
@@ -136,8 +136,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-parcel",
       name = "DHL Parcel",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val DhlParcelInternationalDirectSmb: CarrierService = CarrierService(
     id = "dhl-parcel-international-direct-smb",
@@ -145,8 +145,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-parcel",
       name = "DHL Parcel",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val DhlParcelInternationalStandard: CarrierService = CarrierService(
     id = "dhl-parcel-international-standard",
@@ -154,8 +154,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-parcel",
       name = "DHL Parcel",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val DhlParcelInternationalStandardSmb: CarrierService = CarrierService(
     id = "dhl-parcel-international-standard-smb",
@@ -163,8 +163,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "dhl-parcel",
       name = "DHL Parcel",
-      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber="
-    )
+      trackingUrl = "https://webtrack.dhlglobalmail.com/?trackingnumber=",
+    ),
   )
   val FedexCrossborderEcommerce: CarrierService = CarrierService(
     id = "fedex-crossborder-ecommerce",
@@ -172,8 +172,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderEcommerceLite: CarrierService = CarrierService(
     id = "fedex-crossborder-ecommerce-lite",
@@ -181,8 +181,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicExpressPriority: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-express-priority",
@@ -190,8 +190,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicLimitedTracked: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-limited-tracked",
@@ -199,8 +199,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicLimitedTrackedPlus: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-limited-tracked-plus",
@@ -208,8 +208,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicPudoService: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-pudo-service",
@@ -217,8 +217,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicTrackedUsaPriority: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-tracked-usa-priority",
@@ -226,8 +226,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicTrackedWorldwide: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-tracked-worldwide",
@@ -235,8 +235,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderFicUntrackedUk: CarrierService = CarrierService(
     id = "fedex-crossborder-fic-untracked-uk",
@@ -244,8 +244,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderRoyalMailTracked24: CarrierService = CarrierService(
     id = "fedex-crossborder-royal-mail-tracked-24",
@@ -253,8 +253,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderRoyalMailTracked48: CarrierService = CarrierService(
     id = "fedex-crossborder-royal-mail-tracked-48",
@@ -262,8 +262,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderUk24Hours: CarrierService = CarrierService(
     id = "fedex-crossborder-uk-24-hours",
@@ -271,8 +271,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderUk48Hours: CarrierService = CarrierService(
     id = "fedex-crossborder-uk-48-hours",
@@ -280,8 +280,8 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexCrossborderYodel72HourPacket: CarrierService = CarrierService(
     id = "fedex-crossborder-yodel-72-hour-packet",
@@ -289,74 +289,74 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "fedex-crossborder",
       name = "FedEx Crossborder",
-      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber="
-    )
+      trackingUrl = "https://www.trackmytrakpak.com/?MyTrakPakNumber=",
+    ),
   )
   val FedexGround: CarrierService = CarrierService(
     id = "fedex-ground",
     name = "Ground",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="),
   )
   val FedexInternationalEconomy: CarrierService = CarrierService(
     id = "fedex-international-economy",
     name = "International Economy",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="),
   )
   val FedexInternationalPriority: CarrierService = CarrierService(
     id = "fedex-international-priority",
     name = "International Priority",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="),
   )
   val FedexInternationalStandard: CarrierService = CarrierService(
     id = "fedex-international-standard",
     name = "International Standard",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="),
   )
   val FedexOvernight: CarrierService = CarrierService(
     id = "fedex-overnight",
     name = "Overnight",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=")
+      .Carrier(id = "fedex", name = "FedEx", trackingUrl = "https://www.fedex.com/apps/fedextrack/?tracknumbers="),
   )
   val IlgEconomyUntracked: CarrierService = CarrierService(
     id = "ilg-economy-untracked",
     name = "Economy Untracked",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val IlgEuropeanSinglePack: CarrierService = CarrierService(
     id = "ilg-european-single-pack",
     name = "European Single Pack",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val IlgExpressTracked: CarrierService = CarrierService(
     id = "ilg-express-tracked",
     name = "Express Tracked",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val IlgGlobalCourier: CarrierService = CarrierService(
     id = "ilg-global-courier",
     name = "Global Courier",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val IlgInternationalCourier: CarrierService = CarrierService(
     id = "ilg-international-courier",
     name = "International Courier",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val IlgStandardTracked: CarrierService = CarrierService(
     id = "ilg-standard-tracked",
     name = "Standard Tracked",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/")
+      io.flow.reference.v0.models.Carrier(id = "ilg", name = "ILG", trackingUrl = "https://www.ilguk.com/track-trace/"),
   )
   val LaPosteColissimo: CarrierService = CarrierService(
     id = "la-poste-colissimo",
@@ -364,26 +364,26 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "la-poste",
       name = "La Poste",
-      trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code="
-    )
+      trackingUrl = "https://www.laposte.fr/particulier/outils/en/track-a-parcel?code=",
+    ),
   )
   val LandmarkGlobal: CarrierService = CarrierService(
     id = "landmark-global",
     name = "Global",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck=")
+      .Carrier(id = "landmark", name = "Landmark", trackingUrl = "https://track.landmarkglobal.com/?trck="),
   )
   val MalcaAmitArmored: CarrierService = CarrierService(
     id = "malca-amit-armored",
     name = "Armored",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t=")
+      .Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t="),
   )
   val MalcaAmitExpress: CarrierService = CarrierService(
     id = "malca-amit-express",
     name = "Express",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t=")
+      .Carrier(id = "malca-amit", name = "Malca Amit", trackingUrl = "https://tracking.malca-amit.com/?t="),
   )
   val OcsWorldwideInternationalStandardDelivery: CarrierService = CarrierService(
     id = "ocs-worldwide-international-standard-delivery",
@@ -391,35 +391,35 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "ocs-worldwide",
       name = "OCS Worldwide",
-      trackingUrl = "https://www.ocsworldwide.co.uk/Tracking.aspx?cwb="
-    )
+      trackingUrl = "https://www.ocsworldwide.co.uk/Tracking.aspx?cwb=",
+    ),
   )
   val OtherFreight: CarrierService = CarrierService(
     id = "other-freight",
     name = "Freight",
-    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/")
+    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"),
   )
   val OtherLtl: CarrierService = CarrierService(
     id = "other-ltl",
     name = "Less Than Truckload",
-    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/")
+    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"),
   )
   val OtherPostal: CarrierService = CarrierService(
     id = "other-postal",
     name = "Postal",
-    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/")
+    carrier = io.flow.reference.v0.models.Carrier(id = "other", name = "Other", trackingUrl = "https://track.flow.io/"),
   )
   val RrdonnelleyInternationalIpa: CarrierService = CarrierService(
     id = "rrdonnelley-international-ipa",
     name = "International IPA",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/")
+      .Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"),
   )
   val RrdonnelleyInternationalPpdc: CarrierService = CarrierService(
     id = "rrdonnelley-international-ppdc",
     name = "International PPDC",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/")
+      .Carrier(id = "rrdonnelley", name = "RR Donnelley", trackingUrl = "https://track.aftership.com/rrdonnelley/"),
   )
   val SfExpressEconomyExpressParcel: CarrierService = CarrierService(
     id = "sf-express-economy-express-parcel",
@@ -427,230 +427,230 @@ object CarrierServices {
     carrier = io.flow.reference.v0.models.Carrier(
       id = "sf-express",
       name = "SF Express",
-      trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/"
-    )
+      trackingUrl = "http://www.sf-express.com/us/en/dynamic_function/waybill/#search/bill-number/",
+    ),
   )
   val Ups2ndDayAir: CarrierService = CarrierService(
     id = "ups-2nd-day-air",
     name = "2nd Day Air",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val Ups2ndDayAirAm: CarrierService = CarrierService(
     id = "ups-2nd-day-air-am",
     name = "2nd Day Air AM",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val Ups3DaySelect: CarrierService = CarrierService(
     id = "ups-3-day-select",
     name = "3 Day Select",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsAccessPointEconomy: CarrierService = CarrierService(
     id = "ups-access-point-economy",
     name = "Access Point Economy",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsEconomyMailInnovations: CarrierService = CarrierService(
     id = "ups-economy-mail-innovations",
     name = "Economy Mail Innovations",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpedited: CarrierService = CarrierService(
     id = "ups-expedited",
     name = "Expedited",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpeditedMaiiInnovations: CarrierService = CarrierService(
     id = "ups-expedited-maii-innovations",
     name = "Expedited MaiI Innovations",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpress: CarrierService = CarrierService(
     id = "ups-express",
     name = "Express",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpress1200: CarrierService = CarrierService(
     id = "ups-express-1200",
     name = "Express 1200",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpressInternational: CarrierService = CarrierService(
     id = "ups-express-international",
     name = "Express International",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpressPlus: CarrierService = CarrierService(
     id = "ups-express-plus",
     name = "Express Plus",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsExpressSaver: CarrierService = CarrierService(
     id = "ups-express-saver",
     name = "Express Saver",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsFirstClassMail: CarrierService = CarrierService(
     id = "ups-first-class-mail",
     name = "First Class Mail",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsGround: CarrierService = CarrierService(
     id = "ups-ground",
     name = "Ground",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsInternationalImport: CarrierService = CarrierService(
     id = "ups-international-import",
     name = "International Import",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsMaiiInnovationsReturns: CarrierService = CarrierService(
     id = "ups-maii-innovations-returns",
     name = "MaiI Innovations Returns",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsNextDayAir: CarrierService = CarrierService(
     id = "ups-next-day-air",
     name = "Next Day Air",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsNextDayAirEarly: CarrierService = CarrierService(
     id = "ups-next-day-air-early",
     name = "Next Day Air Early",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsNextDayAirSaver: CarrierService = CarrierService(
     id = "ups-next-day-air-saver",
     name = "Next Day Air Saver",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsPriorityMail: CarrierService = CarrierService(
     id = "ups-priority-mail",
     name = "Priority Mail",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsPriorityMailInnovations: CarrierService = CarrierService(
     id = "ups-priority-mail-innovations",
     name = "Priority Mail Innovations",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsStandard: CarrierService = CarrierService(
     id = "ups-standard",
     name = "Standard",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsStandardInternational: CarrierService = CarrierService(
     id = "ups-standard-international",
     name = "Standard International",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsTodayDedicatedCourier: CarrierService = CarrierService(
     id = "ups-today-dedicated-courier",
     name = "Today Dedicated Courier",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsTodayExpress: CarrierService = CarrierService(
     id = "ups-today-express",
     name = "Today Express",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsTodayExpressSaver: CarrierService = CarrierService(
     id = "ups-today-express-saver",
     name = "Today Express Saver",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsTodayIntercity: CarrierService = CarrierService(
     id = "ups-today-intercity",
     name = "Today Intercity",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsTodayStandard: CarrierService = CarrierService(
     id = "ups-today-standard",
     name = "Today Standard",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideEconomy: CarrierService = CarrierService(
     id = "ups-worldwide-economy",
     name = "Worldwide Economy",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideEconomyDdu: CarrierService = CarrierService(
     id = "ups-worldwide-economy-ddu",
     name = "Worldwide Economy DDU",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideExpedited: CarrierService = CarrierService(
     id = "ups-worldwide-expedited",
     name = "Worldwide Expedited",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideExpress: CarrierService = CarrierService(
     id = "ups-worldwide-express",
     name = "Worldwide Express",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideExpressFreightMidday: CarrierService = CarrierService(
     id = "ups-worldwide-express-freight-midday",
     name = "Worldwide Express Freight Midday",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideExpressFreight: CarrierService = CarrierService(
     id = "ups-worldwide-express-freight.",
     name = "Worldwide Express Freight",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UpsWorldwideExpressPlus: CarrierService = CarrierService(
     id = "ups-worldwide-express-plus",
     name = "Worldwide Express Plus",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum=")
+      .Carrier(id = "ups", name = "UPS", trackingUrl = "https://www.ups.com/track?loc=en_US&tracknum="),
   )
   val UspsPriorityMailInternational: CarrierService = CarrierService(
     id = "usps-priority-mail-international",
     name = "Priority Mail International",
     carrier =
-      io.flow.reference.v0.models.Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/")
+      io.flow.reference.v0.models.Carrier(id = "usps", name = "USPS", trackingUrl = "https://track.aftership.com/usps/"),
   )
   val WnDirectStandard: CarrierService = CarrierService(
     id = "wn-direct-standard",
     name = "Standard",
     carrier = io.flow.reference.v0.models
-      .Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref=")
+      .Carrier(id = "wn-direct", name = "WN Direct", trackingUrl = "http://wndirect.com/tracking.php?type=TR&ref="),
   )
 
   val all: Seq[CarrierService] = Seq(
@@ -747,7 +747,7 @@ object CarrierServices {
     UpsWorldwideExpressFreight,
     UpsWorldwideExpressPlus,
     UspsPriorityMailInternational,
-    WnDirectStandard
+    WnDirectStandard,
   )
 
 }

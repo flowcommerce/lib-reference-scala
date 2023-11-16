@@ -55,7 +55,7 @@ object RegionFunctions {
         case data.Regions.World => data.Regions.all
         case Region(_, _, countries, _, _, _, _) => {
           data.Regions.all.filter(
-            _.countries.forall(c => countries.contains(c))
+            _.countries.forall(c => countries.contains(c)),
           )
         }
       }

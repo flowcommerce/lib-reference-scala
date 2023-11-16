@@ -6,7 +6,7 @@ object Provinces extends Validation[Province] {
   override val cache: Map[String, Province] = Map(
     data.Provinces.all.map { c =>
       c.id.toLowerCase -> c
-    }: _*
+    }: _*,
   )
 
   override def singular = "province"

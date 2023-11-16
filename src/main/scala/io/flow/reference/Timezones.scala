@@ -7,9 +7,9 @@ object Timezones extends Validation[Timezone] {
     data.Timezones.all.flatMap { t =>
       Seq(
         t.name.toLowerCase -> t,
-        t.name.replaceAll("[/_]", " ").toLowerCase -> t
+        t.name.replaceAll("[/_]", " ").toLowerCase -> t,
       )
-    }: _*
+    }: _*,
   )
 
   override def singular = "timezone"

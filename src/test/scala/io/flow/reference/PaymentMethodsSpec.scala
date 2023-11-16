@@ -21,7 +21,7 @@ class PaymentMethodsSpec extends AnyFunSpec with Matchers {
       "visa",
       "mastercard",
       "american_express",
-      "paypal"
+      "paypal",
     )
 
     all.filter { id =>
@@ -63,7 +63,7 @@ class PaymentMethodsSpec extends AnyFunSpec with Matchers {
     intercept[Throwable] {
       PaymentMethods.mustFind("other")
     }.getMessage should be(
-      "The following payment method is invalid: [other]. See https://api.flow.io/reference/payment-methods for a list of all valid payment methods."
+      "The following payment method is invalid: [other]. See https://api.flow.io/reference/payment-methods for a list of all valid payment methods.",
     )
   }
 

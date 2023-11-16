@@ -73,7 +73,7 @@ class RegionsSpec extends AnyFunSpec with Matchers {
       "twn",
       "usa",
       "world",
-      "zaf"
+      "zaf",
     )
 
     all.filter { id =>
@@ -113,13 +113,13 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     intercept[Throwable] {
       Regions.mustFind("other")
     }.getMessage should be(
-      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions."
+      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions.",
     )
 
     intercept[Throwable] {
       Regions.mustFindById("other")
     }.getMessage should be(
-      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions."
+      "The following region is invalid: [other]. See https://api.flow.io/reference/regions for a list of all valid regions.",
     )
   }
 
@@ -140,7 +140,7 @@ class RegionsSpec extends AnyFunSpec with Matchers {
 
     val regions = Regions.filter("fra")
     regions.map(_.name).sorted should be(
-      Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World")
+      Seq("Europe", "European Economic Area", "European Union", "Eurozone", "France", "World"),
     )
     regions.foreach { r =>
       r.countries.contains("FRA") should be(true)
@@ -161,16 +161,16 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     Regions.validate(Seq("Fra", "Mars")) should be(
       Left(
         Seq(
-          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
-        )
-      )
+          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+        ),
+      ),
     )
     Regions.validate(Seq("Fra", "Mars", "Venus", "Jupiter")) should be(
       Left(
         Seq(
-          "The following regions are invalid: [Mars], [Venus], [Jupiter]. See https://api.flow.io/reference/regions for a list of all valid regions."
-        )
-      )
+          "The following regions are invalid: [Mars], [Venus], [Jupiter]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+        ),
+      ),
     )
   }
 
@@ -178,14 +178,14 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     val Left(res) = Regions.validate(
       Seq(
         "Flowville",
-        "Flowville"
-      )
+        "Flowville",
+      ),
     )
 
     res should be(
       Seq(
-        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions."
-      )
+        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+      ),
     )
   }
 
@@ -193,14 +193,14 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     val Left(res) = Regions.validate(
       Seq(
         "Flowville   ",
-        "   Flowville"
-      )
+        "   Flowville",
+      ),
     )
 
     res should be(
       Seq(
-        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions."
-      )
+        "The following region is invalid: [Flowville]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+      ),
     )
   }
 
@@ -223,13 +223,13 @@ class RegionsSpec extends AnyFunSpec with Matchers {
   it("return an error for a single invalid region and trims provided id") {
     Regions.validateSingle("Mars") should be(
       Left(
-        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
-      )
+        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+      ),
     )
     Regions.validateSingle("        Mars") should be(
       Left(
-        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
-      )
+        "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+      ),
     )
   }
 
@@ -237,9 +237,9 @@ class RegionsSpec extends AnyFunSpec with Matchers {
     Regions.validate(Seq("Mars", "Mars")) should be(
       Left(
         Seq(
-          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions."
-        )
-      )
+          "The following region is invalid: [Mars]. See https://api.flow.io/reference/regions for a list of all valid regions.",
+        ),
+      ),
     )
   }
 }

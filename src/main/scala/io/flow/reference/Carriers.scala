@@ -8,9 +8,9 @@ object Carriers extends Validation[Carrier] {
       Seq(
         t.id.toLowerCase -> t,
         t.name.toLowerCase -> t,
-        t.name.replaceAll("[/_]", " ").toLowerCase -> t
+        t.name.replaceAll("[/_]", " ").toLowerCase -> t,
       )
-    }: _*
+    }: _*,
   )
 
   override def singular = "carrier"

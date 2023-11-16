@@ -7,9 +7,9 @@ object Currencies extends Validation[Currency] {
     data.Currencies.all.flatMap { c =>
       Seq(
         c.iso42173.toLowerCase -> c,
-        c.name.toLowerCase -> c
+        c.name.toLowerCase -> c,
       )
-    }: _*
+    }: _*,
   )
 
   override def singular = "currency"

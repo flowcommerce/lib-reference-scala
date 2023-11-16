@@ -52,7 +52,7 @@ class LanguagesSpec extends AnyFunSpec with Matchers {
       "sq",
       "sv",
       "th",
-      "zh"
+      "zh",
     )
 
     all.filter { code =>
@@ -92,7 +92,7 @@ class LanguagesSpec extends AnyFunSpec with Matchers {
     intercept[Throwable] {
       Languages.mustFind("other")
     }.getMessage should be(
-      "The following language is invalid: [other]. See https://api.flow.io/reference/languages for a list of all valid languages."
+      "The following language is invalid: [other]. See https://api.flow.io/reference/languages for a list of all valid languages.",
     )
   }
 

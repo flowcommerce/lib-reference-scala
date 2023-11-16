@@ -11,7 +11,7 @@ object Regions {
     languages = Seq("fa", "ps"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Africa: Region = Region(
     id = "africa",
@@ -74,7 +74,7 @@ object Regions {
       "UGA",
       "ZAF",
       "ZMB",
-      "ZWE"
+      "ZWE",
     ),
     languages = Seq(
       "aa",
@@ -116,7 +116,7 @@ object Regions {
       "wo",
       "xh",
       "yo",
-      "zu"
+      "zu",
     ),
     currencies = Seq(
       "AOA",
@@ -150,10 +150,10 @@ object Regions {
       "XAF",
       "XOF",
       "ZAR",
-      "ZMW"
+      "ZMW",
     ),
     measurementSystems = Seq("imperial", "metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Albania: Region = Region(
     id = "alb",
@@ -162,7 +162,7 @@ object Regions {
     languages = Seq("sq"),
     currencies = Seq("ALL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Algeria: Region = Region(
     id = "dza",
@@ -171,7 +171,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("DZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val AmericanSamoa: Region = Region(
     id = "asm",
@@ -180,7 +180,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Andorra: Region = Region(
     id = "and",
@@ -189,7 +189,7 @@ object Regions {
     languages = Seq("ca"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Angola: Region = Region(
     id = "ago",
@@ -198,7 +198,7 @@ object Regions {
     languages = Seq("kg", "kj", "pt"),
     currencies = Seq("AOA"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Anguilla: Region = Region(
     id = "aia",
@@ -207,7 +207,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Antarctica: Region = Region(
     id = "ata",
@@ -216,7 +216,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val AntiguaAndBarbuda: Region = Region(
     id = "atg",
@@ -225,7 +225,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Argentina: Region = Region(
     id = "arg",
@@ -234,7 +234,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("ARS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Armenia: Region = Region(
     id = "arm",
@@ -243,7 +243,7 @@ object Regions {
     languages = Seq("hy"),
     currencies = Seq("AMD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Aruba: Region = Region(
     id = "abw",
@@ -252,7 +252,7 @@ object Regions {
     languages = Seq("nl"),
     currencies = Seq("AWG"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Asia: Region = Region(
     id = "asia",
@@ -309,7 +309,7 @@ object Regions {
       "TWN",
       "UZB",
       "VNM",
-      "YEM"
+      "YEM",
     ),
     languages = Seq(
       "ar",
@@ -351,7 +351,7 @@ object Regions {
       "ur",
       "uz",
       "vi",
-      "zh"
+      "zh",
     ),
     currencies = Seq(
       "AED",
@@ -396,10 +396,10 @@ object Regions {
       "USD",
       "UZS",
       "VND",
-      "YER"
+      "YER",
     ),
     measurementSystems = Seq("imperial", "metric"),
-    timezones = Seq("Asia/Chongqing")
+    timezones = Seq("Asia/Chongqing"),
   )
   val Australia: Region = Region(
     id = "aus",
@@ -408,7 +408,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Australia/ACT")
+    timezones = Seq("Australia/ACT"),
   )
   val Austria: Region = Region(
     id = "aut",
@@ -417,7 +417,7 @@ object Regions {
     languages = Seq("de"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Azerbaijan: Region = Region(
     id = "aze",
@@ -426,7 +426,7 @@ object Regions {
     languages = Seq("az"),
     currencies = Seq("AZN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bahamas: Region = Region(
     id = "bhs",
@@ -435,7 +435,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("BSD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bahrain: Region = Region(
     id = "bhr",
@@ -444,7 +444,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("BHD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bangladesh: Region = Region(
     id = "bgd",
@@ -453,7 +453,7 @@ object Regions {
     languages = Seq("bn"),
     currencies = Seq("BDT"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Barbados: Region = Region(
     id = "brb",
@@ -462,7 +462,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("BBD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Belarus: Region = Region(
     id = "blr",
@@ -471,7 +471,7 @@ object Regions {
     languages = Seq("be", "ru"),
     currencies = Seq("BYN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Belgium: Region = Region(
     id = "bel",
@@ -480,7 +480,7 @@ object Regions {
     languages = Seq("de", "fr", "nl"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Belize: Region = Region(
     id = "blz",
@@ -489,7 +489,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("BZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Benin: Region = Region(
     id = "ben",
@@ -498,7 +498,7 @@ object Regions {
     languages = Seq("ff", "fr", "yo"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bermuda: Region = Region(
     id = "bmu",
@@ -507,7 +507,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("BMD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bhutan: Region = Region(
     id = "btn",
@@ -516,7 +516,7 @@ object Regions {
     languages = Seq("dz"),
     currencies = Seq("INR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bolivia: Region = Region(
     id = "bol",
@@ -525,7 +525,7 @@ object Regions {
     languages = Seq("ay", "es", "gn", "qu"),
     currencies = Seq("BOB"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BonaireSintEustatiusAndSaba: Region = Region(
     id = "bes",
@@ -534,7 +534,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BosniaAndHerzegovina: Region = Region(
     id = "bih",
@@ -543,7 +543,7 @@ object Regions {
     languages = Seq("bs", "hr", "sr"),
     currencies = Seq("BAM"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Botswana: Region = Region(
     id = "bwa",
@@ -552,7 +552,7 @@ object Regions {
     languages = Seq("en", "tn"),
     currencies = Seq("BWP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BouvetIsland: Region = Region(
     id = "bvt",
@@ -561,7 +561,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NOK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Brazil: Region = Region(
     id = "bra",
@@ -570,7 +570,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("BRL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BritishIndianOceanTerritory: Region = Region(
     id = "iot",
@@ -579,7 +579,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BritishVirginIslands: Region = Region(
     id = "vgb",
@@ -588,7 +588,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BruneiDarussalam: Region = Region(
     id = "brn",
@@ -597,7 +597,7 @@ object Regions {
     languages = Seq("ms"),
     currencies = Seq("BND"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bulgaria: Region = Region(
     id = "bgr",
@@ -606,7 +606,7 @@ object Regions {
     languages = Seq("bg"),
     currencies = Seq("BGN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val BurkinaFaso: Region = Region(
     id = "bfa",
@@ -615,7 +615,7 @@ object Regions {
     languages = Seq("ff", "fr"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Burundi: Region = Region(
     id = "bdi",
@@ -624,7 +624,7 @@ object Regions {
     languages = Seq("fr", "rn"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CaboVerde: Region = Region(
     id = "cpv",
@@ -633,7 +633,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("CVE"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cambodia: Region = Region(
     id = "khm",
@@ -642,7 +642,7 @@ object Regions {
     languages = Seq("km"),
     currencies = Seq("KHR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cameroon: Region = Region(
     id = "cmr",
@@ -651,7 +651,7 @@ object Regions {
     languages = Seq("en", "fr"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Canada: Region = Region(
     id = "can",
@@ -660,7 +660,7 @@ object Regions {
     languages = Seq("en", "fr"),
     currencies = Seq("CAD"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Canada/Eastern")
+    timezones = Seq("Canada/Eastern"),
   )
   val CaymanIslands: Region = Region(
     id = "cym",
@@ -669,7 +669,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("KYD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CentralAfricanRepublic: Region = Region(
     id = "caf",
@@ -678,7 +678,7 @@ object Regions {
     languages = Seq("fr", "sg"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Chad: Region = Region(
     id = "tcd",
@@ -687,7 +687,7 @@ object Regions {
     languages = Seq("ar", "fr"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Chile: Region = Region(
     id = "chl",
@@ -696,7 +696,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("CLP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val China: Region = Region(
     id = "chn",
@@ -705,7 +705,7 @@ object Regions {
     languages = Seq("zh"),
     currencies = Seq("CNY"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Asia/Chongqing")
+    timezones = Seq("Asia/Chongqing"),
   )
   val ChristmasIsland: Region = Region(
     id = "cxr",
@@ -714,7 +714,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CocosKeelingIslands: Region = Region(
     id = "cck",
@@ -723,7 +723,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Colombia: Region = Region(
     id = "col",
@@ -732,7 +732,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("COP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Comoros: Region = Region(
     id = "com",
@@ -741,7 +741,7 @@ object Regions {
     languages = Seq("ar", "fr"),
     currencies = Seq("KMF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Congo: Region = Region(
     id = "cog",
@@ -750,7 +750,7 @@ object Regions {
     languages = Seq("fr", "kg", "ln"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CookIslands: Region = Region(
     id = "cok",
@@ -759,7 +759,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CostaRica: Region = Region(
     id = "cri",
@@ -768,7 +768,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("CRC"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Croatia: Region = Region(
     id = "hrv",
@@ -777,7 +777,7 @@ object Regions {
     languages = Seq("hr", "it"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cuba: Region = Region(
     id = "cub",
@@ -786,7 +786,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Curaçao: Region = Region(
     id = "cuw",
@@ -795,7 +795,7 @@ object Regions {
     languages = Seq("en", "nl"),
     currencies = Seq("ANG"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cyprus: Region = Region(
     id = "cyp",
@@ -804,7 +804,7 @@ object Regions {
     languages = Seq("el", "tr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Czechia: Region = Region(
     id = "cze",
@@ -813,7 +813,7 @@ object Regions {
     languages = Seq("cs", "sk"),
     currencies = Seq("CZK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val CôteDIvoire: Region = Region(
     id = "civ",
@@ -822,7 +822,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val DemocraticPeopleSRepublicOfKorea: Region = Region(
     id = "prk",
@@ -831,7 +831,7 @@ object Regions {
     languages = Seq("ko"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val DemocraticRepublicOfTheCongo: Region = Region(
     id = "cod",
@@ -840,7 +840,7 @@ object Regions {
     languages = Seq("fr", "kg", "ln", "lu", "sw"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Denmark: Region = Region(
     id = "dnk",
@@ -849,7 +849,7 @@ object Regions {
     languages = Seq("da"),
     currencies = Seq("DKK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Djibouti: Region = Region(
     id = "dji",
@@ -858,7 +858,7 @@ object Regions {
     languages = Seq("aa", "ar", "fr", "so"),
     currencies = Seq("DJF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dominica: Region = Region(
     id = "dma",
@@ -867,7 +867,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val DominicanRepublic: Region = Region(
     id = "dom",
@@ -876,7 +876,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("DOP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ecuador: Region = Region(
     id = "ecu",
@@ -885,7 +885,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Egypt: Region = Region(
     id = "egy",
@@ -894,7 +894,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("EGP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val ElSalvador: Region = Region(
     id = "slv",
@@ -903,7 +903,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val EquatorialGuinea: Region = Region(
     id = "gnq",
@@ -912,7 +912,7 @@ object Regions {
     languages = Seq("es", "fr", "pt"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Eritrea: Region = Region(
     id = "eri",
@@ -921,7 +921,7 @@ object Regions {
     languages = Seq("ar", "en", "ti"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Estonia: Region = Region(
     id = "est",
@@ -930,7 +930,7 @@ object Regions {
     languages = Seq("et"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Eswatini: Region = Region(
     id = "swz",
@@ -939,7 +939,7 @@ object Regions {
     languages = Seq("en", "ss"),
     currencies = Seq("SZL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ethiopia: Region = Region(
     id = "eth",
@@ -948,7 +948,7 @@ object Regions {
     languages = Seq("am"),
     currencies = Seq("ETB"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Europe: Region = Region(
     id = "europe",
@@ -1005,7 +1005,7 @@ object Regions {
       "SVN",
       "SWE",
       "UKR",
-      "VAT"
+      "VAT",
     ),
     languages = Seq(
       "be",
@@ -1048,7 +1048,7 @@ object Regions {
       "sr",
       "sv",
       "tr",
-      "uk"
+      "uk",
     ),
     currencies = Seq(
       "ALL",
@@ -1071,10 +1071,10 @@ object Regions {
       "RSD",
       "RUB",
       "SEK",
-      "UAH"
+      "UAH",
     ),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Africa/Algiers", "GMT")
+    timezones = Seq("Africa/Algiers", "GMT"),
   )
   val EuropeanEconomicArea: Region = Region(
     id = "europeaneconomicarea",
@@ -1109,7 +1109,7 @@ object Regions {
       "SWE",
       "ISL",
       "LIE",
-      "NOR"
+      "NOR",
     ),
     languages = Seq(
       "bg",
@@ -1141,11 +1141,11 @@ object Regions {
       "sk",
       "sl",
       "sv",
-      "tr"
+      "tr",
     ),
     currencies = Seq("BGN", "CHF", "CZK", "DKK", "EUR", "HRK", "HUF", "ISK", "NOK", "PLN", "RON", "SEK"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Africa/Algiers", "GMT")
+    timezones = Seq("Africa/Algiers", "GMT"),
   )
   val EuropeanUnion: Region = Region(
     id = "europeanunion",
@@ -1177,7 +1177,7 @@ object Regions {
       "SVK",
       "SVN",
       "ESP",
-      "SWE"
+      "SWE",
     ),
     languages = Seq(
       "bg",
@@ -1205,11 +1205,11 @@ object Regions {
       "sk",
       "sl",
       "sv",
-      "tr"
+      "tr",
     ),
     currencies = Seq("BGN", "CZK", "DKK", "EUR", "HRK", "HUF", "PLN", "RON", "SEK"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Africa/Algiers", "GMT")
+    timezones = Seq("Africa/Algiers", "GMT"),
   )
   val Eurozone: Region = Region(
     id = "eurozone",
@@ -1234,7 +1234,7 @@ object Regions {
       "PRT",
       "SVK",
       "SVN",
-      "ESP"
+      "ESP",
     ),
     languages = Seq(
       "cs",
@@ -1257,11 +1257,11 @@ object Regions {
       "sk",
       "sl",
       "sv",
-      "tr"
+      "tr",
     ),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Africa/Algiers", "GMT")
+    timezones = Seq("Africa/Algiers", "GMT"),
   )
   val FalklandIslands: Region = Region(
     id = "flk",
@@ -1270,7 +1270,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("FKP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val FaroeIslands: Region = Region(
     id = "fro",
@@ -1279,7 +1279,7 @@ object Regions {
     languages = Seq("da"),
     currencies = Seq("DKK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Fiji: Region = Region(
     id = "fji",
@@ -1288,7 +1288,7 @@ object Regions {
     languages = Seq("en", "fj", "hi", "ur"),
     currencies = Seq("FJD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Finland: Region = Region(
     id = "fin",
@@ -1297,7 +1297,7 @@ object Regions {
     languages = Seq("fi", "sv"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val France: Region = Region(
     id = "fra",
@@ -1306,7 +1306,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Africa/Algiers")
+    timezones = Seq("Africa/Algiers"),
   )
   val FrenchGuiana: Region = Region(
     id = "guf",
@@ -1315,7 +1315,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val FrenchPolynesia: Region = Region(
     id = "pyf",
@@ -1324,7 +1324,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("XPF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val FrenchSouthernTerritories: Region = Region(
     id = "atf",
@@ -1333,7 +1333,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gabon: Region = Region(
     id = "gab",
@@ -1342,7 +1342,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("XAF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gambia: Region = Region(
     id = "gmb",
@@ -1351,7 +1351,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("GMD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Georgia: Region = Region(
     id = "geo",
@@ -1360,7 +1360,7 @@ object Regions {
     languages = Seq("ka"),
     currencies = Seq("GEL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Germany: Region = Region(
     id = "deu",
@@ -1369,7 +1369,7 @@ object Regions {
     languages = Seq("de"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ghana: Region = Region(
     id = "gha",
@@ -1378,7 +1378,7 @@ object Regions {
     languages = Seq("ak", "ee", "en"),
     currencies = Seq("GHS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gibraltar: Region = Region(
     id = "gib",
@@ -1387,7 +1387,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("GIP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Greece: Region = Region(
     id = "grc",
@@ -1396,7 +1396,7 @@ object Regions {
     languages = Seq("el"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Greenland: Region = Region(
     id = "grl",
@@ -1405,7 +1405,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("DKK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Grenada: Region = Region(
     id = "grd",
@@ -1414,7 +1414,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guadeloupe: Region = Region(
     id = "glp",
@@ -1423,7 +1423,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guam: Region = Region(
     id = "gum",
@@ -1432,7 +1432,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guatemala: Region = Region(
     id = "gtm",
@@ -1441,7 +1441,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("GTQ"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guernsey: Region = Region(
     id = "ggy",
@@ -1450,7 +1450,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("GBP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guinea: Region = Region(
     id = "gin",
@@ -1459,7 +1459,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("GNF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val GuineaMinusBissau: Region = Region(
     id = "gnb",
@@ -1468,7 +1468,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guyana: Region = Region(
     id = "guy",
@@ -1477,7 +1477,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("GYD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Haiti: Region = Region(
     id = "hti",
@@ -1486,7 +1486,7 @@ object Regions {
     languages = Seq("fr", "ht"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val HeardIslandAndMcdonaldIslands: Region = Region(
     id = "hmd",
@@ -1495,7 +1495,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val HolySee: Region = Region(
     id = "vat",
@@ -1504,7 +1504,7 @@ object Regions {
     languages = Seq("it", "la"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Honduras: Region = Region(
     id = "hnd",
@@ -1513,7 +1513,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("HNL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val HongKong: Region = Region(
     id = "hkg",
@@ -1522,7 +1522,7 @@ object Regions {
     languages = Seq("en", "zh"),
     currencies = Seq("HKD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hungary: Region = Region(
     id = "hun",
@@ -1531,7 +1531,7 @@ object Regions {
     languages = Seq("hu"),
     currencies = Seq("HUF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Iceland: Region = Region(
     id = "isl",
@@ -1540,7 +1540,7 @@ object Regions {
     languages = Seq("is"),
     currencies = Seq("ISK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val India: Region = Region(
     id = "ind",
@@ -1549,7 +1549,7 @@ object Regions {
     languages = Seq("bn", "en", "gu", "hi", "pa", "ta", "te"),
     currencies = Seq("INR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Indonesia: Region = Region(
     id = "idn",
@@ -1558,7 +1558,7 @@ object Regions {
     languages = Seq("id", "ms"),
     currencies = Seq("IDR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val IranIslamicRepublicOf: Region = Region(
     id = "irn",
@@ -1567,7 +1567,7 @@ object Regions {
     languages = Seq("fa"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Iraq: Region = Region(
     id = "irq",
@@ -1576,7 +1576,7 @@ object Regions {
     languages = Seq("ar", "ku"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ireland: Region = Region(
     id = "irl",
@@ -1585,7 +1585,7 @@ object Regions {
     languages = Seq("en", "ga"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("GMT")
+    timezones = Seq("GMT"),
   )
   val IsleOfMan: Region = Region(
     id = "imn",
@@ -1594,7 +1594,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("GBP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Israel: Region = Region(
     id = "isr",
@@ -1603,7 +1603,7 @@ object Regions {
     languages = Seq("ar", "he"),
     currencies = Seq("ILS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Italy: Region = Region(
     id = "ita",
@@ -1612,7 +1612,7 @@ object Regions {
     languages = Seq("de", "fr", "it"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jamaica: Region = Region(
     id = "jam",
@@ -1621,7 +1621,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("JMD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Japan: Region = Region(
     id = "jpn",
@@ -1630,7 +1630,7 @@ object Regions {
     languages = Seq("ja"),
     currencies = Seq("JPY"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jersey: Region = Region(
     id = "jey",
@@ -1639,7 +1639,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("GBP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jordan: Region = Region(
     id = "jor",
@@ -1648,7 +1648,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("JOD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kazakhstan: Region = Region(
     id = "kaz",
@@ -1657,7 +1657,7 @@ object Regions {
     languages = Seq("kk", "ru"),
     currencies = Seq("KZT"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kenya: Region = Region(
     id = "ken",
@@ -1666,7 +1666,7 @@ object Regions {
     languages = Seq("en", "sw"),
     currencies = Seq("KES"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kiribati: Region = Region(
     id = "kir",
@@ -1675,7 +1675,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kosovo: Region = Region(
     id = "rks",
@@ -1684,7 +1684,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kuwait: Region = Region(
     id = "kwt",
@@ -1693,7 +1693,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("KWD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kyrgyzstan: Region = Region(
     id = "kgz",
@@ -1702,7 +1702,7 @@ object Regions {
     languages = Seq("ky", "ru"),
     currencies = Seq("KGS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val LaoPeopleSDemocraticRepublic: Region = Region(
     id = "lao",
@@ -1711,7 +1711,7 @@ object Regions {
     languages = Seq("lo"),
     currencies = Seq("LAK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Latvia: Region = Region(
     id = "lva",
@@ -1720,7 +1720,7 @@ object Regions {
     languages = Seq("lv"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lebanon: Region = Region(
     id = "lbn",
@@ -1729,7 +1729,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("LBP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lesotho: Region = Region(
     id = "lso",
@@ -1738,7 +1738,7 @@ object Regions {
     languages = Seq("en", "st"),
     currencies = Seq("ZAR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Liberia: Region = Region(
     id = "lbr",
@@ -1747,7 +1747,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("imperial"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Libya: Region = Region(
     id = "lby",
@@ -1756,7 +1756,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("LYD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Liechtenstein: Region = Region(
     id = "lie",
@@ -1765,7 +1765,7 @@ object Regions {
     languages = Seq("de"),
     currencies = Seq("CHF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lithuania: Region = Region(
     id = "ltu",
@@ -1774,7 +1774,7 @@ object Regions {
     languages = Seq("lt"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Luxembourg: Region = Region(
     id = "lux",
@@ -1783,7 +1783,7 @@ object Regions {
     languages = Seq("de", "fr", "lb"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Macau: Region = Region(
     id = "mac",
@@ -1792,7 +1792,7 @@ object Regions {
     languages = Seq("pt", "zh"),
     currencies = Seq("MOP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Madagascar: Region = Region(
     id = "mdg",
@@ -1801,7 +1801,7 @@ object Regions {
     languages = Seq("fr", "mg"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Malawi: Region = Region(
     id = "mwi",
@@ -1810,7 +1810,7 @@ object Regions {
     languages = Seq("en", "ny"),
     currencies = Seq("MWK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Malaysia: Region = Region(
     id = "mys",
@@ -1819,7 +1819,7 @@ object Regions {
     languages = Seq("en", "ms", "ta"),
     currencies = Seq("MYR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Maldives: Region = Region(
     id = "mdv",
@@ -1828,7 +1828,7 @@ object Regions {
     languages = Seq("dv"),
     currencies = Seq("MVR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mali: Region = Region(
     id = "mli",
@@ -1837,7 +1837,7 @@ object Regions {
     languages = Seq("bm", "ff", "fr"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Malta: Region = Region(
     id = "mlt",
@@ -1846,7 +1846,7 @@ object Regions {
     languages = Seq("en", "mt"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val MarshallIslands: Region = Region(
     id = "mhl",
@@ -1855,7 +1855,7 @@ object Regions {
     languages = Seq("en", "mh"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Martinique: Region = Region(
     id = "mtq",
@@ -1864,7 +1864,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mauritania: Region = Region(
     id = "mrt",
@@ -1873,7 +1873,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mauritius: Region = Region(
     id = "mus",
@@ -1882,7 +1882,7 @@ object Regions {
     languages = Seq("en", "fr", "ta"),
     currencies = Seq("MUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mayotte: Region = Region(
     id = "myt",
@@ -1891,7 +1891,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mexico: Region = Region(
     id = "mex",
@@ -1900,7 +1900,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("MXN"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Mexico/General")
+    timezones = Seq("Mexico/General"),
   )
   val Micronesia: Region = Region(
     id = "fsm",
@@ -1909,7 +1909,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Monaco: Region = Region(
     id = "mco",
@@ -1918,7 +1918,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mongolia: Region = Region(
     id = "mng",
@@ -1927,7 +1927,7 @@ object Regions {
     languages = Seq("mn"),
     currencies = Seq("MNT"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Montenegro: Region = Region(
     id = "mne",
@@ -1936,7 +1936,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Montserrat: Region = Region(
     id = "msr",
@@ -1945,7 +1945,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Morocco: Region = Region(
     id = "mar",
@@ -1954,7 +1954,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("MAD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mozambique: Region = Region(
     id = "moz",
@@ -1963,7 +1963,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Myanmar: Region = Region(
     id = "mmr",
@@ -1972,7 +1972,7 @@ object Regions {
     languages = Seq("my"),
     currencies = Seq("MMK"),
     measurementSystems = Seq("imperial"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Namibia: Region = Region(
     id = "nam",
@@ -1981,7 +1981,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("NAD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nauru: Region = Region(
     id = "nru",
@@ -1990,7 +1990,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nepal: Region = Region(
     id = "npl",
@@ -1999,7 +1999,7 @@ object Regions {
     languages = Seq("ne"),
     currencies = Seq("NPR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Netherlands: Region = Region(
     id = "nld",
@@ -2008,7 +2008,7 @@ object Regions {
     languages = Seq("nl"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val NewCaledonia: Region = Region(
     id = "ncl",
@@ -2017,7 +2017,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("XPF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val NewZealand: Region = Region(
     id = "nzl",
@@ -2026,7 +2026,7 @@ object Regions {
     languages = Seq("en", "mi"),
     currencies = Seq("NZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nicaragua: Region = Region(
     id = "nic",
@@ -2035,7 +2035,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("NIO"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Niger: Region = Region(
     id = "ner",
@@ -2044,7 +2044,7 @@ object Regions {
     languages = Seq("ar", "ff", "fr", "ha", "kr"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nigeria: Region = Region(
     id = "nga",
@@ -2053,7 +2053,7 @@ object Regions {
     languages = Seq("en", "ha", "ig", "yo"),
     currencies = Seq("NGN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Niue: Region = Region(
     id = "niu",
@@ -2062,7 +2062,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val NorfolkIsland: Region = Region(
     id = "nfk",
@@ -2071,7 +2071,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val NorthAmerica: Region = Region(
     id = "north-america",
@@ -2117,7 +2117,7 @@ object Regions {
       "USA",
       "VCT",
       "VGB",
-      "VIR"
+      "VIR",
     ),
     languages = Seq("en", "es", "fr", "ht", "nl"),
     currencies = Seq(
@@ -2140,10 +2140,10 @@ object Regions {
       "NIO",
       "TTD",
       "USD",
-      "XCD"
+      "XCD",
     ),
     measurementSystems = Seq("imperial", "metric"),
-    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York", "Canada/Eastern", "Mexico/General")
+    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York", "Canada/Eastern", "Mexico/General"),
   )
   val NorthMacedonia: Region = Region(
     id = "mkd",
@@ -2152,7 +2152,7 @@ object Regions {
     languages = Seq("mk"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val NorthernMarianaIslands: Region = Region(
     id = "mnp",
@@ -2161,7 +2161,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Norway: Region = Region(
     id = "nor",
@@ -2170,7 +2170,7 @@ object Regions {
     languages = Seq("nb", "nn", "no"),
     currencies = Seq("NOK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Oceania: Region = Region(
     id = "oceania",
@@ -2203,12 +2203,12 @@ object Regions {
       "UMI",
       "VUT",
       "WLF",
-      "WSM"
+      "WSM",
     ),
     languages = Seq("bi", "en", "fj", "fr", "hi", "ho", "mh", "mi", "pt", "ur"),
     currencies = Seq("AUD", "FJD", "NZD", "PGK", "SBD", "TOP", "USD", "VUV", "WST", "XPF"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("Australia/ACT")
+    timezones = Seq("Australia/ACT"),
   )
   val Oman: Region = Region(
     id = "omn",
@@ -2217,7 +2217,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("OMR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pakistan: Region = Region(
     id = "pak",
@@ -2226,7 +2226,7 @@ object Regions {
     languages = Seq("en", "ur"),
     currencies = Seq("PKR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Palau: Region = Region(
     id = "plw",
@@ -2235,7 +2235,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Panama: Region = Region(
     id = "pan",
@@ -2244,7 +2244,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val PapuaNewGuinea: Region = Region(
     id = "png",
@@ -2253,7 +2253,7 @@ object Regions {
     languages = Seq("en", "ho"),
     currencies = Seq("PGK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Paraguay: Region = Region(
     id = "pry",
@@ -2262,7 +2262,7 @@ object Regions {
     languages = Seq("es", "gn"),
     currencies = Seq("PYG"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Peru: Region = Region(
     id = "per",
@@ -2271,7 +2271,7 @@ object Regions {
     languages = Seq("ay", "es", "qu"),
     currencies = Seq("PEN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Philippines: Region = Region(
     id = "phl",
@@ -2280,7 +2280,7 @@ object Regions {
     languages = Seq("en", "tl"),
     currencies = Seq("PHP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pitcairn: Region = Region(
     id = "pcn",
@@ -2289,7 +2289,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Poland: Region = Region(
     id = "pol",
@@ -2298,7 +2298,7 @@ object Regions {
     languages = Seq("pl"),
     currencies = Seq("PLN"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Portugal: Region = Region(
     id = "prt",
@@ -2307,7 +2307,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val PuertoRico: Region = Region(
     id = "pri",
@@ -2316,7 +2316,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Qatar: Region = Region(
     id = "qat",
@@ -2325,7 +2325,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("QAR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val RepublicOfKorea: Region = Region(
     id = "kor",
@@ -2334,7 +2334,7 @@ object Regions {
     languages = Seq("ko"),
     currencies = Seq("KRW"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val RepublicOfMoldova: Region = Region(
     id = "mda",
@@ -2343,7 +2343,7 @@ object Regions {
     languages = Seq("ro"),
     currencies = Seq("MDL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Romania: Region = Region(
     id = "rou",
@@ -2352,7 +2352,7 @@ object Regions {
     languages = Seq("ro"),
     currencies = Seq("RON"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val RussianFederation: Region = Region(
     id = "rus",
@@ -2361,7 +2361,7 @@ object Regions {
     languages = Seq("ru"),
     currencies = Seq("RUB"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Rwanda: Region = Region(
     id = "rwa",
@@ -2370,7 +2370,7 @@ object Regions {
     languages = Seq("en", "fr", "rw"),
     currencies = Seq("RWF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Réunion: Region = Region(
     id = "reu",
@@ -2379,7 +2379,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintBarthélemy: Region = Region(
     id = "blm",
@@ -2388,7 +2388,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintHelena: Region = Region(
     id = "shn",
@@ -2397,7 +2397,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("SHP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintKittsAndNevis: Region = Region(
     id = "kna",
@@ -2406,7 +2406,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintLucia: Region = Region(
     id = "lca",
@@ -2415,7 +2415,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintMartin: Region = Region(
     id = "maf",
@@ -2424,7 +2424,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintPierreAndMiquelon: Region = Region(
     id = "spm",
@@ -2433,7 +2433,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaintVincentAndTheGrenadines: Region = Region(
     id = "vct",
@@ -2442,7 +2442,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("XCD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Samoa: Region = Region(
     id = "wsm",
@@ -2451,7 +2451,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("WST"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SanMarino: Region = Region(
     id = "smr",
@@ -2460,7 +2460,7 @@ object Regions {
     languages = Seq("it"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaoTomeAndPrincipe: Region = Region(
     id = "stp",
@@ -2469,7 +2469,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SaudiArabia: Region = Region(
     id = "sau",
@@ -2478,7 +2478,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("SAR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Senegal: Region = Region(
     id = "sen",
@@ -2487,7 +2487,7 @@ object Regions {
     languages = Seq("ff", "fr", "wo"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Serbia: Region = Region(
     id = "srb",
@@ -2496,7 +2496,7 @@ object Regions {
     languages = Seq("sr"),
     currencies = Seq("RSD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Seychelles: Region = Region(
     id = "syc",
@@ -2505,7 +2505,7 @@ object Regions {
     languages = Seq("en", "fr"),
     currencies = Seq("SCR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SierraLeone: Region = Region(
     id = "sle",
@@ -2514,7 +2514,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("SLL"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Singapore: Region = Region(
     id = "sgp",
@@ -2523,7 +2523,7 @@ object Regions {
     languages = Seq("en", "ms", "ta", "zh"),
     currencies = Seq("SGD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SintMaarten: Region = Region(
     id = "sxm",
@@ -2532,7 +2532,7 @@ object Regions {
     languages = Seq("en", "nl"),
     currencies = Seq("ANG"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Slovakia: Region = Region(
     id = "svk",
@@ -2541,7 +2541,7 @@ object Regions {
     languages = Seq("cs", "sk"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Slovenia: Region = Region(
     id = "svn",
@@ -2550,7 +2550,7 @@ object Regions {
     languages = Seq("it", "sl"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SolomonIslands: Region = Region(
     id = "slb",
@@ -2559,7 +2559,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("SBD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Somalia: Region = Region(
     id = "som",
@@ -2568,7 +2568,7 @@ object Regions {
     languages = Seq("ar", "so"),
     currencies = Seq("SOS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SouthAfrica: Region = Region(
     id = "zaf",
@@ -2577,7 +2577,7 @@ object Regions {
     languages = Seq("af", "en", "nd", "nr", "ss", "st", "tn", "ts", "ve", "xh", "zu"),
     currencies = Seq("ZAR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SouthAmerica: Region = Region(
     id = "south-america",
@@ -2586,7 +2586,7 @@ object Regions {
     languages = Seq("ay", "en", "es", "fr", "gn", "nl", "pt", "qu"),
     currencies = Seq("ARS", "BOB", "BRL", "CLP", "COP", "EUR", "FKP", "GYD", "PEN", "PYG", "USD", "UYU", "VEF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SouthGeorgiaAndTheSouthSandwichIslands: Region = Region(
     id = "sgs",
@@ -2595,7 +2595,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("GBP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SouthSudan: Region = Region(
     id = "ssd",
@@ -2604,7 +2604,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Spain: Region = Region(
     id = "esp",
@@ -2613,7 +2613,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SriLanka: Region = Region(
     id = "lka",
@@ -2622,7 +2622,7 @@ object Regions {
     languages = Seq("en", "si", "ta"),
     currencies = Seq("LKR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val StateOfPalestine: Region = Region(
     id = "pse",
@@ -2631,7 +2631,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("JOD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sudan: Region = Region(
     id = "sdn",
@@ -2640,7 +2640,7 @@ object Regions {
     languages = Seq("ar", "en"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Suriname: Region = Region(
     id = "sur",
@@ -2649,7 +2649,7 @@ object Regions {
     languages = Seq("nl"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SvalbardAndJanMayenIslands: Region = Region(
     id = "sjm",
@@ -2658,7 +2658,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NOK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sweden: Region = Region(
     id = "swe",
@@ -2667,7 +2667,7 @@ object Regions {
     languages = Seq("sv"),
     currencies = Seq("SEK"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Switzerland: Region = Region(
     id = "che",
@@ -2676,7 +2676,7 @@ object Regions {
     languages = Seq("de", "fr", "it", "rm"),
     currencies = Seq("CHF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val SyrianArabRepublic: Region = Region(
     id = "syr",
@@ -2685,7 +2685,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Taiwan: Region = Region(
     id = "twn",
@@ -2694,7 +2694,7 @@ object Regions {
     languages = Seq("zh"),
     currencies = Seq("TWD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tajikistan: Region = Region(
     id = "tjk",
@@ -2703,7 +2703,7 @@ object Regions {
     languages = Seq("fa", "ru", "tg"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Thailand: Region = Region(
     id = "tha",
@@ -2712,7 +2712,7 @@ object Regions {
     languages = Seq("th"),
     currencies = Seq("THB"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val TimorMinusLeste: Region = Region(
     id = "tls",
@@ -2721,7 +2721,7 @@ object Regions {
     languages = Seq("pt"),
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Togo: Region = Region(
     id = "tgo",
@@ -2730,7 +2730,7 @@ object Regions {
     languages = Seq("ee", "fr"),
     currencies = Seq("XOF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tokelau: Region = Region(
     id = "tkl",
@@ -2739,7 +2739,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("NZD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tonga: Region = Region(
     id = "ton",
@@ -2748,7 +2748,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("TOP"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val TrinidadAndTobago: Region = Region(
     id = "tto",
@@ -2757,7 +2757,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("TTD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tunisia: Region = Region(
     id = "tun",
@@ -2766,7 +2766,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("TND"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Turkey: Region = Region(
     id = "tur",
@@ -2775,7 +2775,7 @@ object Regions {
     languages = Seq("tr"),
     currencies = Seq("TRY"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Turkmenistan: Region = Region(
     id = "tkm",
@@ -2784,7 +2784,7 @@ object Regions {
     languages = Seq("tk"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val TurksAndCaicosIslands: Region = Region(
     id = "tca",
@@ -2793,7 +2793,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tuvalu: Region = Region(
     id = "tuv",
@@ -2802,7 +2802,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("AUD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Uganda: Region = Region(
     id = "uga",
@@ -2811,7 +2811,7 @@ object Regions {
     languages = Seq("en", "sw"),
     currencies = Seq("UGX"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ukraine: Region = Region(
     id = "ukr",
@@ -2820,7 +2820,7 @@ object Regions {
     languages = Seq("uk"),
     currencies = Seq("UAH"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val UnitedArabEmirates: Region = Region(
     id = "are",
@@ -2829,7 +2829,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("AED"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val UnitedKingdom: Region = Region(
     id = "gbr",
@@ -2838,7 +2838,7 @@ object Regions {
     languages = Seq("cy", "en"),
     currencies = Seq("GBP"),
     measurementSystems = Seq("metric"),
-    timezones = Seq("GMT")
+    timezones = Seq("GMT"),
   )
   val UnitedRepublicOfTanzania: Region = Region(
     id = "tza",
@@ -2847,7 +2847,7 @@ object Regions {
     languages = Seq("en", "sw"),
     currencies = Seq("TZS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val UnitedStatesMinorOutlyingIslands: Region = Region(
     id = "umi",
@@ -2856,7 +2856,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val UnitedStatesOfAmerica: Region = Region(
     id = "usa",
@@ -2865,7 +2865,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("USD"),
     measurementSystems = Seq("imperial"),
-    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York")
+    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York"),
   )
   val UnitedStatesVirginIslands: Region = Region(
     id = "vir",
@@ -2874,7 +2874,7 @@ object Regions {
     languages = Nil,
     currencies = Seq("USD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Uruguay: Region = Region(
     id = "ury",
@@ -2883,7 +2883,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("UYU"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Uzbekistan: Region = Region(
     id = "uzb",
@@ -2892,7 +2892,7 @@ object Regions {
     languages = Seq("uz"),
     currencies = Seq("UZS"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Vanuatu: Region = Region(
     id = "vut",
@@ -2901,7 +2901,7 @@ object Regions {
     languages = Seq("bi", "en", "fr"),
     currencies = Seq("VUV"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Venezuela: Region = Region(
     id = "ven",
@@ -2910,7 +2910,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("VEF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Vietnam: Region = Region(
     id = "vnm",
@@ -2919,7 +2919,7 @@ object Regions {
     languages = Seq("vi"),
     currencies = Seq("VND"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val WallisAndFutunaIslands: Region = Region(
     id = "wlf",
@@ -2928,7 +2928,7 @@ object Regions {
     languages = Seq("fr"),
     currencies = Seq("XPF"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val WesternSahara: Region = Region(
     id = "esh",
@@ -2937,7 +2937,7 @@ object Regions {
     languages = Seq("es"),
     currencies = Seq("MAD"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val World: Region = Region(
     id = "world",
@@ -3192,7 +3192,7 @@ object Regions {
       "YEM",
       "ZAF",
       "ZMB",
-      "ZWE"
+      "ZWE",
     ),
     languages = Seq(
       "aa",
@@ -3314,7 +3314,7 @@ object Regions {
       "xh",
       "yo",
       "zh",
-      "zu"
+      "zu",
     ),
     currencies = Seq(
       "AED",
@@ -3446,7 +3446,7 @@ object Regions {
       "XPF",
       "YER",
       "ZAR",
-      "ZMW"
+      "ZMW",
     ),
     measurementSystems = Seq("metric", "imperial"),
     timezones = Seq(
@@ -3458,8 +3458,8 @@ object Regions {
       "Australia/ACT",
       "Canada/Eastern",
       "GMT",
-      "Mexico/General"
-    )
+      "Mexico/General",
+    ),
   )
   val Yemen: Region = Region(
     id = "yem",
@@ -3468,7 +3468,7 @@ object Regions {
     languages = Seq("ar"),
     currencies = Seq("YER"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Zambia: Region = Region(
     id = "zmb",
@@ -3477,7 +3477,7 @@ object Regions {
     languages = Seq("en"),
     currencies = Seq("ZMW"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Zimbabwe: Region = Region(
     id = "zwe",
@@ -3486,7 +3486,7 @@ object Regions {
     languages = Seq("en", "nd", "sn"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
   val ÅlandIslands: Region = Region(
     id = "ala",
@@ -3495,7 +3495,7 @@ object Regions {
     languages = Seq("sv"),
     currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
-    timezones = Nil
+    timezones = Nil,
   )
 
   val all: Seq[Region] = Seq(
@@ -3758,7 +3758,7 @@ object Regions {
     Yemen,
     Zambia,
     Zimbabwe,
-    ÅlandIslands
+    ÅlandIslands,
   )
 
 }

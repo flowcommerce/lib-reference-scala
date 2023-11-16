@@ -18,12 +18,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Australian Capital Territory"
-        )
-      )
-    )
+          name = "Australian Capital Territory",
+        ),
+      ),
+    ),
   )
   val AusNsw: Province = Province(
     id = "AUS-NSW",
@@ -39,12 +39,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New South Wales"
-        )
-      )
-    )
+          name = "New South Wales",
+        ),
+      ),
+    ),
   )
   val AusNt: Province = Province(
     id = "AUS-NT",
@@ -60,12 +60,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Northern Territory"
-        )
-      )
-    )
+          name = "Northern Territory",
+        ),
+      ),
+    ),
   )
   val AusQld: Province = Province(
     id = "AUS-QLD",
@@ -81,12 +81,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Queensland"
-        )
-      )
-    )
+          name = "Queensland",
+        ),
+      ),
+    ),
   )
   val AusSa: Province = Province(
     id = "AUS-SA",
@@ -102,12 +102,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "South Australia"
-        )
-      )
-    )
+          name = "South Australia",
+        ),
+      ),
+    ),
   )
   val AusTas: Province = Province(
     id = "AUS-TAS",
@@ -123,12 +123,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tasmania"
-        )
-      )
-    )
+          name = "Tasmania",
+        ),
+      ),
+    ),
   )
   val AusVic: Province = Province(
     id = "AUS-VIC",
@@ -144,12 +144,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Victoria"
-        )
-      )
-    )
+          name = "Victoria",
+        ),
+      ),
+    ),
   )
   val AusWa: Province = Province(
     id = "AUS-WA",
@@ -165,12 +165,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Western Australia"
-        )
-      )
-    )
+          name = "Western Australia",
+        ),
+      ),
+    ),
   )
   val CanAb: Province = Province(
     id = "CAN-AB",
@@ -186,9 +186,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Alberta"
+          name = "Alberta",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -196,12 +196,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Alberta"
-        )
-      )
-    )
+          name = "Alberta",
+        ),
+      ),
+    ),
   )
   val CanBc: Province = Province(
     id = "CAN-BC",
@@ -217,9 +217,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "British Columbia"
+          name = "British Columbia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -227,12 +227,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Colombie-Britannique"
-        )
-      )
-    )
+          name = "Colombie-Britannique",
+        ),
+      ),
+    ),
   )
   val CanMb: Province = Province(
     id = "CAN-MB",
@@ -248,9 +248,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Manitoba"
+          name = "Manitoba",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -258,12 +258,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Manitoba"
-        )
-      )
-    )
+          name = "Manitoba",
+        ),
+      ),
+    ),
   )
   val CanNb: Province = Province(
     id = "CAN-NB",
@@ -279,9 +279,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New Brunswick"
+          name = "New Brunswick",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -289,12 +289,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Nouveau-Brunswick"
-        )
-      )
-    )
+          name = "Nouveau-Brunswick",
+        ),
+      ),
+    ),
   )
   val CanNl: Province = Province(
     id = "CAN-NL",
@@ -310,9 +310,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Newfoundland and Labrador"
+          name = "Newfoundland and Labrador",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -320,12 +320,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Terre-Neuve-et-Labrador"
-        )
-      )
-    )
+          name = "Terre-Neuve-et-Labrador",
+        ),
+      ),
+    ),
   )
   val CanNs: Province = Province(
     id = "CAN-NS",
@@ -341,9 +341,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Nova Scotia"
+          name = "Nova Scotia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -351,12 +351,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Nouvelle-Écosse"
-        )
-      )
-    )
+          name = "Nouvelle-Écosse",
+        ),
+      ),
+    ),
   )
   val CanNt: Province = Province(
     id = "CAN-NT",
@@ -372,9 +372,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Northwest Territories"
+          name = "Northwest Territories",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -382,12 +382,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Territoires du Nord-Ouest"
-        )
-      )
-    )
+          name = "Territoires du Nord-Ouest",
+        ),
+      ),
+    ),
   )
   val CanNu: Province = Province(
     id = "CAN-NU",
@@ -403,9 +403,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Nunavut"
+          name = "Nunavut",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -413,12 +413,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Nunavut"
-        )
-      )
-    )
+          name = "Nunavut",
+        ),
+      ),
+    ),
   )
   val CanOn: Province = Province(
     id = "CAN-ON",
@@ -434,9 +434,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ontario"
+          name = "Ontario",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -444,12 +444,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Ontario"
-        )
-      )
-    )
+          name = "Ontario",
+        ),
+      ),
+    ),
   )
   val CanPe: Province = Province(
     id = "CAN-PE",
@@ -465,9 +465,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Prince Edward Island"
+          name = "Prince Edward Island",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -475,12 +475,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Île-du-Prince-Édouard"
-        )
-      )
-    )
+          name = "Île-du-Prince-Édouard",
+        ),
+      ),
+    ),
   )
   val CanQc: Province = Province(
     id = "CAN-QC",
@@ -496,9 +496,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Quebec"
+          name = "Quebec",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -506,12 +506,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Québec"
-        )
-      )
-    )
+          name = "Québec",
+        ),
+      ),
+    ),
   )
   val CanSk: Province = Province(
     id = "CAN-SK",
@@ -527,9 +527,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Saskatchewan"
+          name = "Saskatchewan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -537,12 +537,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Saskatchewan"
-        )
-      )
-    )
+          name = "Saskatchewan",
+        ),
+      ),
+    ),
   )
   val CanYt: Province = Province(
     id = "CAN-YT",
@@ -558,9 +558,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Yukon"
+          name = "Yukon",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -568,12 +568,12 @@ object Provinces {
             name = "French - Canada",
             country = "CAN",
             language = "fr",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " ")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = " "),
           ),
-          name = "Yukon"
-        )
-      )
-    )
+          name = "Yukon",
+        ),
+      ),
+    ),
   )
   val Chn11: Province = Province(
     id = "CHN-11",
@@ -589,9 +589,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Beijing"
+          name = "Beijing",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -599,12 +599,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "北京市"
-        )
-      )
-    )
+          name = "北京市",
+        ),
+      ),
+    ),
   )
   val Chn12: Province = Province(
     id = "CHN-12",
@@ -620,9 +620,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tianjin"
+          name = "Tianjin",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -630,12 +630,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "天津市"
-        )
-      )
-    )
+          name = "天津市",
+        ),
+      ),
+    ),
   )
   val Chn13: Province = Province(
     id = "CHN-13",
@@ -651,9 +651,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hebei"
+          name = "Hebei",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -661,12 +661,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "河北省"
-        )
-      )
-    )
+          name = "河北省",
+        ),
+      ),
+    ),
   )
   val Chn14: Province = Province(
     id = "CHN-14",
@@ -682,9 +682,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shanxi"
+          name = "Shanxi",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -692,12 +692,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "山西省"
-        )
-      )
-    )
+          name = "山西省",
+        ),
+      ),
+    ),
   )
   val Chn15: Province = Province(
     id = "CHN-15",
@@ -713,9 +713,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Inner Mongolia"
+          name = "Inner Mongolia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -723,12 +723,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "内蒙古自治区"
-        )
-      )
-    )
+          name = "内蒙古自治区",
+        ),
+      ),
+    ),
   )
   val Chn21: Province = Province(
     id = "CHN-21",
@@ -744,9 +744,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Liaoning"
+          name = "Liaoning",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -754,12 +754,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "辽宁省"
-        )
-      )
-    )
+          name = "辽宁省",
+        ),
+      ),
+    ),
   )
   val Chn22: Province = Province(
     id = "CHN-22",
@@ -775,9 +775,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Jilin"
+          name = "Jilin",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -785,12 +785,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "吉林省"
-        )
-      )
-    )
+          name = "吉林省",
+        ),
+      ),
+    ),
   )
   val Chn23: Province = Province(
     id = "CHN-23",
@@ -806,9 +806,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Heilongjiang"
+          name = "Heilongjiang",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -816,12 +816,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "黑龙江省"
-        )
-      )
-    )
+          name = "黑龙江省",
+        ),
+      ),
+    ),
   )
   val Chn31: Province = Province(
     id = "CHN-31",
@@ -837,9 +837,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shanghai"
+          name = "Shanghai",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -847,12 +847,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "上海市"
-        )
-      )
-    )
+          name = "上海市",
+        ),
+      ),
+    ),
   )
   val Chn32: Province = Province(
     id = "CHN-32",
@@ -868,9 +868,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Jiangsu"
+          name = "Jiangsu",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -878,12 +878,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "江苏省"
-        )
-      )
-    )
+          name = "江苏省",
+        ),
+      ),
+    ),
   )
   val Chn33: Province = Province(
     id = "CHN-33",
@@ -899,9 +899,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Zhejiang"
+          name = "Zhejiang",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -909,12 +909,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "浙江省"
-        )
-      )
-    )
+          name = "浙江省",
+        ),
+      ),
+    ),
   )
   val Chn34: Province = Province(
     id = "CHN-34",
@@ -930,9 +930,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Anhui"
+          name = "Anhui",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -940,12 +940,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "安徽省"
-        )
-      )
-    )
+          name = "安徽省",
+        ),
+      ),
+    ),
   )
   val Chn35: Province = Province(
     id = "CHN-35",
@@ -961,9 +961,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Fujian"
+          name = "Fujian",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -971,12 +971,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "福建省"
-        )
-      )
-    )
+          name = "福建省",
+        ),
+      ),
+    ),
   )
   val Chn36: Province = Province(
     id = "CHN-36",
@@ -992,9 +992,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Jiangxi"
+          name = "Jiangxi",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1002,12 +1002,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "江西省"
-        )
-      )
-    )
+          name = "江西省",
+        ),
+      ),
+    ),
   )
   val Chn37: Province = Province(
     id = "CHN-37",
@@ -1023,9 +1023,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shandong"
+          name = "Shandong",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1033,12 +1033,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "山东省"
-        )
-      )
-    )
+          name = "山东省",
+        ),
+      ),
+    ),
   )
   val Chn41: Province = Province(
     id = "CHN-41",
@@ -1054,9 +1054,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Henan"
+          name = "Henan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1064,12 +1064,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "河南省"
-        )
-      )
-    )
+          name = "河南省",
+        ),
+      ),
+    ),
   )
   val Chn42: Province = Province(
     id = "CHN-42",
@@ -1085,9 +1085,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hubei"
+          name = "Hubei",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1095,12 +1095,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "湖北省"
-        )
-      )
-    )
+          name = "湖北省",
+        ),
+      ),
+    ),
   )
   val Chn43: Province = Province(
     id = "CHN-43",
@@ -1116,9 +1116,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hunan"
+          name = "Hunan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1126,12 +1126,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "湖南省"
-        )
-      )
-    )
+          name = "湖南省",
+        ),
+      ),
+    ),
   )
   val Chn44: Province = Province(
     id = "CHN-44",
@@ -1147,9 +1147,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Guangdong"
+          name = "Guangdong",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1157,12 +1157,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "广东省"
-        )
-      )
-    )
+          name = "广东省",
+        ),
+      ),
+    ),
   )
   val Chn45: Province = Province(
     id = "CHN-45",
@@ -1178,9 +1178,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Guangxi"
+          name = "Guangxi",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1188,12 +1188,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "广西壮族自治区"
-        )
-      )
-    )
+          name = "广西壮族自治区",
+        ),
+      ),
+    ),
   )
   val Chn46: Province = Province(
     id = "CHN-46",
@@ -1209,9 +1209,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hainan"
+          name = "Hainan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1219,12 +1219,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "海南省"
-        )
-      )
-    )
+          name = "海南省",
+        ),
+      ),
+    ),
   )
   val Chn50: Province = Province(
     id = "CHN-50",
@@ -1240,9 +1240,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Chongqing"
+          name = "Chongqing",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1250,12 +1250,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "重庆市"
-        )
-      )
-    )
+          name = "重庆市",
+        ),
+      ),
+    ),
   )
   val Chn51: Province = Province(
     id = "CHN-51",
@@ -1271,9 +1271,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Sichuan"
+          name = "Sichuan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1281,12 +1281,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "四川省"
-        )
-      )
-    )
+          name = "四川省",
+        ),
+      ),
+    ),
   )
   val Chn52: Province = Province(
     id = "CHN-52",
@@ -1302,9 +1302,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Guizhou"
+          name = "Guizhou",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1312,12 +1312,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "贵州省"
-        )
-      )
-    )
+          name = "贵州省",
+        ),
+      ),
+    ),
   )
   val Chn53: Province = Province(
     id = "CHN-53",
@@ -1333,9 +1333,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Yunnan"
+          name = "Yunnan",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1343,12 +1343,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "云南省"
-        )
-      )
-    )
+          name = "云南省",
+        ),
+      ),
+    ),
   )
   val Chn54: Province = Province(
     id = "CHN-54",
@@ -1364,9 +1364,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tibet"
+          name = "Tibet",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1374,12 +1374,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "西藏"
-        )
-      )
-    )
+          name = "西藏",
+        ),
+      ),
+    ),
   )
   val Chn61: Province = Province(
     id = "CHN-61",
@@ -1395,9 +1395,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shaanxi"
+          name = "Shaanxi",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1405,12 +1405,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "陕西省"
-        )
-      )
-    )
+          name = "陕西省",
+        ),
+      ),
+    ),
   )
   val Chn62: Province = Province(
     id = "CHN-62",
@@ -1426,9 +1426,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Gansu"
+          name = "Gansu",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1436,12 +1436,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "甘肃省"
-        )
-      )
-    )
+          name = "甘肃省",
+        ),
+      ),
+    ),
   )
   val Chn63: Province = Province(
     id = "CHN-63",
@@ -1457,9 +1457,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Qinghai"
+          name = "Qinghai",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1467,12 +1467,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "青海省"
-        )
-      )
-    )
+          name = "青海省",
+        ),
+      ),
+    ),
   )
   val Chn64: Province = Province(
     id = "CHN-64",
@@ -1488,9 +1488,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ningxia"
+          name = "Ningxia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1498,12 +1498,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "宁夏回族自治区"
-        )
-      )
-    )
+          name = "宁夏回族自治区",
+        ),
+      ),
+    ),
   )
   val Chn65: Province = Province(
     id = "CHN-65",
@@ -1519,9 +1519,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Xinjiang"
+          name = "Xinjiang",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1529,12 +1529,12 @@ object Provinces {
             name = "Chinese - China",
             country = "CHN",
             language = "zh",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "新疆维吾尔自治区"
-        )
-      )
-    )
+          name = "新疆维吾尔自治区",
+        ),
+      ),
+    ),
   )
   val EspA: Province = Province(
     id = "ESP-A",
@@ -1550,9 +1550,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Alicante"
+          name = "Alicante",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1560,12 +1560,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Alicante"
-        )
-      )
-    )
+          name = "Alicante",
+        ),
+      ),
+    ),
   )
   val EspAb: Province = Province(
     id = "ESP-AB",
@@ -1581,9 +1581,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Albacete"
+          name = "Albacete",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1591,12 +1591,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Albacete"
-        )
-      )
-    )
+          name = "Albacete",
+        ),
+      ),
+    ),
   )
   val EspAl: Province = Province(
     id = "ESP-AL",
@@ -1612,9 +1612,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Almeria"
+          name = "Almeria",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1622,12 +1622,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Almería"
-        )
-      )
-    )
+          name = "Almería",
+        ),
+      ),
+    ),
   )
   val EspAv: Province = Province(
     id = "ESP-AV",
@@ -1643,9 +1643,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Avila"
+          name = "Avila",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1653,12 +1653,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Ávila"
-        )
-      )
-    )
+          name = "Ávila",
+        ),
+      ),
+    ),
   )
   val EspB: Province = Province(
     id = "ESP-B",
@@ -1674,9 +1674,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Barcelona"
+          name = "Barcelona",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1684,12 +1684,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Barcelona"
-        )
-      )
-    )
+          name = "Barcelona",
+        ),
+      ),
+    ),
   )
   val EspBa: Province = Province(
     id = "ESP-BA",
@@ -1705,9 +1705,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Badajoz"
+          name = "Badajoz",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1715,12 +1715,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Badajoz"
-        )
-      )
-    )
+          name = "Badajoz",
+        ),
+      ),
+    ),
   )
   val EspBi: Province = Province(
     id = "ESP-BI",
@@ -1736,9 +1736,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Biskaia"
+          name = "Biskaia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1746,12 +1746,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Biskaia"
-        )
-      )
-    )
+          name = "Biskaia",
+        ),
+      ),
+    ),
   )
   val EspBu: Province = Province(
     id = "ESP-BU",
@@ -1767,9 +1767,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Burgos"
+          name = "Burgos",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1777,12 +1777,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Burgos"
-        )
-      )
-    )
+          name = "Burgos",
+        ),
+      ),
+    ),
   )
   val EspC: Province = Province(
     id = "ESP-C",
@@ -1798,9 +1798,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "A Coruña"
+          name = "A Coruña",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1808,12 +1808,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "A Coruña"
-        )
-      )
-    )
+          name = "A Coruña",
+        ),
+      ),
+    ),
   )
   val EspCa: Province = Province(
     id = "ESP-CA",
@@ -1829,9 +1829,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Cadiz"
+          name = "Cadiz",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1839,12 +1839,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Cádiz"
-        )
-      )
-    )
+          name = "Cádiz",
+        ),
+      ),
+    ),
   )
   val EspCc: Province = Province(
     id = "ESP-CC",
@@ -1860,9 +1860,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Caceres"
+          name = "Caceres",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1870,12 +1870,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Cáceres"
-        )
-      )
-    )
+          name = "Cáceres",
+        ),
+      ),
+    ),
   )
   val EspCe: Province = Province(
     id = "ESP-CE",
@@ -1891,9 +1891,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ceuta"
+          name = "Ceuta",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1901,12 +1901,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Ceuta"
-        )
-      )
-    )
+          name = "Ceuta",
+        ),
+      ),
+    ),
   )
   val EspCi: Province = Province(
     id = "ESP-CI",
@@ -1922,9 +1922,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Canary Islands"
+          name = "Canary Islands",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1932,12 +1932,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Canary Islands"
-        )
-      )
-    )
+          name = "Canary Islands",
+        ),
+      ),
+    ),
   )
   val EspCo: Province = Province(
     id = "ESP-CO",
@@ -1953,9 +1953,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Cordoba"
+          name = "Cordoba",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1963,12 +1963,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Córdoba"
-        )
-      )
-    )
+          name = "Córdoba",
+        ),
+      ),
+    ),
   )
   val EspCr: Province = Province(
     id = "ESP-CR",
@@ -1984,9 +1984,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ciudad Real"
+          name = "Ciudad Real",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -1994,12 +1994,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Ciudad Real"
-        )
-      )
-    )
+          name = "Ciudad Real",
+        ),
+      ),
+    ),
   )
   val EspCs: Province = Province(
     id = "ESP-CS",
@@ -2015,9 +2015,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Castellon"
+          name = "Castellon",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2025,12 +2025,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Castellón"
-        )
-      )
-    )
+          name = "Castellón",
+        ),
+      ),
+    ),
   )
   val EspCu: Province = Province(
     id = "ESP-CU",
@@ -2046,9 +2046,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Cuenca"
+          name = "Cuenca",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2056,12 +2056,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Cuenca"
-        )
-      )
-    )
+          name = "Cuenca",
+        ),
+      ),
+    ),
   )
   val EspGc: Province = Province(
     id = "ESP-GC",
@@ -2077,9 +2077,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Las Palmas"
+          name = "Las Palmas",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2087,12 +2087,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Las Palmas"
-        )
-      )
-    )
+          name = "Las Palmas",
+        ),
+      ),
+    ),
   )
   val EspGi: Province = Province(
     id = "ESP-GI",
@@ -2108,9 +2108,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Girona"
+          name = "Girona",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2118,12 +2118,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Girona"
-        )
-      )
-    )
+          name = "Girona",
+        ),
+      ),
+    ),
   )
   val EspGr: Province = Province(
     id = "ESP-GR",
@@ -2139,9 +2139,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Granada"
+          name = "Granada",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2149,12 +2149,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Granada"
-        )
-      )
-    )
+          name = "Granada",
+        ),
+      ),
+    ),
   )
   val EspGu: Province = Province(
     id = "ESP-GU",
@@ -2170,9 +2170,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Guadalajara"
+          name = "Guadalajara",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2180,12 +2180,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Guadalajara"
-        )
-      )
-    )
+          name = "Guadalajara",
+        ),
+      ),
+    ),
   )
   val EspH: Province = Province(
     id = "ESP-H",
@@ -2201,9 +2201,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Huelva"
+          name = "Huelva",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2211,12 +2211,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Huelva"
-        )
-      )
-    )
+          name = "Huelva",
+        ),
+      ),
+    ),
   )
   val EspHu: Province = Province(
     id = "ESP-HU",
@@ -2232,9 +2232,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Huesca"
+          name = "Huesca",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2242,12 +2242,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Huesca"
-        )
-      )
-    )
+          name = "Huesca",
+        ),
+      ),
+    ),
   )
   val EspJ: Province = Province(
     id = "ESP-J",
@@ -2263,9 +2263,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Jaen"
+          name = "Jaen",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2273,12 +2273,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Jaén"
-        )
-      )
-    )
+          name = "Jaén",
+        ),
+      ),
+    ),
   )
   val EspL: Province = Province(
     id = "ESP-L",
@@ -2294,9 +2294,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Lleida"
+          name = "Lleida",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2304,12 +2304,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Lleida"
-        )
-      )
-    )
+          name = "Lleida",
+        ),
+      ),
+    ),
   )
   val EspLe: Province = Province(
     id = "ESP-LE",
@@ -2325,9 +2325,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Leon"
+          name = "Leon",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2335,12 +2335,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "León"
-        )
-      )
-    )
+          name = "León",
+        ),
+      ),
+    ),
   )
   val EspLo: Province = Province(
     id = "ESP-LO",
@@ -2356,9 +2356,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "La Rioja"
+          name = "La Rioja",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2366,12 +2366,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "La Rioja"
-        )
-      )
-    )
+          name = "La Rioja",
+        ),
+      ),
+    ),
   )
   val EspLu: Province = Province(
     id = "ESP-LU",
@@ -2387,9 +2387,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Lugo"
+          name = "Lugo",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2397,12 +2397,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Lugo"
-        )
-      )
-    )
+          name = "Lugo",
+        ),
+      ),
+    ),
   )
   val EspM: Province = Province(
     id = "ESP-M",
@@ -2418,9 +2418,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Madrid"
+          name = "Madrid",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2428,12 +2428,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Madrid"
-        )
-      )
-    )
+          name = "Madrid",
+        ),
+      ),
+    ),
   )
   val EspMa: Province = Province(
     id = "ESP-MA",
@@ -2449,9 +2449,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Malaga"
+          name = "Malaga",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2459,12 +2459,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Málaga"
-        )
-      )
-    )
+          name = "Málaga",
+        ),
+      ),
+    ),
   )
   val EspMl: Province = Province(
     id = "ESP-ML",
@@ -2480,9 +2480,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Melilla"
+          name = "Melilla",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2490,12 +2490,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Melilla"
-        )
-      )
-    )
+          name = "Melilla",
+        ),
+      ),
+    ),
   )
   val EspMu: Province = Province(
     id = "ESP-MU",
@@ -2511,9 +2511,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Murcia"
+          name = "Murcia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2521,12 +2521,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Murcia"
-        )
-      )
-    )
+          name = "Murcia",
+        ),
+      ),
+    ),
   )
   val EspNa: Province = Province(
     id = "ESP-NA",
@@ -2542,9 +2542,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Navarra"
+          name = "Navarra",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2552,12 +2552,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Navarra"
-        )
-      )
-    )
+          name = "Navarra",
+        ),
+      ),
+    ),
   )
   val EspO: Province = Province(
     id = "ESP-O",
@@ -2573,9 +2573,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Asturias"
+          name = "Asturias",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2583,12 +2583,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Asturias"
-        )
-      )
-    )
+          name = "Asturias",
+        ),
+      ),
+    ),
   )
   val EspOr: Province = Province(
     id = "ESP-OR",
@@ -2604,9 +2604,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ourense"
+          name = "Ourense",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2614,12 +2614,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Ourense"
-        )
-      )
-    )
+          name = "Ourense",
+        ),
+      ),
+    ),
   )
   val EspP: Province = Province(
     id = "ESP-P",
@@ -2635,9 +2635,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Palencia"
+          name = "Palencia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2645,12 +2645,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Palencia"
-        )
-      )
-    )
+          name = "Palencia",
+        ),
+      ),
+    ),
   )
   val EspPm: Province = Province(
     id = "ESP-PM",
@@ -2666,9 +2666,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Balears"
+          name = "Balears",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2676,12 +2676,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Balears"
-        )
-      )
-    )
+          name = "Balears",
+        ),
+      ),
+    ),
   )
   val EspPo: Province = Province(
     id = "ESP-PO",
@@ -2697,9 +2697,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Pontevedra"
+          name = "Pontevedra",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2707,12 +2707,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Pontevedra"
-        )
-      )
-    )
+          name = "Pontevedra",
+        ),
+      ),
+    ),
   )
   val EspS: Province = Province(
     id = "ESP-S",
@@ -2728,9 +2728,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Cantabria"
+          name = "Cantabria",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2738,12 +2738,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Cantabria"
-        )
-      )
-    )
+          name = "Cantabria",
+        ),
+      ),
+    ),
   )
   val EspSa: Province = Province(
     id = "ESP-SA",
@@ -2759,9 +2759,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Salamanca"
+          name = "Salamanca",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2769,12 +2769,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Salamanca"
-        )
-      )
-    )
+          name = "Salamanca",
+        ),
+      ),
+    ),
   )
   val EspSe: Province = Province(
     id = "ESP-SE",
@@ -2790,9 +2790,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Sevilla"
+          name = "Sevilla",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2800,12 +2800,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Sevilla"
-        )
-      )
-    )
+          name = "Sevilla",
+        ),
+      ),
+    ),
   )
   val EspSg: Province = Province(
     id = "ESP-SG",
@@ -2821,9 +2821,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Segovia"
+          name = "Segovia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2831,12 +2831,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Segovia"
-        )
-      )
-    )
+          name = "Segovia",
+        ),
+      ),
+    ),
   )
   val EspSo: Province = Province(
     id = "ESP-SO",
@@ -2852,9 +2852,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Soria"
+          name = "Soria",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2862,12 +2862,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Soria"
-        )
-      )
-    )
+          name = "Soria",
+        ),
+      ),
+    ),
   )
   val EspSs: Province = Province(
     id = "ESP-SS",
@@ -2883,9 +2883,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Gipuzkoa"
+          name = "Gipuzkoa",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2893,12 +2893,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Gipuzkoa"
-        )
-      )
-    )
+          name = "Gipuzkoa",
+        ),
+      ),
+    ),
   )
   val EspT: Province = Province(
     id = "ESP-T",
@@ -2914,9 +2914,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tarragona"
+          name = "Tarragona",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2924,12 +2924,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Tarragona"
-        )
-      )
-    )
+          name = "Tarragona",
+        ),
+      ),
+    ),
   )
   val EspTe: Province = Province(
     id = "ESP-TE",
@@ -2945,9 +2945,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Teruel"
+          name = "Teruel",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2955,12 +2955,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Teruel"
-        )
-      )
-    )
+          name = "Teruel",
+        ),
+      ),
+    ),
   )
   val EspTf: Province = Province(
     id = "ESP-TF",
@@ -2976,9 +2976,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Santa Cruz de Tenerife"
+          name = "Santa Cruz de Tenerife",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -2986,12 +2986,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Santa Cruz de Tenerife"
-        )
-      )
-    )
+          name = "Santa Cruz de Tenerife",
+        ),
+      ),
+    ),
   )
   val EspTo: Province = Province(
     id = "ESP-TO",
@@ -3007,9 +3007,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Toledo"
+          name = "Toledo",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3017,12 +3017,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Toledo"
-        )
-      )
-    )
+          name = "Toledo",
+        ),
+      ),
+    ),
   )
   val EspV: Province = Province(
     id = "ESP-V",
@@ -3038,9 +3038,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Valencia"
+          name = "Valencia",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3048,12 +3048,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Valencia"
-        )
-      )
-    )
+          name = "Valencia",
+        ),
+      ),
+    ),
   )
   val EspVa: Province = Province(
     id = "ESP-VA",
@@ -3069,9 +3069,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Valladolid"
+          name = "Valladolid",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3079,12 +3079,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Valladolid"
-        )
-      )
-    )
+          name = "Valladolid",
+        ),
+      ),
+    ),
   )
   val EspVi: Province = Province(
     id = "ESP-VI",
@@ -3100,9 +3100,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Alava"
+          name = "Alava",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3110,12 +3110,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Álava"
-        )
-      )
-    )
+          name = "Álava",
+        ),
+      ),
+    ),
   )
   val EspZ: Province = Province(
     id = "ESP-Z",
@@ -3131,9 +3131,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Zaragoza"
+          name = "Zaragoza",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3141,12 +3141,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Zaragoza"
-        )
-      )
-    )
+          name = "Zaragoza",
+        ),
+      ),
+    ),
   )
   val EspZa: Province = Province(
     id = "ESP-ZA",
@@ -3162,9 +3162,9 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Zamora"
+          name = "Zamora",
         ),
         io.flow.reference.v0.models.LocalizedTranslation(
           locale = io.flow.reference.v0.models.Locale(
@@ -3172,12 +3172,12 @@ object Provinces {
             name = "Spanish - Spain",
             country = "ESP",
             language = "es",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = ".")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ",", group = "."),
           ),
-          name = "Zamora"
-        )
-      )
-    )
+          name = "Zamora",
+        ),
+      ),
+    ),
   )
   val Jpn01: Province = Province(
     id = "JPN-01",
@@ -3193,12 +3193,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hokkaido"
-        )
-      )
-    )
+          name = "Hokkaido",
+        ),
+      ),
+    ),
   )
   val Jpn02: Province = Province(
     id = "JPN-02",
@@ -3206,7 +3206,7 @@ object Provinces {
     name = "Aomori",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn03: Province = Province(
     id = "JPN-03",
@@ -3214,7 +3214,7 @@ object Provinces {
     name = "Iwate",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn04: Province = Province(
     id = "JPN-04",
@@ -3222,7 +3222,7 @@ object Provinces {
     name = "Miyagi",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn05: Province = Province(
     id = "JPN-05",
@@ -3230,7 +3230,7 @@ object Provinces {
     name = "Akita",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn06: Province = Province(
     id = "JPN-06",
@@ -3238,7 +3238,7 @@ object Provinces {
     name = "Yamagata",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn07: Province = Province(
     id = "JPN-07",
@@ -3254,12 +3254,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Fukushima"
-        )
-      )
-    )
+          name = "Fukushima",
+        ),
+      ),
+    ),
   )
   val Jpn08: Province = Province(
     id = "JPN-08",
@@ -3267,7 +3267,7 @@ object Provinces {
     name = "Ibaraki",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn09: Province = Province(
     id = "JPN-09",
@@ -3283,12 +3283,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tochigi"
-        )
-      )
-    )
+          name = "Tochigi",
+        ),
+      ),
+    ),
   )
   val Jpn10: Province = Province(
     id = "JPN-10",
@@ -3296,7 +3296,7 @@ object Provinces {
     name = "Gunma",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn11: Province = Province(
     id = "JPN-11",
@@ -3304,7 +3304,7 @@ object Provinces {
     name = "Saitama",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn12: Province = Province(
     id = "JPN-12",
@@ -3320,12 +3320,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Chiba"
-        )
-      )
-    )
+          name = "Chiba",
+        ),
+      ),
+    ),
   )
   val Jpn13: Province = Province(
     id = "JPN-13",
@@ -3341,12 +3341,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tokyo"
-        )
-      )
-    )
+          name = "Tokyo",
+        ),
+      ),
+    ),
   )
   val Jpn14: Province = Province(
     id = "JPN-14",
@@ -3354,7 +3354,7 @@ object Provinces {
     name = "Kanagawa",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn15: Province = Province(
     id = "JPN-15",
@@ -3362,7 +3362,7 @@ object Provinces {
     name = "Niigata",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn16: Province = Province(
     id = "JPN-16",
@@ -3370,7 +3370,7 @@ object Provinces {
     name = "Toyama",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn17: Province = Province(
     id = "JPN-17",
@@ -3386,12 +3386,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ishikawa"
-        )
-      )
-    )
+          name = "Ishikawa",
+        ),
+      ),
+    ),
   )
   val Jpn18: Province = Province(
     id = "JPN-18",
@@ -3407,12 +3407,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Fukui"
-        )
-      )
-    )
+          name = "Fukui",
+        ),
+      ),
+    ),
   )
   val Jpn19: Province = Province(
     id = "JPN-19",
@@ -3428,12 +3428,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Yamanashi"
-        )
-      )
-    )
+          name = "Yamanashi",
+        ),
+      ),
+    ),
   )
   val Jpn20: Province = Province(
     id = "JPN-20",
@@ -3441,7 +3441,7 @@ object Provinces {
     name = "Nagano",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn21: Province = Province(
     id = "JPN-21",
@@ -3457,12 +3457,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Gifu"
-        )
-      )
-    )
+          name = "Gifu",
+        ),
+      ),
+    ),
   )
   val Jpn22: Province = Province(
     id = "JPN-22",
@@ -3478,12 +3478,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shizuoka"
-        )
-      )
-    )
+          name = "Shizuoka",
+        ),
+      ),
+    ),
   )
   val Jpn23: Province = Province(
     id = "JPN-23",
@@ -3499,12 +3499,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Aichi"
-        )
-      )
-    )
+          name = "Aichi",
+        ),
+      ),
+    ),
   )
   val Jpn24: Province = Province(
     id = "JPN-24",
@@ -3512,7 +3512,7 @@ object Provinces {
     name = "Mie",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn25: Province = Province(
     id = "JPN-25",
@@ -3528,12 +3528,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shiga"
-        )
-      )
-    )
+          name = "Shiga",
+        ),
+      ),
+    ),
   )
   val Jpn26: Province = Province(
     id = "JPN-26",
@@ -3549,12 +3549,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Kyoto"
-        )
-      )
-    )
+          name = "Kyoto",
+        ),
+      ),
+    ),
   )
   val Jpn27: Province = Province(
     id = "JPN-27",
@@ -3570,12 +3570,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Osaka"
-        )
-      )
-    )
+          name = "Osaka",
+        ),
+      ),
+    ),
   )
   val Jpn28: Province = Province(
     id = "JPN-28",
@@ -3591,12 +3591,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hyogo"
-        )
-      )
-    )
+          name = "Hyogo",
+        ),
+      ),
+    ),
   )
   val Jpn29: Province = Province(
     id = "JPN-29",
@@ -3604,7 +3604,7 @@ object Provinces {
     name = "Nara",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn30: Province = Province(
     id = "JPN-30",
@@ -3612,7 +3612,7 @@ object Provinces {
     name = "Wakayama",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn31: Province = Province(
     id = "JPN-31",
@@ -3620,7 +3620,7 @@ object Provinces {
     name = "Tottori",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn32: Province = Province(
     id = "JPN-32",
@@ -3636,12 +3636,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Shimane"
-        )
-      )
-    )
+          name = "Shimane",
+        ),
+      ),
+    ),
   )
   val Jpn33: Province = Province(
     id = "JPN-33",
@@ -3649,7 +3649,7 @@ object Provinces {
     name = "Okayama",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn34: Province = Province(
     id = "JPN-34",
@@ -3665,12 +3665,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hiroshima"
-        )
-      )
-    )
+          name = "Hiroshima",
+        ),
+      ),
+    ),
   )
   val Jpn35: Province = Province(
     id = "JPN-35",
@@ -3686,12 +3686,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Yamaguchi"
-        )
-      )
-    )
+          name = "Yamaguchi",
+        ),
+      ),
+    ),
   )
   val Jpn36: Province = Province(
     id = "JPN-36",
@@ -3707,12 +3707,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tokushima"
-        )
-      )
-    )
+          name = "Tokushima",
+        ),
+      ),
+    ),
   )
   val Jpn37: Province = Province(
     id = "JPN-37",
@@ -3720,7 +3720,7 @@ object Provinces {
     name = "Kagawa",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn38: Province = Province(
     id = "JPN-38",
@@ -3728,7 +3728,7 @@ object Provinces {
     name = "Ehime",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn39: Province = Province(
     id = "JPN-39",
@@ -3744,12 +3744,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Kochi"
-        )
-      )
-    )
+          name = "Kochi",
+        ),
+      ),
+    ),
   )
   val Jpn40: Province = Province(
     id = "JPN-40",
@@ -3765,12 +3765,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Fukuoka"
-        )
-      )
-    )
+          name = "Fukuoka",
+        ),
+      ),
+    ),
   )
   val Jpn41: Province = Province(
     id = "JPN-41",
@@ -3778,7 +3778,7 @@ object Provinces {
     name = "Saga",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn42: Province = Province(
     id = "JPN-42",
@@ -3786,7 +3786,7 @@ object Provinces {
     name = "Nagasaki",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn43: Province = Province(
     id = "JPN-43",
@@ -3794,7 +3794,7 @@ object Provinces {
     name = "Kumamoto",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn44: Province = Province(
     id = "JPN-44",
@@ -3810,12 +3810,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Oita"
-        )
-      )
-    )
+          name = "Oita",
+        ),
+      ),
+    ),
   )
   val Jpn45: Province = Province(
     id = "JPN-45",
@@ -3823,7 +3823,7 @@ object Provinces {
     name = "Miyazaki",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val Jpn46: Province = Province(
     id = "JPN-46",
@@ -3839,12 +3839,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Kagoshima"
-        )
-      )
-    )
+          name = "Kagoshima",
+        ),
+      ),
+    ),
   )
   val Jpn47: Province = Province(
     id = "JPN-47",
@@ -3852,7 +3852,7 @@ object Provinces {
     name = "Okinawa",
     country = "JPN",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouAb: Province = Province(
     id = "ROU-AB",
@@ -3860,7 +3860,7 @@ object Provinces {
     name = "Alba",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouAg: Province = Province(
     id = "ROU-AG",
@@ -3868,7 +3868,7 @@ object Provinces {
     name = "Argeș",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouAr: Province = Province(
     id = "ROU-AR",
@@ -3876,7 +3876,7 @@ object Provinces {
     name = "Arad",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouB: Province = Province(
     id = "ROU-B",
@@ -3884,7 +3884,7 @@ object Provinces {
     name = "București",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("municipality"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBc: Province = Province(
     id = "ROU-BC",
@@ -3892,7 +3892,7 @@ object Provinces {
     name = "Bacău",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBh: Province = Province(
     id = "ROU-BH",
@@ -3900,7 +3900,7 @@ object Provinces {
     name = "Bihor",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBn: Province = Province(
     id = "ROU-BN",
@@ -3908,7 +3908,7 @@ object Provinces {
     name = "Bistrița-Năsăud",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBr: Province = Province(
     id = "ROU-BR",
@@ -3916,7 +3916,7 @@ object Provinces {
     name = "Brăila",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBt: Province = Province(
     id = "ROU-BT",
@@ -3924,7 +3924,7 @@ object Provinces {
     name = "Botoșani",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBv: Province = Province(
     id = "ROU-BV",
@@ -3932,7 +3932,7 @@ object Provinces {
     name = "Brașov",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouBz: Province = Province(
     id = "ROU-BZ",
@@ -3940,7 +3940,7 @@ object Provinces {
     name = "Buzău",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouCj: Province = Province(
     id = "ROU-CJ",
@@ -3948,7 +3948,7 @@ object Provinces {
     name = "Cluj",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouCl: Province = Province(
     id = "ROU-CL",
@@ -3956,7 +3956,7 @@ object Provinces {
     name = "Călărași",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouCs: Province = Province(
     id = "ROU-CS",
@@ -3964,7 +3964,7 @@ object Provinces {
     name = "Caraș-Severin",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouCt: Province = Province(
     id = "ROU-CT",
@@ -3972,7 +3972,7 @@ object Provinces {
     name = "Constanța",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouCv: Province = Province(
     id = "ROU-CV",
@@ -3980,7 +3980,7 @@ object Provinces {
     name = "Covasna",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouDb: Province = Province(
     id = "ROU-DB",
@@ -3988,7 +3988,7 @@ object Provinces {
     name = "Dâmbovița",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouDj: Province = Province(
     id = "ROU-DJ",
@@ -3996,7 +3996,7 @@ object Provinces {
     name = "Dolj",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouGj: Province = Province(
     id = "ROU-GJ",
@@ -4004,7 +4004,7 @@ object Provinces {
     name = "Gorj",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouGl: Province = Province(
     id = "ROU-GL",
@@ -4012,7 +4012,7 @@ object Provinces {
     name = "Galați",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouGr: Province = Province(
     id = "ROU-GR",
@@ -4020,7 +4020,7 @@ object Provinces {
     name = "Giurgiu",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouHd: Province = Province(
     id = "ROU-HD",
@@ -4028,7 +4028,7 @@ object Provinces {
     name = "Hunedoara",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouHr: Province = Province(
     id = "ROU-HR",
@@ -4036,7 +4036,7 @@ object Provinces {
     name = "Harghita",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouIf: Province = Province(
     id = "ROU-IF",
@@ -4044,7 +4044,7 @@ object Provinces {
     name = "Ilfov",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouIl: Province = Province(
     id = "ROU-IL",
@@ -4052,7 +4052,7 @@ object Provinces {
     name = "Ialomița",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouIs: Province = Province(
     id = "ROU-IS",
@@ -4060,7 +4060,7 @@ object Provinces {
     name = "Iași",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouMh: Province = Province(
     id = "ROU-MH",
@@ -4068,7 +4068,7 @@ object Provinces {
     name = "Mehedinți",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouMm: Province = Province(
     id = "ROU-MM",
@@ -4076,7 +4076,7 @@ object Provinces {
     name = "Maramureș",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouMs: Province = Province(
     id = "ROU-MS",
@@ -4084,7 +4084,7 @@ object Provinces {
     name = "Mureș",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouNt: Province = Province(
     id = "ROU-NT",
@@ -4092,7 +4092,7 @@ object Provinces {
     name = "Neamț",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouOt: Province = Province(
     id = "ROU-OT",
@@ -4100,7 +4100,7 @@ object Provinces {
     name = "Olt",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouPh: Province = Province(
     id = "ROU-PH",
@@ -4108,7 +4108,7 @@ object Provinces {
     name = "Prahova",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouSb: Province = Province(
     id = "ROU-SB",
@@ -4116,7 +4116,7 @@ object Provinces {
     name = "Sibiu",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouSj: Province = Province(
     id = "ROU-SJ",
@@ -4124,7 +4124,7 @@ object Provinces {
     name = "Sălaj",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouSm: Province = Province(
     id = "ROU-SM",
@@ -4132,7 +4132,7 @@ object Provinces {
     name = "Satu Mare",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouSv: Province = Province(
     id = "ROU-SV",
@@ -4140,7 +4140,7 @@ object Provinces {
     name = "Suceava",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouTl: Province = Province(
     id = "ROU-TL",
@@ -4148,7 +4148,7 @@ object Provinces {
     name = "Tulcea",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouTm: Province = Province(
     id = "ROU-TM",
@@ -4156,7 +4156,7 @@ object Provinces {
     name = "Timiș",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouTr: Province = Province(
     id = "ROU-TR",
@@ -4164,7 +4164,7 @@ object Provinces {
     name = "Teleorman",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouVl: Province = Province(
     id = "ROU-VL",
@@ -4172,7 +4172,7 @@ object Provinces {
     name = "Vâlcea",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouVn: Province = Province(
     id = "ROU-VN",
@@ -4180,7 +4180,7 @@ object Provinces {
     name = "Vrancea",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val RouVs: Province = Province(
     id = "ROU-VS",
@@ -4188,7 +4188,7 @@ object Provinces {
     name = "Vaslui",
     country = "ROU",
     provinceType = io.flow.reference.v0.models.ProvinceType("other"),
-    translations = Some(Seq())
+    translations = Some(Seq()),
   )
   val UsaAk: Province = Province(
     id = "USA-AK",
@@ -4204,12 +4204,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Alaska"
-        )
-      )
-    )
+          name = "Alaska",
+        ),
+      ),
+    ),
   )
   val UsaAl: Province = Province(
     id = "USA-AL",
@@ -4225,12 +4225,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Alabama"
-        )
-      )
-    )
+          name = "Alabama",
+        ),
+      ),
+    ),
   )
   val UsaAr: Province = Province(
     id = "USA-AR",
@@ -4246,12 +4246,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Arkansas"
-        )
-      )
-    )
+          name = "Arkansas",
+        ),
+      ),
+    ),
   )
   val UsaAz: Province = Province(
     id = "USA-AZ",
@@ -4267,12 +4267,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Arizona"
-        )
-      )
-    )
+          name = "Arizona",
+        ),
+      ),
+    ),
   )
   val UsaCa: Province = Province(
     id = "USA-CA",
@@ -4288,12 +4288,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "California"
-        )
-      )
-    )
+          name = "California",
+        ),
+      ),
+    ),
   )
   val UsaCo: Province = Province(
     id = "USA-CO",
@@ -4309,12 +4309,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Colorado"
-        )
-      )
-    )
+          name = "Colorado",
+        ),
+      ),
+    ),
   )
   val UsaCt: Province = Province(
     id = "USA-CT",
@@ -4330,12 +4330,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Connecticut"
-        )
-      )
-    )
+          name = "Connecticut",
+        ),
+      ),
+    ),
   )
   val UsaDc: Province = Province(
     id = "USA-DC",
@@ -4351,12 +4351,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Washington DC"
-        )
-      )
-    )
+          name = "Washington DC",
+        ),
+      ),
+    ),
   )
   val UsaDe: Province = Province(
     id = "USA-DE",
@@ -4372,12 +4372,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Delaware"
-        )
-      )
-    )
+          name = "Delaware",
+        ),
+      ),
+    ),
   )
   val UsaFl: Province = Province(
     id = "USA-FL",
@@ -4393,12 +4393,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Florida"
-        )
-      )
-    )
+          name = "Florida",
+        ),
+      ),
+    ),
   )
   val UsaGa: Province = Province(
     id = "USA-GA",
@@ -4414,12 +4414,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Georgia"
-        )
-      )
-    )
+          name = "Georgia",
+        ),
+      ),
+    ),
   )
   val UsaHi: Province = Province(
     id = "USA-HI",
@@ -4435,12 +4435,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Hawaii"
-        )
-      )
-    )
+          name = "Hawaii",
+        ),
+      ),
+    ),
   )
   val UsaIa: Province = Province(
     id = "USA-IA",
@@ -4456,12 +4456,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Iowa"
-        )
-      )
-    )
+          name = "Iowa",
+        ),
+      ),
+    ),
   )
   val UsaId: Province = Province(
     id = "USA-ID",
@@ -4477,12 +4477,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Idaho"
-        )
-      )
-    )
+          name = "Idaho",
+        ),
+      ),
+    ),
   )
   val UsaIl: Province = Province(
     id = "USA-IL",
@@ -4498,12 +4498,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Illinois"
-        )
-      )
-    )
+          name = "Illinois",
+        ),
+      ),
+    ),
   )
   val UsaIn: Province = Province(
     id = "USA-IN",
@@ -4519,12 +4519,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Indiana"
-        )
-      )
-    )
+          name = "Indiana",
+        ),
+      ),
+    ),
   )
   val UsaKs: Province = Province(
     id = "USA-KS",
@@ -4540,12 +4540,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Kansas"
-        )
-      )
-    )
+          name = "Kansas",
+        ),
+      ),
+    ),
   )
   val UsaKy: Province = Province(
     id = "USA-KY",
@@ -4561,12 +4561,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Kentucky"
-        )
-      )
-    )
+          name = "Kentucky",
+        ),
+      ),
+    ),
   )
   val UsaLa: Province = Province(
     id = "USA-LA",
@@ -4582,12 +4582,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Louisiana"
-        )
-      )
-    )
+          name = "Louisiana",
+        ),
+      ),
+    ),
   )
   val UsaMa: Province = Province(
     id = "USA-MA",
@@ -4603,12 +4603,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Massachusetts"
-        )
-      )
-    )
+          name = "Massachusetts",
+        ),
+      ),
+    ),
   )
   val UsaMd: Province = Province(
     id = "USA-MD",
@@ -4624,12 +4624,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Maryland"
-        )
-      )
-    )
+          name = "Maryland",
+        ),
+      ),
+    ),
   )
   val UsaMe: Province = Province(
     id = "USA-ME",
@@ -4645,12 +4645,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Maine"
-        )
-      )
-    )
+          name = "Maine",
+        ),
+      ),
+    ),
   )
   val UsaMi: Province = Province(
     id = "USA-MI",
@@ -4666,12 +4666,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Michigan"
-        )
-      )
-    )
+          name = "Michigan",
+        ),
+      ),
+    ),
   )
   val UsaMn: Province = Province(
     id = "USA-MN",
@@ -4687,12 +4687,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Minnesota"
-        )
-      )
-    )
+          name = "Minnesota",
+        ),
+      ),
+    ),
   )
   val UsaMo: Province = Province(
     id = "USA-MO",
@@ -4708,12 +4708,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Missouri"
-        )
-      )
-    )
+          name = "Missouri",
+        ),
+      ),
+    ),
   )
   val UsaMs: Province = Province(
     id = "USA-MS",
@@ -4729,12 +4729,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Mississippi"
-        )
-      )
-    )
+          name = "Mississippi",
+        ),
+      ),
+    ),
   )
   val UsaMt: Province = Province(
     id = "USA-MT",
@@ -4750,12 +4750,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Montana"
-        )
-      )
-    )
+          name = "Montana",
+        ),
+      ),
+    ),
   )
   val UsaNc: Province = Province(
     id = "USA-NC",
@@ -4771,12 +4771,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "North Carolina"
-        )
-      )
-    )
+          name = "North Carolina",
+        ),
+      ),
+    ),
   )
   val UsaNd: Province = Province(
     id = "USA-ND",
@@ -4792,12 +4792,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "North Dakota"
-        )
-      )
-    )
+          name = "North Dakota",
+        ),
+      ),
+    ),
   )
   val UsaNe: Province = Province(
     id = "USA-NE",
@@ -4813,12 +4813,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Nebraska"
-        )
-      )
-    )
+          name = "Nebraska",
+        ),
+      ),
+    ),
   )
   val UsaNh: Province = Province(
     id = "USA-NH",
@@ -4834,12 +4834,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New Hampshire"
-        )
-      )
-    )
+          name = "New Hampshire",
+        ),
+      ),
+    ),
   )
   val UsaNj: Province = Province(
     id = "USA-NJ",
@@ -4855,12 +4855,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New Jersey"
-        )
-      )
-    )
+          name = "New Jersey",
+        ),
+      ),
+    ),
   )
   val UsaNm: Province = Province(
     id = "USA-NM",
@@ -4876,12 +4876,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New Mexico"
-        )
-      )
-    )
+          name = "New Mexico",
+        ),
+      ),
+    ),
   )
   val UsaNv: Province = Province(
     id = "USA-NV",
@@ -4897,12 +4897,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Nevada"
-        )
-      )
-    )
+          name = "Nevada",
+        ),
+      ),
+    ),
   )
   val UsaNy: Province = Province(
     id = "USA-NY",
@@ -4918,12 +4918,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "New York"
-        )
-      )
-    )
+          name = "New York",
+        ),
+      ),
+    ),
   )
   val UsaOh: Province = Province(
     id = "USA-OH",
@@ -4939,12 +4939,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Ohio"
-        )
-      )
-    )
+          name = "Ohio",
+        ),
+      ),
+    ),
   )
   val UsaOk: Province = Province(
     id = "USA-OK",
@@ -4960,12 +4960,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Oklahoma"
-        )
-      )
-    )
+          name = "Oklahoma",
+        ),
+      ),
+    ),
   )
   val UsaOr: Province = Province(
     id = "USA-OR",
@@ -4981,12 +4981,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Oregon"
-        )
-      )
-    )
+          name = "Oregon",
+        ),
+      ),
+    ),
   )
   val UsaPa: Province = Province(
     id = "USA-PA",
@@ -5002,12 +5002,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Pennsylvania"
-        )
-      )
-    )
+          name = "Pennsylvania",
+        ),
+      ),
+    ),
   )
   val UsaRi: Province = Province(
     id = "USA-RI",
@@ -5023,12 +5023,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Rhode Island"
-        )
-      )
-    )
+          name = "Rhode Island",
+        ),
+      ),
+    ),
   )
   val UsaSc: Province = Province(
     id = "USA-SC",
@@ -5044,12 +5044,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "South Carolina"
-        )
-      )
-    )
+          name = "South Carolina",
+        ),
+      ),
+    ),
   )
   val UsaSd: Province = Province(
     id = "USA-SD",
@@ -5065,12 +5065,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "South Dakota"
-        )
-      )
-    )
+          name = "South Dakota",
+        ),
+      ),
+    ),
   )
   val UsaTn: Province = Province(
     id = "USA-TN",
@@ -5086,12 +5086,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Tennessee"
-        )
-      )
-    )
+          name = "Tennessee",
+        ),
+      ),
+    ),
   )
   val UsaTx: Province = Province(
     id = "USA-TX",
@@ -5107,12 +5107,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Texas"
-        )
-      )
-    )
+          name = "Texas",
+        ),
+      ),
+    ),
   )
   val UsaUt: Province = Province(
     id = "USA-UT",
@@ -5128,12 +5128,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Utah"
-        )
-      )
-    )
+          name = "Utah",
+        ),
+      ),
+    ),
   )
   val UsaVa: Province = Province(
     id = "USA-VA",
@@ -5149,12 +5149,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Virginia"
-        )
-      )
-    )
+          name = "Virginia",
+        ),
+      ),
+    ),
   )
   val UsaVt: Province = Province(
     id = "USA-VT",
@@ -5170,12 +5170,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Vermont"
-        )
-      )
-    )
+          name = "Vermont",
+        ),
+      ),
+    ),
   )
   val UsaWa: Province = Province(
     id = "USA-WA",
@@ -5191,12 +5191,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Washington"
-        )
-      )
-    )
+          name = "Washington",
+        ),
+      ),
+    ),
   )
   val UsaWi: Province = Province(
     id = "USA-WI",
@@ -5212,12 +5212,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Wisconsin"
-        )
-      )
-    )
+          name = "Wisconsin",
+        ),
+      ),
+    ),
   )
   val UsaWv: Province = Province(
     id = "USA-WV",
@@ -5233,12 +5233,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "West Virginia"
-        )
-      )
-    )
+          name = "West Virginia",
+        ),
+      ),
+    ),
   )
   val UsaWy: Province = Province(
     id = "USA-WY",
@@ -5254,12 +5254,12 @@ object Provinces {
             name = "English - United States",
             country = "USA",
             language = "en",
-            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ",")
+            numbers = io.flow.reference.v0.models.LocaleNumbers(decimal = ".", group = ","),
           ),
-          name = "Wyoming"
-        )
-      )
-    )
+          name = "Wyoming",
+        ),
+      ),
+    ),
   )
 
   val all: Seq[Province] = Seq(
@@ -5507,7 +5507,7 @@ object Provinces {
     UsaWa,
     UsaWi,
     UsaWv,
-    UsaWy
+    UsaWy,
   )
 
 }

@@ -12,7 +12,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Afghanistan",
     languages = Seq("fa", "ps"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Alb: Country = Country(
     iso31662 = "AL",
@@ -22,7 +22,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Albania",
     languages = Seq("sq"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dza: Country = Country(
     iso31662 = "DZ",
@@ -32,7 +32,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Algeria",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Asm: Country = Country(
     iso31662 = "AS",
@@ -42,7 +42,7 @@ object Countries {
     measurementSystem = "metric",
     name = "American Samoa",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val And: Country = Country(
     iso31662 = "AD",
@@ -52,7 +52,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Andorra",
     languages = Seq("ca"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ago: Country = Country(
     iso31662 = "AO",
@@ -62,7 +62,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Angola",
     languages = Seq("kg", "kj", "pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Aia: Country = Country(
     iso31662 = "AI",
@@ -72,7 +72,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Anguilla",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Ata: Country = Country(
     iso31662 = "AQ",
@@ -82,7 +82,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Antarctica",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Atg: Country = Country(
     iso31662 = "AG",
@@ -92,7 +92,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Antigua and Barbuda",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Arg: Country = Country(
     iso31662 = "AR",
@@ -102,7 +102,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Argentina",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Arm: Country = Country(
     iso31662 = "AM",
@@ -112,7 +112,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Armenia",
     languages = Seq("hy"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Abw: Country = Country(
     iso31662 = "AW",
@@ -122,7 +122,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Aruba",
     languages = Seq("nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Aus: Country = Country(
     iso31662 = "AU",
@@ -132,7 +132,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Australia",
     languages = Seq("en"),
-    timezones = Seq("Australia/ACT")
+    timezones = Seq("Australia/ACT"),
   )
   val Aut: Country = Country(
     iso31662 = "AT",
@@ -142,7 +142,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Austria",
     languages = Seq("de"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Aze: Country = Country(
     iso31662 = "AZ",
@@ -152,7 +152,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Azerbaijan",
     languages = Seq("az"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bhs: Country = Country(
     iso31662 = "BS",
@@ -162,7 +162,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bahamas",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bhr: Country = Country(
     iso31662 = "BH",
@@ -172,7 +172,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bahrain",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bgd: Country = Country(
     iso31662 = "BD",
@@ -182,7 +182,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bangladesh",
     languages = Seq("bn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Brb: Country = Country(
     iso31662 = "BB",
@@ -192,7 +192,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Barbados",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Blr: Country = Country(
     iso31662 = "BY",
@@ -202,7 +202,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Belarus",
     languages = Seq("be", "ru"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bel: Country = Country(
     iso31662 = "BE",
@@ -212,7 +212,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Belgium",
     languages = Seq("de", "fr", "nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Blz: Country = Country(
     iso31662 = "BZ",
@@ -222,7 +222,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Belize",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ben: Country = Country(
     iso31662 = "BJ",
@@ -232,7 +232,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Benin",
     languages = Seq("ff", "fr", "yo"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bmu: Country = Country(
     iso31662 = "BM",
@@ -242,7 +242,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bermuda",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Btn: Country = Country(
     iso31662 = "BT",
@@ -252,7 +252,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bhutan",
     languages = Seq("dz"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bol: Country = Country(
     iso31662 = "BO",
@@ -262,7 +262,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bolivia",
     languages = Seq("ay", "es", "gn", "qu"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bes: Country = Country(
     iso31662 = "BQ",
@@ -272,7 +272,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bonaire, Sint Eustatius and Saba",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Bih: Country = Country(
     iso31662 = "BA",
@@ -282,7 +282,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bosnia and Herzegovina",
     languages = Seq("bs", "hr", "sr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bwa: Country = Country(
     iso31662 = "BW",
@@ -292,7 +292,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Botswana",
     languages = Seq("en", "tn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bvt: Country = Country(
     iso31662 = "BV",
@@ -302,7 +302,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bouvet Island",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Bra: Country = Country(
     iso31662 = "BR",
@@ -312,7 +312,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Brazil",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Iot: Country = Country(
     iso31662 = "IO",
@@ -322,7 +322,7 @@ object Countries {
     measurementSystem = "metric",
     name = "British Indian Ocean Territory",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Vgb: Country = Country(
     iso31662 = "VG",
@@ -332,7 +332,7 @@ object Countries {
     measurementSystem = "metric",
     name = "British Virgin Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Brn: Country = Country(
     iso31662 = "BN",
@@ -342,7 +342,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Brunei Darussalam",
     languages = Seq("ms"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bgr: Country = Country(
     iso31662 = "BG",
@@ -352,7 +352,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Bulgaria",
     languages = Seq("bg"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bfa: Country = Country(
     iso31662 = "BF",
@@ -362,7 +362,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Burkina Faso",
     languages = Seq("ff", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Bdi: Country = Country(
     iso31662 = "BI",
@@ -372,7 +372,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Burundi",
     languages = Seq("fr", "rn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cpv: Country = Country(
     iso31662 = "CV",
@@ -382,7 +382,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cabo Verde",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Khm: Country = Country(
     iso31662 = "KH",
@@ -392,7 +392,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cambodia",
     languages = Seq("km"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cmr: Country = Country(
     iso31662 = "CM",
@@ -402,7 +402,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cameroon",
     languages = Seq("en", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Can: Country = Country(
     iso31662 = "CA",
@@ -412,7 +412,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Canada",
     languages = Seq("en", "fr"),
-    timezones = Seq("Canada/Eastern")
+    timezones = Seq("Canada/Eastern"),
   )
   val Cym: Country = Country(
     iso31662 = "KY",
@@ -422,7 +422,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cayman Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Caf: Country = Country(
     iso31662 = "CF",
@@ -432,7 +432,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Central African Republic",
     languages = Seq("fr", "sg"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tcd: Country = Country(
     iso31662 = "TD",
@@ -442,7 +442,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Chad",
     languages = Seq("ar", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Chl: Country = Country(
     iso31662 = "CL",
@@ -452,7 +452,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Chile",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Chn: Country = Country(
     iso31662 = "CN",
@@ -462,7 +462,7 @@ object Countries {
     measurementSystem = "metric",
     name = "China",
     languages = Seq("zh"),
-    timezones = Seq("Asia/Chongqing")
+    timezones = Seq("Asia/Chongqing"),
   )
   val Cxr: Country = Country(
     iso31662 = "CX",
@@ -472,7 +472,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Christmas Island",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Cck: Country = Country(
     iso31662 = "CC",
@@ -482,7 +482,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cocos (Keeling) Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Col: Country = Country(
     iso31662 = "CO",
@@ -492,7 +492,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Colombia",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Com: Country = Country(
     iso31662 = "KM",
@@ -502,7 +502,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Comoros",
     languages = Seq("ar", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cog: Country = Country(
     iso31662 = "CG",
@@ -512,7 +512,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Congo",
     languages = Seq("fr", "kg", "ln"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cok: Country = Country(
     iso31662 = "CK",
@@ -522,7 +522,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cook Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Cri: Country = Country(
     iso31662 = "CR",
@@ -532,7 +532,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Costa Rica",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hrv: Country = Country(
     iso31662 = "HR",
@@ -542,7 +542,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Croatia",
     languages = Seq("hr", "it"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cub: Country = Country(
     iso31662 = "CU",
@@ -552,7 +552,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cuba",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cuw: Country = Country(
     iso31662 = "CW",
@@ -562,7 +562,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Curaçao",
     languages = Seq("en", "nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cyp: Country = Country(
     iso31662 = "CY",
@@ -572,7 +572,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Cyprus",
     languages = Seq("el", "tr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cze: Country = Country(
     iso31662 = "CZ",
@@ -582,7 +582,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Czechia",
     languages = Seq("cs", "sk"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Civ: Country = Country(
     iso31662 = "CI",
@@ -592,7 +592,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Côte d'Ivoire",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Prk: Country = Country(
     iso31662 = "KP",
@@ -602,7 +602,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Democratic People's Republic of Korea",
     languages = Seq("ko"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Cod: Country = Country(
     iso31662 = "CD",
@@ -612,7 +612,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Democratic Republic of the Congo",
     languages = Seq("fr", "kg", "ln", "lu", "sw"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dnk: Country = Country(
     iso31662 = "DK",
@@ -622,7 +622,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Denmark",
     languages = Seq("da"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dji: Country = Country(
     iso31662 = "DJ",
@@ -632,7 +632,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Djibouti",
     languages = Seq("aa", "ar", "fr", "so"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dma: Country = Country(
     iso31662 = "DM",
@@ -642,7 +642,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Dominica",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Dom: Country = Country(
     iso31662 = "DO",
@@ -652,7 +652,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Dominican Republic",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ecu: Country = Country(
     iso31662 = "EC",
@@ -662,7 +662,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Ecuador",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Egy: Country = Country(
     iso31662 = "EG",
@@ -672,7 +672,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Egypt",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Slv: Country = Country(
     iso31662 = "SV",
@@ -682,7 +682,7 @@ object Countries {
     measurementSystem = "metric",
     name = "El Salvador",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gnq: Country = Country(
     iso31662 = "GQ",
@@ -692,7 +692,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Equatorial Guinea",
     languages = Seq("es", "fr", "pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Eri: Country = Country(
     iso31662 = "ER",
@@ -702,7 +702,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Eritrea",
     languages = Seq("ar", "en", "ti"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Est: Country = Country(
     iso31662 = "EE",
@@ -712,7 +712,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Estonia",
     languages = Seq("et"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Swz: Country = Country(
     iso31662 = "SZ",
@@ -722,7 +722,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Eswatini",
     languages = Seq("en", "ss"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Eth: Country = Country(
     iso31662 = "ET",
@@ -732,7 +732,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Ethiopia",
     languages = Seq("am"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Flk: Country = Country(
     iso31662 = "FK",
@@ -742,7 +742,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Falkland Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Fro: Country = Country(
     iso31662 = "FO",
@@ -752,7 +752,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Faroe Islands",
     languages = Seq("da"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Fji: Country = Country(
     iso31662 = "FJ",
@@ -762,7 +762,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Fiji",
     languages = Seq("en", "fj", "hi", "ur"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Fin: Country = Country(
     iso31662 = "FI",
@@ -772,7 +772,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Finland",
     languages = Seq("fi", "sv"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Fra: Country = Country(
     iso31662 = "FR",
@@ -782,7 +782,7 @@ object Countries {
     measurementSystem = "metric",
     name = "France",
     languages = Seq("fr"),
-    timezones = Seq("Africa/Algiers")
+    timezones = Seq("Africa/Algiers"),
   )
   val Guf: Country = Country(
     iso31662 = "GF",
@@ -792,7 +792,7 @@ object Countries {
     measurementSystem = "metric",
     name = "French Guiana",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pyf: Country = Country(
     iso31662 = "PF",
@@ -802,7 +802,7 @@ object Countries {
     measurementSystem = "metric",
     name = "French Polynesia",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Atf: Country = Country(
     iso31662 = "TF",
@@ -812,7 +812,7 @@ object Countries {
     measurementSystem = "metric",
     name = "French Southern Territories",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Gab: Country = Country(
     iso31662 = "GA",
@@ -822,7 +822,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Gabon",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gmb: Country = Country(
     iso31662 = "GM",
@@ -832,7 +832,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Gambia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Geo: Country = Country(
     iso31662 = "GE",
@@ -842,7 +842,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Georgia",
     languages = Seq("ka"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Deu: Country = Country(
     iso31662 = "DE",
@@ -852,7 +852,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Germany",
     languages = Seq("de"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gha: Country = Country(
     iso31662 = "GH",
@@ -862,7 +862,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Ghana",
     languages = Seq("ak", "ee", "en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gib: Country = Country(
     iso31662 = "GI",
@@ -872,7 +872,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Gibraltar",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Grc: Country = Country(
     iso31662 = "GR",
@@ -882,7 +882,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Greece",
     languages = Seq("el"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Grl: Country = Country(
     iso31662 = "GL",
@@ -892,7 +892,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Greenland",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Grd: Country = Country(
     iso31662 = "GD",
@@ -902,7 +902,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Grenada",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Glp: Country = Country(
     iso31662 = "GP",
@@ -912,7 +912,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guadeloupe",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gum: Country = Country(
     iso31662 = "GU",
@@ -922,7 +922,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guam",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Gtm: Country = Country(
     iso31662 = "GT",
@@ -932,7 +932,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guatemala",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ggy: Country = Country(
     iso31662 = "GG",
@@ -942,7 +942,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guernsey",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Gin: Country = Country(
     iso31662 = "GN",
@@ -952,7 +952,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guinea",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gnb: Country = Country(
     iso31662 = "GW",
@@ -962,7 +962,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guinea-Bissau",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Guy: Country = Country(
     iso31662 = "GY",
@@ -972,7 +972,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Guyana",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hti: Country = Country(
     iso31662 = "HT",
@@ -982,7 +982,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Haiti",
     languages = Seq("fr", "ht"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hmd: Country = Country(
     iso31662 = "HM",
@@ -992,7 +992,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Heard Island and McDonald Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Vat: Country = Country(
     iso31662 = "VA",
@@ -1002,7 +1002,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Holy See",
     languages = Seq("it", "la"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hnd: Country = Country(
     iso31662 = "HN",
@@ -1012,7 +1012,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Honduras",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hkg: Country = Country(
     iso31662 = "HK",
@@ -1022,7 +1022,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Hong Kong",
     languages = Seq("en", "zh"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Hun: Country = Country(
     iso31662 = "HU",
@@ -1032,7 +1032,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Hungary",
     languages = Seq("hu"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Isl: Country = Country(
     iso31662 = "IS",
@@ -1042,7 +1042,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Iceland",
     languages = Seq("is"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ind: Country = Country(
     iso31662 = "IN",
@@ -1052,7 +1052,7 @@ object Countries {
     measurementSystem = "metric",
     name = "India",
     languages = Seq("bn", "en", "gu", "hi", "pa", "ta", "te"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Idn: Country = Country(
     iso31662 = "ID",
@@ -1062,7 +1062,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Indonesia",
     languages = Seq("id", "ms"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Irn: Country = Country(
     iso31662 = "IR",
@@ -1072,7 +1072,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Iran (Islamic Republic of)",
     languages = Seq("fa"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Irq: Country = Country(
     iso31662 = "IQ",
@@ -1082,7 +1082,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Iraq",
     languages = Seq("ar", "ku"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Irl: Country = Country(
     iso31662 = "IE",
@@ -1092,7 +1092,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Ireland",
     languages = Seq("en", "ga"),
-    timezones = Seq("GMT")
+    timezones = Seq("GMT"),
   )
   val Imn: Country = Country(
     iso31662 = "IM",
@@ -1102,7 +1102,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Isle of Man",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Isr: Country = Country(
     iso31662 = "IL",
@@ -1112,7 +1112,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Israel",
     languages = Seq("ar", "he"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ita: Country = Country(
     iso31662 = "IT",
@@ -1122,7 +1122,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Italy",
     languages = Seq("de", "fr", "it"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jam: Country = Country(
     iso31662 = "JM",
@@ -1132,7 +1132,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Jamaica",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jpn: Country = Country(
     iso31662 = "JP",
@@ -1142,7 +1142,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Japan",
     languages = Seq("ja"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jey: Country = Country(
     iso31662 = "JE",
@@ -1152,7 +1152,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Jersey",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Jor: Country = Country(
     iso31662 = "JO",
@@ -1162,7 +1162,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Jordan",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kaz: Country = Country(
     iso31662 = "KZ",
@@ -1172,7 +1172,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kazakhstan",
     languages = Seq("kk", "ru"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ken: Country = Country(
     iso31662 = "KE",
@@ -1182,7 +1182,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kenya",
     languages = Seq("en", "sw"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kir: Country = Country(
     iso31662 = "KI",
@@ -1192,7 +1192,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kiribati",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Rks: Country = Country(
     iso31662 = "XK",
@@ -1202,7 +1202,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kosovo",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Kwt: Country = Country(
     iso31662 = "KW",
@@ -1212,7 +1212,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kuwait",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kgz: Country = Country(
     iso31662 = "KG",
@@ -1222,7 +1222,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Kyrgyzstan",
     languages = Seq("ky", "ru"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lao: Country = Country(
     iso31662 = "LA",
@@ -1232,7 +1232,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Lao People's Democratic Republic",
     languages = Seq("lo"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lva: Country = Country(
     iso31662 = "LV",
@@ -1242,7 +1242,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Latvia",
     languages = Seq("lv"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lbn: Country = Country(
     iso31662 = "LB",
@@ -1252,7 +1252,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Lebanon",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lso: Country = Country(
     iso31662 = "LS",
@@ -1262,7 +1262,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Lesotho",
     languages = Seq("en", "st"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lbr: Country = Country(
     iso31662 = "LR",
@@ -1272,7 +1272,7 @@ object Countries {
     measurementSystem = "imperial",
     name = "Liberia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lby: Country = Country(
     iso31662 = "LY",
@@ -1282,7 +1282,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Libya",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lie: Country = Country(
     iso31662 = "LI",
@@ -1292,7 +1292,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Liechtenstein",
     languages = Seq("de"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ltu: Country = Country(
     iso31662 = "LT",
@@ -1302,7 +1302,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Lithuania",
     languages = Seq("lt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lux: Country = Country(
     iso31662 = "LU",
@@ -1312,7 +1312,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Luxembourg",
     languages = Seq("de", "fr", "lb"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mac: Country = Country(
     iso31662 = "MO",
@@ -1322,7 +1322,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Macau",
     languages = Seq("pt", "zh"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mdg: Country = Country(
     iso31662 = "MG",
@@ -1332,7 +1332,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Madagascar",
     languages = Seq("fr", "mg"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mwi: Country = Country(
     iso31662 = "MW",
@@ -1342,7 +1342,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Malawi",
     languages = Seq("en", "ny"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mys: Country = Country(
     iso31662 = "MY",
@@ -1352,7 +1352,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Malaysia",
     languages = Seq("en", "ms", "ta"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mdv: Country = Country(
     iso31662 = "MV",
@@ -1362,7 +1362,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Maldives",
     languages = Seq("dv"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mli: Country = Country(
     iso31662 = "ML",
@@ -1372,7 +1372,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mali",
     languages = Seq("bm", "ff", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mlt: Country = Country(
     iso31662 = "MT",
@@ -1382,7 +1382,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Malta",
     languages = Seq("en", "mt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mhl: Country = Country(
     iso31662 = "MH",
@@ -1392,7 +1392,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Marshall Islands",
     languages = Seq("en", "mh"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mtq: Country = Country(
     iso31662 = "MQ",
@@ -1402,7 +1402,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Martinique",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mrt: Country = Country(
     iso31662 = "MR",
@@ -1412,7 +1412,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mauritania",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mus: Country = Country(
     iso31662 = "MU",
@@ -1422,7 +1422,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mauritius",
     languages = Seq("en", "fr", "ta"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Myt: Country = Country(
     iso31662 = "YT",
@@ -1432,7 +1432,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mayotte",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mex: Country = Country(
     iso31662 = "MX",
@@ -1442,7 +1442,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mexico",
     languages = Seq("es"),
-    timezones = Seq("Mexico/General")
+    timezones = Seq("Mexico/General"),
   )
   val Fsm: Country = Country(
     iso31662 = "FM",
@@ -1452,7 +1452,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Micronesia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mco: Country = Country(
     iso31662 = "MC",
@@ -1462,7 +1462,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Monaco",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mng: Country = Country(
     iso31662 = "MN",
@@ -1472,7 +1472,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mongolia",
     languages = Seq("mn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mne: Country = Country(
     iso31662 = "ME",
@@ -1482,7 +1482,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Montenegro",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Msr: Country = Country(
     iso31662 = "MS",
@@ -1492,7 +1492,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Montserrat",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Mar: Country = Country(
     iso31662 = "MA",
@@ -1502,7 +1502,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Morocco",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Moz: Country = Country(
     iso31662 = "MZ",
@@ -1512,7 +1512,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Mozambique",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mmr: Country = Country(
     iso31662 = "MM",
@@ -1522,7 +1522,7 @@ object Countries {
     measurementSystem = "imperial",
     name = "Myanmar",
     languages = Seq("my"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nam: Country = Country(
     iso31662 = "NA",
@@ -1532,7 +1532,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Namibia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nru: Country = Country(
     iso31662 = "NR",
@@ -1542,7 +1542,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Nauru",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Npl: Country = Country(
     iso31662 = "NP",
@@ -1552,7 +1552,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Nepal",
     languages = Seq("ne"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nld: Country = Country(
     iso31662 = "NL",
@@ -1562,7 +1562,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Netherlands",
     languages = Seq("nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ncl: Country = Country(
     iso31662 = "NC",
@@ -1572,7 +1572,7 @@ object Countries {
     measurementSystem = "metric",
     name = "New Caledonia",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nzl: Country = Country(
     iso31662 = "NZ",
@@ -1582,7 +1582,7 @@ object Countries {
     measurementSystem = "metric",
     name = "New Zealand",
     languages = Seq("en", "mi"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nic: Country = Country(
     iso31662 = "NI",
@@ -1592,7 +1592,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Nicaragua",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ner: Country = Country(
     iso31662 = "NE",
@@ -1602,7 +1602,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Niger",
     languages = Seq("ar", "ff", "fr", "ha", "kr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Nga: Country = Country(
     iso31662 = "NG",
@@ -1612,7 +1612,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Nigeria",
     languages = Seq("en", "ha", "ig", "yo"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Niu: Country = Country(
     iso31662 = "NU",
@@ -1622,7 +1622,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Niue",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Nfk: Country = Country(
     iso31662 = "NF",
@@ -1632,7 +1632,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Norfolk Island",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Mkd: Country = Country(
     iso31662 = "MK",
@@ -1642,7 +1642,7 @@ object Countries {
     measurementSystem = "metric",
     name = "North Macedonia",
     languages = Seq("mk"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mnp: Country = Country(
     iso31662 = "MP",
@@ -1652,7 +1652,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Northern Mariana Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Nor: Country = Country(
     iso31662 = "NO",
@@ -1662,7 +1662,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Norway",
     languages = Seq("nb", "nn", "no"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Omn: Country = Country(
     iso31662 = "OM",
@@ -1672,7 +1672,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Oman",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pak: Country = Country(
     iso31662 = "PK",
@@ -1682,7 +1682,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Pakistan",
     languages = Seq("en", "ur"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Plw: Country = Country(
     iso31662 = "PW",
@@ -1692,7 +1692,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Palau",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pan: Country = Country(
     iso31662 = "PA",
@@ -1702,7 +1702,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Panama",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Png: Country = Country(
     iso31662 = "PG",
@@ -1712,7 +1712,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Papua New Guinea",
     languages = Seq("en", "ho"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pry: Country = Country(
     iso31662 = "PY",
@@ -1722,7 +1722,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Paraguay",
     languages = Seq("es", "gn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Per: Country = Country(
     iso31662 = "PE",
@@ -1732,7 +1732,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Peru",
     languages = Seq("ay", "es", "qu"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Phl: Country = Country(
     iso31662 = "PH",
@@ -1742,7 +1742,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Philippines",
     languages = Seq("en", "tl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pcn: Country = Country(
     iso31662 = "PN",
@@ -1752,7 +1752,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Pitcairn",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Pol: Country = Country(
     iso31662 = "PL",
@@ -1762,7 +1762,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Poland",
     languages = Seq("pl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Prt: Country = Country(
     iso31662 = "PT",
@@ -1772,7 +1772,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Portugal",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pri: Country = Country(
     iso31662 = "PR",
@@ -1782,7 +1782,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Puerto Rico",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Qat: Country = Country(
     iso31662 = "QA",
@@ -1792,7 +1792,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Qatar",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Kor: Country = Country(
     iso31662 = "KR",
@@ -1802,7 +1802,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Republic of Korea",
     languages = Seq("ko"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Mda: Country = Country(
     iso31662 = "MD",
@@ -1812,7 +1812,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Republic of Moldova",
     languages = Seq("ro"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Rou: Country = Country(
     iso31662 = "RO",
@@ -1822,7 +1822,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Romania",
     languages = Seq("ro"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Rus: Country = Country(
     iso31662 = "RU",
@@ -1832,7 +1832,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Russian Federation",
     languages = Seq("ru"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Rwa: Country = Country(
     iso31662 = "RW",
@@ -1842,7 +1842,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Rwanda",
     languages = Seq("en", "fr", "rw"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Reu: Country = Country(
     iso31662 = "RE",
@@ -1852,7 +1852,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Réunion",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Blm: Country = Country(
     iso31662 = "BL",
@@ -1862,7 +1862,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Barthélemy",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Shn: Country = Country(
     iso31662 = "SH",
@@ -1872,7 +1872,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Helena",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Kna: Country = Country(
     iso31662 = "KN",
@@ -1882,7 +1882,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Kitts and Nevis",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lca: Country = Country(
     iso31662 = "LC",
@@ -1892,7 +1892,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Lucia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Maf: Country = Country(
     iso31662 = "MF",
@@ -1902,7 +1902,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Martin",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Spm: Country = Country(
     iso31662 = "PM",
@@ -1912,7 +1912,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Pierre and Miquelon",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Vct: Country = Country(
     iso31662 = "VC",
@@ -1922,7 +1922,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saint Vincent and the Grenadines",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Wsm: Country = Country(
     iso31662 = "WS",
@@ -1932,7 +1932,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Samoa",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Smr: Country = Country(
     iso31662 = "SM",
@@ -1942,7 +1942,7 @@ object Countries {
     measurementSystem = "metric",
     name = "San Marino",
     languages = Seq("it"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Stp: Country = Country(
     iso31662 = "ST",
@@ -1952,7 +1952,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sao Tome and Principe",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sau: Country = Country(
     iso31662 = "SA",
@@ -1962,7 +1962,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Saudi Arabia",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sen: Country = Country(
     iso31662 = "SN",
@@ -1972,7 +1972,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Senegal",
     languages = Seq("ff", "fr", "wo"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Srb: Country = Country(
     iso31662 = "RS",
@@ -1982,7 +1982,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Serbia",
     languages = Seq("sr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Syc: Country = Country(
     iso31662 = "SC",
@@ -1992,7 +1992,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Seychelles",
     languages = Seq("en", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sle: Country = Country(
     iso31662 = "SL",
@@ -2002,7 +2002,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sierra Leone",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sgp: Country = Country(
     iso31662 = "SG",
@@ -2012,7 +2012,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Singapore",
     languages = Seq("en", "ms", "ta", "zh"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sxm: Country = Country(
     iso31662 = "SX",
@@ -2022,7 +2022,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sint Maarten",
     languages = Seq("en", "nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Svk: Country = Country(
     iso31662 = "SK",
@@ -2032,7 +2032,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Slovakia",
     languages = Seq("cs", "sk"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Svn: Country = Country(
     iso31662 = "SI",
@@ -2042,7 +2042,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Slovenia",
     languages = Seq("it", "sl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Slb: Country = Country(
     iso31662 = "SB",
@@ -2052,7 +2052,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Solomon Islands",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Som: Country = Country(
     iso31662 = "SO",
@@ -2062,7 +2062,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Somalia",
     languages = Seq("ar", "so"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Zaf: Country = Country(
     iso31662 = "ZA",
@@ -2072,7 +2072,7 @@ object Countries {
     measurementSystem = "metric",
     name = "South Africa",
     languages = Seq("af", "en", "nd", "nr", "ss", "st", "tn", "ts", "ve", "xh", "zu"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sgs: Country = Country(
     iso31662 = "GS",
@@ -2082,7 +2082,7 @@ object Countries {
     measurementSystem = "metric",
     name = "South Georgia and the South Sandwich Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Ssd: Country = Country(
     iso31662 = "SS",
@@ -2092,7 +2092,7 @@ object Countries {
     measurementSystem = "metric",
     name = "South Sudan",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Esp: Country = Country(
     iso31662 = "ES",
@@ -2102,7 +2102,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Spain",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Lka: Country = Country(
     iso31662 = "LK",
@@ -2112,7 +2112,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sri Lanka",
     languages = Seq("en", "si", "ta"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Pse: Country = Country(
     iso31662 = "PS",
@@ -2122,7 +2122,7 @@ object Countries {
     measurementSystem = "metric",
     name = "State of Palestine",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Sdn: Country = Country(
     iso31662 = "SD",
@@ -2132,7 +2132,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sudan",
     languages = Seq("ar", "en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sur: Country = Country(
     iso31662 = "SR",
@@ -2142,7 +2142,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Suriname",
     languages = Seq("nl"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Sjm: Country = Country(
     iso31662 = "SJ",
@@ -2152,7 +2152,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Svalbard and Jan Mayen Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Swe: Country = Country(
     iso31662 = "SE",
@@ -2162,7 +2162,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Sweden",
     languages = Seq("sv"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Che: Country = Country(
     iso31662 = "CH",
@@ -2172,7 +2172,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Switzerland",
     languages = Seq("de", "fr", "it", "rm"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Syr: Country = Country(
     iso31662 = "SY",
@@ -2182,7 +2182,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Syrian Arab Republic",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Twn: Country = Country(
     iso31662 = "TW",
@@ -2192,7 +2192,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Taiwan",
     languages = Seq("zh"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tjk: Country = Country(
     iso31662 = "TJ",
@@ -2202,7 +2202,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Tajikistan",
     languages = Seq("fa", "ru", "tg"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tha: Country = Country(
     iso31662 = "TH",
@@ -2212,7 +2212,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Thailand",
     languages = Seq("th"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tls: Country = Country(
     iso31662 = "TL",
@@ -2222,7 +2222,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Timor-Leste",
     languages = Seq("pt"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tgo: Country = Country(
     iso31662 = "TG",
@@ -2232,7 +2232,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Togo",
     languages = Seq("ee", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tkl: Country = Country(
     iso31662 = "TK",
@@ -2242,7 +2242,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Tokelau",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Ton: Country = Country(
     iso31662 = "TO",
@@ -2252,7 +2252,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Tonga",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tto: Country = Country(
     iso31662 = "TT",
@@ -2262,7 +2262,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Trinidad and Tobago",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tun: Country = Country(
     iso31662 = "TN",
@@ -2272,7 +2272,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Tunisia",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tur: Country = Country(
     iso31662 = "TR",
@@ -2282,7 +2282,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Turkey",
     languages = Seq("tr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tkm: Country = Country(
     iso31662 = "TM",
@@ -2292,7 +2292,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Turkmenistan",
     languages = Seq("tk"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Tca: Country = Country(
     iso31662 = "TC",
@@ -2302,7 +2302,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Turks and Caicos Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Tuv: Country = Country(
     iso31662 = "TV",
@@ -2312,7 +2312,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Tuvalu",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Uga: Country = Country(
     iso31662 = "UG",
@@ -2322,7 +2322,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Uganda",
     languages = Seq("en", "sw"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ukr: Country = Country(
     iso31662 = "UA",
@@ -2332,7 +2332,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Ukraine",
     languages = Seq("uk"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Are: Country = Country(
     iso31662 = "AE",
@@ -2342,7 +2342,7 @@ object Countries {
     measurementSystem = "metric",
     name = "United Arab Emirates",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Gbr: Country = Country(
     iso31662 = "GB",
@@ -2352,7 +2352,7 @@ object Countries {
     measurementSystem = "metric",
     name = "United Kingdom",
     languages = Seq("cy", "en"),
-    timezones = Seq("GMT")
+    timezones = Seq("GMT"),
   )
   val Tza: Country = Country(
     iso31662 = "TZ",
@@ -2362,7 +2362,7 @@ object Countries {
     measurementSystem = "metric",
     name = "United Republic of Tanzania",
     languages = Seq("en", "sw"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Umi: Country = Country(
     iso31662 = "UM",
@@ -2372,7 +2372,7 @@ object Countries {
     measurementSystem = "metric",
     name = "United States Minor Outlying Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Usa: Country = Country(
     iso31662 = "US",
@@ -2382,7 +2382,7 @@ object Countries {
     measurementSystem = "imperial",
     name = "United States of America",
     languages = Seq("en"),
-    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York")
+    timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York"),
   )
   val Vir: Country = Country(
     iso31662 = "VI",
@@ -2392,7 +2392,7 @@ object Countries {
     measurementSystem = "metric",
     name = "United States Virgin Islands",
     languages = Nil,
-    timezones = Nil
+    timezones = Nil,
   )
   val Ury: Country = Country(
     iso31662 = "UY",
@@ -2402,7 +2402,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Uruguay",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Uzb: Country = Country(
     iso31662 = "UZ",
@@ -2412,7 +2412,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Uzbekistan",
     languages = Seq("uz"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Vut: Country = Country(
     iso31662 = "VU",
@@ -2422,7 +2422,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Vanuatu",
     languages = Seq("bi", "en", "fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ven: Country = Country(
     iso31662 = "VE",
@@ -2432,7 +2432,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Venezuela",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Vnm: Country = Country(
     iso31662 = "VN",
@@ -2442,7 +2442,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Vietnam",
     languages = Seq("vi"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Wlf: Country = Country(
     iso31662 = "WF",
@@ -2452,7 +2452,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Wallis and Futuna Islands",
     languages = Seq("fr"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Esh: Country = Country(
     iso31662 = "EH",
@@ -2462,7 +2462,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Western Sahara",
     languages = Seq("es"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Yem: Country = Country(
     iso31662 = "YE",
@@ -2472,7 +2472,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Yemen",
     languages = Seq("ar"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Zmb: Country = Country(
     iso31662 = "ZM",
@@ -2482,7 +2482,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Zambia",
     languages = Seq("en"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Zwe: Country = Country(
     iso31662 = "ZW",
@@ -2492,7 +2492,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Zimbabwe",
     languages = Seq("en", "nd", "sn"),
-    timezones = Nil
+    timezones = Nil,
   )
   val Ala: Country = Country(
     iso31662 = "AX",
@@ -2502,7 +2502,7 @@ object Countries {
     measurementSystem = "metric",
     name = "Åland Islands",
     languages = Seq("sv"),
-    timezones = Nil
+    timezones = Nil,
   )
 
   val all: Seq[Country] = Seq(
@@ -2755,7 +2755,7 @@ object Countries {
     Yem,
     Zmb,
     Zwe,
-    Ala
+    Ala,
   )
 
 }

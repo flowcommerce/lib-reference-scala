@@ -7,9 +7,9 @@ object Languages extends Validation[Language] {
     data.Languages.all.flatMap { l =>
       Seq(
         (l.iso6392.toLowerCase -> l),
-        (l.name.toLowerCase -> l)
+        (l.name.toLowerCase -> l),
       )
-    }: _*
+    }: _*,
   )
 
   override def singular = "language"
