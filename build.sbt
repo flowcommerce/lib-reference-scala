@@ -23,7 +23,7 @@ lazy val allScalacOptions = Seq(
 lazy val root = project
   .in(file("."))
   .settings(
-    scalafmtOnCompile := true,
+    scalafmtOnCompile := false, // For testing auto-push via Jenkins on PR branch.
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.17" % Test,
     ),
