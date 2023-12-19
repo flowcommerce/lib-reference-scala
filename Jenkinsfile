@@ -51,7 +51,7 @@ pipeline {
                         println("Push to upstream? " + HAS_CHANGES)
                         if (HAS_CHANGES) {
                             sh '''
-                                git push --set-upstream origin
+                                git push --set-upstream origin HEAD
                                 git push
                             '''
                         }
