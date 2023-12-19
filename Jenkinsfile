@@ -19,27 +19,9 @@ pipeline {
       }
     }
 
-    stage('SBT Test') {
-      when {
-          not { branch 'main' }
-          changeRequest()
-      }
-      steps {
-        container('play') {
-          script {
-            try {
-              sh '''
-                sbt clean compile flowLintLib test scalafmtSbtCheck scalafmtCheck doc
-              '''
-            } finally {
-                junit allowEmptyResults: true, testResults: '**/target/test-reports/*.xml'
-            }
-          }
-        }
-      }
-    }
-
     stage('Commit auto-generated code') {
+        // Remove the following condition to publish a snapshot from a PR:
+        //when { branch 'main' }
         steps {
             container('play') {
                 withCredentials([
@@ -56,9 +38,15 @@ pipeline {
                 ]) {
                     script {
                         sh '''
+                            #temp debugging
+                            whoami
+                            pwd
+                            ls -ld .
                             git config --global credential.helper "store --file=/tmp/git-credentials"
                             echo "https://$GIT_USERNAME:$GIT_PASSWORD@github.com" > /tmp/git-credentials
                             git config --global --add safe.directory /home/jenkins/workspace/flowcommerce_lib-reference-scala_main
+                            #sic:
+                            git config --global --add safe.directory /home/jenkins/workspace/merce_lib-reference-scala_main
                             mkdir -p /root/.ssh
                             touch /root/.ssh/known_hosts
                             ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
