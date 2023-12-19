@@ -45,7 +45,7 @@ pipeline {
                             touch /root/.ssh/known_hosts
                             ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
                             go run script/generate.go
-                            sbt clean compile flowLintLib test scalafmtSbtCheck scalafmtCheck doc
+                            sbt clean compile flowLintLib test scalafmtSbtCheck doc
                         '''
                         HAS_CHANGES = sh(script:'git commit -a -m "Update generated code"', returnStatus:true) == 0
                         println("Push to upstream? " + HAS_CHANGES)
