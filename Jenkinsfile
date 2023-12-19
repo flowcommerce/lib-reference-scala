@@ -38,15 +38,9 @@ pipeline {
                 ]) {
                     script {
                         sh '''
-                            #temp debugging
-                            whoami
-                            pwd
-                            ls -ld .
                             git config --global credential.helper "store --file=/tmp/git-credentials"
                             echo "https://$GIT_USERNAME:$GIT_PASSWORD@github.com" > /tmp/git-credentials
-                            git config --global --add safe.directory /home/jenkins/workspace/flowcommerce_lib-reference-scala_main
-                            #sic:
-                            git config --global --add safe.directory /home/jenkins/workspace/merce_lib-reference-scala_main
+                            git config --global --add safe.directory $(pwd)
                             mkdir -p /root/.ssh
                             touch /root/.ssh/known_hosts
                             ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
