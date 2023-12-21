@@ -74,6 +74,8 @@ pipeline {
                                 git push
                             '''
                         }
+                        NEED_NEW_TAG  = !new flowSemver().calculateSemver().isSameAsCurrentRepoTag
+                        println("Need new tag? " + NEED_NEW_TAG)
                     }
                 }
             }
@@ -81,7 +83,10 @@ pipeline {
     }
 
     stage('Release') {
-        when { branch 'main' }
+        when {
+            branch 'main'
+            expression { return NEED_NEW_TAG == true }
+        }
         steps {
             script {
                 VERSION = new flowSemver().calculateSemver()
