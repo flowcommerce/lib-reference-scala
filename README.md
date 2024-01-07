@@ -44,10 +44,9 @@ for all of the types of reference data:
 
   [Scala Tests](/src/test/scala/io/flow/reference/)
 
-## Updating to latest models
+## Invoking the code generator
 
 ```
-    git checkout -b <release_branch>
-    go run release.go
-    git pull-request
+    go run script/generate.go
+    sbt compile
 ```
