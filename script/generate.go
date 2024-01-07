@@ -92,7 +92,7 @@ func processCarriers() {
 func processCarrierServices() {
 	instances := []Instance{}
 	for _, cs := range common.CarrierServices() {
-		carrierId := scalaName(formatLocaleIdForName(cs.Carrier.Id))
+		carrierId := scalaName(formatIdForName(cs.Carrier.Id))
 		instances = append(instances, Instance{
 			Name:  strings.Replace(cs.Id, "-", "_", -1),
 			Value: fmt.Sprintf("CarrierService(id = \"%s\", name = \"%s\", carrier = io.flow.reference.data.Carriers.%s)", cs.Id, cs.Name, carrierId),
@@ -215,7 +215,7 @@ func processLocales() {
 	instances := []Instance{}
 	for _, l := range common.Locales() {
 		instances = append(instances, Instance{
-			Name:  formatLocaleIdForName(l.Id),
+			Name:  formatIdForName(l.Id),
 			Value: fmt.Sprintf("Locale(id = \"%s\", name = \"%s\", country = \"%s\", language = \"%s\", numbers = LocaleNumbers(decimal = \"%s\", group = \"%s\"))", l.Id, l.Name, l.Country, l.Language, l.Numbers.Decimal, l.Numbers.Group),
 		})
 	}
@@ -335,7 +335,7 @@ func scalaName(name string) string {
 	return s
 }
 
-func formatLocaleIdForName(id string) string {
+func formatIdForName(id string) string {
 	return strings.Replace(id, "-", "_", -1)
 }
 
