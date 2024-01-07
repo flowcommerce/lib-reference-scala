@@ -16,18 +16,19 @@ case class Grammar(
   prefix: Option[String],
   suffix: Option[String],
 )
+
 object Grammar {
-  val None: Grammar = Grammar(prefix = None, suffix = None)
+  val Default: Grammar = Grammar(prefix = None, suffix = None)
 }
 
 /** A trait that allows a type `T` to be validated as an Either
   */
 trait Validation[T] extends Reference[T] {
 
-  def validate(
+  def validateSingle(
     id: String,
   )(implicit
-    grammar: Grammar = Grammar.None,
+    grammar: Grammar = Grammar.Default,
   ): ValidatedNec[String, T] = {
     val trimmed = id.trim
     find(trimmed).toValidNec(
@@ -42,10 +43,10 @@ trait Validation[T] extends Reference[T] {
   def validate(
     ids: Seq[String],
   )(implicit
-    grammar: Grammar = Grammar.None,
+    grammar: Grammar = Grammar.Default,
   ): ValidatedNec[String, Seq[T]] = {
     val distinctTrimmedIds = ids.map(_.trim).distinct
-    val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validate(id).isValid }
+    val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validateSingle(id).isValid }
 
     invalidError(strictlyInvalidIds, grammar.prefix.getOrElse(""), grammar.suffix.getOrElse("")) match {
       case Nil => distinctTrimmedIds.map(mustFind).validNec
