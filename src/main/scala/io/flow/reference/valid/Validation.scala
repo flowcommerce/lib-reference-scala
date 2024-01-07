@@ -8,10 +8,14 @@ import io.flow.reference.Reference
   */
 trait Validation[T] extends Reference[T] {
 
-  def validateSingle(id: String, prefix: String = "", suffix: String = ""): ValidatedNec[String, T] = {
+  def validateSingle(
+    id: String,
+    prefix: Option[String] = None,
+    suffix: Option[String] = None,
+  ): ValidatedNec[String, T] = {
     val trimmed = id.trim
     find(trimmed).toValidNec(
-      singleInvalid(trimmed, prefix, suffix),
+      singleInvalid(trimmed, prefix.getOrElse(""), suffix.getOrElse("")),
     )
   }
 
@@ -25,11 +29,15 @@ trait Validation[T] extends Reference[T] {
     *   A suffix to place after the singular or plural of `T`, such as "of origin" to yield "country of origin" or
     *   "countries of origin" if `T` is `Country`.
     */
-  def validate(ids: Seq[String], prefix: String = "", suffix: String = ""): ValidatedNec[String, Seq[T]] = {
+  def validate(
+    ids: Seq[String],
+    prefix: Option[String] = None,
+    suffix: Option[String] = None,
+  ): ValidatedNec[String, Seq[T]] = {
     val distinctTrimmedIds = ids.map(_.trim).distinct
     val strictlyInvalidIds = distinctTrimmedIds.filterNot { id => validateSingle(id).isValid }
 
-    invalidError(strictlyInvalidIds, prefix, suffix) match {
+    invalidError(strictlyInvalidIds, prefix.getOrElse(""), suffix.getOrElse("")) match {
       case Nil => distinctTrimmedIds.map(mustFind).validNec
       case errors => errors.map(_.invalidNec).sequence
     }
