@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Carrier
 
-object Carriers extends EitherValidation[Carrier] {
+class BaseCarriers extends Reference[Carrier] {
   override val cache: Map[String, Carrier] = Map(
     data.Carriers.all.flatMap { t =>
       Seq(
@@ -17,3 +17,5 @@ object Carriers extends EitherValidation[Carrier] {
   override def plural = "carriers"
   override def name(c: Carrier): String = c.name
 }
+
+object Carriers extends BaseCarriers with EitherValidation[Carrier]

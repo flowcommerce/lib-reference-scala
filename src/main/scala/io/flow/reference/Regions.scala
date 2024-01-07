@@ -2,11 +2,11 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Region
 
-object Regions extends EitherValidation[Region] {
+class BaseRegions extends Reference[Region] {
 
   override val cache: Map[String, Region] = Map(
     data.Regions.all.map { r =>
-      (r.id.toLowerCase -> r)
+      r.id.toLowerCase -> r
     }: _*,
   )
 
@@ -35,3 +35,5 @@ object Regions extends EitherValidation[Region] {
     }
   }
 }
+
+object Regions extends BaseRegions with EitherValidation[Region]
