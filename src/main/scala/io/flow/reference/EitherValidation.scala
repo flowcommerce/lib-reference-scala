@@ -90,7 +90,7 @@ trait Reference[T] {
   }
 
   private[this] def manyInvalid(ids: Seq[String], prefix: String, suffix: String): String = {
-    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids
+    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids.distinct
       .map(id => s"[$id]")
       .mkString(", ") + s". $pluralReferenceLink"
   }
