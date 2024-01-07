@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.CarrierService
 
-object CarrierServices extends Validation[CarrierService] {
+object CarrierServices extends EitherValidation[CarrierService] {
   override val cache: Map[String, CarrierService] = Map(
     data.CarrierServices.all.flatMap { t =>
       Seq(

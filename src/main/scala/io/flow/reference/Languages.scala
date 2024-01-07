@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Language
 
-object Languages extends Validation[Language] {
+object Languages extends EitherValidation[Language] {
   override val cache: Map[String, Language] = Map(
     data.Languages.all.flatMap { l =>
       Seq(

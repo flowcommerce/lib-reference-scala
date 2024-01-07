@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Region
 
-object Regions extends Validation[Region] {
+object Regions extends EitherValidation[Region] {
 
   override val cache: Map[String, Region] = Map(
     data.Regions.all.map { r =>

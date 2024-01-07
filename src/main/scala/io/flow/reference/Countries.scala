@@ -3,7 +3,7 @@ package io.flow.reference
 import io.flow.reference.v0.models.Country
 import scala.collection.mutable
 
-object Countries extends Validation[Country] {
+object Countries extends EitherValidation[Country] {
 
   override val cache: Map[String, Country] = Map(
     data.Countries.all.flatMap { c =>

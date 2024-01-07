@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Timezone
 
-object Timezones extends Validation[Timezone] {
+object Timezones extends EitherValidation[Timezone] {
   override val cache: Map[String, Timezone] = Map(
     data.Timezones.all.flatMap { t =>
       Seq(

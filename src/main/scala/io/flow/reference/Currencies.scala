@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Currency
 
-object Currencies extends Validation[Currency] {
+object Currencies extends EitherValidation[Currency] {
   override val cache: Map[String, Currency] = Map(
     data.Currencies.all.flatMap { c =>
       Seq(
