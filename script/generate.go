@@ -92,9 +92,10 @@ func processCarriers() {
 func processCarrierServices() {
 	instances := []Instance{}
 	for _, cs := range common.CarrierServices() {
+		carrierId := scalaName(formatLocaleIdForName(cs.Carrier.Id))
 		instances = append(instances, Instance{
 			Name:  strings.Replace(cs.Id, "-", "_", -1),
-			Value: fmt.Sprintf("CarrierService(id = \"%s\", name = \"%s\", carrier = io.flow.reference.v0.models.Carrier(id = \"%s\", name = \"%s\", trackingUrl = \"%s\"))", cs.Id, cs.Name, cs.Carrier.Id, cs.Carrier.Name, cs.Carrier.TrackingUrl),
+			Value: fmt.Sprintf("CarrierService(id = \"%s\", name = \"%s\", carrier = io.flow.reference.data.Carriers.%s)", cs.Id, cs.Name, carrierId),
 		})
 	}
 
