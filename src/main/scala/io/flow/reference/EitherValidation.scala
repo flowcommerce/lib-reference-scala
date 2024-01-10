@@ -1,8 +1,9 @@
 package io.flow.reference
 
-/** A trait that allows a type `T` to be validated, as long as the following are defined:
+/** Base class for all reference data classes. Used primarily to support common validation across the different
+  * reference classes
   */
-trait Validation[T] {
+trait Reference[T] {
 
   /** The singular form of `T`; for example, "country".
     */
@@ -29,7 +30,7 @@ trait Validation[T] {
     cache.get(q.toLowerCase.trim)
   }
 
-  /** Attempts to find a single object; if it cannot be found, validates it to return an error message. */
+  /** Attempts to find a single object; if it cannot be found, raises an error */
   def mustFind(q: String): T = {
     find(q) getOrElse {
       sys.error(singleInvalid(q))
@@ -84,12 +85,12 @@ trait Validation[T] {
     finalParts.distinct.mkString(" ")
   }
 
-  private[this] def singleInvalid(id: String, prefix: String = "", suffix: String = ""): String = {
+  protected def singleInvalid(id: String, prefix: String = "", suffix: String = ""): String = {
     s"The following ${errorMessage(singular, prefix, suffix)} is invalid: [$id]. $singularReferenceLink"
   }
 
   private[this] def manyInvalid(ids: Seq[String], prefix: String, suffix: String): String = {
-    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids
+    s"The following ${errorMessage(plural, prefix, suffix)} are invalid: " + ids.distinct
       .map(id => s"[$id]")
       .mkString(", ") + s". $pluralReferenceLink"
   }
@@ -101,6 +102,12 @@ trait Validation[T] {
       case multiple => Seq(manyInvalid(multiple, prefix, suffix))
     }
   }
+
+}
+
+/** A trait that allows a type `T` to be validated as an Either
+  */
+trait EitherValidation[T] extends Reference[T] {
 
   def validateSingle(id: String, prefix: String = "", suffix: String = ""): Either[String, T] = {
     val trimmed = id.trim

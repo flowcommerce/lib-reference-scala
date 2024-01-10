@@ -1,9 +1,10 @@
 package io.flow.reference
 
 import io.flow.reference.v0.models.Country
+
 import scala.collection.mutable
 
-object Countries extends Validation[Country] {
+class BaseCountries extends Reference[Country] {
 
   override val cache: Map[String, Country] = Map(
     data.Countries.all.flatMap { c =>
@@ -61,7 +62,7 @@ object Countries extends Validation[Country] {
     val countries = mutable.ListBuffer[Country]()
 
     labelsAndCodes.foreach { case (label, code) =>
-      Countries.find(code) match {
+      find(code) match {
         case None => {
           invalid.get(label) match {
             case None => {
@@ -96,3 +97,5 @@ object Countries extends Validation[Country] {
     }
   }
 }
+
+object Countries extends BaseCountries with EitherValidation[Country]

@@ -1,8 +1,7 @@
 package io.flow.reference
 
 import io.flow.reference.v0.models.PaymentMethod
-
-object PaymentMethods extends Validation[PaymentMethod] {
+class BasePaymentMethods extends Reference[PaymentMethod] {
 
   override val cache: Map[String, PaymentMethod] = Map(
     data.PaymentMethods.all.map { r =>
@@ -19,3 +18,5 @@ object PaymentMethods extends Validation[PaymentMethod] {
   override def urlKey = "payment-methods"
 
 }
+
+object PaymentMethods extends BasePaymentMethods with EitherValidation[PaymentMethod]

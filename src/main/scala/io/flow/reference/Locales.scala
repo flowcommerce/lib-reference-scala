@@ -2,7 +2,7 @@ package io.flow.reference
 
 import io.flow.reference.v0.models.Locale
 
-object Locales extends Validation[Locale] {
+class BaseLocales extends Reference[Locale] {
   override val cache: Map[String, Locale] = Map(
     data.Locales.all.flatMap { l =>
       variations(l.id).map { key =>
@@ -49,3 +49,5 @@ object Locales extends Validation[Locale] {
     }
   }
 }
+
+object Locales extends BaseLocales with EitherValidation[Locale]
