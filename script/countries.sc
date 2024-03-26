@@ -13,13 +13,11 @@ val definition =
     |    id numeric not null primary key,
     |    iso31663 character varying(3) NOT NULL,
     |    iso31662 character varying(2) NOT NULL,
-    |    languages text,
+    |    languages JSON[],
     |    name text NOT NULL,
     |    measurement_system text,
     |    default_currency text,
-    |    default_language text,
-    |    timezones text,
-    |    default_delivered_duty text
+    |    default_language text
     |);
     |""".stripMargin
 writer.println(definition)
@@ -28,15 +26,10 @@ val lines = Countries.all.zipWithIndex.map {
   case (country, ndx) => {
     val line =
       s"""
-         |insert into reference.countries (id,iso31663,iso31662,languages,name,measurement_system,default_currency,default_language,timezones,default_delivered_duty) values (${ndx + 1},'${country.iso31663}','${country.iso31662}','${country.languages.mkString(",")
-      }','${cleanStr(country.name)}','${country.measurementSystem}','${
+         |insert into reference.countries (id,iso31663,iso31662,languages,name,measurement_system,default_currency,default_language) values (${ndx + 1},'${country.iso31663}','${country.iso31662}',array[${country.languages.map(l => s"""'"${l}"'""").mkString(",")}]::json[],'${cleanStr(country.name)}','${country.measurementSystem}','${
         country.defaultCurrency
           .getOrElse("")
-      }','${country.defaultLanguage.getOrElse("")}','${
-        country.timezones.mkString(
-          ",",
-        )
-      }','${country.defaultDeliveredDuty.getOrElse("")}');""".stripMargin
+      }','${country.defaultLanguage.getOrElse("")}');""".stripMargin
     line
   }
 }
