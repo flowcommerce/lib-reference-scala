@@ -29,7 +29,7 @@ val lines = Countries.all.zipWithIndex.map {
          |insert into reference.countries (id,iso31663,iso31662,languages,name,measurement_system,default_currency,default_language) values (${ndx + 1},'${country.iso31663}','${country.iso31662}',array[${country.languages.map(l => s"""'"${l}"'""").mkString(",")}]::json[],'${cleanStr(country.name)}','${country.measurementSystem}','${
         country.defaultCurrency
           .getOrElse("")
-      }','${country.defaultLanguage.getOrElse("")}');""".stripMargin
+      }',${country.defaultLanguage.map(dl => s"'${dl}'").getOrElse(null)});""".stripMargin
     line
   }
 }
