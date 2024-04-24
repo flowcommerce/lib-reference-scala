@@ -45,7 +45,7 @@ publishTo := {
   }
 }
 
-coverageExcludedFiles := ".*\\/src/main/scala/io/flow/generated\\/.*"
+coverageExcludedFiles := ".*\\/src/main/scala/io/flow/generated\\/.*;.*\\/src/main/scala/io/flow/reference/data\\/.*"
 coverageDataDir := file("target/scala-2.13")
 coverageHighlighting := true
 coverageFailOnMinimum := true
