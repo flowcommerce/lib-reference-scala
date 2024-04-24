@@ -45,4 +45,11 @@ publishTo := {
   }
 }
 
+coverageExcludedFiles := ".*\\/src/main/scala/io/flow/generated\\/.*"
+coverageDataDir := file("target/scala-2.13")
+coverageHighlighting := true
+coverageFailOnMinimum := true
+coverageMinimumStmtTotal := 80
+coverageMinimumBranchTotal := 75
+
 scalacOptions ++= allScalacOptions

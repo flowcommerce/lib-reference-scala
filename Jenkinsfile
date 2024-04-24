@@ -29,11 +29,19 @@ pipeline {
           script {
             try {
               sh '''
-                sbt clean compile flowLintLib test scalafmtSbtCheck scalafmtCheck doc
+                sbt clean coverage compile flowLintLib test scalafmtSbtCheck scalafmtCheck doc
+                sbt coverageAggregate
               '''
             } finally {
                 junit allowEmptyResults: true, testResults: '**/target/test-reports/*.xml'
-            }
+                step([$class: 'ScoveragePublisher', reportDir: 'target/scala-2.13/scoverage-report', reportFile: 'scoverage.xml'])
+                publishHTML (target : [allowMissing: false,
+                 alwaysLinkToLastBuild: true,
+                 keepAll: true,
+                 reportDir: 'target/scala-2.13/scoverage-report',
+                 reportFiles: 'index.html',
+                 reportName: 'Scoverage Code Coverage',
+                 reportTitles: 'Scoverage Code Coverage'])
           }
         }
       }
