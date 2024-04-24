@@ -42,6 +42,7 @@ pipeline {
                  reportFiles: 'index.html',
                  reportName: 'Scoverage Code Coverage',
                  reportTitles: 'Scoverage Code Coverage'])
+            }
           }
         }
       }
