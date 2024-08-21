@@ -970,6 +970,30 @@ object PaymentMethods {
     regions = Seq("world"),
     capabilities = Some(Nil),
   )
+  val Twint: PaymentMethod = PaymentMethod(
+    id = "twint",
+    `type` = PaymentMethodType.Online,
+    name = "Twint",
+    images = PaymentMethodImages(
+      small = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/twint/30/original.png",
+        width = 65,
+        height = 41,
+      ),
+      medium = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/twint/60/original.png",
+        width = 100,
+        height = 60,
+      ),
+      large = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/twint/120/original.png",
+        width = 256,
+        height = 256,
+      ),
+    ),
+    regions = Seq("world"),
+    capabilities = Some(Nil),
+  )
   val Unionpay: PaymentMethod = PaymentMethod(
     id = "unionpay",
     `type` = PaymentMethodType.Online,
@@ -1084,6 +1108,7 @@ object PaymentMethods {
     Sepadirectdebit,
     Trustly,
     Trustpay,
+    Twint,
     Unionpay,
     Visa,
     Wechatpay,
