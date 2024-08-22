@@ -802,6 +802,30 @@ object PaymentMethods {
     regions = Seq("world"),
     capabilities = Some(Seq(PaymentMethodCapability.Credit, PaymentMethodCapability.Debit)),
   )
+  val Mobilepay: PaymentMethod = PaymentMethod(
+    id = "mobilepay",
+    `type` = PaymentMethodType.Online,
+    name = "MobilePay",
+    images = PaymentMethodImages(
+      small = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/mobilepay/30/original.png",
+        width = 65,
+        height = 41,
+      ),
+      medium = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/mobilepay/60/original.png",
+        width = 100,
+        height = 60,
+      ),
+      large = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/mobilepay/120/original.png",
+        width = 256,
+        height = 256,
+      ),
+    ),
+    regions = Seq("world"),
+    capabilities = Some(Nil),
+  )
   val MolpayPoints: PaymentMethod = PaymentMethod(
     id = "molpay_points",
     `type` = PaymentMethodType.Online,
@@ -869,6 +893,30 @@ object PaymentMethods {
         url = "https://flowcdn.io/util/logos/payment-methods/paypal/120/original.png",
         width = 180,
         height = 60,
+      ),
+    ),
+    regions = Seq("world"),
+    capabilities = Some(Nil),
+  )
+  val Przelewy24: PaymentMethod = PaymentMethod(
+    id = "przelewy24",
+    `type` = PaymentMethodType.Online,
+    name = "Przelewy24",
+    images = PaymentMethodImages(
+      small = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/przelewy24/30/original.png",
+        width = 65,
+        height = 41,
+      ),
+      medium = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/przelewy24/60/original.png",
+        width = 100,
+        height = 60,
+      ),
+      large = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/przelewy24/120/original.png",
+        width = 256,
+        height = 256,
       ),
     ),
     regions = Seq("world"),
@@ -1101,9 +1149,11 @@ object PaymentMethods {
     Klarna,
     Maestro,
     Mastercard,
+    Mobilepay,
     MolpayPoints,
     Multibanco,
     Paypal,
+    Przelewy24,
     Qiwiwallet,
     Sepadirectdebit,
     Trustly,
