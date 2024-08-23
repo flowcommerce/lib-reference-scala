@@ -2,9 +2,15 @@
 
 Scala library providing convenient and fast access to reference data
 
-## Source Data
+## Adding new reference data
 
-This library wraps the source data provided by the [Flow Reference Project](https://github.com/flowcommerce/json-reference)
+Changes should not be done to this repository direcly.
+
+This library wraps the source data provided by the [Flow Reference Project](https://github.com/flowcommerce/json-reference).
+Therefore, if new reference data needs to be added, it should be added to [json-reference](https://github.com/flowcommerce/json-reference) first. 
+After changes are merged in the [json-reference](https://github.com/flowcommerce/json-reference), the code generate has to be invoked here.
+
+Find more details about how references are organized and managed [here](https://www.notion.so/flow/References-bd8b9b8f5c434d21aa0bf1c0b98e6d66).
 
 ## Installation
 
