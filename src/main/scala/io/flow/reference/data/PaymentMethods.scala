@@ -586,6 +586,30 @@ object PaymentMethods {
     regions = Seq("world"),
     capabilities = Some(Nil),
   )
+  val GrabPaySG: PaymentMethod = PaymentMethod(
+    id = "grabpay_SG",
+    `type` = PaymentMethodType.Online,
+    name = "GrabPay SG",
+    images = PaymentMethodImages(
+      small = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/grabpay_SG/30/original.png",
+        width = 40,
+        height = 26,
+      ),
+      medium = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/grabpay_SG/60/original.png",
+        width = 77,
+        height = 50,
+      ),
+      large = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/grabpay_SG/120/original.png",
+        width = 154,
+        height = 100,
+      ),
+    ),
+    regions = Seq("world"),
+    capabilities = Some(Nil),
+  )
   val Ideal: PaymentMethod = PaymentMethod(
     id = "ideal",
     `type` = PaymentMethodType.Online,
@@ -1140,6 +1164,7 @@ object PaymentMethods {
     EbankingFi,
     Giropay,
     GooglePay,
+    GrabPaySG,
     Ideal,
     Interac,
     Jcb,
