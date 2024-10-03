@@ -586,7 +586,7 @@ object PaymentMethods {
     regions = Seq("world"),
     capabilities = Some(Nil),
   )
-  val GrabPay: PaymentMethod = PaymentMethod(
+  val Grabpay: PaymentMethod = PaymentMethod(
     id = "grabpay",
     `type` = PaymentMethodType.Online,
     name = "GrabPay",
@@ -1164,7 +1164,7 @@ object PaymentMethods {
     EbankingFi,
     Giropay,
     GooglePay,
-    GrabPay,
+    Grabpay,
     Ideal,
     Interac,
     Jcb,
