@@ -1066,6 +1066,30 @@ object PaymentMethods {
     regions = Seq("world"),
     capabilities = Some(Nil),
   )
+  val Vipps: PaymentMethod = PaymentMethod(
+    id = "vipps",
+    `type` = PaymentMethodType.Online,
+    name = "Vipps",
+    images = PaymentMethodImages(
+      small = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/vipps/30/original.png",
+        width = 40,
+        height = 26,
+      ),
+      medium = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/vipps/60/original.png",
+        width = 77,
+        height = 50,
+      ),
+      large = PaymentMethodImage(
+        url = "https://flowcdn.io/util/logos/payment-methods/vipps/120/original.png",
+        width = 154,
+        height = 100,
+      ),
+    ),
+    regions = Seq("world"),
+    capabilities = Some(Nil),
+  )
   val Visa: PaymentMethod = PaymentMethod(
     id = "visa",
     `type` = PaymentMethodType.Card,
@@ -1160,6 +1184,7 @@ object PaymentMethods {
     Trustpay,
     Twint,
     Unionpay,
+    Vipps,
     Visa,
     Wechatpay,
   )
