@@ -793,7 +793,7 @@ object Regions {
     name = "Curaçao",
     countries = Seq("CUW"),
     languages = Seq("en", "nl"),
-    currencies = Seq("ANG"),
+    currencies = Seq("ANG", "XCG"),
     measurementSystems = Seq("metric"),
     timezones = Nil,
   )
@@ -2141,6 +2141,7 @@ object Regions {
       "TTD",
       "USD",
       "XCD",
+      "XCG",
     ),
     measurementSystems = Seq("imperial", "metric"),
     timezones = Seq("America/Chicago", "America/Los_Angeles", "America/New_York", "Canada/Eastern", "Mexico/General"),
@@ -2530,7 +2531,7 @@ object Regions {
     name = "Sint Maarten",
     countries = Seq("SXM"),
     languages = Seq("en", "nl"),
-    currencies = Seq("ANG"),
+    currencies = Seq("ANG", "XCG"),
     measurementSystems = Seq("metric"),
     timezones = Nil,
   )
@@ -3442,6 +3443,7 @@ object Regions {
       "WST",
       "XAF",
       "XCD",
+      "XCG",
       "XOF",
       "XPF",
       "YER",

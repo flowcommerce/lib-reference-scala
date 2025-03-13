@@ -165,6 +165,13 @@ object Currencies {
     defaultLocale = Some("pt-CV"),
     symbols = Some(CurrencySymbols(primary = "CVE", narrow = None)),
   )
+  val Xcg: Currency = Currency(
+    iso42173 = "XCG",
+    name = "Caribbean Guilder",
+    numberDecimals = 2,
+    defaultLocale = Some("nl-CW"),
+    symbols = Some(CurrencySymbols(primary = "XCG", narrow = None)),
+  )
   val Kyd: Currency = Currency(
     iso42173 = "KYD",
     name = "Cayman Islands Dollar",
@@ -1030,6 +1037,7 @@ object Currencies {
     Khr,
     Cad,
     Cve,
+    Xcg,
     Kyd,
     Xof,
     Xaf,
