@@ -25,7 +25,7 @@ lazy val root = project
   .settings(
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-core" % "2.10.0",
+      "org.typelevel" %% "cats-core" % "2.13.0",
       "org.scalatest" %% "scalatest" % "3.2.19" % Test,
     ),
     credentials += Credentials(
