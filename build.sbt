@@ -2,7 +2,7 @@ name := "lib-reference-scala"
 
 organization := "io.flow"
 
-scalaVersion := "2.13.16"
+scalaVersion := "2.13.17"
 
 enablePlugins(GitVersioning)
 git.useGitDescribe := true
