@@ -169,6 +169,11 @@ object CarrierServices {
   )
   val FedexGround: CarrierService =
     CarrierService(id = "fedex-ground", name = "Ground", carrier = io.flow.reference.data.Carriers.Fedex)
+  val FedexInternationalConnectPlus: CarrierService = CarrierService(
+    id = "fedex-international-connect-plus",
+    name = "International Connect Plus",
+    carrier = io.flow.reference.data.Carriers.Fedex,
+  )
   val FedexInternationalEconomy: CarrierService = CarrierService(
     id = "fedex-international-economy",
     name = "International Economy",
@@ -419,6 +424,7 @@ object CarrierServices {
     FedexCrossborderUk48Hours,
     FedexCrossborderYodel72HourPacket,
     FedexGround,
+    FedexInternationalConnectPlus,
     FedexInternationalEconomy,
     FedexInternationalPriority,
     FedexInternationalStandard,
