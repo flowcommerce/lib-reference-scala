@@ -347,7 +347,7 @@ object Countries {
   val Bgr: Country = Country(
     iso31662 = "BG",
     iso31663 = "BGR",
-    defaultCurrency = Some("BGN"),
+    defaultCurrency = Some("EUR"),
     defaultLanguage = Some("bg"),
     measurementSystem = "metric",
     name = "Bulgaria",
