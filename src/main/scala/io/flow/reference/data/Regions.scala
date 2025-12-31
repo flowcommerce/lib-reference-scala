@@ -1053,6 +1053,7 @@ object Regions {
     currencies = Seq(
       "ALL",
       "BAM",
+      "BGN",
       "BYN",
       "CHF",
       "CZK",
@@ -1142,7 +1143,7 @@ object Regions {
       "sv",
       "tr",
     ),
-    currencies = Seq("CHF", "CZK", "DKK", "EUR", "HRK", "HUF", "ISK", "NOK", "PLN", "RON", "SEK"),
+    currencies = Seq("BGN", "CHF", "CZK", "DKK", "EUR", "HRK", "HUF", "ISK", "NOK", "PLN", "RON", "SEK"),
     measurementSystems = Seq("metric"),
     timezones = Seq("Africa/Algiers", "GMT"),
   )
@@ -1206,7 +1207,7 @@ object Regions {
       "sv",
       "tr",
     ),
-    currencies = Seq("CZK", "DKK", "EUR", "HRK", "HUF", "PLN", "RON", "SEK"),
+    currencies = Seq("BGN", "CZK", "DKK", "EUR", "HRK", "HUF", "PLN", "RON", "SEK"),
     measurementSystems = Seq("metric"),
     timezones = Seq("Africa/Algiers", "GMT"),
   )
@@ -1216,6 +1217,7 @@ object Regions {
     countries = Seq(
       "AUT",
       "BEL",
+      "BGR",
       "CYP",
       "EST",
       "FIN",
@@ -1237,6 +1239,7 @@ object Regions {
     ),
     languages = Seq(
       "cs",
+      "bg",
       "de",
       "el",
       "en",
@@ -3329,6 +3332,7 @@ object Regions {
       "BAM",
       "BBD",
       "BDT",
+      "BGN",
       "BHD",
       "BMD",
       "BND",
