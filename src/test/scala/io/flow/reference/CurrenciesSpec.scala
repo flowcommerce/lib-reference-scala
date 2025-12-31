@@ -41,7 +41,6 @@ class CurrenciesSpec extends AnyFunSpec with Matchers {
       "ARS",
       "AUD",
       "BAM",
-      "BGN",
       "BRL",
       "BSD",
       "CAD",

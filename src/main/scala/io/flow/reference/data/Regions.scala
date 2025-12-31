@@ -604,7 +604,7 @@ object Regions {
     name = "Bulgaria",
     countries = Seq("BGR"),
     languages = Seq("bg"),
-    currencies = Seq("BGN"),
+    currencies = Seq("EUR"),
     measurementSystems = Seq("metric"),
     timezones = Nil,
   )
@@ -1217,6 +1217,7 @@ object Regions {
     countries = Seq(
       "AUT",
       "BEL",
+      "BGR",
       "CYP",
       "EST",
       "FIN",
@@ -1238,6 +1239,7 @@ object Regions {
     ),
     languages = Seq(
       "cs",
+      "bg",
       "de",
       "el",
       "en",
